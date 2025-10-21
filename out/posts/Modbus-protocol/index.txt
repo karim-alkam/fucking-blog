@@ -1,0 +1,141 @@
+1:"$Sreact.fragment"
+2:I[76074,["8173","static/chunks/8173-658042c358f3b6bb.js","2088","static/chunks/2088-710900e226b741dc.js","7177","static/chunks/app/layout-e20e4149c928e1a5.js"],"default"]
+3:I[15244,[],""]
+4:I[43866,[],""]
+6:I[86213,[],"OutletBoundary"]
+8:I[86213,[],"MetadataBoundary"]
+a:I[86213,[],"ViewportBoundary"]
+c:I[34835,[],""]
+:HL["/_next/static/css/a2cee4b11f594140.css","style"]
+:HL["/_next/static/css/5eacd01f773eed7f.css","style"]
+0:{"P":null,"b":"fQy3IuA34tOyVw7XsWx1e","p":"","c":["","posts","Modbus-protocol",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","Modbus-protocol","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2cee4b11f594140.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":["$","body",null,{"className":"bg-gray-900 text-gray-100 min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-gray-800 text-gray-400 py-8","children":["$","div",null,{"className":"container mx-auto px-4 text-center","children":["$","p",null,{"children":["© ",2025," My Blog. All rights reserved."]}]}]}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Modbus-protocol","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$0:f:0:1:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5eacd01f773eed7f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L6",null,{"children":"$L7"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","IIz0AAxDkFrsQlc_8-mcs",{"children":[["$","$L8",null,{"children":"$L9"}],["$","$La",null,{"children":"$Lb"}],null]}]]}],false]],"m":"$undefined","G":["$c","$undefined"],"s":false,"S":true}
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Salameh"}],["$","meta","2",{"name":"description","content":"A personal blog built with love by Abdullah Salameh"}]]
+7:null
+d:I[35525,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],"default"]
+e:I[53704,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],""]
+f:I[88722,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],"default"]
+11:I[48173,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],""]
+10:T1f10,<p>the <strong>Modbus</strong> protocol is the standard of networking in industrial automation it was developed in 1979 by <strong>Modicon</strong> for there PLCs but it became an open <strong>standard</strong> any manufacturer can use in there devices    </p>
+<h2 id="why-modbus">Why Modbus</h2>
+<p>Modbus is on the application layer of the network, the meaning is it&#39;s job is to organize and structure data exchange<br>it&#39;s continued success stems from these three main factors:</p>
+<ul>
+<li>Open and free: It is <strong>openly published</strong> and <strong>royalty-free</strong>, making it easy for any manufacturer to adopt.</li>
+<li>It&#39;s relatively easy to deploy and maintain compared to newer, more complex industrial protocols.</li>
+<li><strong>Versatility:</strong> It places few restrictions on data format, making it flexible for everything from reading a single relay status to logging complex measurements.</li>
+</ul>
+<p>It fundamentally operates on a <strong>Client/Server</strong> principle (formerly Master/Slave), where a central <strong>Client/Master</strong> (e.g., a supervisory computer, data logger) initiates a transaction to request data or command an action from a <strong>Server/Slave</strong> (e.g., a sensor or PLC).</p>
+<h2 id="the-two-dominant-flavors-rtu-vs-tcp">The Two Dominant Flavors: RTU vs. TCP</h2>
+<p>While the core data model remains the same, Modbus is deployed over two very different physical transports:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Feature</strong></th>
+<th align="left"><strong>Modbus RTU (Remote Terminal Unit)</strong></th>
+<th align="left"><strong>Modbus TCP (Transmission Control Protocol)</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Transport</td>
+<td align="left"><strong>Serial</strong> communication (e.g., RS-448/RS-232).</td>
+<td align="left"><strong>Ethernet</strong> (TCP/IP network).</td>
+</tr>
+<tr>
+<td align="left">Framing</td>
+<td align="left">Binary, compact, suitable for low-speed lines.</td>
+<td align="left">Uses the TCP/IP stack (Modbus over Ethernet).</td>
+</tr>
+<tr>
+<td align="left">Addressing</td>
+<td align="left">Uses a <strong>Slave Address</strong> field directly in the frame.</td>
+<td align="left">Uses <strong>IP Address</strong> for routing + a <strong>Unit ID</strong> field in the header.</td>
+</tr>
+<tr>
+<td align="left">Error Check</td>
+<td align="left">Uses a dedicated <strong>CRC</strong> (Cyclic Redundancy Check) at the end of the frame.</td>
+<td align="left">Relies on the <strong>TCP/IP stack&#39;s built-in checksums</strong>.</td>
+</tr>
+<tr>
+<td align="left">Key Purpose</td>
+<td align="left">Legacy systems, device-level communication, simple bus topology.</td>
+<td align="left">High-speed data transfer, integration with modern IT networks.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="the-tcpip-differentiator-transaction-id">The TCP/IP Differentiator: Transaction ID</h3>
+<p>Modbus TCP adds an <strong>MBAP Header</strong> (Modbus Application Protocol Header) before the core message. The most important field in this header is the <strong>Transaction ID</strong> (2 bytes).</p>
+<p>This ID is used to <strong>match asynchronous requests with their responses</strong>. If a client sends three requests quickly, the server&#39;s responses might arrive out of order, but the client uses the Transaction ID to correctly pair the incoming data to the original query.</p>
+<h2 id="the-modbus-data-model-four-key-tables">The Modbus Data Model: Four Key Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Access</th>
+<th>Size</th>
+<th>Purpose (What it Measures)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Discrete Input</td>
+<td>Read-Only (R)</td>
+<td>1 Bit (ON/OFF)</td>
+<td>Reading the status of a physical input (e.g., whether a safety switch is closed).</td>
+</tr>
+<tr>
+<td>Coil (Discrete Output)</td>
+<td>Read/Write (R/W)</td>
+<td>1 Bit (ON/OFF)</td>
+<td>Reading or controlling the state of a physical output (e.g., turning a light or relay ON/OFF).</td>
+</tr>
+<tr>
+<td>Input Register</td>
+<td>Read-Only (R)</td>
+<td>16 Bits (Word)</td>
+<td>Reading measured values (e.g., the current temperature reading from a sensor).</td>
+</tr>
+<tr>
+<td>Holding Register</td>
+<td>Read/Write (R/W)</td>
+<td>16 Bits (Word)</td>
+<td>Reading or writing configuration settings (e.g., setting a temperature setpoint or a control gain).</td>
+</tr>
+</tbody></table>
+<p>Every Modbus communication relies on two core data structures: the PDU and the ADU.</p>
+<h3 id="pdu-protocol-data-unit">PDU (Protocol Data Unit)</h3>
+<p>The PDU is the <strong>core message content</strong>, independent of the physical communication method.<br>$$PDU = Function Code + Data$$</p>
+<ul>
+<li><strong>Function Code (1 Byte):</strong> This is the command. It tells the server <em>what</em> to do. Examples include 0x01 (Read Coils) or 0x03 (Read Holding Registers). If the server encounters an error, it responds with an <strong>Exception Function Code</strong> (Original Code + 0x80) plus an Exception Code explaining the error.</li>
+<li><strong>Data:</strong> Includes the <strong>Starting Address</strong> (where to start the operation, 2 bytes) and the <strong>Quantity</strong> (how many items to read/write).</li>
+</ul>
+<h3 id="adu-application-data-unit">ADU (Application Data Unit)</h3>
+<p>The ADU is the <strong>complete, transmitted frame</strong> that wraps the PDU with transport-specific fields.</p>
+<ul>
+<li><p><strong>Modbus RTU ADU</strong>: $Slave Address + PDU + CRC$</p>
+<ul>
+<li><strong>Slave Address (1 byte)</strong>: Identifies the specific server (slave) device on the serial line that the client (master) wants to communicate with. This is the device&#39;s unique physical address on the bus. </li>
+<li><strong>PDU (Up to 253 bytes)</strong>: <strong>Protocol Data Unit</strong> (Function Code + Data). This is the core instruction or response, which is identical in both RTU and TCP versions.</li>
+<li><strong>CRC (2 bytes)</strong>: <strong>Cyclic Redundancy Check</strong>. This is a dedicated checksum used for robust <strong>error checking</strong>. The receiving device calculates the CRC for the incoming data and compares it to the received CRC value to ensure data integrity.</li>
+</ul>
+</li>
+<li><p><strong>Modbus TPC ADU</strong>: $MBAP Header + Unit ID + PDU$</p>
+<ul>
+<li><strong>MBAP Header (6 bytes)</strong>: <strong>Modbus Application Protocol Header</strong>. This header is essential for network communication and is broken down into three fields:<ul>
+<li><strong>Transaction ID (2 bytes)</strong>: A sequential tag used by the client to <strong>match requests to their corresponding responses</strong> when they arrive.</li>
+<li><strong>Protocol ID (2 bytes)</strong>: Always 0x0000, identifying the Modbus protocol.</li>
+<li><strong>Length (2 bytes)</strong>: Specifies the number of bytes that follow in the rest of the frame (Unit ID + PDU).</li>
+</ul>
+</li>
+<li><strong>Unit ID (1 byte)</strong>: Used to <strong>identify the specific device</strong> when Modbus TCP is used to talk to an RTU network through a gateway. It acts as the slave address on the internal serial segment.</li>
+<li><strong>PDU (Up to 253 bytes)</strong>: <strong>Protocol Data Unit</strong> (Function Code + Data). This is the core instruction or response, identical to the RTU version.</li>
+</ul>
+</li>
+</ul>
+<p>The <strong>ADU</strong> is what the client actually constructs and sends, and it carries the PDU across the wire to complete the transaction.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Modbus">https://en.wikipedia.org/wiki/Modbus</a></li>
+<li><a href="https://www.youtube.com/watch?v=txi2p5_OjKU">https://www.youtube.com/watch?v=txi2p5_OjKU</a></li>
+<li><a href="https://www.youtube.com/watch?v=JBGaInI-TG4">https://www.youtube.com/watch?v=JBGaInI-TG4</a></li>
+<li><a href="https://www.youtube.com/watch?v=nlFM1q9QPJw">https://www.youtube.com/watch?v=nlFM1q9QPJw</a></li>
+</ul>
+5:[["$","$Ld",null,{}],["$","$Le",null,{"id":"MathJax-config","strategy":"beforeInteractive","children":"\n            window.MathJax = {\n              tex: {\n                inlineMath: [['$', '$'], ['\\(', '\\)']],\n                displayMath: [['$$', '$$'], ['\\[', '\\]']],\n              },\n              svg: {\n                fontCache: 'global'\n              }\n            };\n          "}],["$","$Le",null,{"type":"text/javascript","id":"MathJax-script","async":true,"src":"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"}],["$","div",null,{"className":"container mx-auto px-4 py-8","children":["$","article",null,{"className":"max-w-3xl mx-auto break-words hyphens-auto","children":[["$","div",null,{"className":"bg-yellow-500 text-black px-4 py-2 mb-4 rounded","children":"This is a draft post"}],["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-white mb-2","children":"Modbus protocol"}],["$","p",null,{"className":"text-gray-400","children":"2025-10-08"}]]}],["$","$Lf",null,{"html":"$10"}],["$","div",null,{"className":"mt-12 pt-6 border-t border-gray-700","children":["$","$L11",null,{"href":"/","className":"text-blue-400 hover:text-blue-300 inline-flex items-center","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","className":"h-5 w-5 mr-2","fill":"none","viewBox":"0 0 24 24","stroke":"currentColor","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to all posts"]}]}]]}]}]]
