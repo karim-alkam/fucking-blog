@@ -1,9 +1,9 @@
 ---
 title: Modbus protocol
-description:
+description: "The essential guide to the Modbus protocol: understand the architecture, data models, and differences between RTU and TCP."
 date: 2025-10-08
 tags:
-draft: "true"
+draft: "false"
 ---
 the **Modbus** protocol is the standard of networking in industrial automation it was developed in 1979 by **Modicon** for there PLCs but it became an open **standard** any manufacturer can use in there devices    
 
