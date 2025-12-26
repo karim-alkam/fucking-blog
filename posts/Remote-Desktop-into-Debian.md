@@ -1,6 +1,6 @@
 ---
-title: Remote Desktop into Debian
-description:
+title: Remote Desktop into Linux
+description: This guide provides a step-by-step tutorial on setting up a high-performance remote desktop on a headless Debian server using XRDP and XFCE as a superior, faster alternative to VNC.
 date: 2025-12-05
 tags:
   - linux

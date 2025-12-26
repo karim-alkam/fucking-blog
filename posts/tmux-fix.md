@@ -4,7 +4,7 @@ description: How to fix the `^[]11;rgb` garbage text when attaching to Tmux from
 date: 2025-12-27
 tags:
   - linux
-draft: "true"
+draft: "false"
 ---
 If you use Windows Terminal to SSH into your Linux box (like my Debian server) and use `tmux`, you’ve probably seen this absolute garbage pop up on your screen when you attach to a session:
 
