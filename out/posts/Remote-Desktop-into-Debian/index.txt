@@ -1,0 +1,83 @@
+1:"$Sreact.fragment"
+2:I[76074,["8173","static/chunks/8173-658042c358f3b6bb.js","2088","static/chunks/2088-710900e226b741dc.js","7177","static/chunks/app/layout-e20e4149c928e1a5.js"],"default"]
+3:I[15244,[],""]
+4:I[43866,[],""]
+6:I[86213,[],"OutletBoundary"]
+8:I[86213,[],"MetadataBoundary"]
+a:I[86213,[],"ViewportBoundary"]
+c:I[34835,[],""]
+:HL["/_next/static/css/a2cee4b11f594140.css","style"]
+:HL["/_next/static/css/5eacd01f773eed7f.css","style"]
+0:{"P":null,"b":"qhFBmh1qEjoECsFERcFXA","p":"","c":["","posts","Remote-Desktop-into-Debian",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","Remote-Desktop-into-Debian","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2cee4b11f594140.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":["$","body",null,{"className":"bg-gray-900 text-gray-100 min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-gray-800 text-gray-400 py-8","children":["$","div",null,{"className":"container mx-auto px-4 text-center","children":["$","p",null,{"children":["© ",2025," My Blog. All rights reserved."]}]}]}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Remote-Desktop-into-Debian","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$0:f:0:1:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5eacd01f773eed7f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L6",null,{"children":"$L7"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","UeuHWbC6HB7wvHx4bcqWH",{"children":[["$","$L8",null,{"children":"$L9"}],["$","$La",null,{"children":"$Lb"}],null]}]]}],false]],"m":"$undefined","G":["$c","$undefined"],"s":false,"S":true}
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Salameh"}],["$","meta","2",{"name":"description","content":"A personal blog built with love by Abdullah Salameh"}]]
+7:null
+d:I[35525,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],"default"]
+e:I[53704,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],""]
+f:I[59414,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],"default"]
+10:I[88722,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],"default"]
+12:I[48173,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-22affa8891f1b25f.js"],""]
+11:Te22,<p>If you have a headless Debian server (like a Raspberry Pi, a VPS, or an old laptop), eventually you’re going to want to see a desktop interface.</p>
+<p>Most guides will tell you to install RealVNC or x11vnc. <strong>Don&#39;t do it.</strong></p>
+<p>VNC transmits images of your screen. It is bandwidth-heavy, lags on WiFi, requires &quot;dummy plug&quot; drivers for headless setups, and breaks easily with modern display managers.</p>
+<p>Instead, use <strong>XRDP</strong>. It uses the Microsoft Remote Desktop Protocol. It is faster, handles resolution scaling automatically, supports copy-paste out of the box, and doesn&#39;t require a physical monitor to be plugged in.</p>
+<p>Here is how to set it up properly on Debian using <code>tasksel</code>.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>A Debian server (CLI access via SSH).</li>
+<li>A user account with <code>sudo</code> privileges.</li>
+<li>A Windows PC (to connect from).</li>
+</ul>
+<hr>
+<h3 id="step-1-install-the-desktop-environment-the-easy-way">Step 1: Install the Desktop Environment (The Easy Way)</h3>
+<p>We will use <strong>Tasksel</strong>, a Debian tool that bundles packages into &quot;tasks.&quot; We are choosing <strong>XFCE</strong> because it is lightweight, stable, and works perfectly with remote connections.</p>
+<ol>
+<li><p>Update your repositories</p>
+<pre><code>sudo apt update
+</code></pre>
+</li>
+<li><p>Run Tasksel:</p>
+<pre><code>sudo tasksel
+</code></pre>
+</li>
+<li><p>A purple menu will appear. Use the <strong>Spacebar</strong> to select (add a <code>*</code> next to) these two items:</p>
+<pre><code>[*] Debian desktop environment    
+[*] Xfce
+</code></pre>
+<p> (Make sure GNOME is not selected to save resources).</p>
+</li>
+<li><p>Press <strong>Tab</strong> to highlight <code>&lt;Ok&gt;</code> and hit <strong>Enter</strong>. Go grab a coffee; this will download and install the GUI.</p>
+</li>
+</ol>
+<hr>
+<h3 id="step-2-install-the-rdp-server">Step 2: Install the RDP Server</h3>
+<p>Now we install <strong>XRDP</strong> (the open-source RDP server) and the critical component most guides forget: <strong>dbus-x11</strong>.</p>
+<p>Without <code>dbus-x11</code>, you will get a &quot;Unable to contact settings server&quot; error when you try to connect.</p>
+<pre><code>sudo apt install xrdp dbus-x11
+</code></pre>
+<p>Enable and start the XRDP service:</p>
+<pre><code>sudo systemctl enable xrdp
+sudo systemctl start xrdp
+</code></pre>
+<hr>
+<h3 id="step-3-configure-the-session">Step 3: Configure the Session</h3>
+<p>By default, XRDP might not know which desktop environment to launch. We need to explicitly tell it to use XFCE for your user.</p>
+<p>Run this command (as your normal user, <strong>not</strong> sudo):</p>
+<pre><code>echo xfce4-session &gt; ~/.xsession
+</code></pre>
+<p>Now, restart the XRDP service to apply the changes:</p>
+<pre><code>sudo systemctl restart xrdp
+</code></pre>
+<hr>
+<h3 id="step-4-connect-from-windows">Step 4: Connect from Windows</h3>
+<p>You don&#39;t need to download any third-party software.</p>
+<ol>
+<li>Open the <strong>Remote Desktop Connection</strong> app on Windows.</li>
+<li>Enter the <strong>IP Address</strong> of your Debian server (e.g., <code>192.168.1.50</code>).</li>
+<li>Click <strong>Connect</strong>.</li>
+<li>Accept the security certificate warning.</li>
+<li>When the XRDP login screen appears, enter your Linux username and password.</li>
+</ol>
+<h3 id="summary">Summary</h3>
+<p>You now have a high-performance remote desktop. Unlike VNC, if you resize the window on your PC, the Debian desktop creates a new resolution to match it instantly. Enjoy!</p>
+5:[["$","$Ld",null,{}],["$","$Le",null,{"id":"MathJax-config","strategy":"beforeInteractive","children":"\n          window.MathJax = {\n            tex: {\n              inlineMath: [['$', '$'], ['\\(', '\\)']],\n              displayMath: [['$$', '$$'], ['\\[', '\\]']],\n            },\n            svg: {\n              fontCache: 'global'\n            }\n          };\n        "}],["$","$Le",null,{"type":"text/javascript","id":"MathJax-script","async":true,"src":"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"}],["$","div",null,{"className":"container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12","children":[["$","div",null,{"className":"hidden lg:block lg:col-span-1"}],["$","article",null,{"className":"lg:col-span-2 break-words hyphens-auto","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-white mb-2","children":"Remote Desktop into Debian"}],["$","p",null,{"className":"text-gray-400","children":"2025-12-05"}],["$","div",null,{"className":"lg:hidden mt-8","children":[" ",["$","$Lf",null,{"toc":[{"level":3,"text":"Prerequisites","id":"prerequisites"},{"level":3,"text":"Step 1: Install the Desktop Environment (The Easy Way)","id":"step-1-install-the-desktop-environment-the-easy-way"},{"level":3,"text":"Step 2: Install the RDP Server","id":"step-2-install-the-rdp-server"},{"level":3,"text":"Step 3: Configure the Session","id":"step-3-configure-the-session"},{"level":3,"text":"Step 4: Connect from Windows","id":"step-4-connect-from-windows"},{"level":3,"text":"Summary","id":"summary"}],"displayType":"inline"}]]}]]}],["$","$L10",null,{"html":"$11"}],["$","div",null,{"className":"mt-12 pt-6 border-t border-gray-700","children":["$","$L12",null,{"href":"/","className":"text-blue-400 hover:text-blue-300 inline-flex items-center","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","className":"h-5 w-5 mr-2","fill":"none","viewBox":"0 0 24 24","stroke":"currentColor","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to all posts"]}]}]]}],["$","div",null,{"className":"hidden lg:block lg:col-span-1","children":["$","$Lf",null,{"toc":"$5:3:props:children:1:props:children:0:props:children:2:props:children:1:props:toc","displayType":"sidebar"}]}]]}]]
