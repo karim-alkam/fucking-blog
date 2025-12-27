@@ -24,7 +24,7 @@ sudo apt install tmux
 
 To start tmux, just type `tmux` in your terminal. You’ll know you’re in tmux because of the distinct green status bar at the bottom.
 
-![[Pasted image 20251227015049.png]]
+![](/images/Pasted%20image%2020251227015049.png)
 
 ### The "Prefix" Key
 
@@ -38,7 +38,7 @@ The real magic happens when you split your window.
 
 You can navigate between them using `Prefix` + `Arrow Keys`.
 
-![[Pasted image 20251227015026.png]]
+![](/images/Pasted%20image%2020251227015026.png)
 
 ### Windows (Tabs)
 
@@ -47,7 +47,7 @@ If your screen gets too cluttered, you can create new Windows (like tabs).
 - **Next/Prev Window:** Prefix + `n` or `p`
 - **Rename Window:** Prefix + `,`
 
-![[Pasted image 20251227015303.png]]
+![](/images/Pasted%20image%2020251227015303.png)
 
 ### Sessions (The Lifesaver)
 
@@ -239,7 +239,7 @@ The easiest way is to kill your current tmux server: `tmux kill-server` and star
 tmux source-file ~/.tmux.conf
 ```
 
-![[Pasted image 20251227025238.png]]
+![](/images/Pasted%20image%2020251227025238.png)
 
 - **Note**: these are not the colors specified in the conf file, this is because my Windows terminal applies it's own colors
     
@@ -255,7 +255,7 @@ With this configuration file, your life just got a lot easier. Here is how your 
 3. **Navigation:** No prefix needed! Just hold **`Alt` + Arrow Keys** to jump between panes.
 4. **Mouse Mode:** You can now click on panes to select them and drag borders to resize them.
 
-![[Pasted image 20251227025802.png]]
+![](/images/Pasted%20image%2020251227025802.png)
 
 ### Cheat Sheet 2: The "Pro" Config
 
