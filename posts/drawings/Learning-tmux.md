@@ -4,7 +4,7 @@ description: Learn how to put terminals inside your terminals so you can termina
 date: 2025-12-27
 tags:
   - linux
-draft: "true"
+draft: "false"
 ---
 You’re running a long update on a remote server, your internet blips, and the connection drops. The process is dead, and you have no idea if it finished. Or maybe you have five different terminal windows open, trying to juggle monitoring logs, editing files, and running commands.
 
