@@ -1,7 +1,7 @@
 ---
 title: Fixing that annoying `^[]11;rgb` garbage in Tmux & Windows Terminal
 description: How to fix the `^[]11;rgb` garbage text when attaching to Tmux from Windows Terminal by adjusting the `escape-time` setting.
-date: 2025-12-27
+date: 2025-12-26
 tags:
   - linux
 draft: "false"
