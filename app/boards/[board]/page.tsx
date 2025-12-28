@@ -1,34 +1,15 @@
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
+import { getBoards, getDrawingsForBoard } from '../../lib/boards';
 
 export async function generateStaticParams() {
-  const drawingsDir = path.join(process.cwd(), 'drawings');
-  let boards: string[] = [];
-  try {
-    boards = fs.readdirSync(drawingsDir).filter((name) => {
-      const fullPath = path.join(drawingsDir, name);
-      return fs.statSync(fullPath).isDirectory();
-    });
-  } catch {
-    boards = [];
-  }
+  const boards = getBoards();
   return boards.map((board) => ({ board }));
 }
 
 export default async function BoardPage({ params }: { params: Promise<{ board: string }> }) {
   const { board } = await params;
-  const boardDir = path.join(process.cwd(), 'drawings', board);
-  let drawings: string[] = [];
-  try {
-    drawings = fs.readdirSync(boardDir)
-      .filter((name) => name.endsWith('.excalidraw'))
-      .map((name) => name.replace(/\.excalidraw$/, ''));
-    drawings.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
-  } catch {
-    drawings = [];
-  }
+  const drawings = getDrawingsForBoard(board);
   return (
     <div className="flex justify-center items-start py-8 mx-4 md:mx-0">
       <div className="w-full max-w-2xl">

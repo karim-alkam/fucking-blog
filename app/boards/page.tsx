@@ -1,20 +1,10 @@
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import HeroBoards from './components/HeroBoards';
+import { getBoards } from '../lib/boards';
 
 export default async function BoardsPage() {
-  const drawingsDir = path.join(process.cwd(), 'drawings');
-  let boards: string[] = [];
-  try {
-    boards = fs.readdirSync(drawingsDir).filter((name) => {
-      const fullPath = path.join(drawingsDir, name);
-      return fs.statSync(fullPath).isDirectory();
-    });
-  } catch {
-    boards = [];
-  }
+  const boards = getBoards();
   return (
     <>
       <HeroBoards />
