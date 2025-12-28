@@ -1,55 +1,13 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+import Fuse from 'fuse.js';
 import type { Post } from '../../types';
 import PostCard from '../../components/PostCard';
 
 interface SearchResultsProps {
   posts: Post[];
-}
-
-
-function searchPosts(posts: Post[], query: string) {
-  if (!query.trim()) return [];
-
-  const searchTerms = query.toLowerCase().trim().split(/\s+/);
-
-  // Score each post
-  const scoredPosts = posts.map(post => {
-    let score = 0;
-    const title = post.title.toLowerCase();
-    const description = post.description?.toLowerCase() || '';
-    const tags = post.tags?.map(tag => tag.toLowerCase()) || [];
-
-    // Check each search term
-    searchTerms.forEach(term => {
-      // Title matches get highest priority (3 points per term)
-      if (title.includes(term)) {
-        score += 3;
-      }
-
-      // Tag matches get second priority (2 points per term per tag)
-      tags.forEach(tag => {
-        if (tag.includes(term)) {
-          score += 2;
-        }
-      });
-
-      // Description matches get lowest priority (1 point per term)
-      if (description.includes(term)) {
-        score += 1;
-      }
-    });
-
-    return { post, score };
-  });
-
-  // Filter out posts with no matches and sort by score
-  return scoredPosts
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .map(({ post }) => post);
 }
 
 export default function SearchResults({ posts }: SearchResultsProps) {
@@ -63,21 +21,46 @@ export default function SearchResults({ posts }: SearchResultsProps) {
   // State to manage the input field's value
   const [searchTerm, setSearchTerm] = useState(initialSearchQuery);
 
-  // Effect to update filtered posts when the URL search query changes
+  // Initialize Fuse instance
+  const fuse = useMemo(() => {
+    return new Fuse(posts, {
+      keys: [
+        { name: 'title', weight: 0.7 },
+        { name: 'tags', weight: 0.2 },
+        { name: 'description', weight: 0.1 },
+      ],
+      threshold: 0.4, // Match sensitivity (0.0 = perfect match, 1.0 = match anything)
+      includeScore: true,
+      ignoreLocation: true, // Search anywhere in the string
+    });
+  }, [posts]);
+
+  // Effect to sync local input state with URL query
+  // This ensures that when the user searches from the Navbar, the input on the search page updates
   useEffect(() => {
-    const results = searchPosts(posts, initialSearchQuery); // Use initialSearchQuery from URL
-    setFilteredPosts(results);
-  }, [initialSearchQuery, posts]); // Depend on initialSearchQuery (from URL)
+    setSearchTerm(initialSearchQuery);
+  }, [initialSearchQuery]);
+
+  // Effect to perform search when query or posts change
+  useEffect(() => {
+    if (!initialSearchQuery.trim()) {
+      setFilteredPosts([]);
+      return;
+    }
+
+    const results = fuse.search(initialSearchQuery);
+    const matches = results.map(result => result.item);
+    setFilteredPosts(matches);
+  }, [initialSearchQuery, fuse]);
 
   // Function to handle search submission
   const handleSearchSubmit = () => {
     const params = new URLSearchParams(searchParams);
-    if (searchTerm) {
+    if (searchTerm.trim()) {
       params.set('q', searchTerm);
     } else {
       params.delete('q');
     }
-    // Use push instead of replace if you want search results to be in browser history
     router.push(`${pathname}?${params.toString()}`);
   };
 
@@ -90,13 +73,11 @@ export default function SearchResults({ posts }: SearchResultsProps) {
         <input
           type="text"
           ref={inputRef}
-          value={searchTerm} // Use local state
-          onChange={(e) => {
-            setSearchTerm(e.target.value); // Update local state only
-          }}
-          onKeyPress={(e) => {
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyDown={(e) => {
             if (e.key === 'Enter') {
-              handleSearchSubmit(); // Trigger search on Enter key press
+              handleSearchSubmit();
             }
           }}
           placeholder="Search..."
@@ -111,8 +92,10 @@ export default function SearchResults({ posts }: SearchResultsProps) {
 
       {/* Search Results */}
       <div className="space-y-6 mt-8">
-        {filteredPosts.length === 0 ? (
-          <p className="text-gray-400">No results found for &quot;{searchTerm}&quot;.</p>
+        {!initialSearchQuery ? (
+          <p className="text-gray-400">Enter a term to search.</p>
+        ) : filteredPosts.length === 0 ? (
+          <p className="text-gray-400">No results found for &quot;{initialSearchQuery}&quot;.</p>
         ) : (
           filteredPosts.map((post) => (
             <PostCard key={post.slug} post={post} />
@@ -121,4 +104,4 @@ export default function SearchResults({ posts }: SearchResultsProps) {
       </div>
     </div>
   );
-} 
+}
