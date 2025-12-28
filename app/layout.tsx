@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Salameh',
   description: 'A personal blog built with love by Abdullah Salameh',
   icons: {
-    icon: '/my-logo.png', // stored in public/my-logo.png
+    icon: '/logo-me.png', // stored in public/my-logo.png
   },
 };
 
