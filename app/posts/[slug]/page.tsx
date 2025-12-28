@@ -4,7 +4,7 @@ import path from 'path';
 import 'highlight.js/styles/github-dark.css';
 import Script from 'next/script';
 import Link from 'next/link';
-import CodeBlock from '../../components/CodeBlock';
+import PostContent from '../../components/PostContent';
 import TocSidebar from '../../components/TocSidebar';
 import ScrollToTop from '../../components/ScrollToTop';
 import { getPostBySlug } from '../../lib/posts';
@@ -75,7 +75,7 @@ export default async function Page(props: PageProps) {
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{postData.title}</h1>
               <p className="text-gray-400">{formatDate(postData.date)}</p>
             </header>
-            <CodeBlock html={postData.content} />
+            <PostContent html={postData.content} />
             <div className="mt-12 pt-6 border-t border-gray-700">
               <Link href="/" className="text-blue-400 hover:text-blue-300 inline-flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,7 +134,8 @@ export default async function Page(props: PageProps) {
             )}
           </header>
 
-          <CodeBlock html={postData.content} />
+          <PostContent html={postData.content} />
+
           <div className="mt-12 pt-6 border-t border-gray-700">
             <Link href="/" className="text-blue-400 hover:text-blue-300 inline-flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
