@@ -8,9 +8,10 @@ import PostCard from './PostCard';
 
 interface PostsListProps {
   posts: Post[];
+  title?: string;
 }
 
-export default function PostsList({ posts }: PostsListProps) {
+export default function PostsList({ posts, title = 'Recent Posts' }: PostsListProps) {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(5);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -51,7 +52,7 @@ export default function PostsList({ posts }: PostsListProps) {
       <div className="flex flex-col space-y-6 mx-auto mb-8 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold text-white">
-            {selectedTag ? `Posts tagged with "${selectedTag}"` : 'Recent Posts'}
+            {selectedTag ? `Posts tagged with "${selectedTag}"` : title}
           </h2>
           <div className="flex items-center space-x-2">
             <label htmlFor="pageSize" className="text-gray-300">Items per page:</label>
@@ -75,11 +76,10 @@ export default function PostsList({ posts }: PostsListProps) {
             <button
               key={tag}
               onClick={() => handleTagClick(tag)}
-              className={`px-3 py-1 rounded-full text-sm transition-colors ${
-                selectedTag === tag
+              className={`px-3 py-1 rounded-full text-sm transition-colors ${selectedTag === tag
                   ? 'bg-blue-500 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-              }`}
+                }`}
             >
               {tag}
             </button>

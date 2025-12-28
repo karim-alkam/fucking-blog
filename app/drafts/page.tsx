@@ -9,8 +9,7 @@ export default async function DraftsPage() {
   return (
     <main className="min-h-screen bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-8">Draft Posts</h1>
-        <PostsList posts={draftPosts} />
+        <PostsList posts={draftPosts} title="Draft Posts" />
       </div>
     </main>
   );
