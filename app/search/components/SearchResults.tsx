@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import type { Post } from '../types';
-import PostCard from './PostCard';
+import type { Post } from '../../types';
+import PostCard from '../../components/PostCard';
 
 interface SearchResultsProps {
   posts: Post[];
@@ -12,39 +12,39 @@ interface SearchResultsProps {
 
 function searchPosts(posts: Post[], query: string) {
   if (!query.trim()) return [];
-  
+
   const searchTerms = query.toLowerCase().trim().split(/\s+/);
-  
+
   // Score each post
   const scoredPosts = posts.map(post => {
     let score = 0;
     const title = post.title.toLowerCase();
     const description = post.description?.toLowerCase() || '';
     const tags = post.tags?.map(tag => tag.toLowerCase()) || [];
-    
+
     // Check each search term
     searchTerms.forEach(term => {
       // Title matches get highest priority (3 points per term)
       if (title.includes(term)) {
         score += 3;
       }
-      
+
       // Tag matches get second priority (2 points per term per tag)
       tags.forEach(tag => {
         if (tag.includes(term)) {
           score += 2;
         }
       });
-      
+
       // Description matches get lowest priority (1 point per term)
       if (description.includes(term)) {
         score += 1;
       }
     });
-    
+
     return { post, score };
   });
-  
+
   // Filter out posts with no matches and sort by score
   return scoredPosts
     .filter(({ score }) => score > 0)
@@ -84,7 +84,7 @@ export default function SearchResults({ posts }: SearchResultsProps) {
   return (
     <div className="max-w-3xl mx-auto py-8">
       <h1 className="text-3xl font-bold text-white mb-8">Search Results</h1>
-      
+
       {/* Search Bar */}
       <div className="flex items-center bg-gray-800 border border-gray-700 rounded-lg focus-within:border-blue-500 transition-colors pr-3">
         <input
@@ -108,7 +108,7 @@ export default function SearchResults({ posts }: SearchResultsProps) {
           </svg>
         </button>
       </div>
-      
+
       {/* Search Results */}
       <div className="space-y-6 mt-8">
         {filteredPosts.length === 0 ? (

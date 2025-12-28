@@ -3,10 +3,10 @@ import { readdirSync } from 'fs';
 import path from 'path';
 import 'highlight.js/styles/github-dark.css';
 import Link from 'next/link';
-import PostContent from '../../components/PostContent';
-import TocSidebar from '../../components/TocSidebar';
-import ScrollToTop from '../../components/ScrollToTop';
-import MathJaxInit from '../../components/MathJaxInit';
+import PostContent from '../components/PostContent';
+import TocSidebar from '../components/TocSidebar';
+import ScrollToTop from '../components/ScrollToTop';
+import MathJaxInit from '../components/MathJaxInit';
 import { getPostBySlug } from '../../lib/posts';
 
 /**
