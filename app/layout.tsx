@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 export const metadata = {
   title: 'Salameh',
   description: 'A personal blog built with love by Abdullah Salameh',
+  icons: {
+    icon: '/my-logo.png', // stored in public/my-logo.png
+  },
 };
 
 export default function RootLayout({
