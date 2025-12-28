@@ -2,11 +2,11 @@ import { notFound } from 'next/navigation';
 import { readdirSync } from 'fs';
 import path from 'path';
 import 'highlight.js/styles/github-dark.css';
-import Script from 'next/script';
 import Link from 'next/link';
 import PostContent from '../../components/PostContent';
 import TocSidebar from '../../components/TocSidebar';
 import ScrollToTop from '../../components/ScrollToTop';
+import MathJaxInit from '../../components/MathJaxInit';
 import { getPostBySlug } from '../../lib/posts';
 
 /**
@@ -44,28 +44,7 @@ export default async function Page(props: PageProps) {
     return (
       <>
         <ScrollToTop />
-        <Script
-          id="MathJax-config"
-          strategy="beforeInteractive"
-        >
-          {`
-            window.MathJax = {
-              tex: {
-                inlineMath: [['$', '$']],
-                displayMath: [['$$', '$$']],
-              },
-              svg: {
-                fontCache: 'global'
-              }
-            };
-          `}
-        </Script>
-        <Script
-          type="text/javascript"
-          id="MathJax-script"
-          async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        />
+        <MathJaxInit />
         <div className="container mx-auto px-4 py-8">
           <article className="max-w-3xl mx-auto break-words hyphens-auto">
             <div className="bg-yellow-500 text-black px-4 py-2 mb-4 rounded">
@@ -93,28 +72,7 @@ export default async function Page(props: PageProps) {
   return (
     <>
       <ScrollToTop />
-      <Script
-        id="MathJax-config"
-        strategy="beforeInteractive"
-      >
-        {`
-          window.MathJax = {
-            tex: {
-              inlineMath: [['$', '$']],
-              displayMath: [['$$', '$$']],
-            },
-            svg: {
-              fontCache: 'global'
-            }
-          };
-        `}
-      </Script>
-      <Script
-        type="text/javascript"
-        id="MathJax-script"
-        async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      />
+      <MathJaxInit />
       {/* Main content area with potential sidebar */}
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12">
         {/* Empty left column on large screens */}
