@@ -13,7 +13,7 @@ import 'highlight.js/styles/github-dark.css';
 const renderer = new marked.Renderer();
 
 // Custom code block renderer with highlighting and copy button
-renderer.code = function ({ text, lang, escaped }: any) {
+renderer.code = function ({ text, lang }: { text: string; lang?: string }) {
   const language = (lang || '').split(/\s+/)[0];
   const code = text; // text is already unescaped by marked in newer versions for the code token, or we might need to be careful. 
   // Actually, marked passes specific object. Let's stick to standard signature if possible or handle the object.
@@ -27,7 +27,7 @@ renderer.code = function ({ text, lang, escaped }: any) {
   if (language && hljs.getLanguage(language)) {
     try {
       highlighted = hljs.highlight(code, { language }).value;
-    } catch (e) {
+    } catch {
       highlighted = code; // Fallback
     }
   } else {
@@ -58,7 +58,7 @@ renderer.code = function ({ text, lang, escaped }: any) {
 
 
 // Custom link renderer
-renderer.link = function ({ href, title, text }: any) {
+renderer.link = function ({ href, title, text }: { href: string; title?: string | null; text: string }) {
   const titleAttr = title ? ` title="${title}"` : '';
   return `<a href="${href}"${titleAttr} class="break-all">${text}</a>`;
 };
