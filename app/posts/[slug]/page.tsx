@@ -1,23 +1,13 @@
 import { notFound } from 'next/navigation';
 import { readdirSync } from 'fs';
-import fs from 'fs/promises';
 import path from 'path';
-import matter from 'gray-matter';
-import { marked } from 'marked';
-import { gfmHeadingId, getHeadingList } from 'marked-gfm-heading-id';
 import 'highlight.js/styles/github-dark.css';
 import Script from 'next/script';
 import Link from 'next/link';
 import CodeBlock from '../../components/CodeBlock';
 import TocSidebar from '../../components/TocSidebar';
 import ScrollToTop from '../../components/ScrollToTop';
-
-
-// Configure marked
-marked.setOptions({ gfm: true, breaks: true });
-
-// Use the gfmHeadingId extension
-marked.use(gfmHeadingId());
+import { getPostBySlug } from '../../lib/posts';
 
 /**
  * Synchronously read the /posts folder so Next infers
@@ -27,46 +17,6 @@ export function generateStaticParams() {
   const postsDir = path.join(process.cwd(), 'posts');
   const files = readdirSync(postsDir);
   return files.map((f) => ({ slug: f.replace(/\.md$/, '') }));
-}
-
-async function getPostData(slug: string) {
-  const fullPath = path.join(process.cwd(), 'posts', `${slug}.md`);
-  try {
-    const fileContents = await fs.readFile(fullPath, 'utf8');
-    const { data, content } = matter(fileContents);
-    
-    // Marked will now automatically add IDs to headings due to the extension
-    const htmlContent = marked(content);
-
-    // Ensure date is a string in ISO format
-    const date = data.date instanceof Date 
-      ? data.date.toISOString()
-      : String(data.date);
-
-    // Convert draft field to boolean if it's a string
-    const draft = typeof data.draft === 'string' 
-      ? data.draft.toLowerCase() === 'true'
-      : Boolean(data.draft);
-
-    // Always generate TOC data using getHeadingList
-    const generatedHeadings = getHeadingList();
-    const toc = generatedHeadings.map(heading => ({
-      level: heading.level,
-      text: heading.raw,
-      id: heading.id,
-    }));
-
-    return {
-      slug,
-      title: data.title,
-      date,
-      content: htmlContent,
-      draft,
-      toc, // Always include toc data
-    };
-  } catch {
-    return null;
-  }
 }
 
 interface PageProps {
@@ -80,7 +30,7 @@ export default async function Page(props: PageProps) {
   const params = await props.params;
   const slug = params.slug;
 
-  const postData = await getPostData(slug);
+  const postData = await getPostBySlug(slug);
   if (!postData) return notFound();
 
   const formatDate = (dateString: string) => {
@@ -101,8 +51,8 @@ export default async function Page(props: PageProps) {
           {`
             window.MathJax = {
               tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
               },
               svg: {
                 fontCache: 'global'
@@ -150,8 +100,8 @@ export default async function Page(props: PageProps) {
         {`
           window.MathJax = {
             tex: {
-              inlineMath: [['$', '$'], ['\\(', '\\)']],
-              displayMath: [['$$', '$$'], ['\\[', '\\]']],
+              inlineMath: [['$', '$']],
+              displayMath: [['$$', '$$']],
             },
             svg: {
               fontCache: 'global'
@@ -175,7 +125,7 @@ export default async function Page(props: PageProps) {
           <header className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{postData.title}</h1>
             <p className="text-gray-400">{formatDate(postData.date)}</p>
-            
+
             {/* Mobile Inline TOC - visible on mobile if toc is true */}
             {postData.toc && postData.toc.length > 0 && (
               <div className="lg:hidden mt-8"> {/* Removed container/px as article handles padding */}
