@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 export default function ChunkErrorListener() {
     useEffect(() => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         function handleError(event: any) {
             const error = event.error || event.reason;
             if (
