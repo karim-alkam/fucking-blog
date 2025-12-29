@@ -22,7 +22,11 @@ export const metadata = {
   },
   description: 'A personal blog built with love by Abdullah Salameh',
   icons: {
-    icon: '/A-logo.png',
+    icon: [
+      { url: '/A-logo-small.png', type: 'image/png' },
+    ],
+    shortcut: '/A-logo-small.png',
+    apple: '/A-logo-small.png',
   },
 };
 
