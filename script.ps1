@@ -20,15 +20,9 @@ function Write-Step {
 }
 
 # --- DEPLOYMENT START ---
-Write-Header "Starting Blog Deployment"
+Write-Header "Syncing Blog Content"
 
-# Check if the temporary branch exists and delete it
-$branchExists = git branch --list "gh-pages-deploy"
-if ($branchExists) {
-    git branch -D gh-pages-deploy | Out-Null
-}
-
-# --- RUN NPM SCRIPTS ---
+# --- RUN DATA SCRIPTS ---
 Write-Header "Running Data Sync Scripts"
 
 Write-Step "Syncing posts from Obsidian..."
@@ -40,10 +34,7 @@ npm run process-images
 Write-Step "Compressing drawings..."
 npm run process-drawings
 
-Write-Step "Building Next.js application..."
-npm run build
-
-Write-Success "All scripts executed successfully."
+Write-Success "Data processed successfully."
 
 # --- GIT COMMIT MAIN ---
 Write-Header "Committing to Main Branch"
@@ -58,26 +49,7 @@ Write-Step "Pushing to origin/main..."
 git push origin main
 Write-Success "Pushed to main."
 
-# --- SUBTREE DEPLOY ---
-Write-Header "Deploying to GitHub Pages"
-
-try {
-    Write-Step "Creating subtree split (gh-pages-deploy)..."
-    git subtree split --prefix out -b gh-pages-deploy
-    
-    Write-Step "Pushing to gh-pages..."
-    git push origin gh-pages-deploy:gh-pages --force
-    
-    Write-Success "Deployed successfully to GitHub Pages!"
-} catch {
-    Write-Host "✖ Deployment Failed: $_" -ForegroundColor Red
-    exit 1
-} finally {
-    if (git branch --list "gh-pages-deploy") {
-        git branch -D gh-pages-deploy | Out-Null
-    }
-}
-
 Write-Header "Done"
+Write-Host "GitHub Actions will now build and deploy your site automatically." -ForegroundColor Yellow
 Read-Host -Prompt "Press Enter to exit"
 exit 0
