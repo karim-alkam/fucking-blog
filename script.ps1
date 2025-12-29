@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 function Write-Header {
     param([string]$Message)
@@ -49,7 +49,8 @@ Write-Success "All scripts executed successfully."
 Write-Header "Committing to Main Branch"
 
 git add .
-$msg = "Update content - $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+$msg = "Update content - $timestamp"
 git commit -m $msg | Out-Null
 Write-Success "Committed changes to main."
 
@@ -78,3 +79,4 @@ try {
 }
 
 Write-Header "Done"
+exit 0
