@@ -197,6 +197,47 @@
       clip: rect(66px, 9999px, 55px, 0);
     }
   }
+
+  @keyframes glitch-anim-icon {
+    0% {
+      clip-path: inset(10% 0 80% 0);
+      transform: translate(-2px, 0);
+    }
+
+    20% {
+      clip-path: inset(80% 0 10% 0);
+      transform: translate(2px, 0);
+    }
+
+    40% {
+      clip-path: inset(40% 0 40% 0);
+      transform: translate(-2px, 0);
+    }
+
+    60% {
+      clip-path: inset(0 0 0 0);
+      transform: translate(0, 0);
+    }
+
+    80% {
+      clip-path: inset(20% 0 60% 0);
+      transform: translate(2px, 0);
+    }
+
+    100% {
+      clip-path: inset(50% 0 30% 0);
+      transform: translate(-2px, 0);
+    }
+  }
+
+  .glitch-controls-1 {
+    animation: glitch-anim-icon 4s infinite linear alternate-reverse;
+  }
+
+  .glitch-controls-2 {
+    animation: glitch-anim-icon 3s infinite linear alternate-reverse;
+    animation-delay: 1.5s;
+  }
 }
 
 /* Syntax Highlighting overrides for Cyberpunk */

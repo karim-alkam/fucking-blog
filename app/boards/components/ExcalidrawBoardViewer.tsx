@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import dynamic from "next/dynamic";
 import "@excalidraw/excalidraw/index.css";
+import "./excalidraw-overrides.css";
 import type { ExcalidrawInitialDataState } from '@excalidraw/excalidraw/types';
 import LZString from 'lz-string';
 
@@ -65,12 +66,79 @@ export default function ExcalidrawBoardViewer({ initialData }: { initialData: Ex
   }
 
   return (
-    <div className="h-[calc(100vh-180px)] w-full mx-auto overflow-hidden">
-      <Excalidraw
-        theme="dark"
-        viewModeEnabled={true}
-        initialData={data}
-      />
+    <div className="h-[calc(100vh-180px)] w-full mx-auto flex flex-col border border-cyber-neon-cyan bg-cyber-black relative shadow-lg shadow-cyber-neon-cyan/20">
+      {/* Decorative Window Header */}
+      <div className="h-8 bg-cyber-dark-gray border-b border-cyber-neon-cyan flex items-center justify-between px-4 select-none overflow-hidden">
+        <div className="text-xs font-mono text-cyber-gray-light tracking-widest uppercase flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <span className="text-cyber-neon-pink animate-pulse">►</span>
+            <span className="glitch relative text-cyber-neon-cyan" data-text="SYSTEM_VIEWER_v2.0">SYSTEM_VIEWER_v2.0</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-3">
+          <div className="flex gap-2">
+            {/* Minimize Button */}
+            <button className="text-cyber-neon-cyan hover:text-cyber-neon-yellow transition-colors group relative w-3 h-3" title="Minimize">
+              <div className="absolute inset-0 glitch-controls-1 opacity-70 text-cyber-neon-pink">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
+                  <path d="M1 9H11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                </svg>
+              </div>
+              <div className="absolute inset-0 glitch-controls-2 opacity-70 text-cyber-neon-green">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
+                  <path d="M1 9H11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                </svg>
+              </div>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 relative z-10">
+                <path d="M1 9H11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+              </svg>
+            </button>
+
+            {/* Maximize Button */}
+            <button className="text-cyber-neon-cyan hover:text-cyber-neon-yellow transition-colors group relative w-3 h-3" title="Maximize">
+              <div className="absolute inset-0 glitch-controls-1 opacity-70 text-cyber-neon-pink">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
+                  <rect x="1.5" y="1.5" width="9" height="9" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </div>
+              <div className="absolute inset-0 glitch-controls-2 opacity-70 text-cyber-neon-green">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
+                  <rect x="1.5" y="1.5" width="9" height="9" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </div>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 relative z-10">
+                <rect x="1.5" y="1.5" width="9" height="9" stroke="currentColor" strokeWidth="1.5" />
+              </svg>
+            </button>
+
+            {/* Close Button */}
+            <button className="text-cyber-neon-cyan hover:text-cyber-neon-pink transition-colors group relative w-3 h-3" title="Close">
+              <div className="absolute inset-0 glitch-controls-1 opacity-70 text-cyber-neon-yellow">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
+                  <path d="M2.5 2.5L9.5 9.5M9.5 2.5L2.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                </svg>
+              </div>
+              <div className="absolute inset-0 glitch-controls-2 opacity-70 text-cyber-neon-blue">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
+                  <path d="M2.5 2.5L9.5 9.5M9.5 2.5L2.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                </svg>
+              </div>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 relative z-10">
+                <path d="M2.5 2.5L9.5 9.5M9.5 2.5L2.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Excalidraw Canvas Container */}
+      <div className="flex-1 w-full overflow-hidden relative">
+        <Excalidraw
+          theme="dark"
+          viewModeEnabled={true}
+          initialData={data}
+        />
+      </div>
     </div>
   );
 }
