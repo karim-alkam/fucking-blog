@@ -2,6 +2,8 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import NextTopLoader from 'nextjs-toploader';
 
+import ChunkErrorListener from './components/ChunkErrorListener';
+
 export const metadata = {
   title: 'Salameh',
   description: 'A personal blog built with love by Abdullah Salameh',
@@ -19,6 +21,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
         <NextTopLoader color="#3B82F6" height={3} showSpinner={false} />
+        <ChunkErrorListener />
         <Navbar />
         <main className="flex-1">
           {children}
