@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import ExcalidrawBoardViewer from '../../components/ExcalidrawBoardViewer';
-import { getBoards, getDrawingsForBoard } from '../../../lib/boards';
+import { getBoards, getDrawingsForBoard, getDrawingContent } from '../../../lib/boards';
 
 export async function generateStaticParams() {
   const boards = getBoards();
@@ -18,6 +18,8 @@ export async function generateStaticParams() {
 
 export default async function DrawingPage({ params }: { params: Promise<{ board: string, drawing: string }> }) {
   const { board, drawing } = await params;
+  const initialData = getDrawingContent(board, drawing);
+
   return (
     <div className="p-4 mx-4 md:mx-0">
       <div className="flex flex-row items-center mb-4 gap-x-4">
@@ -26,7 +28,7 @@ export default async function DrawingPage({ params }: { params: Promise<{ board:
         </Link>
         <h1 className="text-2xl font-bold ">{drawing.replace(/-/g, ' ')}</h1>
       </div>
-      <ExcalidrawBoardViewer board={board} drawing={drawing} />
+      <ExcalidrawBoardViewer initialData={initialData} />
     </div>
   );
-} 
+}

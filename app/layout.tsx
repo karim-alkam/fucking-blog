@@ -1,5 +1,6 @@
 import './globals.css';
 import Navbar from './components/Navbar';
+import NextTopLoader from 'nextjs-toploader';
 
 export const metadata = {
   title: 'Salameh',
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+        <NextTopLoader color="#3B82F6" height={3} showSpinner={false} />
         <Navbar />
         <main className="flex-1">
           {children}

@@ -26,3 +26,13 @@ export function getDrawingsForBoard(board: string): string[] {
         return [];
     }
 }
+
+export function getDrawingContent(board: string, drawing: string): any {
+    const filePath = path.join(process.cwd(), 'drawings', board, `${drawing}.excalidraw`);
+    try {
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(fileContent);
+    } catch {
+        return null;
+    }
+}

@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 import "@excalidraw/excalidraw/index.css";
-import { useEffect, useState } from "react";
 import type { ExcalidrawInitialDataState } from '@excalidraw/excalidraw/types';
 
 const Excalidraw = dynamic(
@@ -23,51 +22,22 @@ function ExcalidrawSkeletonLoader() {
   );
 }
 
-export default function ExcalidrawBoardViewer({ board, drawing }: { board: string, drawing: string }) {
-  const [excalidrawData, setExcalidrawData] = useState<ExcalidrawInitialDataState | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    let isMounted = true;
-    const loadExcalidrawFile = async () => {
-      setIsLoading(true);
-      setError(null);
-      try {
-        const jsonPath = `/drawings-json/${encodeURIComponent(board)}/${encodeURIComponent(drawing)}.json`;
-        const response = await fetch(jsonPath);
-        if (!response.ok) throw new Error('Failed to fetch file');
-        const text = await response.text();
-        const data = JSON.parse(text);
-        const initialConfig: ExcalidrawInitialDataState = {
-          ...(data as ExcalidrawInitialDataState),
-          appState: { ...(data.appState || {}), zoom: { value: 0.5 }, scrollX: 0, scrollY: 0 },
-        };
-        if (isMounted) setExcalidrawData(initialConfig);
-      } catch (err: unknown) {
-        console.error('Error loading Excalidraw file:', err);
-        if (isMounted) setError('Failed to load drawing.');
-      } finally {
-        if (isMounted) setIsLoading(false);
-      }
-    };
-    loadExcalidrawFile();
-    return () => { isMounted = false; };
-  }, [board, drawing]);
+export default function ExcalidrawBoardViewer({ initialData }: { initialData: ExcalidrawInitialDataState | null }) {
+  if (!initialData) {
+    return (
+      <div className="h-[calc(100vh-180px)] w-full max-w-[1200px] mx-auto rounded-lg overflow-hidden flex items-center justify-center bg-gray-800">
+        <div className="text-red-500">Failed to load drawing data.</div>
+      </div>
+    );
+  }
 
   return (
     <div className="h-[calc(100vh-180px)] w-full max-w-[1200px] mx-auto rounded-lg overflow-hidden">
-      {isLoading || !excalidrawData ? (
-        <ExcalidrawSkeletonLoader />
-      ) : error ? (
-        <div className="text-red-500 text-center p-4">{error}</div>
-      ) : (
-        <Excalidraw
-          theme="dark"
-          viewModeEnabled={true}
-          initialData={excalidrawData}
-        />
-      )}
+      <Excalidraw
+        theme="dark"
+        viewModeEnabled={true}
+        initialData={initialData}
+      />
     </div>
   );
-} 
+}
