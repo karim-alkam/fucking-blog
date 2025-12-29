@@ -3,6 +3,11 @@ import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import HeroBoards from './components/HeroBoards';
 import { getBoards } from '../lib/boards';
 
+
+export const metadata = {
+  title: "VISUAL_DB",
+};
+
 export default async function BoardsPage() {
   const boards = getBoards();
   return (

@@ -25,6 +25,22 @@ interface PageProps {
   }>;
 }
 
+export async function generateMetadata(props: PageProps) {
+  const params = await props.params;
+  const postData = await getPostBySlug(params.slug);
+
+  if (!postData) {
+    return {
+      title: 'LOG: NOT FOUND',
+    };
+  }
+
+  return {
+    title: `LOG: ${postData.title}`,
+    description: postData.description || `Reading entry: ${postData.title}`,
+  };
+}
+
 // This is a Server Component
 export default async function Page(props: PageProps) {
   const params = await props.params;

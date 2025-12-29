@@ -14,6 +14,15 @@ export async function generateStaticParams() {
     }
   }
   return params;
+  return params;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ board: string, drawing: string }> }) {
+  const { drawing } = await params;
+  const decodedDrawing = decodeURIComponent(drawing).replace(/-/g, ' ');
+  return {
+    title: `DRAWING: ${decodedDrawing}`,
+  };
 }
 
 export default async function DrawingPage({ params }: { params: Promise<{ board: string, drawing: string }> }) {

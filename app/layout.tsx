@@ -16,7 +16,10 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata = {
-  title: 'Salameh',
+  title: {
+    default: 'SYSTEM // SALAMEH',
+    template: '%s // SALAMEH',
+  },
   description: 'A personal blog built with love by Abdullah Salameh',
   icons: {
     icon: '/A-logo.png',

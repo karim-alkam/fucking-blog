@@ -7,6 +7,14 @@ export async function generateStaticParams() {
   return boards.map((board) => ({ board }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ board: string }> }) {
+  const { board } = await params;
+  const decodedBoard = decodeURIComponent(board).replace(/-/g, ' ');
+  return {
+    title: `BOARD: ${decodedBoard}`,
+  };
+}
+
 export default async function BoardPage({ params }: { params: Promise<{ board: string }> }) {
   const { board } = await params;
   const drawings = getDrawingsForBoard(board);

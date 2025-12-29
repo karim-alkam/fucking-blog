@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "DATA_NODE: ABOUT",
+  title: "BIO_DATA",
   description: "Learn more about me and my blog",
 };
 

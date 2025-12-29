@@ -87,6 +87,7 @@ export async function getPostBySlug(slug: string) {
       date,
       content: finalHtml,
       draft,
+      description: data.description || '',
       toc, // Always include toc data
     };
   } catch {

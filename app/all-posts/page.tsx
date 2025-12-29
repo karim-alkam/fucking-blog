@@ -3,7 +3,7 @@ import { getPosts } from '../lib/posts';
 import PostsList from '../components/PostsList';
 
 export const metadata = {
-  title: "DATA_NODE: ALL_LOGS",
+  title: "ARCHIVES",
   description: "Accessing all available entries...",
 };
 
