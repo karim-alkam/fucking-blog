@@ -1,36 +1,97 @@
 1:"$Sreact.fragment"
-2:I[76074,["8173","static/chunks/8173-658042c358f3b6bb.js","2088","static/chunks/2088-710900e226b741dc.js","7177","static/chunks/app/layout-e20e4149c928e1a5.js"],"default"]
-3:I[15244,[],""]
-4:I[43866,[],""]
-6:I[86213,[],"OutletBoundary"]
-8:I[86213,[],"MetadataBoundary"]
-a:I[86213,[],"ViewportBoundary"]
-c:I[34835,[],""]
-:HL["/_next/static/css/0321f71efb8eead6.css","style"]
+2:I[91325,["8173","static/chunks/8173-658042c358f3b6bb.js","3770","static/chunks/3770-0f4245edc72fbb51.js","7177","static/chunks/app/layout-acb07ca5536b8774.js"],""]
+3:I[76074,["8173","static/chunks/8173-658042c358f3b6bb.js","3770","static/chunks/3770-0f4245edc72fbb51.js","7177","static/chunks/app/layout-acb07ca5536b8774.js"],"default"]
+4:I[15244,[],""]
+5:I[43866,[],""]
+7:I[86213,[],"OutletBoundary"]
+9:I[86213,[],"MetadataBoundary"]
+b:I[86213,[],"ViewportBoundary"]
+d:I[34835,[],""]
+:HL["/_next/static/css/eeb5f82474929b80.css","style"]
 :HL["/_next/static/css/5eacd01f773eed7f.css","style"]
-0:{"P":null,"b":"yKZO2wRWxY0fZmhVAsida","p":"","c":["","posts","ROS-2-Cheat-Sheets",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","ROS-2-Cheat-Sheets","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0321f71efb8eead6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":["$","body",null,{"className":"bg-gray-900 text-gray-100 min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-gray-800 text-gray-400 py-8","children":["$","div",null,{"className":"container mx-auto px-4 text-center","children":["$","p",null,{"children":["© ",2025," My Blog. All rights reserved."]}]}]}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","ROS-2-Cheat-Sheets","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$0:f:0:1:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5eacd01f773eed7f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L6",null,{"children":"$L7"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","db7klHchnA9uQvoxEvJEj",{"children":[["$","$L8",null,{"children":"$L9"}],["$","$La",null,{"children":"$Lb"}],null]}]]}],false]],"m":"$undefined","G":["$c","$undefined"],"s":false,"S":true}
-b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-9:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Salameh"}],["$","meta","2",{"name":"description","content":"A personal blog built with love by Abdullah Salameh"}],["$","link","3",{"rel":"icon","href":"/my-logo.png"}]]
-7:null
-d:I[35525,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-feb871fe9a8caa87.js"],"default"]
-e:I[53704,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-feb871fe9a8caa87.js"],""]
-f:I[59414,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-feb871fe9a8caa87.js"],"default"]
-10:I[56262,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-feb871fe9a8caa87.js"],"default"]
-12:I[48173,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks/3092-76502ef1c1e154b2.js","5858","static/chunks/app/posts/%5Bslug%5D/page-feb871fe9a8caa87.js"],""]
-11:T5d19,<h2 id="ros-2-environment-configuration-cheat-sheet">ROS 2 Environment Configuration Cheat Sheet</h2>
+0:{"P":null,"b":"e4EaJyOwKkGgK7zDAuYFO","p":"","c":["","posts","ROS-2-Cheat-Sheets",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","ROS-2-Cheat-Sheets","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eeb5f82474929b80.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":["$","body",null,{"className":"bg-gray-900 text-gray-100 min-h-screen flex flex-col","children":[["$","$L2",null,{"color":"#3B82F6","height":3,"showSpinner":false}],["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-gray-800 text-gray-400 py-8","children":["$","div",null,{"className":"container mx-auto px-4 text-center","children":["$","p",null,{"children":["© ",2025," My Blog. All rights reserved."]}]}]}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","ROS-2-Cheat-Sheets","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$0:f:0:1:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5eacd01f773eed7f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":"$L8"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","xBQzDyvegfstFaM3Tqo5T",{"children":[["$","$L9",null,{"children":"$La"}],["$","$Lb",null,{"children":"$Lc"}],null]}]]}],false]],"m":"$undefined","G":["$d","$undefined"],"s":false,"S":true}
+c:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Salameh"}],["$","meta","2",{"name":"description","content":"A personal blog built with love by Abdullah Salameh"}],["$","link","3",{"rel":"icon","href":"/logo-me.png"}]]
+8:null
+e:I[21081,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+f:I[19119,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+10:I[51850,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+11:I[63265,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+13:I[48173,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],""]
+12:T173f5,
+      <style>
+        .custom-scrollbar {
+          scrollbar-width: auto;
+          scrollbar-color: #4B5563 #1F2937;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+          height: 12px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #1F2937;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #4B5563;
+          border-radius: 6px;
+          border: 3px solid #1F2937;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #6B7280;
+        }
+
+        /* Code Block Scrollbar (Thinner) */
+        .custom-code-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #4B5563 #1F2937;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar {
+          height: 8px; /* Thinner than table scrollbar */
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-track {
+          background: #1F2937;
+          border-radius: 4px;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #4B5563;
+          border-radius: 4px;
+          border: 2px solid #1F2937;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #6B7280;
+        }
+      </style>
+      <h2 id="ros-2-environment-configuration-cheat-sheet">ROS 2 Environment Configuration Cheat Sheet</h2>
 <hr>
 <h3 id="commands-and-explanations">Commands and Explanations</h3>
 <h3 id="1-source-the-setup-files">1. Source the Setup Files</h3>
-<pre><code class="language-bash">source /opt/ros/&lt;distro&gt;/setup.bash
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">source</span> /opt/ros/&lt;distro&gt;/setup.bash</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="source /opt/ros/<distro>/setup.bash" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Activates ROS 2 in the current shell session by setting necessary environment variables.</li>
 <li>Replace <code>&lt;distro&gt;</code> with the name of your installed ROS 2 distribution (e.g., <code>humble</code>, <code>galactic</code>, <code>jazzy</code>).</li>
 </ul>
 <h3 id="2-add-sourcing-to-shell-startup-script">2. Add Sourcing to Shell Startup Script</h3>
-<pre><code class="language-bash">echo &quot;source /opt/ros/&lt;distro&gt;/setup.bash&quot; &gt;&gt; ~/.bashrc
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">echo</span> <span class="hljs-string">"source /opt/ros/&lt;distro&gt;/setup.bash"</span> &gt;&gt; ~/.bashrc</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="echo &quot;source /opt/ros/<distro>/setup.bash&quot; >> ~/.bashrc" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Automatically sources ROS 2 every time you open a new shell.</li>
 <li>Modify <code>~/.bashrc</code> to include the source command.</li>
 </ul>
@@ -39,89 +100,211 @@ f:I[59414,["8173","static/chunks/8173-658042c358f3b6bb.js","3092","static/chunks
 <li>Edit the <code>~/.bashrc</code> file manually to remove the line added.</li>
 </ul>
 <h3 id="3-check-environment-variables">3. Check Environment Variables</h3>
-<pre><code class="language-bash">printenv | grep -i ROS
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">printenv</span> | grep -i ROS</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="printenv | grep -i ROS" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Verifies if ROS environment variables are correctly set (e.g., <code>ROS_DISTRO</code>, <code>ROS_VERSION</code>).</li>
 </ul>
 <h3 id="4-set-the-ros_domain_id-variable">4. Set the ROS_DOMAIN_ID Variable</h3>
-<pre><code class="language-bash">export ROS_DOMAIN_ID=&lt;your_domain_id&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">export</span> ROS_DOMAIN_ID=&lt;your_domain_id&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="export ROS_DOMAIN_ID=<your_domain_id>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Sets a unique domain ID for communication between ROS 2 nodes.</li>
 <li>Add to <code>~/.bashrc</code> for persistence:</li>
 </ul>
-<pre><code class="language-bash">echo &quot;export ROS_DOMAIN_ID=&lt;your_domain_id&gt;&quot; &gt;&gt; ~/.bashrc
-</code></pre>
-<h3 id="5-set-the-ros_automatic_discovery_range-variable">5. Set the ROS_AUTOMATIC_DISCOVERY_RANGE Variable</h3>
-<pre><code class="language-bash">export ROS_AUTOMATIC_DISCOVERY_RANGE=&lt;range_value&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">echo</span> <span class="hljs-string">"export ROS_DOMAIN_ID=&lt;your_domain_id&gt;"</span> &gt;&gt; ~/.bashrc</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="echo &quot;export ROS_DOMAIN_ID=<your_domain_id>&quot; >> ~/.bashrc" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="5-set-the-ros_automatic_discovery_range-variable">5. Set the ROS_AUTOMATIC_DISCOVERY_RANGE Variable</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">export</span> ROS_AUTOMATIC_DISCOVERY_RANGE=&lt;range_value&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="export ROS_AUTOMATIC_DISCOVERY_RANGE=<range_value>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Limits ROS 2 discovery range, useful in environments with multiple robots.</li>
 <li>Add to <code>~/.bashrc</code> for persistence:</li>
 </ul>
-<pre><code class="language-bash">echo &quot;export ROS_AUTOMATIC_DISCOVERY_RANGE=&lt;range_value&gt;&quot; &gt;&gt; ~/.bashrc
-</code></pre>
-<h2 id="turtlesim-and-ros2-cheat-sheet">Turtlesim and ROS2 Cheat Sheet</h2>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">echo</span> <span class="hljs-string">"export ROS_AUTOMATIC_DISCOVERY_RANGE=&lt;range_value&gt;"</span> &gt;&gt; ~/.bashrc</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="echo &quot;export ROS_AUTOMATIC_DISCOVERY_RANGE=<range_value>&quot; >> ~/.bashrc" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h2 id="turtlesim-and-ros2-cheat-sheet">Turtlesim and ROS2 Cheat Sheet</h2>
 <hr>
 <h3 id="1-install-turtlesim">1. Install Turtlesim</h3>
 <ul>
 <li>Install Turtlesim:</li>
 </ul>
-<pre><code class="language-bash">sudo apt update
-sudo apt install ros-&lt;ros2-distro&gt;-turtlesim
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">sudo</span> apt update
+<span class="hljs-built_in">sudo</span> apt install ros-&lt;ros2-distro&gt;-turtlesim</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="sudo apt update
+sudo apt install ros-<ros2-distro>-turtlesim" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Check installed executables:</li>
 </ul>
-<pre><code class="language-bash">ros2 pkg executables turtlesim
-</code></pre>
-<h3 id="2-start-turtlesim">2. Start Turtlesim</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 pkg executables turtlesim</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 pkg executables turtlesim" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="2-start-turtlesim">2. Start Turtlesim</h3>
 <ul>
 <li>Launch the turtlesim node:</li>
 </ul>
-<pre><code class="language-bash">ros2 run turtlesim turtlesim_node
-</code></pre>
-<h3 id="3-control-the-turtle">3. Control the Turtle</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtlesim_node</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtlesim_node" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="3-control-the-turtle">3. Control the Turtle</h3>
 <ul>
 <li>Launch the teleop node to control the turtle:</li>
 </ul>
-<pre><code class="language-bash">ros2 run turtlesim turtle_teleop_key
-</code></pre>
-<p>Additional ROS2 commands:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtle_teleop_key</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtle_teleop_key" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Additional ROS2 commands:</p>
 <ul>
 <li>List active nodes:</li>
 </ul>
-<pre><code class="language-bash">ros2 node list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 node list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 node list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>List available topics:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>List available services:</li>
 </ul>
-<pre><code class="language-bash">ros2 service list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>List available actions:</li>
 </ul>
-<pre><code class="language-bash">ros2 action list
-</code></pre>
-<h3 id="4-install-and-use-rqt">4. Install and Use RQT</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="4-install-and-use-rqt">4. Install and Use RQT</h3>
 <ul>
 <li>Install RQT and plugins:</li>
 </ul>
-<pre><code class="language-bash">sudo apt update
-sudo apt install &#39;~nros-&lt;ros2-distro&gt;-rqt*&#39;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"><span class="hljs-built_in">sudo</span> apt update
+<span class="hljs-built_in">sudo</span> apt install <span class="hljs-string">'~nros-&lt;ros2-distro&gt;-rqt*'</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="sudo apt update
+sudo apt install '~nros-<ros2-distro>-rqt*'" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Launch RQT:</li>
 </ul>
-<pre><code class="language-bash">rqt
-</code></pre>
-<h3 id="5-use-rqt-service-caller">5. Use RQT Service Caller</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">rqt</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="rqt" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="5-use-rqt-service-caller">5. Use RQT Service Caller</h3>
 <ul>
 <li>Select the Service Caller plugin:<ul>
 <li>Navigate to: Plugins &gt; Services &gt; Service Caller</li>
@@ -154,9 +337,17 @@ sudo apt install &#39;~nros-&lt;ros2-distro&gt;-rqt*&#39;
 <ul>
 <li>Remap the <code>cmd_vel</code> topic for turtle2:</li>
 </ul>
-<pre><code class="language-bash">ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel
-</code></pre>
-<h3 id="9-stop-turtlesim">9. Stop Turtlesim</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="9-stop-turtlesim">9. Stop Turtlesim</h3>
 <ul>
 <li>Stop the turtlesim node:<ul>
 <li>Press Ctrl + C in the <code>turtlesim_node</code> terminal.</li>
@@ -183,38 +374,87 @@ sudo apt install &#39;~nros-&lt;ros2-distro&gt;-rqt*&#39;
 <hr>
 <h3 id="1-ros2-run">1. ros2 run</h3>
 <p>The <code>ros2 run</code> command is used to run an executable from a specific package.</p>
-<pre><code class="language-bash">ros2 run &lt;package_name&gt; &lt;executable_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run &lt;package_name&gt; &lt;executable_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run <package_name> <executable_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example to run the turtlesim:</li>
 </ul>
-<pre><code class="language-bash">ros2 run turtlesim turtlesim_node
-</code></pre>
-<p>This will open a window with a turtle in it.</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtlesim_node</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtlesim_node" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>This will open a window with a turtle in it.</p>
 <h3 id="2-ros2-node-list">2. ros2 node list</h3>
 <p>To list all active nodes in the ROS 2 system:</p>
-<pre><code class="language-bash">ros2 node list
-</code></pre>
-<h3 id="3-ros2-node-info">3. ros2 node info</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 node list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 node list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="3-ros2-node-info">3. ros2 node info</h3>
 <p>The <code>ros2 node info &lt;node_name&gt;</code> command provides detailed information about a node’s publishers, subscribers, services, and actions.</p>
 <ul>
 <li>Example to get info about the <code>/turtlesim</code> node:</li>
 </ul>
-<pre><code class="language-bash">ros2 node info /turtlesim
-</code></pre>
-<h3 id="31-remapping-node-names-and-topics">3.1 Remapping Node Names and Topics</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 node info /turtlesim</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 node info /turtlesim" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="31-remapping-node-names-and-topics">3.1 Remapping Node Names and Topics</h3>
 <ul>
 <li>Remap the node name using <code>--ros-args --remap</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>This will rename <code>/turtlesim</code> to <code>/my_turtle</code>. If you run <code>ros2 node list</code>, you will see:</li>
 </ul>
-<pre><code class="language-bash">/my_turtle
-/teleop_turtle
-</code></pre>
-<h2 id="ros-2-topic-commands-cheat-sheet">ROS 2 Topic Commands Cheat Sheet</h2>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">/my_turtle
+/teleop_turtle</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="/my_turtle
+/teleop_turtle" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h2 id="ros-2-topic-commands-cheat-sheet">ROS 2 Topic Commands Cheat Sheet</h2>
 <hr>
 <h3 id="topics-in-ros2">Topics in ROS2</h3>
 <ul>
@@ -226,105 +466,249 @@ sudo apt install &#39;~nros-&lt;ros2-distro&gt;-rqt*&#39;
 <ul>
 <li>Run rqt_graph to visualize the nodes and topics:</li>
 </ul>
-<pre><code class="language-bash">rqt_graph
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">rqt_graph</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="rqt_graph" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Open via GUI: <code>rqt &gt; Plugins &gt; Introspection &gt; Node Graph</code>.</li>
 </ul>
 <h3 id="2-ros2-topic-list">2. ros2 topic list:</h3>
 <ul>
 <li>List all active topics:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>List topics with types:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic list -t
-</code></pre>
-<h3 id="3-ros2-topic-echo">3. ros2 topic echo:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic list -t</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic list -t" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="3-ros2-topic-echo">3. ros2 topic echo:</h3>
 <ul>
 <li>Display the data being published on a topic:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic echo &lt;topic_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic <span class="hljs-built_in">echo</span> &lt;topic_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic echo <topic_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: To see <code>/turtle1/cmd_vel</code> data:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic echo /turtle1/cmd_vel
-</code></pre>
-<h3 id="4-ros2-topic-info">4. ros2 topic info:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic <span class="hljs-built_in">echo</span> /turtle1/cmd_vel</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic echo /turtle1/cmd_vel" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="4-ros2-topic-info">4. ros2 topic info:</h3>
 <ul>
 <li>Get info about a specific topic:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic info &lt;topic_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic info &lt;topic_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic info <topic_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: Info about <code>/turtle1/cmd_vel</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic info /turtle1/cmd_vel
-</code></pre>
-<h3 id="5-ros2-interface-show">5. ros2 interface show:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic info /turtle1/cmd_vel</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic info /turtle1/cmd_vel" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="5-ros2-interface-show">5. ros2 interface show:</h3>
 <ul>
 <li>Show the structure of a message type:</li>
 </ul>
-<pre><code class="language-bash">ros2 interface show &lt;msg_type&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 interface show &lt;msg_type&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 interface show <msg_type>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: For <code>geometry_msgs/msg/Twist</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 interface show geometry_msgs/msg/Twist
-</code></pre>
-<h3 id="6-ros2-topic-pub">6. ros2 topic pub:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 interface show geometry_msgs/msg/Twist</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 interface show geometry_msgs/msg/Twist" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="6-ros2-topic-pub">6. ros2 topic pub:</h3>
 <ul>
 <li>Publish data to a topic:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic pub &lt;topic_name&gt; &lt;msg_type&gt; &quot;&lt;args&gt;&quot;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic pub &lt;topic_name&gt; &lt;msg_type&gt; <span class="hljs-string">"&lt;args&gt;"</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic pub <topic_name> <msg_type> &quot;<args>&quot;" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: To continuously move the turtle:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist &quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}&quot;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist <span class="hljs-string">"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist &quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}&quot;" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Publish once:</li>
 </ul>
-<pre><code class="language-bash"> ros2 topic pub --once &lt;topic_name&gt; &lt;msg_type&gt; &quot;&lt;args&gt;&quot;
-</code></pre>
-<h3 id="7-ros2-topic-hz">7. ros2 topic hz:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2"> ros2 topic pub --once &lt;topic_name&gt; &lt;msg_type&gt; <span class="hljs-string">"&lt;args&gt;"</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic pub --once <topic_name> <msg_type> &quot;<args>&quot;" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="7-ros2-topic-hz">7. ros2 topic hz:</h3>
 <ul>
 <li>View the rate of data publishing:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic hz &lt;topic_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic hz &lt;topic_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic hz <topic_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: Check the rate for <code>/turtle1/pose</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic hz /turtle1/pose
-</code></pre>
-<h3 id="8-ros2-topic-bw">8. ros2 topic bw:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic hz /turtle1/pose</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic hz /turtle1/pose" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="8-ros2-topic-bw">8. ros2 topic bw:</h3>
 <ul>
 <li>Check bandwidth usage for a topic:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic bw &lt;topic_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic bw &lt;topic_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic bw <topic_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: Check bandwidth for <code>/turtle1/pose</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic bw /turtle1/pose
-</code></pre>
-<h3 id="9-ros2-topic-find">9. ros2 topic find:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic bw /turtle1/pose</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic bw /turtle1/pose" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="9-ros2-topic-find">9. ros2 topic find:</h3>
 <ul>
 <li>Find topics by message type:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic find &lt;msg_type&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic find &lt;msg_type&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic find <msg_type>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example: Find topics with <code>geometry_msgs/msg/Twist</code> type:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic find geometry_msgs/msg/Twist
-</code></pre>
-<h2 id="ros-2-services-cheat-sheet">ROS 2 Services Cheat Sheet</h2>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic find geometry_msgs/msg/Twist</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic find geometry_msgs/msg/Twist" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h2 id="ros-2-services-cheat-sheet">ROS 2 Services Cheat Sheet</h2>
 <hr>
 <h3 id="services-in-ros2">Services in ROS2:</h3>
 <p>Services in ROS 2 follow a call-and-response model, where nodes request data from a service and receive a response. Unlike topics, services only provide data when specifically called by a client.</p>
@@ -334,46 +718,103 @@ sudo apt install &#39;~nros-&lt;ros2-distro&gt;-rqt*&#39;
 <ul>
 <li>View all active services in ROS 2:</li>
 </ul>
-<pre><code class="language-bash">ros2 service list
-</code></pre>
-<h3 id="2-service-type">2. Service Type:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="2-service-type">2. Service Type:</h3>
 <ul>
 <li>Check the type of a service (e.g., <code>/clear</code>):</li>
 </ul>
-<pre><code class="language-bash">ros2 service type /clear
-</code></pre>
-<h3 id="3-service-info">3. Service Info:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service <span class="hljs-built_in">type</span> /clear</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service type /clear" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="3-service-info">3. Service Info:</h3>
 <ul>
 <li>Get info about a service (e.g., <code>/clear</code>):</li>
 </ul>
-<pre><code class="language-bash">ros2 service info /clear
-</code></pre>
-<h3 id="4-find-services-by-type">4. Find Services by Type:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service info /clear</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service info /clear" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="4-find-services-by-type">4. Find Services by Type:</h3>
 <ul>
 <li>Find services of a specific type:</li>
 </ul>
-<pre><code class="language-bash">ros2 service find std_srvs/srv/Empty
-</code></pre>
-<h3 id="5-show-service-interface">5. Show Service Interface:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service find std_srvs/srv/Empty</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service find std_srvs/srv/Empty" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="5-show-service-interface">5. Show Service Interface:</h3>
 <ul>
 <li>View the request/response structure of a service:</li>
 </ul>
-<pre><code class="language-bash">ros2 interface show turtlesim/srv/Spawn
-</code></pre>
-<h3 id="6-call-a-service">6. Call a Service:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 interface show turtlesim/srv/Spawn</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 interface show turtlesim/srv/Spawn" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="6-call-a-service">6. Call a Service:</h3>
 <ul>
 <li>Call a service with or without arguments:</li>
 </ul>
-<pre><code class="language-bash">ros2 service call /clear std_srvs/srv/Empty
-ros2 service call /spawn turtlesim/srv/Spawn &quot;{x: 2, y: 2, theta: 0.2, name: &#39;&#39;}&quot;
-</code></pre>
-<h3 id="7-echo-service-data">7. Echo Service Data:</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service call /clear std_srvs/srv/Empty
+ros2 service call /spawn turtlesim/srv/Spawn <span class="hljs-string">"{x: 2, y: 2, theta: 0.2, name: ''}"</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service call /clear std_srvs/srv/Empty
+ros2 service call /spawn turtlesim/srv/Spawn &quot;{x: 2, y: 2, theta: 0.2, name: ''}&quot;" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="7-echo-service-data">7. Echo Service Data:</h3>
 <ul>
 <li>View service communication (request/response):</li>
 </ul>
-<pre><code class="language-bash">ros2 service echo /add_two_ints
-</code></pre>
-<p>Here is the content with the requested headings formatted as <code>####</code>:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service <span class="hljs-built_in">echo</span> /add_two_ints</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service echo /add_two_ints" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Here is the content with the requested headings formatted as <code>####</code>:</p>
 <hr>
 <h2 id="ros-2-parameters-cheat-sheet">ROS 2 Parameters Cheat Sheet</h2>
 <h3 id="parameters-in-ros2">Parameters in ROS2:</h3>
@@ -382,12 +823,22 @@ ros2 service call /spawn turtlesim/srv/Spawn &quot;{x: 2, y: 2, theta: 0.2, name
 <ul>
 <li>List all parameters for all nodes:</li>
 </ul>
-<pre><code class="language-bash">ros2 param list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example output:</li>
 </ul>
-<pre><code>/teleop_turtle:
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">/teleop_turtle:
 	scale_angular
 	scale_linear
 	use_sim_time
@@ -395,75 +846,195 @@ ros2 service call /spawn turtlesim/srv/Spawn &quot;{x: 2, y: 2, theta: 0.2, name
 	background_b
 	background_g
     background_r
-    use_sim_time
-</code></pre>
-<h3 id="2-ros2-param-get">2. ros2 param get</h3>
+    use_sim_time</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="/teleop_turtle:
+	scale_angular
+	scale_linear
+	use_sim_time
+/turtlesim:
+	background_b
+	background_g
+    background_r
+    use_sim_time" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="2-ros2-param-get">2. ros2 param get</h3>
 <ul>
 <li>Get the value and type of a parameter:</li>
 </ul>
-<pre><code class="language-bash">ros2 param get &lt;node_name&gt; &lt;parameter_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param get &lt;node_name&gt; &lt;parameter_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param get <node_name> <parameter_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example to get the value of <code>/turtlesim background_g</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 param get /turtlesim background_g
-</code></pre>
-<p>Output:</p>
-<pre><code>Integer value is: 86
-</code></pre>
-<h3 id="3-ros2-param-set">3. ros2 param set</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param get /turtlesim background_g</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param get /turtlesim background_g" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Output:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">Integer value is: 86</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="Integer value is: 86" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="3-ros2-param-set">3. ros2 param set</h3>
 <ul>
 <li>Change a parameter’s value:</li>
 </ul>
-<pre><code class="language-bash">ros2 param set &lt;node_name&gt; &lt;parameter_name&gt; &lt;value&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param <span class="hljs-built_in">set</span> &lt;node_name&gt; &lt;parameter_name&gt; &lt;value&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param set <node_name> <parameter_name> <value>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example to change <code>/turtlesim background_r</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 param set /turtlesim background_r 150
-</code></pre>
-<p>Output:</p>
-<pre><code>Set parameter successful
-</code></pre>
-<h3 id="4-ros2-param-dump">4. ros2 param dump</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param <span class="hljs-built_in">set</span> /turtlesim background_r 150</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param set /turtlesim background_r 150" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Output:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">Set parameter successful</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="Set parameter successful" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="4-ros2-param-dump">4. ros2 param dump</h3>
 <ul>
-<li>View and save a node&#39;s parameters to a file:</li>
+<li>View and save a node's parameters to a file:</li>
 </ul>
-<pre><code class="language-bash">ros2 param dump &lt;node_name&gt; &gt; &lt;file_name&gt;.yaml
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param dump &lt;node_name&gt; &gt; &lt;file_name&gt;.yaml</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param dump <node_name> > <file_name>.yaml" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example for <code>/turtlesim</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 param dump /turtlesim &gt; turtlesim.yaml
-</code></pre>
-<h3 id="5-ros2-param-load">5. ros2 param load</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param dump /turtlesim &gt; turtlesim.yaml</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param dump /turtlesim > turtlesim.yaml" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="5-ros2-param-load">5. ros2 param load</h3>
 <ul>
 <li>Load parameters from a file into a node:</li>
 </ul>
-<pre><code class="language-bash">ros2 param load &lt;node_name&gt; &lt;parameter_file&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param load &lt;node_name&gt; &lt;parameter_file&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param load <node_name> <parameter_file>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example:</li>
 </ul>
-<pre><code class="language-bash">ros2 param load /turtlesim turtlesim.yaml
-</code></pre>
-<p>Output:</p>
-<pre><code>Set parameter background_b successful
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 param load /turtlesim turtlesim.yaml</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 param load /turtlesim turtlesim.yaml" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Output:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">Set parameter background_b successful
 Set parameter background_g successful
-Set parameter background_r successful
-</code></pre>
-<h3 id="6-load-parameter-file-on-node-startup">6. Load Parameter File on Node Startup</h3>
+Set parameter background_r successful</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="Set parameter background_b successful
+Set parameter background_g successful
+Set parameter background_r successful" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="6-load-parameter-file-on-node-startup">6. Load Parameter File on Node Startup</h3>
 <ul>
 <li>Start a node with saved parameters:</li>
 </ul>
-<pre><code class="language-bash">ros2 run &lt;package_name&gt; &lt;executable_name&gt; --ros-args --params-file &lt;file_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run &lt;package_name&gt; &lt;executable_name&gt; --ros-args --params-file &lt;file_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run <package_name> <executable_name> --ros-args --params-file <file_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example:</li>
 </ul>
-<pre><code class="language-bash">ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml
-</code></pre>
-<p>Here&#39;s the version without any tabs before the code blocks:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Here's the version without any tabs before the code blocks:</p>
 <hr>
 <h2 id="ros-2-actions-cheat-sheet">ROS 2 Actions Cheat Sheet</h2>
 <h3 id="overview-of-actions">Overview of Actions</h3>
@@ -476,103 +1047,242 @@ Set parameter background_r successful
 <hr>
 <h3 id="1-ros2-node-info">1. ros2 node info</h3>
 <ul>
-<li>View a node&#39;s information, including its actions:</li>
+<li>View a node's information, including its actions:</li>
 </ul>
-<pre><code class="language-bash">ros2 node info &lt;node_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 node info &lt;node_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 node info <node_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example for <code>/turtlesim</code>:</li>
 </ul>
-<pre><code class="language-bash">ros2 node info /turtlesim
-</code></pre>
-<p>This shows the Action Servers and Action Clients for the node.</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 node info /turtlesim</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 node info /turtlesim" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>This shows the Action Servers and Action Clients for the node.</p>
 <h3 id="2-ros2-action-list">2. ros2 action list</h3>
 <ul>
 <li>List all actions in the ROS graph:</li>
 </ul>
-<pre><code class="language-bash">ros2 action list
-</code></pre>
-<p>This will return available actions such as <code>/turtle1/rotate_absolute</code>.</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>This will return available actions such as <code>/turtle1/rotate_absolute</code>.</p>
 <h3 id="3-ros2-action-type">3. ros2 action type</h3>
 <ul>
 <li>Check the action type for a specific action:</li>
 </ul>
-<pre><code class="language-bash">ros2 action type /turtle1/rotate_absolute
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action <span class="hljs-built_in">type</span> /turtle1/rotate_absolute</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action type /turtle1/rotate_absolute" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Output example:</li>
 </ul>
-<pre><code>turtlesim/action/RotateAbsolute
-</code></pre>
-<h3 id="4-ros2-action-info">4. ros2 action info</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">turtlesim/action/RotateAbsolute</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="turtlesim/action/RotateAbsolute" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="4-ros2-action-info">4. ros2 action info</h3>
 <ul>
 <li>View detailed information about an action:</li>
 </ul>
-<pre><code class="language-bash">ros2 action info /turtle1/rotate_absolute
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action info /turtle1/rotate_absolute</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action info /turtle1/rotate_absolute" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example output:</li>
 </ul>
-<pre><code>Action: /turtle1/rotate_absolute
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">Action: /turtle1/rotate_absolute
 Action clients: 1
     /teleop_turtle
 Action servers: 1
-    /turtlesim
-</code></pre>
-<h3 id="5-ros2-interface-show-1">5. ros2 interface show</h3>
+    /turtlesim</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="Action: /turtle1/rotate_absolute
+Action clients: 1
+    /teleop_turtle
+Action servers: 1
+    /turtlesim" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="5-ros2-interface-show-1">5. ros2 interface show</h3>
 <ul>
 <li>Inspect the structure of the action type:</li>
 </ul>
-<pre><code class="language-bash">ros2 interface show turtlesim/action/RotateAbsolute
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 interface show turtlesim/action/RotateAbsolute</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 interface show turtlesim/action/RotateAbsolute" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>This will show the structure of the goal, result, and feedback:</li>
 </ul>
-<pre><code>The desired heading in radians
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">The desired heading in radians
 float32 theta
 ---
 The angular displacement in radians to the starting position
 float32 delta
 ---
 The remaining rotation in radians
-float32 remaining
-</code></pre>
-<h3 id="6-ros2-action-send_goal">6. ros2 action send_goal</h3>
+float32 remaining</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="The desired heading in radians
+float32 theta
+---
+The angular displacement in radians to the starting position
+float32 delta
+---
+The remaining rotation in radians
+float32 remaining" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="6-ros2-action-send_goal">6. ros2 action send_goal</h3>
 <ul>
 <li>Send a goal to an action server:</li>
 </ul>
-<pre><code class="language-bash">ros2 action send_goal &lt;action_name&gt; &lt;action_type&gt; &lt;values&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action send_goal &lt;action_name&gt; &lt;action_type&gt; &lt;values&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action send_goal <action_name> <action_type> <values>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Example:</li>
 </ul>
-<pre><code class="language-bash">ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute &quot;{theta: 1.57}&quot;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute <span class="hljs-string">"{theta: 1.57}"</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute &quot;{theta: 1.57}&quot;" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Add <code>--feedback</code> to receive feedback during goal execution:</li>
 </ul>
-<pre><code class="language-bash">ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute &quot;{theta: -1.57}&quot; --feedback
-</code></pre>
-<p>Here is the content with only the commands formatted without tabs:</p>
-<h2 id="usingrqt_consoleto-view-logs">Using <code>rqt_console</code> to view logs</h2>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute <span class="hljs-string">"{theta: -1.57}"</span> --feedback</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute &quot;{theta: -1.57}&quot; --feedback" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Here is the content with only the commands formatted without tabs:</p>
+<h2 id="usingrqt_consoleto-view-logs">Using&nbsp;<code>rqt_console</code>&nbsp;to view logs</h2>
 <hr>
 <h3 id="1-setup">1. Setup</h3>
 <p>Start rqt_console in a new terminal with the following command:</p>
-<pre><code class="language-bash">ros2 run rqt_console rqt_console
-</code></pre>
-<p>Now, start turtlesim in a new terminal with the following command:</p>
-<pre><code class="language-bash">ros2 run turtlesim turtlesim_node
-</code></pre>
-<h3 id="2-messages-on-rqt_console">2. Messages on rqt_console</h3>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run rqt_console rqt_console</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run rqt_console rqt_console" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Now, start turtlesim in a new terminal with the following command:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtlesim_node</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtlesim_node" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h3 id="2-messages-on-rqt_console">2. Messages on rqt_console</h3>
 <p>To produce log messages for rqt_console to display, let’s have the turtle run into the wall. In a new terminal, enter the ros2 topic pub command below:</p>
-<pre><code class="language-bash">ros2 topic pub -r 1 /turtle1/cmd_vel geometry_msgs/msg/Twist &quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}&quot;
-</code></pre>
-<p>Press <code>Ctrl+C</code> in the terminal where you ran the ros2 topic pub command to stop your turtle from running into the wall.</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic pub -r 1 /turtle1/cmd_vel geometry_msgs/msg/Twist <span class="hljs-string">"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}"</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic pub -r 1 /turtle1/cmd_vel geometry_msgs/msg/Twist &quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}&quot;" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Press <code>Ctrl+C</code> in the terminal where you ran the ros2 topic pub command to stop your turtle from running into the wall.</p>
 <h3 id="3-set-the-default-logger-level">3. Set the Default Logger Level</h3>
 <p>You can set the default logger level when you first run the <code>/turtlesim</code> node using remapping. Enter the following command in your terminal:</p>
-<pre><code class="language-bash">ros2 run turtlesim turtlesim_node --ros-args --log-level WARN
-</code></pre>
-<p>Here is a cheat sheet for recording and playing back data using <code>ros2 bag</code>, excluding the previously mentioned commands:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 run turtlesim turtlesim_node --ros-args --log-level WARN</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 run turtlesim turtlesim_node --ros-args --log-level WARN" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Here is a cheat sheet for recording and playing back data using <code>ros2 bag</code>, excluding the previously mentioned commands:</p>
 <h2 id="recording-and-playing-back-data-in-ros-2">Recording and Playing Back Data in ROS 2</h2>
 <hr>
 <h3 id="managing-topic-data">Managing Topic Data</h3>
@@ -585,42 +1295,98 @@ float32 remaining
 <ul>
 <li>To list available topics in your system, run:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>To inspect the data of a topic, run:</li>
 </ul>
-<pre><code class="language-bash">ros2 topic echo &lt;topic_name&gt;
-</code></pre>
-<h4 id="3-record-topics">3. Record Topics</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 topic <span class="hljs-built_in">echo</span> &lt;topic_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 topic echo <topic_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="3-record-topics">3. Record Topics</h4>
 <ul>
 <li>Single Topic:<br>  Record a single topic:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag record &lt;topic_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag record &lt;topic_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag record <topic_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Multiple Topics:<br>  Record multiple topics and specify a custom bag file name:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag record -o &lt;file_name&gt; &lt;topic1&gt; &lt;topic2&gt; ...
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag record -o &lt;file_name&gt; &lt;topic1&gt; &lt;topic2&gt; ...</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag record -o <file_name> <topic1> <topic2> ..." aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Record All Topics:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag record -a
-</code></pre>
-<h4 id="4-inspect-topic-data">4. Inspect Topic Data</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag record -a</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag record -a" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="4-inspect-topic-data">4. Inspect Topic Data</h4>
 <ul>
 <li>To see details about a recorded bag file:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag info &lt;bag_file_name&gt;
-</code></pre>
-<h4 id="5-play-topic-data">5. Play Topic Data</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag info &lt;bag_file_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag info <bag_file_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="5-play-topic-data">5. Play Topic Data</h4>
 <ul>
 <li>To replay a bag file:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag play &lt;bag_file_name&gt;
-</code></pre>
-<hr>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag play &lt;bag_file_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag play <bag_file_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
 <h3 id="managing-service-data">Managing Service Data</h3>
 <h4 id="1-setup-2">1. Setup</h4>
 <ul>
@@ -630,34 +1396,83 @@ float32 remaining
 <ul>
 <li>List all available services:</li>
 </ul>
-<pre><code class="language-bash">ros2 service list
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service list</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service list" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>To check if Service Introspection is enabled on a specific service:</li>
 </ul>
-<pre><code class="language-bash">ros2 service echo --flow-style &lt;service_name&gt;
-</code></pre>
-<h4 id="3-record-services">3. Record Services</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 service <span class="hljs-built_in">echo</span> --flow-style &lt;service_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 service echo --flow-style <service_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="3-record-services">3. Record Services</h4>
 <ul>
 <li>Record a Specific Service:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag record --service &lt;service_name&gt;
-</code></pre>
-<ul>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag record --service &lt;service_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag record --service <service_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <ul>
 <li>Record All Services:</li>
 </ul>
-<pre><code>ros2 bag record --all-services
-</code></pre>
-<h4 id="4-inspect-service-data">4. Inspect Service Data</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language- !p-1 !m-1 !mx-2">ros2 bag record --all-services</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag record --all-services" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="4-inspect-service-data">4. Inspect Service Data</h4>
 <ul>
 <li>To inspect a recorded service data bag file:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag info &lt;bag_file_name&gt;
-</code></pre>
-<h4 id="5-play-service-data">5. Play Service Data</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag info &lt;bag_file_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag info <bag_file_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="5-play-service-data">5. Play Service Data</h4>
 <ul>
 <li>To replay service data from the bag file:</li>
 </ul>
-<pre><code class="language-bash">ros2 bag play --publish-service-requests &lt;bag_file_name&gt;
-</code></pre>
-5:[["$","$Ld",null,{}],["$","$Le",null,{"id":"MathJax-config","strategy":"beforeInteractive","children":"\n          window.MathJax = {\n            tex: {\n              inlineMath: [['$', '$']],\n              displayMath: [['$$', '$$']],\n            },\n            svg: {\n              fontCache: 'global'\n            }\n          };\n        "}],["$","$Le",null,{"type":"text/javascript","id":"MathJax-script","async":true,"src":"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"}],["$","div",null,{"className":"container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12","children":[["$","div",null,{"className":"hidden lg:block lg:col-span-1"}],["$","article",null,{"className":"lg:col-span-2 break-words hyphens-auto","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-white mb-2","children":"ROS 2 Cheat Sheets"}],["$","p",null,{"className":"text-gray-400","children":"2024-12-14"}],["$","div",null,{"className":"lg:hidden mt-8","children":[" ",["$","$Lf",null,{"toc":[{"level":2,"text":"ROS 2 Environment Configuration Cheat Sheet","id":"ros-2-environment-configuration-cheat-sheet"},{"level":3,"text":"Commands and Explanations","id":"commands-and-explanations"},{"level":3,"text":"1. Source the Setup Files","id":"1-source-the-setup-files"},{"level":3,"text":"2. Add Sourcing to Shell Startup Script","id":"2-add-sourcing-to-shell-startup-script"},{"level":3,"text":"3. Check Environment Variables","id":"3-check-environment-variables"},{"level":3,"text":"4. Set the ROS_DOMAIN_ID Variable","id":"4-set-the-ros_domain_id-variable"},{"level":3,"text":"5. Set the ROS_AUTOMATIC_DISCOVERY_RANGE Variable","id":"5-set-the-ros_automatic_discovery_range-variable"},{"level":2,"text":"Turtlesim and ROS2 Cheat Sheet","id":"turtlesim-and-ros2-cheat-sheet"},{"level":3,"text":"1. Install Turtlesim","id":"1-install-turtlesim"},{"level":3,"text":"2. Start Turtlesim","id":"2-start-turtlesim"},{"level":3,"text":"3. Control the Turtle","id":"3-control-the-turtle"},{"level":3,"text":"4. Install and Use RQT","id":"4-install-and-use-rqt"},{"level":3,"text":"5. Use RQT Service Caller","id":"5-use-rqt-service-caller"},{"level":3,"text":"6. Spawn a New Turtle (Service Call)","id":"6-spawn-a-new-turtle-service-call"},{"level":3,"text":"7. Change Pen Settings (Service Call)","id":"7-change-pen-settings-service-call"},{"level":3,"text":"8. Remap Topics for Multiple Turtles","id":"8-remap-topics-for-multiple-turtles"},{"level":3,"text":"9. Stop Turtlesim","id":"9-stop-turtlesim"},{"level":2,"text":"Understanding Nodes in ROS 2 Cheat Sheet","id":"understanding-nodes-in-ros-2-cheat-sheet"},{"level":3,"text":"The ROS 2 Graph","id":"the-ros-2-graph"},{"level":3,"text":"Nodes in ROS 2","id":"nodes-in-ros-2"},{"level":3,"text":"1. ros2 run","id":"1-ros2-run"},{"level":3,"text":"2. ros2 node list","id":"2-ros2-node-list"},{"level":3,"text":"3. ros2 node info","id":"3-ros2-node-info"},{"level":3,"text":"3.1 Remapping Node Names and Topics","id":"31-remapping-node-names-and-topics"},{"level":2,"text":"ROS 2 Topic Commands Cheat Sheet","id":"ros-2-topic-commands-cheat-sheet"},{"level":3,"text":"Topics in ROS2","id":"topics-in-ros2"},{"level":3,"text":"1. rqt_graph (Graphical Tool):","id":"1-rqt_graph-graphical-tool"},{"level":3,"text":"2. ros2 topic list:","id":"2-ros2-topic-list"},{"level":3,"text":"3. ros2 topic echo:","id":"3-ros2-topic-echo"},{"level":3,"text":"4. ros2 topic info:","id":"4-ros2-topic-info"},{"level":3,"text":"5. ros2 interface show:","id":"5-ros2-interface-show"},{"level":3,"text":"6. ros2 topic pub:","id":"6-ros2-topic-pub"},{"level":3,"text":"7. ros2 topic hz:","id":"7-ros2-topic-hz"},{"level":3,"text":"8. ros2 topic bw:","id":"8-ros2-topic-bw"},{"level":3,"text":"9. ros2 topic find:","id":"9-ros2-topic-find"},{"level":2,"text":"ROS 2 Services Cheat Sheet","id":"ros-2-services-cheat-sheet"},{"level":3,"text":"Services in ROS2:","id":"services-in-ros2"},{"level":3,"text":"1. List Active Services:","id":"1-list-active-services"},{"level":3,"text":"2. Service Type:","id":"2-service-type"},{"level":3,"text":"3. Service Info:","id":"3-service-info"},{"level":3,"text":"4. Find Services by Type:","id":"4-find-services-by-type"},{"level":3,"text":"5. Show Service Interface:","id":"5-show-service-interface"},{"level":3,"text":"6. Call a Service:","id":"6-call-a-service"},{"level":3,"text":"7. Echo Service Data:","id":"7-echo-service-data"},{"level":2,"text":"ROS 2 Parameters Cheat Sheet","id":"ros-2-parameters-cheat-sheet"},{"level":3,"text":"Parameters in ROS2:","id":"parameters-in-ros2"},{"level":3,"text":"1. ros2 param list","id":"1-ros2-param-list"},{"level":3,"text":"2. ros2 param get","id":"2-ros2-param-get"},{"level":3,"text":"3. ros2 param set","id":"3-ros2-param-set"},{"level":3,"text":"4. ros2 param dump","id":"4-ros2-param-dump"},{"level":3,"text":"5. ros2 param load","id":"5-ros2-param-load"},{"level":3,"text":"6. Load Parameter File on Node Startup","id":"6-load-parameter-file-on-node-startup"},{"level":2,"text":"ROS 2 Actions Cheat Sheet","id":"ros-2-actions-cheat-sheet"},{"level":3,"text":"Overview of Actions","id":"overview-of-actions"},{"level":3,"text":"1. ros2 node info","id":"1-ros2-node-info"},{"level":3,"text":"2. ros2 action list","id":"2-ros2-action-list"},{"level":3,"text":"3. ros2 action type","id":"3-ros2-action-type"},{"level":3,"text":"4. ros2 action info","id":"4-ros2-action-info"},{"level":3,"text":"5. ros2 interface show","id":"5-ros2-interface-show-1"},{"level":3,"text":"6. ros2 action send_goal","id":"6-ros2-action-send_goal"},{"level":2,"text":"Using rqt_console to view logs","id":"usingrqt_consoleto-view-logs"},{"level":3,"text":"1. Setup","id":"1-setup"},{"level":3,"text":"2. Messages on rqt_console","id":"2-messages-on-rqt_console"},{"level":3,"text":"3. Set the Default Logger Level","id":"3-set-the-default-logger-level"},{"level":2,"text":"Recording and Playing Back Data in ROS 2","id":"recording-and-playing-back-data-in-ros-2"},{"level":3,"text":"Managing Topic Data","id":"managing-topic-data"},{"level":4,"text":"1. Setup","id":"1-setup-1"},{"level":4,"text":"2. Choose a Topic","id":"2-choose-a-topic"},{"level":4,"text":"3. Record Topics","id":"3-record-topics"},{"level":4,"text":"4. Inspect Topic Data","id":"4-inspect-topic-data"},{"level":4,"text":"5. Play Topic Data","id":"5-play-topic-data"},{"level":3,"text":"Managing Service Data","id":"managing-service-data"},{"level":4,"text":"1. Setup","id":"1-setup-2"},{"level":4,"text":"2. Check Service Availability","id":"2-check-service-availability"},{"level":4,"text":"3. Record Services","id":"3-record-services"},{"level":4,"text":"4. Inspect Service Data","id":"4-inspect-service-data"},{"level":4,"text":"5. Play Service Data","id":"5-play-service-data"}],"displayType":"inline"}]]}]]}],["$","$L10",null,{"html":"$11"}],["$","div",null,{"className":"mt-12 pt-6 border-t border-gray-700","children":["$","$L12",null,{"href":"/","className":"text-blue-400 hover:text-blue-300 inline-flex items-center","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","className":"h-5 w-5 mr-2","fill":"none","viewBox":"0 0 24 24","stroke":"currentColor","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to all posts"]}]}]]}],["$","div",null,{"className":"hidden lg:block lg:col-span-1","children":["$","$Lf",null,{"toc":"$5:3:props:children:1:props:children:0:props:children:2:props:children:1:props:toc","displayType":"sidebar"}]}]]}]]
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-bash !p-1 !m-1 !mx-2">ros2 bag play --publish-service-requests &lt;bag_file_name&gt;</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="ros2 bag play --publish-service-requests <bag_file_name>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  
+    6:[["$","$Le",null,{}],["$","$Lf",null,{}],["$","div",null,{"className":"container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12","children":[["$","div",null,{"className":"hidden lg:block lg:col-span-1"}],["$","article",null,{"className":"lg:col-span-2 break-words hyphens-auto","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-white mb-2","children":"ROS 2 Cheat Sheets"}],["$","p",null,{"className":"text-gray-400","children":"2024-12-14"}],["$","div",null,{"className":"lg:hidden mt-8","children":[" ",["$","$L10",null,{"toc":[{"level":2,"text":"ROS 2 Environment Configuration Cheat Sheet","id":"ros-2-environment-configuration-cheat-sheet"},{"level":3,"text":"Commands and Explanations","id":"commands-and-explanations"},{"level":3,"text":"1. Source the Setup Files","id":"1-source-the-setup-files"},{"level":3,"text":"2. Add Sourcing to Shell Startup Script","id":"2-add-sourcing-to-shell-startup-script"},{"level":3,"text":"3. Check Environment Variables","id":"3-check-environment-variables"},{"level":3,"text":"4. Set the ROS_DOMAIN_ID Variable","id":"4-set-the-ros_domain_id-variable"},{"level":3,"text":"5. Set the ROS_AUTOMATIC_DISCOVERY_RANGE Variable","id":"5-set-the-ros_automatic_discovery_range-variable"},{"level":2,"text":"Turtlesim and ROS2 Cheat Sheet","id":"turtlesim-and-ros2-cheat-sheet"},{"level":3,"text":"1. Install Turtlesim","id":"1-install-turtlesim"},{"level":3,"text":"2. Start Turtlesim","id":"2-start-turtlesim"},{"level":3,"text":"3. Control the Turtle","id":"3-control-the-turtle"},{"level":3,"text":"4. Install and Use RQT","id":"4-install-and-use-rqt"},{"level":3,"text":"5. Use RQT Service Caller","id":"5-use-rqt-service-caller"},{"level":3,"text":"6. Spawn a New Turtle (Service Call)","id":"6-spawn-a-new-turtle-service-call"},{"level":3,"text":"7. Change Pen Settings (Service Call)","id":"7-change-pen-settings-service-call"},{"level":3,"text":"8. Remap Topics for Multiple Turtles","id":"8-remap-topics-for-multiple-turtles"},{"level":3,"text":"9. Stop Turtlesim","id":"9-stop-turtlesim"},{"level":2,"text":"Understanding Nodes in ROS 2 Cheat Sheet","id":"understanding-nodes-in-ros-2-cheat-sheet"},{"level":3,"text":"The ROS 2 Graph","id":"the-ros-2-graph"},{"level":3,"text":"Nodes in ROS 2","id":"nodes-in-ros-2"},{"level":3,"text":"1. ros2 run","id":"1-ros2-run"},{"level":3,"text":"2. ros2 node list","id":"2-ros2-node-list"},{"level":3,"text":"3. ros2 node info","id":"3-ros2-node-info"},{"level":3,"text":"3.1 Remapping Node Names and Topics","id":"31-remapping-node-names-and-topics"},{"level":2,"text":"ROS 2 Topic Commands Cheat Sheet","id":"ros-2-topic-commands-cheat-sheet"},{"level":3,"text":"Topics in ROS2","id":"topics-in-ros2"},{"level":3,"text":"1. rqt_graph (Graphical Tool):","id":"1-rqt_graph-graphical-tool"},{"level":3,"text":"2. ros2 topic list:","id":"2-ros2-topic-list"},{"level":3,"text":"3. ros2 topic echo:","id":"3-ros2-topic-echo"},{"level":3,"text":"4. ros2 topic info:","id":"4-ros2-topic-info"},{"level":3,"text":"5. ros2 interface show:","id":"5-ros2-interface-show"},{"level":3,"text":"6. ros2 topic pub:","id":"6-ros2-topic-pub"},{"level":3,"text":"7. ros2 topic hz:","id":"7-ros2-topic-hz"},{"level":3,"text":"8. ros2 topic bw:","id":"8-ros2-topic-bw"},{"level":3,"text":"9. ros2 topic find:","id":"9-ros2-topic-find"},{"level":2,"text":"ROS 2 Services Cheat Sheet","id":"ros-2-services-cheat-sheet"},{"level":3,"text":"Services in ROS2:","id":"services-in-ros2"},{"level":3,"text":"1. List Active Services:","id":"1-list-active-services"},{"level":3,"text":"2. Service Type:","id":"2-service-type"},{"level":3,"text":"3. Service Info:","id":"3-service-info"},{"level":3,"text":"4. Find Services by Type:","id":"4-find-services-by-type"},{"level":3,"text":"5. Show Service Interface:","id":"5-show-service-interface"},{"level":3,"text":"6. Call a Service:","id":"6-call-a-service"},{"level":3,"text":"7. Echo Service Data:","id":"7-echo-service-data"},{"level":2,"text":"ROS 2 Parameters Cheat Sheet","id":"ros-2-parameters-cheat-sheet"},{"level":3,"text":"Parameters in ROS2:","id":"parameters-in-ros2"},{"level":3,"text":"1. ros2 param list","id":"1-ros2-param-list"},{"level":3,"text":"2. ros2 param get","id":"2-ros2-param-get"},{"level":3,"text":"3. ros2 param set","id":"3-ros2-param-set"},{"level":3,"text":"4. ros2 param dump","id":"4-ros2-param-dump"},{"level":3,"text":"5. ros2 param load","id":"5-ros2-param-load"},{"level":3,"text":"6. Load Parameter File on Node Startup","id":"6-load-parameter-file-on-node-startup"},{"level":2,"text":"ROS 2 Actions Cheat Sheet","id":"ros-2-actions-cheat-sheet"},{"level":3,"text":"Overview of Actions","id":"overview-of-actions"},{"level":3,"text":"1. ros2 node info","id":"1-ros2-node-info"},{"level":3,"text":"2. ros2 action list","id":"2-ros2-action-list"},{"level":3,"text":"3. ros2 action type","id":"3-ros2-action-type"},{"level":3,"text":"4. ros2 action info","id":"4-ros2-action-info"},{"level":3,"text":"5. ros2 interface show","id":"5-ros2-interface-show-1"},{"level":3,"text":"6. ros2 action send_goal","id":"6-ros2-action-send_goal"},{"level":2,"text":"Using rqt_console to view logs","id":"usingrqt_consoleto-view-logs"},{"level":3,"text":"1. Setup","id":"1-setup"},{"level":3,"text":"2. Messages on rqt_console","id":"2-messages-on-rqt_console"},{"level":3,"text":"3. Set the Default Logger Level","id":"3-set-the-default-logger-level"},{"level":2,"text":"Recording and Playing Back Data in ROS 2","id":"recording-and-playing-back-data-in-ros-2"},{"level":3,"text":"Managing Topic Data","id":"managing-topic-data"},{"level":4,"text":"1. Setup","id":"1-setup-1"},{"level":4,"text":"2. Choose a Topic","id":"2-choose-a-topic"},{"level":4,"text":"3. Record Topics","id":"3-record-topics"},{"level":4,"text":"4. Inspect Topic Data","id":"4-inspect-topic-data"},{"level":4,"text":"5. Play Topic Data","id":"5-play-topic-data"},{"level":3,"text":"Managing Service Data","id":"managing-service-data"},{"level":4,"text":"1. Setup","id":"1-setup-2"},{"level":4,"text":"2. Check Service Availability","id":"2-check-service-availability"},{"level":4,"text":"3. Record Services","id":"3-record-services"},{"level":4,"text":"4. Inspect Service Data","id":"4-inspect-service-data"},{"level":4,"text":"5. Play Service Data","id":"5-play-service-data"}],"displayType":"inline"}]]}]]}],["$","$L11",null,{"html":"$12"}],["$","div",null,{"className":"mt-12 pt-6 border-t border-gray-700","children":["$","$L13",null,{"href":"/","className":"text-blue-400 hover:text-blue-300 inline-flex items-center","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","className":"h-5 w-5 mr-2","fill":"none","viewBox":"0 0 24 24","stroke":"currentColor","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to all posts"]}]}]]}],["$","div",null,{"className":"hidden lg:block lg:col-span-1","children":["$","$L10",null,{"toc":"$6:2:props:children:1:props:children:0:props:children:2:props:children:1:props:toc","displayType":"sidebar"}]}]]}]]

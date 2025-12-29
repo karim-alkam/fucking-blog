@@ -1,53 +1,80 @@
 $ErrorActionPreference = "Stop"
 
-# Step 8: Push the public folder to the gh-pages branch using subtree split and force push
-Write-Host "Deploying to GitHub pages..."
+function Write-Header {
+    param([string]$Message)
+    Write-Host ""
+    Write-Host "==========================================" -ForegroundColor Cyan
+    Write-Host $Message.ToUpper() -ForegroundColor Cyan
+    Write-Host "==========================================" -ForegroundColor Cyan
+    Write-Host ""
+}
+
+function Write-Success {
+    param([string]$Message)
+    Write-Host "✔ $Message" -ForegroundColor Green
+}
+
+function Write-Step {
+    param([string]$Message)
+    Write-Host "➜ $Message" -ForegroundColor Gray
+}
+
+# --- DEPLOYMENT START ---
+Write-Header "Starting Blog Deployment"
 
 # Check if the temporary branch exists and delete it
 $branchExists = git branch --list "gh-pages-deploy"
 if ($branchExists) {
-    git branch -D gh-pages-deploy
+    git branch -D gh-pages-deploy | Out-Null
 }
 
+# --- RUN NPM SCRIPTS ---
+Write-Header "Running Data Sync Scripts"
 
-
-Write-Host "/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/--/"
-# Perform subtree split
-Write-Host "Running npm scripts..."
+Write-Step "Syncing posts from Obsidian..."
 npm run copy-posts-from-obsidian
+
+Write-Step "Processing markdown images..."
 npm run process-images
+
+Write-Step "Compressing drawings..."
 npm run process-drawings
+
+Write-Step "Building Next.js application..."
 npm run build
 
-Write-Host "Finished npm scripts..."
-Write-Host "/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/--/"
-Write-Host "Committing and pushing changes to main branch..."
+Write-Success "All scripts executed successfully."
 
-try {
+# --- GIT COMMIT MAIN ---
+Write-Header "Committing to Main Branch"
+
 git add .
-git commit -m "Deploy to gh-pages - $(Get-Date -Format G)"
-    git subtree split --prefix out -b gh-pages-deploy
-} catch {
-    Write-Error "Subtree split failed."
-    exit 1
-}
+$msg = "Update content - $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+git commit -m $msg | Out-Null
+Write-Success "Committed changes to main."
 
-# Push to gh-pages branch with force
-try {
-    git push origin gh-pages-deploy:gh-pages --force
-} catch {
-    Write-Error "Failed to push to hostinger branch."
-    git branch -D gh-pages-deploy
-    exit 1
-}
-
-# Delete the temporary branch
-git branch -D gh-pages-deploy
-Write-Host "/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/--/"
-# Add and commit changes to the main branch
-Write-Host "Committing and pushing changes to main branch..."
-git add .
-git commit -m "Update blog content and build output - $(Get-Date -Format G)"
+Write-Step "Pushing to origin/main..."
 git push origin main
-Write-Host "/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/--/"
-Write-Host "All done! Site synced, processed, committed, built, and deployed."
+Write-Success "Pushed to main."
+
+# --- SUBTREE DEPLOY ---
+Write-Header "Deploying to GitHub Pages"
+
+try {
+    Write-Step "Creating subtree split (gh-pages-deploy)..."
+    git subtree split --prefix out -b gh-pages-deploy
+    
+    Write-Step "Pushing to gh-pages..."
+    git push origin gh-pages-deploy:gh-pages --force
+    
+    Write-Success "Deployed successfully to GitHub Pages!"
+} catch {
+    Write-Host "✖ Deployment Failed: $_" -ForegroundColor Red
+    exit 1
+} finally {
+    if (git branch --list "gh-pages-deploy") {
+        git branch -D gh-pages-deploy | Out-Null
+    }
+}
+
+Write-Header "Done"

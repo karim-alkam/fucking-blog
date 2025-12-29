@@ -1,36 +1,40 @@
-// This script copies and minifies all .excalidraw files from drawings/ to public/drawings-json/ as .json files, preserving folder structure.
 const fs = require('fs');
 const path = require('path');
+const logger = require('./logger');
 
 const SRC_DIR = path.join(process.cwd(), 'drawings');
-const DEST_DIR = path.join(process.cwd(), 'public', 'drawings-json');
 
-function ensureDirSync(dir) {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-}
+function processFiles(dir, stats = { minified: 0, errors: 0 }) {
+  if (!fs.existsSync(dir)) return stats;
 
-function processFiles(src, dest) {
-  ensureDirSync(dest);
-  fs.readdirSync(src, { withFileTypes: true }).forEach(dirent => {
-    const srcPath = path.join(src, dirent.name);
-    const destPath = path.join(dest, dirent.name.replace(/\.excalidraw$/, '.json'));
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  for (const dirent of entries) {
+    const fullPath = path.join(dir, dirent.name);
+
     if (dirent.isDirectory()) {
-      processFiles(srcPath, path.join(dest, dirent.name));
+      processFiles(fullPath, stats);
     } else if (dirent.isFile() && dirent.name.endsWith('.excalidraw')) {
       try {
-        const raw = fs.readFileSync(srcPath, 'utf8');
+        const raw = fs.readFileSync(fullPath, 'utf8');
         const data = JSON.parse(raw);
+        // In-place minify
         const minified = JSON.stringify(data);
-        fs.writeFileSync(destPath, minified);
-        console.log(`Minified: ${srcPath} -> ${destPath}`);
+        fs.writeFileSync(fullPath, minified);
+        stats.minified++;
       } catch (e) {
-        console.error(`ERROR: Failed to minify ${srcPath}:`, e);
+        logger.error(`Failed to minify ${dirent.name}: ${e.message}`);
+        stats.errors++;
       }
     }
-  });
+  }
+  return stats;
 }
 
-processFiles(SRC_DIR, DEST_DIR);
-console.log('All .excalidraw files have been minified to public/drawings-json/.'); 
+logger.header('COMPRESSING EXCALIDRAW FILES');
+const stats = processFiles(SRC_DIR);
+
+if (stats.minified > 0) logger.success(`Minified ${stats.minified} drawings.`);
+else logger.info('No drawings found to minify.');
+
+if (stats.errors > 0) logger.warn(`${stats.errors} errors encountered.`);
