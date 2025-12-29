@@ -40,22 +40,36 @@ export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
     return () => {
       observer.current?.disconnect();
     };
-  }, [toc]); // Re-observe if toc changes (though it shouldn't on a static post page)
+  }, [toc]);
 
   const sidebarClasses = displayType === 'sidebar'
-    ? "hidden lg:block sticky top-8 h-[calc(100vh-80px)] overflow-y-auto lg:col-span-1"
-    : "lg:hidden mb-8"; // Classes for mobile inline display - Removed padding
+    ? "hidden lg:block sticky top-24 h-[calc(100vh-120px)] overflow-y-auto lg:col-span-1"
+    : "lg:hidden mb-8";
 
   return (
     <div className={sidebarClasses}>
-      <div className="bg-gray-800 p-6 rounded-lg">
-        <h2 className="text-xl font-semibold text-white mb-4">Table of Contents</h2>
-        <ul>
+      <div className="bg-cyber-dark-gray border border-cyber-gray p-6 relative">
+        <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyber-neon-cyan to-cyber-neon-purple"></div>
+
+        <h2 className="text-lg font-display font-bold text-cyber-white mb-4 uppercase tracking-widest flex items-center">
+          <span className="w-2 h-2 bg-cyber-neon-cyan mr-2 animate-pulse"></span>
+          Table of Contents
+        </h2>
+        <ul className="space-y-1">
           {toc.map((item) => (
-            <li key={item.id} className={`mb-2 ${item.level === 3 ? 'ml-4' : ''}`}>
+            <li key={item.id} className={`${item.level === 3 ? 'ml-4' : ''}`}>
               <Link
                 href={`#${item.id}`}
-                className={`text-blue-400 hover:underline transition-colors ${activeId === item.id ? 'font-bold text-white' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById(item.id)?.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }}
+                className={`block py-1 text-sm font-mono transition-colors duration-200 border-l-2 pl-3 ${activeId === item.id
+                  ? 'border-cyber-neon-yellow text-cyber-neon-yellow'
+                  : 'border-transparent text-gray-500 hover:text-cyber-white hover:border-gray-500'
+                  }`}
               >
                 {item.text}
               </Link>
@@ -65,4 +79,4 @@ export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
       </div>
     </div>
   );
-} 
+}

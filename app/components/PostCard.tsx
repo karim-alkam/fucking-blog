@@ -18,45 +18,60 @@ export default function PostCard({ post }: PostCardProps) {
   };
 
   return (
-    <article>
-      <Link 
+    <article className="h-full">
+      <Link
         href={`/posts/${post.slug}`}
-        className="block bg-gray-800 rounded-lg p-6 md:hover:bg-gray-700 transition-colors"
+        className="block h-full cyber-card p-6 group"
       >
-        <h3 className="text-xl font-semibold text-blue-400 md:hover:text-blue-300 transition-colors">
+        <div className="flex justify-between items-start mb-4">
+          <div className="flex gap-2">
+            {post.draft && (
+              <span className="text-cyber-neon-pink font-mono text-xs border border-cyber-neon-pink bg-cyber-neon-pink/10 px-2 py-0.5 rounded-sm animate-pulse shadow-[0_0_8px_rgba(255,0,60,0.5)]">
+                DRAFT
+              </span>
+            )}
+            <span className="text-cyber-neon-cyan font-mono text-xs border border-cyber-neon-cyan/30 px-2 py-0.5 rounded-sm">
+              {post.date ? formatDate(post.date) : 'LOG_DATE_MISSING'}
+            </span>
+          </div>
+          <div className="w-2 h-2 bg-cyber-neon-pink rounded-full opacity-50 group-hover:opacity-100 group-hover:shadow-[0_0_8px_rgba(255,0,60,0.8)] transition-all"></div>
+        </div>
+
+        <h3 className="text-2xl font-display font-bold text-cyber-white group-hover:text-cyber-neon-yellow transition-colors mb-3 leading-tight">
           {post.title}
         </h3>
-        <p className="text-gray-400 text-sm mt-1">{formatDate(post.date)}</p>
-        <p className="text-gray-300 mt-3 leading-relaxed">{post.description}</p>
-        {post.tags && post.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-3">
-            {post.tags.map(tag => (
-              <span
-                key={tag}
-                className="px-2 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded-full"
-              >
-                {tag}
-              </span>
-            ))}
+
+        <p className="text-gray-400 text-sm mb-6 font-light leading-relaxed line-clamp-3">
+          {post.description}
+        </p>
+
+        <div className="mt-auto">
+          {post.tags && post.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-4">
+              {post.tags.slice(0, 3).map(tag => (
+                <span
+                  key={tag}
+                  className="px-2 py-0.5 text-[10px] uppercase font-mono tracking-wider border border-cyber-gray text-cyber-gray-light group-hover:border-cyber-neon-purple group-hover:text-cyber-neon-purple transition-colors"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <div className="flex items-center text-cyber-neon-cyan text-sm font-bold tracking-wide uppercase group-hover:text-cyber-neon-yellow transition-colors">
+            Read Protocol
+            <svg
+              className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
           </div>
-        )}
-        <div className="mt-4 text-blue-400 md:hover:text-blue-300 transition-colors flex items-center">
-          Read more
-          <svg 
-            className="w-4 h-4 ml-1" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M9 5l7 7-7 7" 
-            />
-          </svg>
         </div>
       </Link>
-    </article>
+    </article >
   );
-} 
+}

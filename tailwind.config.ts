@@ -13,26 +13,21 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        purple: {
-          50: '#f5f3ff',
-          100: '#ede9fe',
-          200: '#ddd6fe',
-          300: '#c4b5fd',
-          400: '#a78bfa',
-          500: '#8b5cf6',
-          600: '#7c3aed',
-          700: '#6d28d9',
-          800: '#5b21b6',
-          900: '#4c1d95',
-          950: '#2e1065',
-        },
-        purpleCustom: {
-          DEFAULT: {
-            css: {
-              maxWidth: '100ch',
-            }
-          }
-        },
+        'cyber-black': 'var(--cyber-black)',
+        'cyber-dark-gray': 'var(--cyber-dark-gray)',
+        'cyber-gray': 'var(--cyber-gray)',
+        'cyber-gray-light': 'var(--cyber-gray-light)',
+        'cyber-white': 'var(--cyber-white)',
+        'cyber-neon-yellow': 'var(--cyber-neon-yellow)',
+        'cyber-neon-cyan': 'var(--cyber-neon-cyan)',
+        'cyber-neon-pink': 'var(--cyber-neon-pink)',
+        'cyber-neon-purple': 'var(--cyber-neon-purple)',
+        'cyber-neon-green': 'var(--cyber-neon-green)',
+        'cyber-neon-blue': 'var(--cyber-neon-blue)',
+      },
+      fontFamily: {
+        sans: ['var(--font-outfit)', 'sans-serif'],
+        display: ['var(--font-rajdhani)', 'sans-serif'],
       },
     },
   },

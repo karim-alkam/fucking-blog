@@ -1,145 +1,278 @@
-/* Force a rebuild of the CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* Dark mode styles */
 @layer base {
   :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
+    /* Cyberpunk Edgerunners Palette */
+    --cyber-black: #050505;
+    --cyber-dark-gray: #121212;
+    --cyber-gray: #2a2a2a;
+    --cyber-gray-light: #888888;
+    --cyber-white: #e0e0e0;
+
+    /* Neon Accents */
+    --cyber-neon-yellow: #FCEE0A;
+    /* Main Accent / Primary */
+    --cyber-neon-cyan: #00F0FF;
+    /* Secondary / Links */
+    --cyber-neon-pink: #FF003C;
+    /* Alert / Hover / Highlight */
+    --cyber-neon-purple: #7000FF;
+    /* Deep accents */
+    --cyber-neon-green: #39FF14;
+    --cyber-neon-blue: #2DE2E6;
   }
 
   body {
-    @apply bg-gray-900 text-gray-100;
+    @apply bg-cyber-black text-cyber-white overflow-x-hidden;
+    background-image:
+      linear-gradient(rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.95)),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232a2a2a' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
-  /* Custom scrollbar for dark mode */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-800;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gray-600 rounded-full;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-500;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-wide uppercase;
   }
 }
 
-/* Custom styles for code blocks */
+@layer components {
+
+  /* Utility class for neon text glow */
+  .text-glow-yellow {
+    text-shadow: 0 0 5px rgba(252, 238, 10, 0.5), 0 0 10px rgba(252, 238, 10, 0.3);
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 5px rgba(0, 240, 255, 0.5), 0 0 10px rgba(0, 240, 255, 0.3);
+  }
+
+  .text-glow-pink {
+    text-shadow: 0 0 5px rgba(255, 0, 60, 0.5), 0 0 10px rgba(255, 0, 60, 0.3);
+  }
+
+  /* Cyberpunk Card */
+  .cyber-card {
+    @apply bg-cyber-dark-gray border border-cyber-gray relative transition-all duration-300;
+    clip-path: polygon(0 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%);
+  }
+
+  .cyber-card:hover {
+    @apply border-cyber-neon-yellow;
+    box-shadow: 0 0 15px rgba(252, 238, 10, 0.2);
+    transform: translateY(-2px);
+  }
+
+  /* Glitch Text Effect (Simplified for performance) */
+  .glitch {
+    position: relative;
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+
+  .glitch::after {
+    left: -2px;
+    text-shadow: -1px 0 #00fff9;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+  }
+
+  @keyframes glitch-anim {
+    0% {
+      clip: rect(35px, 9999px, 86px, 0);
+    }
+
+    5% {
+      clip: rect(98px, 9999px, 5px, 0);
+    }
+
+    10% {
+      clip: rect(66px, 9999px, 73px, 0);
+    }
+
+    15% {
+      clip: rect(2px, 9999px, 5px, 0);
+    }
+
+    20% {
+      clip: rect(13px, 9999px, 79px, 0);
+    }
+
+    25% {
+      clip: rect(91px, 9999px, 35px, 0);
+    }
+
+    30% {
+      clip: rect(78px, 9999px, 60px, 0);
+    }
+
+    35% {
+      clip: rect(8px, 9999px, 32px, 0);
+    }
+
+    40% {
+      clip: rect(78px, 9999px, 32px, 0);
+    }
+
+    45% {
+      clip: rect(53px, 9999px, 86px, 0);
+    }
+
+    50% {
+      clip: rect(78px, 9999px, 5px, 0);
+    }
+
+    55% {
+      clip: rect(72px, 9999px, 98px, 0);
+    }
+
+    60% {
+      clip: rect(32px, 9999px, 4px, 0);
+    }
+
+    65% {
+      clip: rect(93px, 9999px, 12px, 0);
+    }
+
+    70% {
+      clip: rect(96px, 9999px, 56px, 0);
+    }
+
+    75% {
+      clip: rect(43px, 9999px, 41px, 0);
+    }
+
+    80% {
+      clip: rect(52px, 9999px, 78px, 0);
+    }
+
+    85% {
+      clip: rect(14px, 9999px, 62px, 0);
+    }
+
+    90% {
+      clip: rect(10px, 9999px, 59px, 0);
+    }
+
+    95% {
+      clip: rect(17px, 9999px, 9px, 0);
+    }
+
+    100% {
+      clip: rect(53px, 9999px, 77px, 0);
+    }
+  }
+
+  @keyframes glitch-anim2 {
+    0% {
+      clip: rect(2px, 9999px, 93px, 0);
+    }
+
+    /* ... shortened for brevity, similar random slices ... */
+    100% {
+      clip: rect(66px, 9999px, 55px, 0);
+    }
+  }
+}
+
+/* Syntax Highlighting overrides for Cyberpunk */
 .hljs {
-  @apply rounded-md p-4 my-4;
+  @apply bg-transparent text-cyber-white rounded-none !important;
 }
 
-/* Syntax highlighting colors for dark mode */
 .hljs-keyword,
-.hljs-selector-tag,
+.hljs-selector-tag {
+  color: var(--cyber-neon-pink) !important;
+}
+
 .hljs-built_in,
 .hljs-name,
-.hljs-tag {
-  @apply text-purple-400;
+.hljs-tag,
+.hljs-attr {
+  color: var(--cyber-neon-green) !important;
+  /* Green for tags/attrs/builtin */
 }
 
 .hljs-string,
+.hljs-literal,
+.hljs-addition {
+  color: var(--cyber-neon-cyan) !important;
+}
+
 .hljs-title,
 .hljs-section,
 .hljs-attribute,
-.hljs-literal,
 .hljs-template-tag,
 .hljs-template-variable,
-.hljs-type,
-.hljs-addition {
-  @apply text-green-400;
+.hljs-type {
+  color: var(--cyber-neon-blue) !important;
+  /* Blue for titles */
 }
 
 .hljs-comment,
 .hljs-quote,
-.hljs-deletion,
 .hljs-meta {
-  @apply text-gray-500;
-}
-
-.hljs-number,
-.hljs-regexp,
-.hljs-bullet,
-.hljs-link {
-  @apply text-yellow-400;
-}
-
-.hljs-function,
-.hljs-title.function_ {
-  @apply text-blue-400;
+  color: var(--cyber-gray-light) !important;
+  font-style: italic;
 }
 
 .hljs-variable,
-.hljs-attr {
-  @apply text-orange-400;
+.hljs-deletion,
+.hljs-number,
+.hljs-link {
+  color: var(--cyber-neon-yellow) !important;
 }
 
-/* Improve code block appearance */
-pre {
-  @apply relative overflow-x-auto rounded-md border border-gray-700 bg-gray-800 p-4 my-4;
-  position: relative; /* Ensure position relative for absolute positioning of copy button */
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst {
+  color: var(--cyber-neon-purple) !important;
 }
 
-pre code {
-  @apply bg-transparent p-0 text-sm font-mono text-gray-200;
+.hljs-emphasis {
+  font-style: italic;
 }
 
-code {
-  @apply font-mono text-blue-300 bg-gray-800 px-1 py-0.5 rounded text-sm;
+.hljs-strong {
+  font-weight: bold;
 }
 
-/* Custom prose styles for dark mode */
-.prose pre {
-  @apply bg-gray-800 text-gray-100;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--cyber-black);
 }
 
-.prose code {
-  @apply text-blue-300 bg-gray-800 px-1 py-0.5 rounded;
+::-webkit-scrollbar-thumb {
+  background: var(--cyber-gray);
+  border: 1px solid var(--cyber-black);
 }
 
-.prose a {
-  @apply text-blue-400 no-underline hover:text-blue-300;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyber-neon-yellow);
 }
-
-.prose blockquote {
-  @apply border-l-4 border-gray-700 text-gray-300;
-}
-
-.prose h1, .prose h2, .prose h3, .prose h4 {
-  @apply text-white;
-}
-
-.prose hr {
-  @apply border-gray-700;
-}
-
-.prose table {
-  @apply border-gray-700;
-}
-
-.prose thead {
-  @apply bg-gray-800 text-gray-200;
-}
-
-.prose tbody tr {
-  @apply border-b border-gray-700;
-}
-
-.prose tbody td {
-  @apply text-gray-300;
-}
-
-/* Custom styles for Markdown rendering */
-/* Add styles here that you want to apply to markdown content */

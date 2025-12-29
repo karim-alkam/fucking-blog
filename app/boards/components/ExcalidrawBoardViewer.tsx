@@ -16,9 +16,10 @@ const Excalidraw = dynamic(
 
 function ExcalidrawSkeletonLoader() {
   return (
-    <div className="h-full w-full flex items-center justify-center bg-gray-800 rounded-lg animate-pulse">
-      <div className="text-gray-500 text-lg">
-        Loading Excalidraw...
+    <div className="h-full w-full flex flex-col items-center justify-center bg-cyber-dark-gray relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyber-gray/20 to-transparent animate-shimmer" style={{ transform: 'skewX(-20deg)' }}></div>
+      <div className="text-cyber-neon-cyan font-mono text-lg animate-pulse tracking-widest">
+        LOADING_CANVAS...
       </div>
     </div>
   );
@@ -49,7 +50,7 @@ export default function ExcalidrawBoardViewer({ initialData }: { initialData: Ex
 
   if (!initialData) {
     return (
-      <div className="h-[calc(100vh-180px)] w-full max-w-[1200px] mx-auto rounded-lg overflow-hidden flex items-center justify-center bg-gray-800">
+      <div className="h-[calc(100vh-180px)] w-full mx-auto overflow-hidden flex items-center justify-center bg-gray-800">
         <div className="text-red-500">Failed to load drawing data.</div>
       </div>
     );
@@ -57,14 +58,14 @@ export default function ExcalidrawBoardViewer({ initialData }: { initialData: Ex
 
   if (!data) {
     return (
-      <div className="h-[calc(100vh-180px)] w-full max-w-[1200px] mx-auto rounded-lg overflow-hidden">
+      <div className="h-[calc(100vh-180px)] w-full mx-auto overflow-hidden">
         <ExcalidrawSkeletonLoader />
       </div>
     );
   }
 
   return (
-    <div className="h-[calc(100vh-180px)] w-full max-w-[1200px] mx-auto rounded-lg overflow-hidden">
+    <div className="h-[calc(100vh-180px)] w-full mx-auto overflow-hidden">
       <Excalidraw
         theme="dark"
         viewModeEnabled={true}

@@ -7,10 +7,8 @@ export default async function DraftsPage() {
   const draftPosts = allPosts.filter((post: Post) => post.draft === true);
 
   return (
-    <main className="min-h-screen bg-gray-900 text-white py-8">
-      <div className="container mx-auto px-4">
-        <PostsList posts={draftPosts} title="Draft Posts" />
-      </div>
+    <main className="min-h-screen pt-4">
+      <PostsList posts={draftPosts} title="Draft Logs" />
     </main>
   );
 } 

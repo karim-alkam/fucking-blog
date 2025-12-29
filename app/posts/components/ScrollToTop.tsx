@@ -35,11 +35,12 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-3 shadow-lg transition-all duration-300 ease-in-out z-50"
+          className="fixed bottom-8 right-8 bg-cyber-black border border-cyber-neon-cyan text-cyber-neon-cyan hover:bg-cyber-neon-cyan hover:text-cyber-black p-3 shadow-[0_0_10px_rgba(0,240,255,0.3)] hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] transition-all duration-300 ease-in-out z-50 group clip-path-polygon"
+          style={{ clipPath: 'polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%)' }}
           aria-label="Scroll to top"
         >
           <svg
-            className="w-6 h-6"
+            className="w-6 h-6 transform group-hover:-translate-y-1 transition-transform"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

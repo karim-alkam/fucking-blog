@@ -39,36 +39,6 @@ export default async function Page(props: PageProps) {
     return date.toISOString().slice(0, 10); // e.g., 2024-06-07
   };
 
-  // If it's a draft post, we still show it but with a draft indicator
-  if (postData.draft) {
-    return (
-      <>
-        <ScrollToTop />
-        <MathJaxInit />
-        <div className="container mx-auto px-4 py-8">
-          <article className="max-w-3xl mx-auto break-words hyphens-auto">
-            <div className="bg-yellow-500 text-black px-4 py-2 mb-4 rounded">
-              This is a draft post
-            </div>
-            <header className="mb-8">
-              <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{postData.title}</h1>
-              <p className="text-gray-400">{formatDate(postData.date)}</p>
-            </header>
-            <PostContent html={postData.content} />
-            <div className="mt-12 pt-6 border-t border-gray-700">
-              <Link href="/" className="text-blue-400 hover:text-blue-300 inline-flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-                Back to all posts
-              </Link>
-            </div>
-          </article>
-        </div>
-      </>
-    );
-  }
-
   return (
     <>
       <ScrollToTop />
@@ -80,6 +50,17 @@ export default async function Page(props: PageProps) {
 
         {/* Post Content (Middle Column - twice the size) */}
         <article className="lg:col-span-2 break-words hyphens-auto">
+          {postData.draft && (
+            <div className="cyber-card p-4 mb-8 border-l-4 border-cyber-neon-pink bg-cyber-dark-gray/50 flex items-center">
+              <span className="text-cyber-neon-pink font-mono uppercase tracking-widest text-sm font-bold mr-3">
+                [DRAFT_MODE]
+              </span>
+              <span className="text-gray-400 font-mono text-xs">
+                System_Entry_Is_Not_Finalized
+              </span>
+            </div>
+          )}
+
           <header className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{postData.title}</h1>
             <p className="text-gray-400">{formatDate(postData.date)}</p>
@@ -95,8 +76,8 @@ export default async function Page(props: PageProps) {
           <PostContent html={postData.content} />
 
           <div className="mt-12 pt-6 border-t border-gray-700">
-            <Link href="/" className="text-blue-400 hover:text-blue-300 inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <Link href="/" className="inline-flex items-center text-cyber-neon-cyan hover:text-cyber-neon-yellow transition-colors group font-mono text-sm tracking-wider uppercase">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Back to all posts

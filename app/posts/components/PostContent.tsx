@@ -50,7 +50,15 @@ const PostContent: React.FC<{ html: string }> = ({ html }) => {
 
     return (
         <div
-            className="prose prose-lg dark:prose-invert prose-headings:text-white prose-a:text-blue-400 prose-strong:text-white prose-code:text-blue-300 prose-pre:bg-gray-800 prose-pre:border prose-pre:border-gray-700 max-w-none"
+            className="prose prose-lg dark:prose-invert max-w-none 
+            prose-headings:font-display prose-headings:text-cyber-white prose-headings:uppercase prose-headings:tracking-wide
+            prose-p:text-gray-300 prose-p:font-light prose-p:leading-relaxed
+            prose-a:text-cyber-neon-cyan prose-a:no-underline hover:prose-a:text-cyber-neon-yellow hover:prose-a:shadow-[0_2px_0_0_currentColor] prose-a:transition-all
+            prose-strong:text-cyber-neon-pink prose-strong:font-bold
+            prose-code:text-cyber-neon-yellow prose-code:font-mono prose-code:bg-transparent prose-code:p-0
+            prose-pre:bg-transparent prose-pre:border-0 prose-pre:shadow-none prose-pre:p-0 prose-pre:m-0
+            prose-blockquote:border-l-4 prose-blockquote:border-cyber-neon-purple prose-blockquote:bg-cyber-dark-gray/30 prose-blockquote:p-4 prose-blockquote:italic prose-blockquote:text-gray-400
+            prose-li:text-gray-300 prose-marker:text-cyber-neon-cyan"
             dangerouslySetInnerHTML={{ __html: html }}
             onClick={handleCopyClick}
         />

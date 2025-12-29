@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const allPosts = await getPosts();
-  
+
   // Get unique tags from all posts
   const allTags = Array.from(new Set(
     allPosts.flatMap(post => post.tags || [])
@@ -19,7 +19,9 @@ export default async function Home() {
   return (
     <>
       <Hero tags={allTags} />
-      <PostsList posts={allPosts} />
+      <div className="relative z-10 -mt-10">
+        <PostsList posts={allPosts} title="LATEST_LOGS" />
+      </div>
     </>
   );
 }

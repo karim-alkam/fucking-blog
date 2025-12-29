@@ -3,7 +3,7 @@ import { getPosts } from '../lib/posts';
 import SearchResults from './components/SearchResults';
 
 export default async function SearchPage() {
-  const allPosts = await getPosts(true); // Fetch all posts at build time
+  const allPosts = await getPosts(false); // Fetch only published posts
 
   return (
     <main>
