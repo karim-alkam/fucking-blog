@@ -19,7 +19,7 @@ export const metadata = {
   title: 'Salameh',
   description: 'A personal blog built with love by Abdullah Salameh',
   icons: {
-    icon: '/logo-cyber.png',
+    icon: '/A-logo.png',
   },
 };
 
