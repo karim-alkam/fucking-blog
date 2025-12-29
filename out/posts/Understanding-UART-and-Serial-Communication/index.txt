@@ -1,0 +1,155 @@
+1:"$Sreact.fragment"
+2:I[91325,["8173","static/chunks/8173-658042c358f3b6bb.js","3770","static/chunks/3770-0f4245edc72fbb51.js","7177","static/chunks/app/layout-acb07ca5536b8774.js"],""]
+3:I[76074,["8173","static/chunks/8173-658042c358f3b6bb.js","3770","static/chunks/3770-0f4245edc72fbb51.js","7177","static/chunks/app/layout-acb07ca5536b8774.js"],"default"]
+4:I[15244,[],""]
+5:I[43866,[],""]
+7:I[86213,[],"OutletBoundary"]
+9:I[86213,[],"MetadataBoundary"]
+b:I[86213,[],"ViewportBoundary"]
+d:I[34835,[],""]
+:HL["/_next/static/css/eeb5f82474929b80.css","style"]
+:HL["/_next/static/css/5eacd01f773eed7f.css","style"]
+0:{"P":null,"b":"UV2HvcSRlJGrf67KTfUr5","p":"","c":["","posts","Understanding-UART-and-Serial-Communication",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","Understanding-UART-and-Serial-Communication","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eeb5f82474929b80.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":["$","body",null,{"className":"bg-gray-900 text-gray-100 min-h-screen flex flex-col","children":[["$","$L2",null,{"color":"#3B82F6","height":3,"showSpinner":false}],["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-gray-800 text-gray-400 py-8","children":["$","div",null,{"className":"container mx-auto px-4 text-center","children":["$","p",null,{"children":["© ",2025," My Blog. All rights reserved."]}]}]}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Understanding-UART-and-Serial-Communication","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$0:f:0:1:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5eacd01f773eed7f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":"$L8"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","hyZLAyXeJlUbXlLwdQcIL",{"children":[["$","$L9",null,{"children":"$La"}],["$","$Lb",null,{"children":"$Lc"}],null]}]]}],false]],"m":"$undefined","G":["$d","$undefined"],"s":false,"S":true}
+c:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Salameh"}],["$","meta","2",{"name":"description","content":"A personal blog built with love by Abdullah Salameh"}],["$","link","3",{"rel":"icon","href":"/logo-me.png"}]]
+8:null
+e:I[21081,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+f:I[19119,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+10:I[51850,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+11:I[63265,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+13:I[48173,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],""]
+12:T2112,
+      <style>
+        .custom-scrollbar {
+          scrollbar-width: auto;
+          scrollbar-color: #4B5563 #1F2937;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+          height: 12px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #1F2937;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #4B5563;
+          border-radius: 6px;
+          border: 3px solid #1F2937;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #6B7280;
+        }
+
+        /* Code Block Scrollbar (Thinner) */
+        .custom-code-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #4B5563 #1F2937;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar {
+          height: 8px; /* Thinner than table scrollbar */
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-track {
+          background: #1F2937;
+          border-radius: 4px;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #4B5563;
+          border-radius: 4px;
+          border: 2px solid #1F2937;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #6B7280;
+        }
+      </style>
+      <h1 id="data-transmission">Data Transmission</h1>
+<p>Data transmission can be categorized into two main types: <strong>Serial</strong> and <strong>Parallel</strong>. Serial communication, in particular, has several subtypes, including <strong>Asynchronous</strong>, <strong>Synchronous</strong>, and <strong>Isochronous</strong>. In this post, we’ll focus on <strong>UART (Universal Asynchronous Receiver-Transmitter)</strong>, which is an asynchronous method of communication. Unlike synchronous communication, UART does not require devices to share the same clock cycles or be synchronized.</p>
+<p><img src="/images/Data%20transmission.png" alt=""></p>
+<hr>
+<h2 id="serial-vs-parallel-transmission">Serial vs. Parallel Transmission</h2>
+<ul>
+<li><p><strong>Serial Transmission</strong>: Data is sent one bit at a time over a single communication channel. This method is simpler and more cost-effective but can be slower compared to parallel transmission.</p>
+</li>
+<li><p><strong>Parallel Transmission</strong>: Data is sent in groups of 8 bits (a byte) simultaneously over multiple channels. While faster, it is more complex and expensive due to the need for multiple communication lines.</p>
+</li>
+</ul>
+<p>Both methods enable devices to communicate, but they differ in their approach. Serial transmission is often preferred for its simplicity and lower cost, while parallel transmission is used when speed is critical.</p>
+<p><img src="/images/parallel%20vs%20serail.png" alt=""></p>
+<h3 id="key-terms">Key Terms:</h3>
+<ul>
+<li><strong>MSB (Most Significant Bit)</strong>: The bit with the highest value in a byte (e.g., 2^7).</li>
+<li><strong>LSB (Least Significant Bit)</strong>: The bit with the lowest value in a byte (e.g., 2^0).</li>
+</ul>
+<hr>
+<h2 id="serial-transmission">Serial Transmission</h2>
+<p>In serial transmission, bits are sent one after another over a single communication channel. This reduces the cost of transmission compared to parallel methods, which require multiple channels. Serial transmission can be implemented in three ways: <strong>asynchronous</strong>, <strong>synchronous</strong>, and <strong>isochronous</strong>.</p>
+<hr>
+<h3 id="asynchronous-transmission-uart">Asynchronous Transmission (UART)</h3>
+<p>Asynchronous transmission does not rely on a shared clock signal between devices. Instead, it uses agreed-upon patterns to communicate data. Each byte of data is framed with a <strong>start bit</strong> and one or more <strong>stop bits</strong>, allowing the receiver to identify the beginning and end of each byte.</p>
+<ul>
+<li><strong>Start Bit</strong>: A single bit (usually 0) that signals the start of a byte.</li>
+<li><strong>Stop Bit(s)</strong>: One or more bits (usually 1s) that signal the end of a byte.</li>
+</ul>
+<p>Between bytes, there may be a gap or idle time, which helps the receiver prepare for the next byte. The receiver synchronizes with the incoming data stream at the start of each byte, ensuring accurate data interpretation.</p>
+<blockquote>
+<p><strong>Note</strong>: Asynchronous transmission is "asynchronous at the byte level," but the bits within each byte are still synchronized.</p>
+</blockquote>
+<p><img src="/images/serial%20byte.png" alt=""></p>
+<hr>
+<h2 id="uart-universal-asynchronous-receiver-transmitter">UART: Universal Asynchronous Receiver-Transmitter</h2>
+<p>UART is a hardware device that facilitates asynchronous serial communication. It uses two wires:</p>
+<ul>
+<li><strong>Tx (Transmit)</strong>: Sends data from the transmitting device.</li>
+<li><strong>Rx (Receive)</strong>: Receives data at the receiving device.</li>
+</ul>
+<p><img src="/images/Pasted%20image%2020250215052600.png" alt=""></p>
+<p>The communication speed, known as the <strong>baud rate</strong>, must be agreed upon by both devices.</p>
+<hr>
+<h3 id="baud-rate-how-it-works">Baud Rate: How It Works</h3>
+<p>The <strong>baud rate</strong> is a critical parameter in serial communication, especially in UART. It defines the speed at which data is transmitted and received, measured in <strong>bits per second (bps)</strong>. Here’s how it works:</p>
+<ol>
+<li><p><strong>Definition</strong>: The baud rate represents the number of signal changes (symbols) per second. In UART, each symbol typically corresponds to one bit, so the baud rate is often equal to the bit rate.</p>
+</li>
+<li><p><strong>Synchronization</strong>: Both the transmitter and receiver must be configured to use the same baud rate. If they are not synchronized, data will be misinterpreted, leading to communication errors.</p>
+</li>
+<li><p><strong>Common Baud Rates</strong>: Some standard baud rates include 9600, 19200, 38400, 57600, and 115200 bps. Lower baud rates are used for longer distances or noisy environments, while higher baud rates are used for faster communication over shorter distances.</p>
+</li>
+<li><p><strong>Calculation</strong>: The baud rate determines the duration of each bit. For example, at 9600 bps, each bit lasts approximately 104 microseconds (1 second / 9600 bits).</p>
+</li>
+<li><p><strong>Error Tolerance</strong>: The receiver samples the incoming data at the midpoint of each bit. If the baud rates of the transmitter and receiver are slightly mismatched, the sampling point may drift, causing errors. Therefore, precise baud rate configuration is essential.</p>
+</li>
+</ol>
+<hr>
+<h3 id="ttl-vs-rs-232">TTL vs. RS-232</h3>
+<h4 id="ttl-transistor-transistor-logic">TTL (Transistor-Transistor Logic):</h4>
+<ul>
+<li>Operates at 5V.</li>
+<li>Commonly used in short-range communication.</li>
+<li>Not a protocol but refers to the voltage level used by UART.</li>
+<li>Example: USB-to-TTL converters.</li>
+</ul>
+<p><img src="/images/TTL.png" alt=""></p>
+<h4 id="rs-232">RS-232:</h4>
+<ul>
+<li>Uses higher voltage levels (+/- 12V) for long-range communication.</li>
+<li>Voltage levels:<ul>
+<li>-3V to -15V represents a "1" bit.</li>
+<li>+3V to +15V represents a "0" bit.</li>
+</ul>
+</li>
+<li>Active low logic.</li>
+</ul>
+<p><img src="/images/RS232.png" alt=""></p>
+<hr>
+<h3 id="references">References:</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=JuvWbRhhpdI" class="break-all">YouTube: UART Communication Explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=IyGwvGzrqp8" class="break-all">YouTube: Serial vs. Parallel Communication</a></li>
+<li><a href="https://www.youtube.com/watch?v=V6m2skVlsQI" class="break-all">YouTube: TTL and RS-232 Explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=4xBjrE9csxg" class="break-all">YouTube: Asynchronous Transmission</a></li>
+<li><a href="https://www.youtube.com/watch?v=Z-O6PkvYXXs" class="break-all">YouTube: UART Protocol Deep Dive</a></li>
+<li><a href="https://dpvipracollege.in/wp-content/uploads/2023/01/Data-Communications-and-Networking-By-Behrouz-A.Forouzan.pdf" class="break-all">Data Communications and Networking by Behrouz A. Forouzan</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter" class="break-all">Wikipedia: Universal Asynchronous Receiver-Transmitter</a></li>
+</ul>
+
+    6:[["$","$Le",null,{}],["$","$Lf",null,{}],["$","div",null,{"className":"container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12","children":[["$","div",null,{"className":"hidden lg:block lg:col-span-1"}],["$","article",null,{"className":"lg:col-span-2 break-words hyphens-auto","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-white mb-2","children":"Understanding UART and Serial Communication"}],["$","p",null,{"className":"text-gray-400","children":"2025-02-14"}],["$","div",null,{"className":"lg:hidden mt-8","children":[" ",["$","$L10",null,{"toc":[{"level":1,"text":"Data Transmission","id":"data-transmission"},{"level":2,"text":"Serial vs. Parallel Transmission","id":"serial-vs-parallel-transmission"},{"level":3,"text":"Key Terms:","id":"key-terms"},{"level":2,"text":"Serial Transmission","id":"serial-transmission"},{"level":3,"text":"Asynchronous Transmission (UART)","id":"asynchronous-transmission-uart"},{"level":2,"text":"UART: Universal Asynchronous Receiver-Transmitter","id":"uart-universal-asynchronous-receiver-transmitter"},{"level":3,"text":"Baud Rate: How It Works","id":"baud-rate-how-it-works"},{"level":3,"text":"TTL vs. RS-232","id":"ttl-vs-rs-232"},{"level":4,"text":"TTL (Transistor-Transistor Logic):","id":"ttl-transistor-transistor-logic"},{"level":4,"text":"RS-232:","id":"rs-232"},{"level":3,"text":"References:","id":"references"}],"displayType":"inline"}]]}]]}],["$","$L11",null,{"html":"$12"}],["$","div",null,{"className":"mt-12 pt-6 border-t border-gray-700","children":["$","$L13",null,{"href":"/","className":"text-blue-400 hover:text-blue-300 inline-flex items-center","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","className":"h-5 w-5 mr-2","fill":"none","viewBox":"0 0 24 24","stroke":"currentColor","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to all posts"]}]}]]}],["$","div",null,{"className":"hidden lg:block lg:col-span-1","children":["$","$L10",null,{"toc":"$6:2:props:children:1:props:children:0:props:children:2:props:children:1:props:toc","displayType":"sidebar"}]}]]}]]

@@ -1,0 +1,432 @@
+1:"$Sreact.fragment"
+2:I[91325,["8173","static/chunks/8173-658042c358f3b6bb.js","3770","static/chunks/3770-0f4245edc72fbb51.js","7177","static/chunks/app/layout-acb07ca5536b8774.js"],""]
+3:I[76074,["8173","static/chunks/8173-658042c358f3b6bb.js","3770","static/chunks/3770-0f4245edc72fbb51.js","7177","static/chunks/app/layout-acb07ca5536b8774.js"],"default"]
+4:I[15244,[],""]
+5:I[43866,[],""]
+7:I[86213,[],"OutletBoundary"]
+9:I[86213,[],"MetadataBoundary"]
+b:I[86213,[],"ViewportBoundary"]
+d:I[34835,[],""]
+:HL["/_next/static/css/eeb5f82474929b80.css","style"]
+:HL["/_next/static/css/5eacd01f773eed7f.css","style"]
+0:{"P":null,"b":"UV2HvcSRlJGrf67KTfUr5","p":"","c":["","posts","(OOP)-in-Python",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","(OOP)-in-Python","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eeb5f82474929b80.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":["$","body",null,{"className":"bg-gray-900 text-gray-100 min-h-screen flex flex-col","children":[["$","$L2",null,{"color":"#3B82F6","height":3,"showSpinner":false}],["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-gray-800 text-gray-400 py-8","children":["$","div",null,{"className":"container mx-auto px-4 text-center","children":["$","p",null,{"children":["© ",2025," My Blog. All rights reserved."]}]}]}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","(OOP)-in-Python","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$0:f:0:1:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5eacd01f773eed7f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":"$L8"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","FN1V-FPMiOLMPcFwF6kpg",{"children":[["$","$L9",null,{"children":"$La"}],["$","$Lb",null,{"children":"$Lc"}],null]}]]}],false]],"m":"$undefined","G":["$d","$undefined"],"s":false,"S":true}
+c:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Salameh"}],["$","meta","2",{"name":"description","content":"A personal blog built with love by Abdullah Salameh"}],["$","link","3",{"rel":"icon","href":"/logo-me.png"}]]
+8:null
+e:I[21081,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+f:I[19119,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+10:I[51850,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+11:I[63265,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],"default"]
+13:I[48173,["8173","static/chunks/8173-658042c358f3b6bb.js","5858","static/chunks/app/posts/%5Bslug%5D/page-b5ad0478bf5133dc.js"],""]
+12:T7256,
+      <style>
+        .custom-scrollbar {
+          scrollbar-width: auto;
+          scrollbar-color: #4B5563 #1F2937;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+          height: 12px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #1F2937;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #4B5563;
+          border-radius: 6px;
+          border: 3px solid #1F2937;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #6B7280;
+        }
+
+        /* Code Block Scrollbar (Thinner) */
+        .custom-code-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #4B5563 #1F2937;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar {
+          height: 8px; /* Thinner than table scrollbar */
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-track {
+          background: #1F2937;
+          border-radius: 4px;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #4B5563;
+          border-radius: 4px;
+          border: 2px solid #1F2937;
+        }
+        .custom-code-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #6B7280;
+        }
+      </style>
+      <h3 id="a-beginners-guide-to-object-oriented-programming-oop-in-python">A Beginner's Guide to Object-Oriented Programming (OOP) in Python</h3>
+<p>Object-oriented programming (OOP) is a cornerstone programming paradigm in Python. It allows developers to create reusable and modular code by organizing functionality into objects, which are instances of classes. In this guide, we’ll walk you through the basics of OOP, including key concepts like inheritance and the <code>super()</code> function, and provide practical examples to help you get started.</p>
+<hr>
+<h3 id="what-are-objects">What Are Objects?</h3>
+<p>Objects are the building blocks of OOP. In Python, <strong>everything is an object</strong>, from simple data types like integers and strings to complex data structures and functions. When you create a variable, you're actually creating an object of a specific type (or class).</p>
+<h4 id="example-numbers-and-strings-as-objects">Example: Numbers and Strings as Objects</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">x = <span class="hljs-number">5</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(x))  <span class="hljs-comment"># Output: &lt;class 'int'&gt;</span>
+
+greeting = <span class="hljs-string">"Hello"</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(greeting))  <span class="hljs-comment"># Output: &lt;class 'str'&gt;</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="x = 5
+print(type(x))  # Output: <class 'int'>
+
+greeting = &quot;Hello&quot;
+print(type(greeting))  # Output: <class 'str'>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Even collections like lists are objects:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(numbers))  <span class="hljs-comment"># Output: &lt;class 'list'&gt;</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="numbers = [1, 2, 3]
+print(type(numbers))  # Output: <class 'list'>" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
+<h3 id="built-in-methods">Built-in Methods</h3>
+<p>Each object type in Python comes with its own set of methods—functions that can be used to manipulate or interact with the object. These methods are accessed using dot notation.</p>
+<h4 id="example-string-methods">Example: String Methods</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">greeting = <span class="hljs-string">"Hello"</span>
+<span class="hljs-built_in">print</span>(greeting.upper())  <span class="hljs-comment"># Output: HELLO</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="greeting = &quot;Hello&quot;
+print(greeting.upper())  # Output: HELLO" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="example-list-methods">Example: List Methods</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+numbers.append(<span class="hljs-number">4</span>)
+<span class="hljs-built_in">print</span>(numbers)  <span class="hljs-comment"># Output: [1, 2, 3, 4]</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)  # Output: [1, 2, 3, 4]" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>However, methods are type-specific. Trying to call a string method on an integer will result in an error:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">x = <span class="hljs-number">5</span>
+<span class="hljs-built_in">print</span>(x.upper())  <span class="hljs-comment"># Raises AttributeError</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="x = 5
+print(x.upper())  # Raises AttributeError" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
+<h3 id="creating-custom-classes">Creating Custom Classes</h3>
+<p>Python lets you define your own classes to create custom objects tailored to your needs. A class serves as a blueprint for creating objects, and each object is an instance of that class.</p>
+<h4 id="example-defining-a-simple-class">Example: Defining a Simple Class</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">bark</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Woof!"</span>)</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="class Dog:
+    def bark(self):
+        print(&quot;Woof!&quot;)" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>You can create an instance (object) of the <code>Dog</code> class and use its method:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">my_dog = Dog()
+my_dog.bark()  <span class="hljs-comment"># Output: Woof!</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="my_dog = Dog()
+my_dog.bark()  # Output: Woof!" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
+<h3 id="attributes-and-methods">Attributes and Methods</h3>
+<p>Classes can have attributes (data) and methods (functions). These define the properties and behaviors of objects created from the class. To initialize attributes, you use the special <code>__init__</code> method, which is automatically called when an object is created.</p>
+<h4 id="example-adding-attributes-with-__init__">Example: Adding Attributes with <code>__init__</code></h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name, age</span>):
+        <span class="hljs-variable language_">self</span>.name = name
+        <span class="hljs-variable language_">self</span>.age = age
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">bark</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{self.name}</span> says Woof!"</span>)</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f&quot;{self.name} says Woof!&quot;)" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Here’s how you can use this class:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">my_dog = Dog(<span class="hljs-string">"Buddy"</span>, <span class="hljs-number">3</span>)
+<span class="hljs-built_in">print</span>(my_dog.name)  <span class="hljs-comment"># Output: Buddy</span>
+<span class="hljs-built_in">print</span>(my_dog.age)   <span class="hljs-comment"># Output: 3</span>
+my_dog.bark()       <span class="hljs-comment"># Output: Buddy says Woof!</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="my_dog = Dog(&quot;Buddy&quot;, 3)
+print(my_dog.name)  # Output: Buddy
+print(my_dog.age)   # Output: 3
+my_dog.bark()       # Output: Buddy says Woof!" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
+<h3 id="inheritance-and-the-super-function">Inheritance and the <code>super()</code> Function</h3>
+<p>Inheritance allows one class (child class) to derive attributes and methods from another class (parent class). This is particularly useful for code reuse and extension.</p>
+<p>When a child class overrides the <code>__init__</code> method, it’s important to ensure that the parent class’s <code>__init__</code> method is called. This is done using the <code>super().__init__()</code> function.</p>
+<h4 id="example-using-super__init__-in-a-subclass">Example: Using <code>super().__init__()</code> in a Subclass</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, species</span>):
+        <span class="hljs-variable language_">self</span>.species = species
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span>(<span class="hljs-title class_ inherited__">Animal</span>):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name, age, species=<span class="hljs-string">"Dog"</span></span>):
+        <span class="hljs-built_in">super</span>().__init__(species)  <span class="hljs-comment"># Initialize parent class attributes</span>
+        <span class="hljs-variable language_">self</span>.name = name
+        <span class="hljs-variable language_">self</span>.age = age
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">bark</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{self.name}</span>, the <span class="hljs-subst">{self.species}</span>, says Woof!"</span>)</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="class Animal:
+    def __init__(self, species):
+        self.species = species
+
+class Dog(Animal):
+    def __init__(self, name, age, species=&quot;Dog&quot;):
+        super().__init__(species)  # Initialize parent class attributes
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f&quot;{self.name}, the {self.species}, says Woof!&quot;)" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Here’s how it works:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">my_dog = Dog(<span class="hljs-string">"Buddy"</span>, <span class="hljs-number">3</span>)
+<span class="hljs-built_in">print</span>(my_dog.species)  <span class="hljs-comment"># Output: Dog</span>
+my_dog.bark()          <span class="hljs-comment"># Output: Buddy, the Dog, says Woof!</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="my_dog = Dog(&quot;Buddy&quot;, 3)
+print(my_dog.species)  # Output: Dog
+my_dog.bark()          # Output: Buddy, the Dog, says Woof!" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>In this example:</p>
+<ul>
+<li>The <code>Animal</code> class serves as the parent class.</li>
+<li>The <code>Dog</code> class extends <code>Animal</code> and adds its own attributes (<code>name</code> and <code>age</code>).</li>
+<li>The <code>super().__init__(species)</code> call ensures the <code>species</code> attribute from <code>Animal</code> is properly initialized.</li>
+</ul>
+<hr>
+<h3 id="class-and-static-methods">Class and Static Methods</h3>
+<p>In addition to instance methods, Python supports class methods and static methods:</p>
+<ul>
+<li><strong>Class methods</strong> work at the class level and are defined using the <code>@classmethod</code> decorator.</li>
+<li><strong>Static methods</strong> don’t access class or instance attributes and are defined with the <code>@staticmethod</code> decorator.</li>
+</ul>
+<h4 id="example-class-method">Example: Class Method</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span>:
+    count = <span class="hljs-number">0</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name</span>):
+        <span class="hljs-variable language_">self</span>.name = name
+        Animal.count += <span class="hljs-number">1</span>
+
+<span class="hljs-meta">    @classmethod</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_count</span>(<span class="hljs-params">cls</span>):
+        <span class="hljs-keyword">return</span> cls.count</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="class Animal:
+    count = 0
+
+    def __init__(self, name):
+        self.name = name
+        Animal.count += 1
+
+    @classmethod
+    def get_count(cls):
+        return cls.count" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Usage:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">a1 = Animal(<span class="hljs-string">"Cat"</span>)
+a2 = Animal(<span class="hljs-string">"Dog"</span>)
+<span class="hljs-built_in">print</span>(Animal.get_count())  <span class="hljs-comment"># Output: 2</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="a1 = Animal(&quot;Cat&quot;)
+a2 = Animal(&quot;Dog&quot;)
+print(Animal.get_count())  # Output: 2" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <h4 id="example-static-method">Example: Static Method</h4>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MathUtil</span>:
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">x, y</span>):
+        <span class="hljs-keyword">return</span> x + y</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="class MathUtil:
+    @staticmethod
+    def add(x, y):
+        return x + y" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Usage:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">result = MathUtil.add(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>)
+<span class="hljs-built_in">print</span>(result)  <span class="hljs-comment"># Output: 15</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="result = MathUtil.add(5, 10)
+print(result)  # Output: 15" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
+<h3 id="why-use-oop">Why Use OOP?</h3>
+<p>Object-oriented programming provides numerous benefits:</p>
+<ol>
+<li><strong>Encapsulation</strong>: Keeps related data and methods together.</li>
+<li><strong>Reusability</strong>: Inheritance allows you to extend existing code.</li>
+<li><strong>Readability</strong>: Code mirrors real-world entities and relationships.</li>
+</ol>
+<hr>
+<h3 id="real-world-example-employee-management-system">Real-World Example: Employee Management System</h3>
+<p>Let’s create a simple system for managing employees using OOP concepts.</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Employee</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name, position</span>):
+        <span class="hljs-variable language_">self</span>.name = name
+        <span class="hljs-variable language_">self</span>.position = position
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">describe</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{self.name}</span> works as a <span class="hljs-subst">{self.position}</span>"</span>)
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Manager</span>(<span class="hljs-title class_ inherited__">Employee</span>):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name, position, department</span>):
+        <span class="hljs-built_in">super</span>().__init__(name, position)
+        <span class="hljs-variable language_">self</span>.department = department
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">describe</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{self.name}</span> is a Manager of the <span class="hljs-subst">{self.department}</span> department."</span>)</code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="class Employee:
+    def __init__(self, name, position):
+        self.name = name
+        self.position = position
+
+    def describe(self):
+        print(f&quot;{self.name} works as a {self.position}&quot;)
+
+class Manager(Employee):
+    def __init__(self, name, position, department):
+        super().__init__(name, position)
+        self.department = department
+
+    def describe(self):
+        print(f&quot;{self.name} is a Manager of the {self.department} department.&quot;)" aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <p>Usage:</p>
+
+    <div class="relative group">
+      <pre class="custom-code-scrollbar !p-4"><code class="hljs language-python !p-1 !m-1 !mx-2">e1 = Employee(<span class="hljs-string">"Alice"</span>, <span class="hljs-string">"Developer"</span>)
+m1 = Manager(<span class="hljs-string">"Bob"</span>, <span class="hljs-string">"Manager"</span>, <span class="hljs-string">"Engineering"</span>)
+
+e1.describe()  <span class="hljs-comment"># Output: Alice works as a Developer</span>
+m1.describe()  <span class="hljs-comment"># Output: Bob is a Manager of the Engineering department.</span></code></pre>
+      <button class="copy-btn absolute top-2 right-2 p-1 rounded-sm bg-gray-700 hover:bg-gray-600 transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100" data-code="e1 = Employee(&quot;Alice&quot;, &quot;Developer&quot;)
+m1 = Manager(&quot;Bob&quot;, &quot;Manager&quot;, &quot;Engineering&quot;)
+
+e1.describe()  # Output: Alice works as a Developer
+m1.describe()  # Output: Bob is a Manager of the Engineering department." aria-label="Copy code" title="Copy code">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+        </svg>
+      </button>
+    </div>
+  <hr>
+<h3 id="conclusion">Conclusion</h3>
+<p>Object-oriented programming in Python enables developers to build organized, reusable, and scalable applications. Key concepts like inheritance, the <code>super()</code> function, and different types of methods (instance, class, and static) make OOP powerful and flexible.</p>
+<p>Start small by creating simple classes and gradually explore inheritance and method overriding. For practice, try creating a library system, a school management system, or a banking application. With consistent practice, you’ll master the art of OOP in Python!</p>
+
+    6:[["$","$Le",null,{}],["$","$Lf",null,{}],["$","div",null,{"className":"container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12","children":[["$","div",null,{"className":"hidden lg:block lg:col-span-1"}],["$","article",null,{"className":"lg:col-span-2 break-words hyphens-auto","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-white mb-2","children":"A Beginner's Guide to Object-Oriented Programming (OOP) in Python"}],["$","p",null,{"className":"text-gray-400","children":"2024-12-09"}],["$","div",null,{"className":"lg:hidden mt-8","children":[" ",["$","$L10",null,{"toc":[{"level":3,"text":"A Beginner's Guide to Object-Oriented Programming (OOP) in Python","id":"a-beginners-guide-to-object-oriented-programming-oop-in-python"},{"level":3,"text":"What Are Objects?","id":"what-are-objects"},{"level":4,"text":"Example: Numbers and Strings as Objects","id":"example-numbers-and-strings-as-objects"},{"level":3,"text":"Built-in Methods","id":"built-in-methods"},{"level":4,"text":"Example: String Methods","id":"example-string-methods"},{"level":4,"text":"Example: List Methods","id":"example-list-methods"},{"level":3,"text":"Creating Custom Classes","id":"creating-custom-classes"},{"level":4,"text":"Example: Defining a Simple Class","id":"example-defining-a-simple-class"},{"level":3,"text":"Attributes and Methods","id":"attributes-and-methods"},{"level":4,"text":"Example: Adding Attributes with __init__","id":"example-adding-attributes-with-__init__"},{"level":3,"text":"Inheritance and the super() Function","id":"inheritance-and-the-super-function"},{"level":4,"text":"Example: Using super().__init__() in a Subclass","id":"example-using-super__init__-in-a-subclass"},{"level":3,"text":"Class and Static Methods","id":"class-and-static-methods"},{"level":4,"text":"Example: Class Method","id":"example-class-method"},{"level":4,"text":"Example: Static Method","id":"example-static-method"},{"level":3,"text":"Why Use OOP?","id":"why-use-oop"},{"level":3,"text":"Real-World Example: Employee Management System","id":"real-world-example-employee-management-system"},{"level":3,"text":"Conclusion","id":"conclusion"}],"displayType":"inline"}]]}]]}],["$","$L11",null,{"html":"$12"}],["$","div",null,{"className":"mt-12 pt-6 border-t border-gray-700","children":["$","$L13",null,{"href":"/","className":"text-blue-400 hover:text-blue-300 inline-flex items-center","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","className":"h-5 w-5 mr-2","fill":"none","viewBox":"0 0 24 24","stroke":"currentColor","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to all posts"]}]}]]}],["$","div",null,{"className":"hidden lg:block lg:col-span-1","children":["$","$L10",null,{"toc":"$6:2:props:children:1:props:children:0:props:children:2:props:children:1:props:toc","displayType":"sidebar"}]}]]}]]
