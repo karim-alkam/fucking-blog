@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import type { ExcalidrawInitialDataState } from '@excalidraw/excalidraw/types';
 
 export function getBoards(): string[] {
     const drawingsDir = path.join(process.cwd(), 'drawings');
@@ -27,11 +28,11 @@ export function getDrawingsForBoard(board: string): string[] {
     }
 }
 
-export function getDrawingContent(board: string, drawing: string): any {
+export function getDrawingContent(board: string, drawing: string): ExcalidrawInitialDataState | null {
     const filePath = path.join(process.cwd(), 'drawings', board, `${drawing}.excalidraw`);
     try {
         const fileContent = fs.readFileSync(filePath, 'utf8');
-        return JSON.parse(fileContent);
+        return JSON.parse(fileContent) as ExcalidrawInitialDataState;
     } catch {
         return null;
     }
