@@ -31,6 +31,13 @@ npm run copy-posts-from-obsidian
 Write-Step "Processing markdown images..."
 npm run process-images
 
+Write-Step "Syncing drawings from Obsidian..."
+npm run sync-drawings
+
+Write-Step "Syncing Excalidraw Attachments..."
+npm run sync-drawing-assets
+if ($LASTEXITCODE -ne 0) { Write-Error "Attachment sync failed!"; exit 1 }
+
 Write-Step "Compressing drawings..."
 npm run process-drawings
 
