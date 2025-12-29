@@ -1,0 +1,191 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.16.1",
+  "elements": [
+    {
+      "id": "YFVTBQZvlI7assHkNksBe",
+      "type": "image",
+      "x": 227.42607443736932,
+      "y": 7.328937644376026,
+      "width": 633.8189134808853,
+      "height": 368,
+      "angle": 0,
+      "strokeColor": "transparent",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 2063509939,
+      "version": 32,
+      "versionNonce": 256760402,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1767024221284,
+      "link": null,
+      "locked": false,
+      "status": "pending",
+      "fileId": "eb535b51ce9c2806cfcb7bb743dbefd08374d4b4",
+      "scale": [
+        1,
+        1
+      ],
+      "crop": null
+    },
+    {
+      "id": "6JM4D6KwC1uwPwNr-jTYb",
+      "type": "image",
+      "x": 220,
+      "y": 380,
+      "width": 428.776741004049,
+      "height": 289.6123601518576,
+      "angle": 0,
+      "strokeColor": "transparent",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": null,
+      "seed": 823878579,
+      "version": 17,
+      "versionNonce": 964959667,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1742701887805,
+      "link": null,
+      "locked": false,
+      "status": "pending",
+      "fileId": "b9cec311a9885b40edd4cd20568e9b67192122bd",
+      "scale": [
+        1,
+        1
+      ],
+      "crop": null
+    },
+    {
+      "id": "531ZWNNk",
+      "type": "text",
+      "x": 660,
+      "y": 460,
+      "width": 182.05142765900527,
+      "height": 150,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": null,
+      "seed": 558402803,
+      "version": 144,
+      "versionNonce": 728883933,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1742701955500,
+      "link": null,
+      "locked": false,
+      "text": "if there are two\nsources u have to\nscale both of\nthem, if u just\nscale one if them\nit won't work",
+      "rawText": "if there are two sources u have to scale both of them, if u just scale one if them it won't work",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "if there are two sources u have to scale both of them, if u just scale one if them it won't work",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "theme": "dark",
+    "viewBackgroundColor": "#ffffff",
+    "currentItemStrokeColor": "#1e1e1e",
+    "currentItemBackgroundColor": "transparent",
+    "currentItemFillStyle": "solid",
+    "currentItemStrokeWidth": 2,
+    "currentItemStrokeStyle": "solid",
+    "currentItemRoughness": 1,
+    "currentItemOpacity": 100,
+    "currentItemFontFamily": 5,
+    "currentItemFontSize": 20,
+    "currentItemTextAlign": "left",
+    "currentItemStartArrowhead": null,
+    "currentItemEndArrowhead": "arrow",
+    "currentItemArrowType": "round",
+    "currentItemFrameRole": null,
+    "scrollX": 122.68523547992883,
+    "scrollY": 99.88532816604518,
+    "zoom": {
+      "value": 0.73809
+    },
+    "currentItemRoundness": "round",
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": true,
+    "gridColor": {
+      "Bold": "rgba(217, 217, 217, 1)",
+      "Regular": "rgba(230, 230, 230, 1)"
+    },
+    "currentStrokeOptions": null,
+    "frameRendering": {
+      "enabled": true,
+      "clip": true,
+      "name": true,
+      "outline": true,
+      "markerName": true,
+      "markerEnabled": true
+    },
+    "objectsSnapModeEnabled": false,
+    "activeTool": {
+      "type": "selection",
+      "customType": null,
+      "locked": false,
+      "lastActiveTool": null,
+      "fromSelection": false
+    }
+  },
+  "files": {
+    "eb535b51ce9c2806cfcb7bb743dbefd08374d4b4": {
+      "id": "eb535b51ce9c2806cfcb7bb743dbefd08374d4b4",
+      "mimeType": "image/png",
+      "dataURL": "/drawing-assets/Pasted Image 20250323064844_372.png",
+      "created": 1767025726248,
+      "lastRetrieved": 1767025726248
+    },
+    "b9cec311a9885b40edd4cd20568e9b67192122bd": {
+      "id": "b9cec311a9885b40edd4cd20568e9b67192122bd",
+      "mimeType": "image/png",
+      "dataURL": "/drawing-assets/Pasted Image 20250323065225_094.png",
+      "created": 1767025726248,
+      "lastRetrieved": 1767025726248
+    }
+  },
+  "customData": {
+    "obsidianAttachments": {
+      "eb535b51ce9c2806cfcb7bb743dbefd08374d4b4": {
+        "filename": "Pasted Image 20250323064844_372.png",
+        "suffix": ""
+      },
+      "b9cec311a9885b40edd4cd20568e9b67192122bd": {
+        "filename": "Pasted Image 20250323065225_094.png",
+        "suffix": ""
+      }
+    }
+  }
+}

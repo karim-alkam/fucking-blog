@@ -14,11 +14,12 @@ export function getBoards(): string[] {
     }
 }
 
+// 1. Filter out files starting with 'compressed_' for the list
 export function getDrawingsForBoard(board: string): string[] {
     const boardDir = path.join(process.cwd(), 'drawings', board);
     try {
         const drawings = fs.readdirSync(boardDir)
-            .filter((name) => name.endsWith('.excalidraw'))
+            .filter((name) => name.endsWith('.excalidraw') && !name.startsWith('compressed_'))
             .map((name) => name.replace(/\.excalidraw$/, ''));
 
         // Sort naturally (numeric aware)
@@ -28,11 +29,26 @@ export function getDrawingsForBoard(board: string): string[] {
     }
 }
 
+// 2. Prioritize reading compressed file
 export function getDrawingContent(board: string, drawing: string): ExcalidrawInitialDataState | null {
-    const filePath = path.join(process.cwd(), 'drawings', board, `${drawing}.excalidraw`);
+    const boardDir = path.join(process.cwd(), 'drawings', board);
+    const compressedPath = path.join(boardDir, `compressed_${drawing}.excalidraw`);
+    const originalPath = path.join(boardDir, `${drawing}.excalidraw`);
+
     try {
-        const fileContent = fs.readFileSync(filePath, 'utf8');
-        return JSON.parse(fileContent) as ExcalidrawInitialDataState;
+        // Try compressed first
+        if (fs.existsSync(compressedPath)) {
+            const fileContent = fs.readFileSync(compressedPath, 'utf8');
+            // The content is wrapped { compressed: true, data: "..." }
+            // The client handles decompression.
+            const data = JSON.parse(fileContent) as ExcalidrawInitialDataState;
+            return data;
+        }
+
+        // Fallback to original
+        const fileContent = fs.readFileSync(originalPath, 'utf8');
+        const data = JSON.parse(fileContent) as ExcalidrawInitialDataState;
+        return data;
     } catch {
         return null;
     }

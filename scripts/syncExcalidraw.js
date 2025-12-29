@@ -141,10 +141,11 @@ async function syncDrawings() {
             }
 
             // Convert "My Drawing.md" -> "My-Drawing.excalidraw"
+            // Also handles "Folder Name/My Drawing.md" -> "Folder-Name/My-Drawing.excalidraw"
             const relPath = path.relative(sourceDir, src)
                 .replace(/\.md$/, '.excalidraw')
                 .split(path.sep)
-                .map(part => part.replace(/ /g, '-'))
+                .map(part => part.trim().replace(/\s+/g, '-'))
                 .join(path.sep);
 
             const dest = path.join(destDir, relPath);
