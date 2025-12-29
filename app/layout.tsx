@@ -25,7 +25,7 @@ export default function RootLayout({
         </main>
         <footer className="bg-gray-800 text-gray-400 py-8">
           <div className="container mx-auto px-4 text-center">
-            <p>© {new Date().getFullYear()} Salameh's Blog. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Salameh&apos;s Blog. All rights reserved.</p>
           </div>
         </footer>
       </body>
