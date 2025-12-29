@@ -79,4 +79,5 @@ try {
 }
 
 Write-Header "Done"
+Read-Host -Prompt "Press Enter to exit"
 exit 0
