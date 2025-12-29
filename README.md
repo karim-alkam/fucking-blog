@@ -1,83 +1,69 @@
-# My New Blog
+# Salameh's Blog
 
-This is a personal blog built with Next.js, Tailwind CSS, and Markdown.
+A personal, high-performance blog built with **Next.js 15**, **Tailwind CSS**, and fueled by **Obsidian**. This site features a seamless workflow for syncing content from a local knowledge base directly to the web.
 
-## Features
+## 🚀 Features
 
-- Markdown-based posts
-- Pagination and items per page selector
-- Tag filtering
-- Search functionality with scoring (prioritizing title/tag matches)
-- Draft post handling (drafts not shown in main lists but accessible via direct link)
-- Responsive design
-- About page
+-   **Obsidian Integration**: Automatic sync of Markdown files and attached images from an Obsidian Vault.
+-   **Excalidraw Support**: Native rendering of `.excalidraw` files with server-side processing.
+-   **Fuzzy Search**: Fast, client-side search across all posts and snippets.
+-   **Instant Navigation**: Integrated `nextjs-toploader` for immediate visual feedback on all link clicks.
+-   **Static Export**: Fully optimized for GitHub Pages via static HTML export.
+-   **Automated CI/CD**: Hands-free building and deployment using GitHub Actions.
 
-## Setup
+## 🛠️ Local Development
 
-Follow these steps to set up and run the project locally:
-
-1.  **Clone the repository:**
-
-    ```bash
-    git clone <repository_url>
-    cd my-new-blog
-    ```
-
-2.  **Install dependencies:**
-
-    ```bash
-    npm install
-    # or using yarn
-    # yarn install
-    # or using pnpm
-    # pnpm install
-    ```
-
-3.  **Run the development server:**
-
+### 1. Install Dependencies
 ```bash
-npm run dev
-    # or using yarn
-    # yarn dev
-    # or using pnpm
-    # pnpm dev
+npm install
 ```
 
-    The blog will be available at `http://localhost:3000`.
+### 2. Configure Sync (Optional)
+The sync scripts expect a local Obsidian vault path. You can verify/update these in:
+- `scripts/copyFilesFromObsidian.js`
+- `scripts/processMarkdownImages.js`
 
-    *Note: Ensure you are in the project's root directory when running these commands.*
+### 3. Run Development Server
+```bash
+npm run dev
+```
+Visit `http://localhost:3000` to see your changes locally.
 
-4.  **Build for production (optional):**
+## 📦 Deployment Workflow
 
-    ```bash
-    npm run build
-    # or using yarn
-    # yarn build
-    # or using pnpm
-    # pnpm build
-    ```
+I've simplified the deployment to be lightning fast.
 
-    This will create a production build in the `.next` folder.
+1. **Run the Deployment Script**:
+   ```powershell
+   .\script.ps1
+   ```
+   *This script handles syncing your Obsidian files, processing images, and pushing to the `main` branch.*
 
-## Project Structure
+2. **Cloud Build**:
+   GitHub Actions will automatically pick up the change, run `npm run build`, and deploy the site to GitHub Pages in the cloud. You don't have to wait for the build to finish locally!
 
-(Optional: Add a brief overview of key directories like `app/`, `posts/`, `lib/`, `components/` if helpful)
+## 📂 Project Structure
 
-## Writing Posts
+- `app/`: Next.js App Router (Pages, Layouts, Components).
+- `posts/`: Synced Markdown content.
+- `drawings/`: Native Excalidraw files.
+- `public/`: Static assets and processed images.
+- `scripts/`: Internal utilities for data processing and logging.
 
-Create new markdown files (`.md` or `.mdx`) in the `posts/` directory. Include frontmatter at the top of each file for post metadata (title, date, description, tags, draft status). Example:
+## 📝 Writing Posts
+
+Write your posts in Obsidian. The sync script handles the rest.
+Ensure your Markdown files include frontmatter:
 
 ```markdown
 ---
-title: "My First Blog Post"
-date: "2023-10-26"
-description: "This is a description of my first blog post."
-tags: ["example", "markdown"]
+title: "My Engineering Journey"
+date: "2024-12-29"
+description: "How I built this blog and what I learned."
+tags: ["nextjs", "obsidian", "web-dev"]
 draft: false
 ---
-
-This is the content of my blog post.
 ```
 
-Set `draft: true` to exclude the post from the main blog lists.
-
+---
+*Created with ❤️ by Abdullah Salameh*
