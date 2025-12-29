@@ -68,7 +68,10 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-8">
           <div className="flex space-x-1">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive =
+                link.href === '/'
+                  ? pathname === '/'
+                  : pathname.startsWith(link.href) || (link.href === '/all-posts' && pathname.startsWith('/posts'));
               return (
                 <Link
                   key={link.name}
