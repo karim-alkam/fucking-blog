@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AnalyticsEvents from '../components/AnalyticsEvents';
 
 export const metadata = {
   title: "BIO_DATA",
@@ -8,6 +9,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl">
+      <AnalyticsEvents eventName="about_view" />
 
       {/* Header Section */}
       <section className="text-center mb-16 relative">

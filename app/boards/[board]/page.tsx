@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import { getBoards, getDrawingsForBoard } from '../../lib/boards';
+import AnalyticsEvents from '../../components/AnalyticsEvents';
 
 export async function generateStaticParams() {
   const boards = getBoards();
@@ -20,6 +21,7 @@ export default async function BoardPage({ params }: { params: Promise<{ board: s
   const drawings = getDrawingsForBoard(board);
   return (
     <div className="container mx-auto max-w-7xl px-4 py-8 min-h-screen">
+      <AnalyticsEvents eventName="board_view" eventParams={{ board_id: board }} />
       <div className="flex flex-col mb-12">
         <Link href="/boards" className="self-start inline-flex items-center text-cyber-neon-cyan hover:text-cyber-neon-yellow transition-colors mb-6 group font-mono text-sm tracking-wider uppercase">
           <ArrowLeftIcon className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />

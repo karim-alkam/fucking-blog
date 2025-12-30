@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react';
+import AnalyticsEvents from '../components/AnalyticsEvents';
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -40,6 +41,7 @@ export default function Contact() {
 
   return (
     <main className="container mx-auto px-4 py-12 max-w-5xl">
+      <AnalyticsEvents eventName="contact_view" />
       <div className="grid md:grid-cols-2 gap-12 items-center">
 
         {/* Contact Form */}

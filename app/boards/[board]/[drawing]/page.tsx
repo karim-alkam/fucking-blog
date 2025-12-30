@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import ExcalidrawBoardViewer from '../../components/ExcalidrawBoardViewer';
 import { getBoards, getDrawingsForBoard, getDrawingContent } from '../../../lib/boards';
+import AnalyticsEvents from '../../../components/AnalyticsEvents';
 
 export async function generateStaticParams() {
   const boards = getBoards();
@@ -31,6 +32,7 @@ export default async function DrawingPage({ params }: { params: Promise<{ board:
 
   return (
     <div className="container mx-auto max-w-7xl px-4 py-8 min-h-screen flex flex-col">
+      <AnalyticsEvents eventName="drawing_view" eventParams={{ board_id: board, drawing_id: drawing }} />
       <div className="flex flex-col mb-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-cyber-gray pb-4">
           <div className="flex items-center gap-4">

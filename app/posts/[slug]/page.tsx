@@ -7,6 +7,7 @@ import PostContent from '../components/PostContent';
 import TocSidebar from '../components/TocSidebar';
 import ScrollToTop from '../components/ScrollToTop';
 import MathJaxInit from '../components/MathJaxInit';
+import AnalyticsEvents from '../../components/AnalyticsEvents';
 import { getPostBySlug } from '../../lib/posts';
 
 /**
@@ -59,6 +60,7 @@ export default async function Page(props: PageProps) {
     <>
       <ScrollToTop />
       <MathJaxInit />
+      <AnalyticsEvents eventName="post_view" eventParams={{ slug: postData.slug, title: postData.title }} />
       {/* Main content area with potential sidebar */}
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-12">
         {/* Empty left column on large screens */}
