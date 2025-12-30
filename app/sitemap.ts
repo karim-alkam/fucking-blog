@@ -1,11 +1,12 @@
 import { MetadataRoute } from 'next';
 import { getPosts } from './lib/posts';
 import { getBoards } from './lib/boards';
+import { BASE_URL } from './lib/constants';
 
 export const dynamic = 'force-static';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://blog.salameh.top'; // Update this if using a custom domain
+    const baseUrl = BASE_URL;
 
     // Get all posts
     const posts = await getPosts();

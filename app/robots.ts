@@ -1,9 +1,10 @@
 import { MetadataRoute } from 'next';
+import { BASE_URL } from './lib/constants';
 
 export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://blog.salameh.top'; // Update this if using a custom domain
+    const baseUrl = BASE_URL;
 
     return {
         rules: {

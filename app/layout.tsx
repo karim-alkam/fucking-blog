@@ -4,6 +4,7 @@ import NextTopLoader from 'nextjs-toploader';
 import { Outfit, Rajdhani } from 'next/font/google';
 import ChunkErrorListener from './components/ChunkErrorListener';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { BASE_URL, GA_ID, GOOGLE_VERIFICATION_ID, SITE_CONFIG } from './lib/constants';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -17,16 +18,16 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://blog.salameh.top'),
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: 'SYSTEM // SALAMEH',
-    template: '%s // SALAMEH',
+    default: SITE_CONFIG.title,
+    template: `%s // ${SITE_CONFIG.author.split(' ')[1].toUpperCase()}`,
   },
-  description: 'A personal engineering blog and digital garden by Abdullah Salameh. Exploring Embedded Systems, IoT, and Full Stack Development.',
+  description: SITE_CONFIG.description,
   keywords: ['Electrical Engineering', 'Embedded Systems', 'IoT', 'Web Development', 'Next.js', 'Digital Garden', 'Engineering Log'],
-  authors: [{ name: 'Abdullah Salameh', url: 'https://github.com/abda-s' }],
-  creator: 'Abdullah Salameh',
-  publisher: 'Abdullah Salameh',
+  authors: [{ name: SITE_CONFIG.author, url: 'https://github.com/abda-s' }],
+  creator: SITE_CONFIG.author,
+  publisher: SITE_CONFIG.author,
   robots: {
     index: true,
     follow: true,
@@ -41,9 +42,9 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://blog.salameh.top',
-    title: 'SYSTEM // SALAMEH',
-    description: 'A personal engineering blog and digital garden by Abdullah Salameh.',
+    url: BASE_URL,
+    title: SITE_CONFIG.title,
+    description: SITE_CONFIG.description,
     siteName: 'Abdullah Salameh - Engineering Log',
     images: [
       {
@@ -53,6 +54,16 @@ export const metadata = {
         alt: 'Abdullah Salameh - Engineering Log',
       },
     ],
+  },
+  verification: {
+    google: GOOGLE_VERIFICATION_ID,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE_CONFIG.title,
+    description: SITE_CONFIG.description,
+    images: ['/A-logo-w-bg.png'],
+    creator: SITE_CONFIG.twitterHandle,
   },
   icons: {
     icon: [
@@ -85,7 +96,7 @@ export default function RootLayout({
           </div>
         </footer>
         {/* Global heavy grain or grid effect could go here */}
-        <GoogleAnalytics gaId="G-TSYTD07K3H" />
+        <GoogleAnalytics gaId={GA_ID} />
       </body>
     </html>
   );
