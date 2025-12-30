@@ -85,7 +85,7 @@ export default function RootLayout({
           </div>
         </footer>
         {/* Global heavy grain or grid effect could go here */}
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
+        <GoogleAnalytics gaId="G-TSYTD07K3H" />
       </body>
     </html>
   );
