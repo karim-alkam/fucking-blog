@@ -26,7 +26,12 @@ interface PageProps {
   }>;
 }
 
-export async function generateMetadata(props: PageProps) {
+import { Metadata } from 'next';
+import { SITE_CONFIG, BASE_URL } from '../../lib/constants';
+
+// ... existing imports
+
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params;
   const postData = await getPostBySlug(params.slug);
 
@@ -36,9 +41,37 @@ export async function generateMetadata(props: PageProps) {
     };
   }
 
+  const title = `${postData.title} // SALAMEH`;
+  const description = postData.description || `Reading entry: ${postData.title}`;
+  const url = `${BASE_URL}/posts/${params.slug}`;
+
   return {
-    title: `LOG: ${postData.title}`,
-    description: postData.description || `Reading entry: ${postData.title}`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      publishedTime: postData.date,
+      url,
+      authors: [SITE_CONFIG.author],
+      siteName: SITE_CONFIG.title,
+      images: [
+        {
+          url: '/A-logo-w-bg.png', // Fallback to site logo for now
+          width: 4096,
+          height: 4096,
+          alt: postData.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/A-logo-w-bg.png'],
+      creator: SITE_CONFIG.twitterHandle,
+    },
   };
 }
 

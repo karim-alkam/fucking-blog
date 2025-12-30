@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getPosts } from './lib/posts';
-import { getBoards } from './lib/boards';
+import { getBoards, getDrawingsForBoard } from './lib/boards';
 import { BASE_URL } from './lib/constants';
 
 export const dynamic = 'force-static';
@@ -17,14 +17,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.8,
     }));
 
-    // Get all boards
+    // Get all boards and their drawings
     const boards = getBoards();
+
+    // Board collection URLs
     const boardUrls = boards.map((board) => ({
         url: `${baseUrl}/boards/${board}/`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.7,
     }));
+
+    // Individual drawing URLs
+    const drawingUrls = boards.flatMap((board) => {
+        const drawings = getDrawingsForBoard(board);
+        return drawings.map((drawing) => ({
+            url: `${baseUrl}/boards/${board}/${drawing}/`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        }));
+    });
 
     return [
         {
@@ -47,5 +60,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
         ...postUrls,
         ...boardUrls,
+        ...drawingUrls,
     ];
 }
