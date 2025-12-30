@@ -11,7 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Get all posts
     const posts = await getPosts();
     const postUrls = posts.map((post) => ({
-        url: `${baseUrl}/posts/${post.slug}`,
+        url: `${baseUrl}/posts/${post.slug}/`,
         lastModified: new Date(post.date),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
@@ -20,7 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Get all boards
     const boards = getBoards();
     const boardUrls = boards.map((board) => ({
-        url: `${baseUrl}/boards/${board}`,
+        url: `${baseUrl}/boards/${board}/`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.7,
@@ -28,19 +28,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     return [
         {
-            url: baseUrl,
+            url: `${baseUrl}/`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 1,
         },
         {
-            url: `${baseUrl}/about`,
+            url: `${baseUrl}/about/`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/contact`,
+            url: `${baseUrl}/contact/`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.5,
