@@ -19,7 +19,8 @@ interface PageProps {
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params;
   const boardName = decodeURIComponent(params.board);
-  const title = `BOARD: ${boardName} // SALAMEH`;
+  const title = `BOARD: ${boardName}`;
+  const fullTitle = `${title} // SALAMEH`;
   const description = `Explore engineering drawings and whiteboards in the ${boardName} collection.`;
   const url = `${BASE_URL}/boards/${params.board}`;
 
@@ -27,7 +28,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     title,
     description,
     openGraph: {
-      title,
+      title: fullTitle,
       description,
       type: 'website',
       url,
@@ -43,7 +44,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: fullTitle,
       description,
       images: ['/A-logo-w-bg.png'],
       creator: SITE_CONFIG.twitterHandle,

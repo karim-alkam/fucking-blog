@@ -3,7 +3,7 @@ import { SITE_CONFIG, BASE_URL } from '../lib/constants';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
-  title: "CONTACT_UPLINK // SALAMEH",
+  title: "CONTACT_UPLINK",
   description: "Get in touch with Abdullah Salameh. Open for project inquiries and tech discussions.",
   openGraph: {
     title: "CONTACT_UPLINK // SALAMEH",

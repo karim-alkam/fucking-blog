@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import { SITE_CONFIG, BASE_URL } from '../lib/constants';
 
 export const metadata: Metadata = {
-  title: "BIO_DATA // SALAMEH",
+  title: "BIO_DATA",
   description: "Electrical Engineering student specialized in embedded systems, IoT, and full-stack development. Learn more about my mission and skills.",
   openGraph: {
     title: "BIO_DATA // SALAMEH",
