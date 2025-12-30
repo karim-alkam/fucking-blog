@@ -18,11 +18,49 @@ export async function generateStaticParams() {
   return params;
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ board: string, drawing: string }> }) {
-  const { drawing } = await params;
-  const decodedDrawing = decodeURIComponent(drawing).replace(/-/g, ' ');
+interface PageProps {
+  params: Promise<{
+    board: string;
+    drawing: string;
+  }>;
+}
+
+import { Metadata } from 'next';
+import { SITE_CONFIG, BASE_URL } from '../../../lib/constants';
+
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
+  const boardName = decodeURIComponent(params.board);
+  const drawingName = decodeURIComponent(params.drawing);
+  const title = `DRAWING: ${drawingName} // SALAMEH`;
+  const description = `Interactive Excalidraw whiteboarding session: ${drawingName} from ${boardName}.`;
+  const url = `${BASE_URL}/boards/${params.board}/${params.drawing}`;
+
   return {
-    title: `DRAWING: ${decodedDrawing}`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url,
+      siteName: SITE_CONFIG.title,
+      images: [
+        {
+          url: '/A-logo-w-bg.png',
+          width: 4096,
+          height: 4096,
+          alt: `Drawing: ${drawingName}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/A-logo-w-bg.png'],
+      creator: SITE_CONFIG.twitterHandle,
+    },
   };
 }
 

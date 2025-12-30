@@ -2,17 +2,52 @@ import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import { getBoards, getDrawingsForBoard } from '../../lib/boards';
 import AnalyticsEvents from '../../components/AnalyticsEvents';
+import { Metadata } from 'next';
+import { SITE_CONFIG, BASE_URL } from '../../lib/constants';
 
 export async function generateStaticParams() {
   const boards = getBoards();
   return boards.map((board) => ({ board }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ board: string }> }) {
-  const { board } = await params;
-  const decodedBoard = decodeURIComponent(board).replace(/-/g, ' ');
+interface PageProps {
+  params: Promise<{
+    board: string;
+  }>;
+}
+
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
+  const boardName = decodeURIComponent(params.board);
+  const title = `BOARD: ${boardName} // SALAMEH`;
+  const description = `Explore engineering drawings and whiteboards in the ${boardName} collection.`;
+  const url = `${BASE_URL}/boards/${params.board}`;
+
   return {
-    title: `BOARD: ${decodedBoard}`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url,
+      siteName: SITE_CONFIG.title,
+      images: [
+        {
+          url: '/A-logo-w-bg.png',
+          width: 4096,
+          height: 4096,
+          alt: `Board: ${boardName}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/A-logo-w-bg.png'],
+      creator: SITE_CONFIG.twitterHandle,
+    },
   };
 }
 

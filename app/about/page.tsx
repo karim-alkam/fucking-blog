@@ -1,9 +1,34 @@
 import Link from 'next/link';
 import AnalyticsEvents from '../components/AnalyticsEvents';
 
-export const metadata = {
-  title: "BIO_DATA",
-  description: "Learn more about me and my blog",
+import { Metadata } from 'next';
+import { SITE_CONFIG, BASE_URL } from '../lib/constants';
+
+export const metadata: Metadata = {
+  title: "BIO_DATA // SALAMEH",
+  description: "Electrical Engineering student specialized in embedded systems, IoT, and full-stack development. Learn more about my mission and skills.",
+  openGraph: {
+    title: "BIO_DATA // SALAMEH",
+    description: "Electrical Engineering student specialized in embedded systems, IoT, and full-stack development.",
+    url: `${BASE_URL}/about`,
+    siteName: SITE_CONFIG.title,
+    images: [
+      {
+        url: '/A-logo-w-bg.png',
+        width: 4096,
+        height: 4096,
+        alt: 'Abdullah Salameh - Bio',
+      },
+    ],
+    type: 'profile',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "BIO_DATA // SALAMEH",
+    description: "Electrical Engineering student specialized in embedded systems, IoT, and full-stack development.",
+    images: ['/A-logo-w-bg.png'],
+    creator: SITE_CONFIG.twitterHandle,
+  },
 };
 
 export default function AboutPage() {
