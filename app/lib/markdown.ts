@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { marked } from 'marked';
 import { gfmHeadingId } from 'marked-gfm-heading-id';
 import hljs from 'highlight.js';
@@ -73,7 +74,7 @@ export async function processMarkdown(content: string): Promise<string> {
   const doc = dom.window.document;
 
   // Handle Tables
-  doc.querySelectorAll('table').forEach((table) => {
+  doc.querySelectorAll('table').forEach((table: any) => {
     // Create wrapper div
     const wrapper = doc.createElement('div');
     wrapper.className = 'not-prose overflow-x-auto w-full my-8 bg-cyber-dark-gray border border-cyber-gray shadow-lg pb-2 custom-scrollbar';
@@ -86,14 +87,14 @@ export async function processMarkdown(content: string): Promise<string> {
     }
 
     // Style Headers
-    table.querySelectorAll('thead').forEach(thead => thead.classList.add('bg-cyber-black'));
-    table.querySelectorAll('th').forEach(th => {
+    table.querySelectorAll('thead').forEach((thead: any) => thead.classList.add('bg-cyber-black'));
+    table.querySelectorAll('th').forEach((th: any) => {
       th.className = 'px-6 py-4 text-left text-xs font-mono text-cyber-neon-cyan uppercase tracking-wider border-b border-cyber-gray';
     });
 
     // Style Body Cells
-    table.querySelectorAll('tbody').forEach(tbody => tbody.classList.add('divide-y', 'divide-cyber-gray', 'bg-cyber-dark-gray'));
-    table.querySelectorAll('td').forEach(td => {
+    table.querySelectorAll('tbody').forEach((tbody: any) => tbody.classList.add('divide-y', 'divide-cyber-gray', 'bg-cyber-dark-gray'));
+    table.querySelectorAll('td').forEach((td: any) => {
       td.className = 'px-6 py-4 whitespace-nowrap text-sm text-gray-300 font-mono';
     });
 
