@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import NextTopLoader from 'nextjs-toploader';
 import { Outfit, Rajdhani } from 'next/font/google';
 import ChunkErrorListener from './components/ChunkErrorListener';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -52,6 +53,7 @@ export default function RootLayout({
           </div>
         </footer>
         {/* Global heavy grain or grid effect could go here */}
+        <GoogleAnalytics gaId="G-TSYTD07K3H" />
       </body>
     </html>
   );

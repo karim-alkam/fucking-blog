@@ -16,6 +16,7 @@
   "dependencies": {
     "@excalidraw/excalidraw": "^0.18.0",
     "@heroicons/react": "^2.2.0",
+    "@next/third-parties": "^16.1.1",
     "brotli-wasm": "^3.0.1",
     "canvas": "^3.2.0",
     "dompurify": "^3.2.6",
