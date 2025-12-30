@@ -17,11 +17,43 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://blog.salameh.top'),
   title: {
     default: 'SYSTEM // SALAMEH',
     template: '%s // SALAMEH',
   },
-  description: 'A personal blog built with love by Abdullah Salameh',
+  description: 'A personal engineering blog and digital garden by Abdullah Salameh. Exploring Embedded Systems, IoT, and Full Stack Development.',
+  keywords: ['Electrical Engineering', 'Embedded Systems', 'IoT', 'Web Development', 'Next.js', 'Digital Garden', 'Engineering Log'],
+  authors: [{ name: 'Abdullah Salameh', url: 'https://github.com/abda-s' }],
+  creator: 'Abdullah Salameh',
+  publisher: 'Abdullah Salameh',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://blog.salameh.top',
+    title: 'SYSTEM // SALAMEH',
+    description: 'A personal engineering blog and digital garden by Abdullah Salameh.',
+    siteName: 'Abdullah Salameh - Engineering Log',
+    images: [
+      {
+        url: '/A-logo-w-bg.png',
+        width: 4096,
+        height: 4096,
+        alt: 'Abdullah Salameh - Engineering Log',
+      },
+    ],
+  },
   icons: {
     icon: [
       { url: '/A-logo-small.png', type: 'image/png' },
