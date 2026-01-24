@@ -103,7 +103,7 @@ we will start the ssh server to remotely access the raspberry pi
 ### Enable the SSH server
 You have two options but if you did as i said in the installation the ssh server should be already installed
 #### While flashing a fresh OS image
-1. Follow the instructions in the [[Running ROS on Raspberry Pi#7. Finalize and Install]] guide.
+1. Follow the instructions in the <a href="/posts/Running-ROS-on-Raspberry-Pi#7-finalize-and-install" class="obsidian-link">Running ROS on Raspberry Pi</a> guide.
 2. During the **OS Customisation** step, navigate to the **Services** tab.
 3. Tick the checkbox to **Enable SSH**.
 4. Select **password authentication** to log in using the same username and password you use while physically using your Raspberry Pi. Select **Allow public-key authentication only** to [configure an SSH key](https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password) for passwordless login.

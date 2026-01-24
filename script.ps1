@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 
 function Write-Header {
     param([string]$Message)
@@ -27,6 +27,9 @@ Write-Header "Running Data Sync Scripts"
 
 Write-Step "Syncing posts from Obsidian..."
 npm run copy-posts-from-obsidian
+
+Write-Step "Processing Obsidian links..."
+npm run process-obsidian-links
 
 Write-Step "Processing markdown images..."
 npm run process-images

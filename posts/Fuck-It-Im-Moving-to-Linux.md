@@ -30,14 +30,14 @@ Here is the breakdown:
 - [Betaflight Configurator](https://snapcraft.io/betaflight-configurator) (For the FPV drones)
 
 **Creative & Media:**
-- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), [OBS Studio](https://obsproject.com/download), [Blender](https://www.blender.org/): Installing DaVinci wasn't that straight forward so i made this blog [[Getting DaVinci Resolve to Actually Work on Ubuntu]]   
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), [OBS Studio](https://obsproject.com/download), [Blender](https://www.blender.org/): Installing DaVinci wasn't that straight forward so i made this blog <a href="/posts/Getting-DaVinci-Resolve-to-Actually-Work-on-Ubuntu" class="obsidian-link">Getting DaVinci Resolve to Actually Work on Ubuntu</a>   
 - [Inkscape](https://inkscape.org/), [Krita](https://krita.org/en/), [Audacity](https://www.audacityteam.org/download/)
 
 **The Internet & Sideloading:**
-- [Zen Browser](https://zen-browser.app/): I wanted all my workspaces and bookmarks to stay the same, so I did some shit and it worked. Here is an in-depth tutorial on how to do it: [[Migrate Zen Browser from Windows to Linux]].
+- [Zen Browser](https://zen-browser.app/): I wanted all my workspaces and bookmarks to stay the same, so I did some shit and it worked. Here is an in-depth tutorial on how to do it: <a href="/posts/Migrate-Zen-Browser-from-Windows-to-Linux" class="obsidian-link">How to Migrate Zen Browser from Windows to Linux</a>.
 - [AltServer](https://altstore.io/): I use this to sideload apps on my iPhone. I found an alternative for Linux called **Althea** and it just works. Follow the steps in the [repo](https://github.com/vyvir/althea) and you're good.
 
-**Gaming:** I play **Assetto Corsa** and **DRL** on Steam. I just installed Steam natively and used Proton to run them without any problem. But I also play **VelociDrone**, which can run on Linux but had some issues. I wrote a blog explaining how to do it: [[VelociDrone installation on ubuntu]].
+**Gaming:** I play **Assetto Corsa** and **DRL** on Steam. I just installed Steam natively and used Proton to run them without any problem. But I also play **VelociDrone**, which can run on Linux but had some issues. I wrote a blog explaining how to do it: <a href="/posts/VelociDrone-installation-on-ubuntu" class="obsidian-link">VelociDrone installation on ubuntu</a>.
 
 ### The "Impossible" Apps: Multisim & Office
 
@@ -46,4 +46,4 @@ Now let's talk about the things that I can’t just run on Linux or that would c
 - [Nextion Editor](https://nextion.tech/nextion-editor/)
 - **Microsoft Office 365** (Word, Excel)
 
-The best approach was to use a VM, but fuck that I found out about something better: [WinBoat](https://www.winboat.app/). I dove deeper into how it works and why I'm using it in the blog where I installed Multisim: [[Running NI Multisim on Linux]]. The short explanation is: I can open apps like they are native on Linux, but they are actually running in a KVM in Docker in the background. It’s clean and it works.
+The best approach was to use a VM, but fuck that I found out about something better: [WinBoat](https://www.winboat.app/). I dove deeper into how it works and why I'm using it in the blog where I installed Multisim: <a href="/posts/Running-NI-Multisim-on-Linux" class="obsidian-link">Running NI Multisim on Linux</a>. The short explanation is: I can open apps like they are native on Linux, but they are actually running in a KVM in Docker in the background. It’s clean and it works.

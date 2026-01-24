@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "process-obsidian-links": "node scripts/processObsidianLinks.js",
     "process-images": "node scripts/processMarkdownImages.js",
     "sync-drawings": "node scripts/syncExcalidraw.js",
     "sync-drawing-assets": "node scripts/syncDrawingAssets.js",

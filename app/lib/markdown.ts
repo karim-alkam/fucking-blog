@@ -73,6 +73,11 @@ export async function processMarkdown(content: string): Promise<string> {
   const dom = new JSDOM(htmlContent);
   const doc = dom.window.document;
 
+  // Style Obsidian Links
+  doc.querySelectorAll('.obsidian-link').forEach((link: any) => {
+    link.className = '!text-cyber-neon-green !no-underline hover:!text-cyber-neon-yellow hover:!underline !decoration-cyber-neon-yellow !underline-offset-4 !transition-all !break-all';
+  });
+
   // Handle Tables
   doc.querySelectorAll('table').forEach((table: any) => {
     // Create wrapper div
