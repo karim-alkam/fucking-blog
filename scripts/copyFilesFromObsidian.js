@@ -2,9 +2,10 @@
 const fs = require('fs');
 const path = require('path');
 const logger = require('./logger');
+const { getPath } = require('./config');
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
-const vaultDir = path.resolve('C:/Users/3adas/OneDrive/Notes/posts');
+const vaultDir = getPath('vaultDir', 'BLOG_VAULT_DIR');
 const postsDir = path.resolve(process.cwd(), 'posts');
 // ────────────────────────────────────────────────────────────────────────────
 

@@ -3,9 +3,10 @@ const path = require('path');
 const logger = require('./logger');
 const puppeteer = require('puppeteer');
 const { pathToFileURL } = require('url');
+const { getPath } = require('./config');
 
 const drawingsDir = path.join(process.cwd(), 'drawings');
-const attachmentsDir = "C:\\Users\\3adas\\OneDrive\\Notes\\files";
+const attachmentsDir = getPath('attachmentsDir', 'BLOG_ATTACHMENTS_DIR');
 const destAttachmentsDir = path.resolve(process.cwd(), "public", "drawing-assets");
 
 async function walk(dir) {

@@ -1,0 +1,12 @@
+{
+  "paths": {
+    "vaultDir": "/home/abdas/Documents/Notes/posts",
+    "drawingsDir": "/home/abdas/Documents/Notes/drawings",
+    "attachmentsDir": "/home/abdas/Documents/Notes/files"
+  },
+  "notes": [
+    "Update these paths to match your Linux Obsidian vault location",
+    "You can also override these with environment variables:",
+    "BLOG_VAULT_DIR, BLOG_DRAWINGS_DIR, BLOG_ATTACHMENTS_DIR"
+  ]
+}

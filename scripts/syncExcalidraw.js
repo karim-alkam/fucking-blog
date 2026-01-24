@@ -2,9 +2,10 @@
 const fs = require('fs');
 const path = require('path');
 const logger = require('./logger');
+const { getPath } = require('./config');
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
-const sourceDir = path.resolve('C:/Users/3adas/OneDrive/Notes/drawings');
+const sourceDir = getPath('drawingsDir', 'BLOG_DRAWINGS_DIR');
 const destDir = path.resolve(process.cwd(), 'drawings');
 // ────────────────────────────────────────────────────────────────────────────
 

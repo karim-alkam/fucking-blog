@@ -247,11 +247,11 @@ Binary Files and Memory Addresses
 
 The end of the command follows a pattern of **`Address FilePath`**. It is placing three distinct "bricks" of data into the chip's memory:
 
-|**Memory Address**|**File Path**|**Description**|
-|---|---|---|
-|**`0x0`**|`.\build\bootloader\bootloader.bin`|**The Bootloader:** The very first code that runs; it initializes the system and prepares to load the app.|
-|**`0x8000`**|`.\build\partition_table\partition-table.bin`|**The Partition Table:** A "map" that tells the ESP32 where the app, the settings (NVS), and the file system (SPIFFS/LittleFS) are located.|
-|**`0x10000`**|`.\build\app.bin`|**The Main Application:** Your actual code (the logic you wrote) starts at this specific offset.|
+| **Memory Address** | **File Path**                                 | **Description**                                                                                                                             |
+| ------------------ | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`0x0`**          | `.\build\bootloader\bootloader.bin`           | **The Bootloader:** The very first code that runs; it initializes the system and prepares to load the app.                                  |
+| **`0x8000`**       | `.\build\partition_table\partition-table.bin` | **The Partition Table:** A "map" that tells the ESP32 where the app, the settings (NVS), and the file system (SPIFFS/LittleFS) are located. |
+| **`0x10000`**      | `.\build\app.bin`                             | **The Main Application:** Your actual code (the logic you wrote) starts at this specific offset.                                            |
 
 ### Summary of the Flow
 1. **Prepare:** Python opens the serial port and puts the ESP32 into a waiting state (`before default_reset`).

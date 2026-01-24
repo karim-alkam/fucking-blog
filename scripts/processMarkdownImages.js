@@ -1,9 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 const logger = require('./logger');
+const { getPath } = require('./config');
 
 const postsDir = path.resolve(process.cwd(), "posts");
-const attachmentsDir = "C:\\Users\\3adas\\OneDrive\\Notes\\files";
+const attachmentsDir = getPath('attachmentsDir', 'BLOG_ATTACHMENTS_DIR');
 const staticImagesDir = path.resolve(process.cwd(), "public", "images");
 
 async function processMarkdownFiles() {
