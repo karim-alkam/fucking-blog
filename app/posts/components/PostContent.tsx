@@ -50,7 +50,7 @@ const PostContent: React.FC<{ html: string }> = ({ html }) => {
 
     return (
         <div
-            className="prose prose-lg dark:prose-invert max-w-none 
+            className="prose prose-lg dark:prose-invert 
             prose-headings:font-display prose-headings:text-cyber-white prose-headings:uppercase prose-headings:tracking-wide
             prose-p:text-gray-300 prose-p:font-light prose-p:leading-relaxed
             prose-a:text-cyber-neon-cyan prose-a:no-underline hover:prose-a:text-cyber-neon-yellow hover:prose-a:shadow-[0_2px_0_0_currentColor] prose-a:transition-all

@@ -43,7 +43,7 @@ export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
   }, [toc]);
 
   const sidebarClasses = displayType === 'sidebar'
-    ? "hidden lg:block sticky top-24 h-[calc(100vh-120px)] overflow-y-auto lg:col-span-1"
+    ? "hidden lg:block sticky top-24 h-[calc(100vh-120px)] overflow-y-auto"
     : "lg:hidden mb-8";
 
   return (
