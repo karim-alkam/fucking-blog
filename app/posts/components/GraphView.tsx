@@ -255,7 +255,9 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
                 nodeLabel="name"
                 nodeRelSize={6}
                 // Custom interaction filter: Ignore 1-finger touch to allow scrolling
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 enablePanInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 enableZoomInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
                 linkColor={() => '#2a2a2a'}
                 backgroundColor="rgba(0,0,0,0)"
