@@ -4,6 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 // Dynamically import ForceGraph2D with no SSR
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -134,8 +135,23 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
     <div className="flex flex-col gap-6">
       
       {/* 1. Interactive Graph */}
-      <div className="flex flex-col border border-cyber-neon-cyan bg-cyber-black relative shadow-lg shadow-cyber-neon-cyan/20 w-full sm:w-80 lg:w-full mx-auto">
+      <motion.div 
+        initial={{ opacity: 0, scaleY: 0, filter: 'brightness(2) hue-rotate(90deg)' }}
+        animate={{ opacity: 1, scaleY: 1, filter: 'brightness(1) hue-rotate(0deg)' }}
+        transition={{ duration: 0.6, type: "spring", bounce: 0.3 }}
+        style={{ originY: 0 }}
+        className="flex flex-col border border-cyber-neon-cyan bg-cyber-black relative shadow-lg shadow-cyber-neon-cyan/20 w-full sm:w-80 lg:w-full mx-auto overflow-hidden"
+      >
         
+        {/* Scanline Effect Overlay */}
+        <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
+        <motion.div 
+            initial={{ top: "-10%" }}
+            animate={{ top: "110%" }}
+            transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
+            className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-20 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
+        />
+
         {/* Decorative Window Header */}
         <div className="h-8 bg-cyber-dark-gray border-b border-cyber-neon-cyan flex items-center justify-between px-4 select-none overflow-hidden">
             <div className="text-xs font-mono text-cyber-gray-light tracking-widest uppercase flex items-center gap-4">
@@ -242,11 +258,16 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
             }}
             />
         </div>
-      </div>
+      </motion.div>
 
       {/* 2. Links Section */}
       {internalLinks.length > 0 && (
-          <div className="border-l-2 border-cyber-neon-cyan pl-4">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            className="border-l-2 border-cyber-neon-cyan pl-4"
+          >
               <h3 className="text-sm font-display font-bold text-cyber-neon-cyan uppercase mb-2 tracking-widest">
                   Mentions
               </h3>
@@ -265,12 +286,17 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
                       </li>
                   ))}
               </ul>
-          </div>
+          </motion.div>
       )}
 
       {/* 3. Backlinks Section */}
       {backlinks.length > 0 && (
-          <div className="border-l-2 border-cyber-neon-green pl-4">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            className="border-l-2 border-cyber-neon-green pl-4"
+          >
               <h3 className="text-sm font-display font-bold text-cyber-neon-green uppercase mb-2 tracking-widest">
                   Referenced By
               </h3>
@@ -283,7 +309,7 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
                       </li>
                   ))}
               </ul>
-          </div>
+          </motion.div>
       )}
 
     </div>
