@@ -44,15 +44,21 @@ if ! npm run copy-posts-from-obsidian; then
     exit 1
 fi
 
-write_step "Processing Obsidian links..."
-if ! npm run process-obsidian-links; then
-    write_error "Link processing failed!"
-    exit 1
-fi
-
 write_step "Processing markdown images..."
 if ! npm run process-images; then
     write_error "Image processing failed!"
+    exit 1
+fi
+
+write_step "Generating content graph..."
+if ! npm run generate-graph; then
+    write_error "Graph generation failed!"
+    exit 1
+fi
+
+write_step "Processing Obsidian links..."
+if ! npm run process-obsidian-links; then
+    write_error "Link processing failed!"
     exit 1
 fi
 

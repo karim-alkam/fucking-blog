@@ -56,15 +56,6 @@ export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
         style={{ originY: 0 }}
         className="bg-cyber-dark-gray border border-cyber-gray p-6 relative overflow-hidden"
       >
-        {/* Scanline Effect Overlay */}
-        <div className="absolute inset-0 pointer-events-none z-0 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
-        <motion.div 
-            initial={{ top: "-10%" }}
-            animate={{ top: "110%" }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
-            className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-0 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
-        />
-
         <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyber-neon-cyan to-cyber-neon-purple z-10"></div>
 
         <h2 className="text-lg font-display font-bold text-cyber-white mb-4 uppercase tracking-widest flex items-center relative z-10">

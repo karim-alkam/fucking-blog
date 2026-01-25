@@ -28,11 +28,15 @@ Write-Header "Running Data Sync Scripts"
 Write-Step "Syncing posts from Obsidian..."
 npm run copy-posts-from-obsidian
 
-Write-Step "Processing Obsidian links..."
-npm run process-obsidian-links
-
 Write-Step "Processing markdown images..."
 npm run process-images
+
+Write-Step "Generating content graph..."
+npm run generate-graph
+if ($LASTEXITCODE -ne 0) { Write-Error "Graph generation failed!"; exit 1 }
+
+Write-Step "Processing Obsidian links..."
+npm run process-obsidian-links
 
 Write-Step "Syncing drawings from Obsidian..."
 npm run sync-drawings
