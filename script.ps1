@@ -26,17 +26,17 @@ Write-Header "Syncing Blog Content"
 Write-Header "Running Data Sync Scripts"
 
 Write-Step "Syncing posts from Obsidian..."
-npm run copy-posts-from-obsidian
+npm run sync-posts
 
 Write-Step "Processing markdown images..."
-npm run process-images
+npm run sync-images
 
 Write-Step "Generating content graph..."
-npm run generate-graph
+npm run gen-graph
 if ($LASTEXITCODE -ne 0) { Write-Error "Graph generation failed!"; exit 1 }
 
 Write-Step "Processing Obsidian links..."
-npm run process-obsidian-links
+npm run process-links
 
 Write-Step "Syncing drawings from Obsidian..."
 npm run sync-drawings
@@ -46,7 +46,7 @@ npm run sync-drawing-assets
 if ($LASTEXITCODE -ne 0) { Write-Error "Attachment sync failed!"; exit 1 }
 
 Write-Step "Compressing drawings..."
-npm run process-drawings
+npm run compress-drawings
 
 Write-Success "Data processed successfully."
 

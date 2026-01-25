@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "copy-posts-from-obsidian": "node scripts/copyFilesFromObsidian.js",
-    "process-images": "node scripts/processMarkdownImages.js",
-    "generate-graph": "node scripts/generateGraph.js",
-    "process-obsidian-links": "node scripts/processObsidianLinks.js",
+    "sync-posts": "node scripts/copyFilesFromObsidian.js",
+    "sync-images": "node scripts/processMarkdownImages.js",
+    "gen-graph": "node scripts/generateGraph.js",
+    "process-links": "node scripts/processObsidianLinks.js",
     "sync-drawings": "node scripts/syncExcalidraw.js",
     "sync-drawing-assets": "node scripts/syncDrawingAssets.js",
-    "process-drawings": "node scripts/compressExcalidraw.js"
+    "compress-drawings": "node scripts/compressExcalidraw.js"
   },
   "dependencies": {
     "@excalidraw/excalidraw": "^0.18.0",

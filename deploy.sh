@@ -39,25 +39,25 @@ write_header "Syncing Blog Content"
 write_header "Running Data Sync Scripts"
 
 write_step "Syncing posts from Obsidian..."
-if ! npm run copy-posts-from-obsidian; then
+if ! npm run sync-posts; then
     write_error "Post sync failed!"
     exit 1
 fi
 
 write_step "Processing markdown images..."
-if ! npm run process-images; then
+if ! npm run sync-images; then
     write_error "Image processing failed!"
     exit 1
 fi
 
 write_step "Generating content graph..."
-if ! npm run generate-graph; then
+if ! npm run gen-graph; then
     write_error "Graph generation failed!"
     exit 1
 fi
 
 write_step "Processing Obsidian links..."
-if ! npm run process-obsidian-links; then
+if ! npm run process-links; then
     write_error "Link processing failed!"
     exit 1
 fi
@@ -75,7 +75,7 @@ if ! npm run sync-drawing-assets; then
 fi
 
 write_step "Compressing drawings..."
-if ! npm run process-drawings; then
+if ! npm run compress-drawings; then
     write_error "Drawing compression failed!"
     exit 1
 fi
