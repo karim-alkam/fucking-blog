@@ -142,39 +142,17 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
     };
   }, [data]);
 
-  // Handle Touch Interactions with Native Listener
-  // React's onTouchStartCapture is synthetic and doesn't stop native events from reaching D3.
-  // We must attach a native capture listener to the DOM element to gatekeep the events.
-  useEffect(() => {
-    const el = graphWrapperRef.current;
-    if (!el) return;
-
-    const handleNativeTouch = (e: TouchEvent) => {
-        if (e.touches.length === 1) {
-            // CRITICAL: Stop the event from propagating down to the Canvas (where D3 listens)
-            // This prevents D3 from hijacking the event and calling preventDefault().
-            e.stopImmediatePropagation();
-            
-            // Show tutorial
-            setShowTutorial(true);
-            const timer = setTimeout(() => setShowTutorial(false), 2000);
-            
-            // Allow browser default behavior (scroll) to happen naturally
-        } else {
-            // 2 fingers: Let it pass to D3. 
-            // If the user later lifts a finger, D3 handles the "zoom -> pan" transition internally.
-            setShowTutorial(false);
-        }
-    };
-
-    // Attach with { capture: true } to intercept before children
-    // passive: false allows us to be a "gatekeeper" (though we don't preventDefault ourselves)
-    el.addEventListener('touchstart', handleNativeTouch, { capture: true, passive: true });
-
-    return () => {
-        el.removeEventListener('touchstart', handleNativeTouch, { capture: true } as any);
-    };
-  }, [data]); // Re-attach if data/DOM re-renders
+  // Handle Touch Interactions for Mobile UX (Tutorial Only)
+  // We use D3's filter mechanism to block interaction, so this only handles the tutorial overlay.
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length === 1) {
+        setShowTutorial(true);
+        const timer = setTimeout(() => setShowTutorial(false), 2000);
+        return () => clearTimeout(timer);
+    } else {
+        setShowTutorial(false);
+    }
+  };
 
   if (!data) return null;
 
@@ -264,8 +242,9 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
         </div>
 
         <div 
-            className="flex-1 w-full overflow-hidden relative h-64 [&_canvas]:!touch-pan-y" 
+            className="flex-1 w-full overflow-hidden relative h-64 [&_canvas]:!touch-auto" 
             ref={graphWrapperRef}
+            onTouchStart={handleTouchStart}
         >
             {width > 0 ? (
                 <ForceGraph2D
@@ -275,6 +254,9 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
                 graphData={filteredData}
                 nodeLabel="name"
                 nodeRelSize={6}
+                // Custom interaction filter: Ignore 1-finger touch to allow scrolling
+                enablePanInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
+                enableZoomInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
                 linkColor={() => '#2a2a2a'}
                 backgroundColor="rgba(0,0,0,0)"
                 onNodeClick={(node) => {
