@@ -42,6 +42,7 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
   const router = useRouter();
   const graphWrapperRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0); // Start at 0 to defer render until measured
+  const [showTutorial, setShowTutorial] = useState(false);
 
   // Filter Graph Data for Local View
   const filteredData = useMemo(() => {
@@ -141,6 +142,40 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
     };
   }, [data]);
 
+  // Handle Touch Interactions with Native Listener
+  // React's onTouchStartCapture is synthetic and doesn't stop native events from reaching D3.
+  // We must attach a native capture listener to the DOM element to gatekeep the events.
+  useEffect(() => {
+    const el = graphWrapperRef.current;
+    if (!el) return;
+
+    const handleNativeTouch = (e: TouchEvent) => {
+        if (e.touches.length === 1) {
+            // CRITICAL: Stop the event from propagating down to the Canvas (where D3 listens)
+            // This prevents D3 from hijacking the event and calling preventDefault().
+            e.stopImmediatePropagation();
+            
+            // Show tutorial
+            setShowTutorial(true);
+            const timer = setTimeout(() => setShowTutorial(false), 2000);
+            
+            // Allow browser default behavior (scroll) to happen naturally
+        } else {
+            // 2 fingers: Let it pass to D3. 
+            // If the user later lifts a finger, D3 handles the "zoom -> pan" transition internally.
+            setShowTutorial(false);
+        }
+    };
+
+    // Attach with { capture: true } to intercept before children
+    // passive: false allows us to be a "gatekeeper" (though we don't preventDefault ourselves)
+    el.addEventListener('touchstart', handleNativeTouch, { capture: true, passive: true });
+
+    return () => {
+        el.removeEventListener('touchstart', handleNativeTouch, { capture: true } as any);
+    };
+  }, [data]); // Re-attach if data/DOM re-renders
+
   if (!data) return null;
 
   return (
@@ -228,7 +263,10 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
             </div>
         </div>
 
-        <div className="flex-1 w-full overflow-hidden relative h-64" ref={graphWrapperRef}>
+        <div 
+            className="flex-1 w-full overflow-hidden relative h-64 [&_canvas]:!touch-pan-y" 
+            ref={graphWrapperRef}
+        >
             {width > 0 ? (
                 <ForceGraph2D
                 key={currentSlug} // Force re-mount on navigation to ensure clean state
@@ -279,6 +317,17 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
                 </div>
             )}
         </div>
+
+        {/* Mobile Tutorial Overlay */}
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: showTutorial ? 1 : 0 }}
+            className="absolute inset-0 z-50 flex items-center justify-center bg-cyber-black/80 pointer-events-none"
+        >
+            <div className="text-cyber-neon-cyan font-mono text-sm font-bold bg-cyber-dark-gray border border-cyber-neon-cyan px-4 py-2 shadow-[0_0_15px_rgba(0,240,255,0.3)]">
+                USE TWO FINGERS TO MOVE
+            </div>
+        </motion.div>
       </motion.div>
 
       {/* 2. Links Section */}
