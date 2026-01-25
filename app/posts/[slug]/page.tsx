@@ -9,6 +9,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import MathJaxInit from '../components/MathJaxInit';
 import AnalyticsEvents from '../../components/AnalyticsEvents';
 import { getPostBySlug } from '../../lib/posts';
+import GraphView from '../components/GraphView';
 
 /**
  * Synchronously read the /posts folder so Next infers
@@ -98,10 +99,12 @@ export default async function Page(props: PageProps) {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col lg:flex-row justify-center gap-12">
           
-          {/* Left Spacer - Visible only on extra large screens (2xl) to balance the layout */}
-          <div className="hidden 2xl:block w-64 shrink-0">
-            {/* Future content goes here */}
-          </div>
+          {/* Left Spacer with Graph View */}
+          <aside className="hidden 2xl:block w-64 shrink-0">
+             <div className="sticky top-24">
+                <GraphView currentSlug={postData.slug} />
+             </div>
+          </aside>
 
           {/* Post Content Area */}
           <article className="min-w-0 flex-1 max-w-4xl break-words hyphens-auto">
@@ -126,6 +129,11 @@ export default async function Page(props: PageProps) {
                   <TocSidebar toc={postData.toc} displayType="inline" />
                 </div>
               )}
+
+              {/* Mobile Graph View - visible on mobile/tablet (lg:hidden) */}
+              <div className="lg:hidden mt-8 mb-4">
+                 <GraphView currentSlug={postData.slug} />
+              </div>
             </header>
 
             <PostContent html={postData.content} />
@@ -141,11 +149,18 @@ export default async function Page(props: PageProps) {
           </article>
 
           {/* Right Sidebar (TOC) - Hidden on mobile/tablet, visible on desktop (lg+) */}
-          {postData.toc && postData.toc.length > 0 && (
-            <aside className="hidden lg:block w-80 shrink-0">
-               <TocSidebar toc={postData.toc} displayType="sidebar" />
-            </aside>
-          )}
+          <aside className="hidden lg:block w-80 shrink-0">
+             <div className="sticky top-24 flex flex-col gap-8">
+               {postData.toc && postData.toc.length > 0 && (
+                  <TocSidebar toc={postData.toc} displayType="sidebar" />
+               )}
+               
+               {/* Graph on Laptop (LG - XL) - Hidden on 2XL where it moves to left */}
+               <div className="block 2xl:hidden pr-2">
+                  <GraphView currentSlug={postData.slug} />
+               </div>
+             </div>
+          </aside>
 
         </div>
       </div>

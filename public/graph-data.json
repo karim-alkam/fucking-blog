@@ -1,0 +1,1320 @@
+{
+  "nodes": [
+    {
+      "id": "oop-in-python",
+      "name": "A Beginner's Guide to Object-Oriented Programming (OOP) in Python",
+      "val": 20,
+      "type": "post",
+      "slug": "(OOP)-in-Python"
+    },
+    {
+      "id": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "name": "Charging the BYD Seagull: How 8A and 32A Chargers Impact Its LFP Battery",
+      "val": 20,
+      "type": "post",
+      "slug": "Charging-the-BYD-Seagull-How-8A-and-32A-Chargers-Impact-Its-LFP-Battery"
+    },
+    {
+      "id": "data-science-project-walkthrough",
+      "name": "Predicting Home Values: A Full Data Science Project Walkthrough",
+      "val": 20,
+      "type": "post",
+      "slug": "Data-Science-Project-Walkthrough"
+    },
+    {
+      "id": "fixing-my-ethernet-cable-issue",
+      "name": "Fixing My Ethernet Cable Issue",
+      "val": 20,
+      "type": "post",
+      "slug": "Fixing-My-Ethernet-Cable-Issue"
+    },
+    {
+      "id": "fuck-it-im-moving-to-linux",
+      "name": "Fuck It, I’m Moving to Linux",
+      "val": 20,
+      "type": "post",
+      "slug": "Fuck-It-Im-Moving-to-Linux"
+    },
+    {
+      "id": "getting-davinci-resolve-to-actually-work-on-ubuntu",
+      "name": "Getting DaVinci Resolve to Actually Work on Ubuntu",
+      "val": 20,
+      "type": "post",
+      "slug": "Getting-DaVinci-Resolve-to-Actually-Work-on-Ubuntu"
+    },
+    {
+      "id": "how-to-open-bluetooth-devices-with-autohotkey",
+      "name": "How to Open Bluetooth Devices with Win + Shift + B Using AutoHotkey",
+      "val": 20,
+      "type": "post",
+      "slug": "How-to-Open-Bluetooth-Devices-with-AutoHotkey"
+    },
+    {
+      "id": "how-to-make-a-pcb",
+      "name": "How to make a pcb",
+      "val": 20,
+      "type": "post",
+      "slug": "How-to-make-a-pcb"
+    },
+    {
+      "id": "learning-vim",
+      "name": "Learning VIM",
+      "val": 20,
+      "type": "post",
+      "slug": "Learning-VIM"
+    },
+    {
+      "id": "learning-tmux",
+      "name": "Learning Tmux",
+      "val": 20,
+      "type": "post",
+      "slug": "Learning-tmux"
+    },
+    {
+      "id": "migrate-zen-browser-from-windows-to-linux",
+      "name": "How to Migrate Zen Browser from Windows to Linux",
+      "val": 20,
+      "type": "post",
+      "slug": "Migrate-Zen-Browser-from-Windows-to-Linux"
+    },
+    {
+      "id": "modbus-protocol",
+      "name": "Modbus protocol",
+      "val": 20,
+      "type": "post",
+      "slug": "Modbus-protocol"
+    },
+    {
+      "id": "pid-controller",
+      "name": "PID Controller",
+      "val": 20,
+      "type": "post",
+      "slug": "PID-Controller"
+    },
+    {
+      "id": "ros-2-cheat-sheets",
+      "name": "ROS 2 Cheat Sheets",
+      "val": 20,
+      "type": "post",
+      "slug": "ROS-2-Cheat-Sheets"
+    },
+    {
+      "id": "remote-desktop-into-debian",
+      "name": "Remote Desktop into Linux",
+      "val": 20,
+      "type": "post",
+      "slug": "Remote-Desktop-into-Debian"
+    },
+    {
+      "id": "running-ni-multisim-on-linux",
+      "name": "Running NI Multisim on Linux",
+      "val": 20,
+      "type": "post",
+      "slug": "Running-NI-Multisim-on-Linux"
+    },
+    {
+      "id": "running-ros-on-raspberry-pi",
+      "name": "Running ROS on Raspberry Pi",
+      "val": 20,
+      "type": "post",
+      "slug": "Running-ROS-on-Raspberry-Pi"
+    },
+    {
+      "id": "setting-up-esp8266",
+      "name": "Setting up ESP8266",
+      "val": 20,
+      "type": "post",
+      "slug": "Setting-up-ESP8266"
+    },
+    {
+      "id": "spotx-no-ads-on-spotify-for-windows",
+      "name": "SpotX – No Ads on Spotify for Windows",
+      "val": 20,
+      "type": "post",
+      "slug": "SpotX--No-Ads-on-Spotify-for-Windows"
+    },
+    {
+      "id": "starting-a-blog",
+      "name": "Starting a blog",
+      "val": 20,
+      "type": "post",
+      "slug": "Starting-a-blog"
+    },
+    {
+      "id": "tcp-ip-model",
+      "name": "The TCP/IP Model",
+      "val": 20,
+      "type": "post",
+      "slug": "TCP-IP-Model"
+    },
+    {
+      "id": "understanding-capacitor-charging-and-the-concept-of-full-charge",
+      "name": "Understanding Capacitor Charging and the Concept of Full Charge",
+      "val": 20,
+      "type": "post",
+      "slug": "Understanding-Capacitor-Charging-and-the-Concept-of-Full-Charge"
+    },
+    {
+      "id": "understanding-incremental-rotary-encoders",
+      "name": "Understanding Incremental Rotary Encoders",
+      "val": 20,
+      "type": "post",
+      "slug": "Understanding-Incremental-Rotary-Encoders"
+    },
+    {
+      "id": "understanding-uart-and-serial-communication",
+      "name": "Understanding UART and Serial Communication",
+      "val": 20,
+      "type": "post",
+      "slug": "Understanding-UART-and-Serial-Communication"
+    },
+    {
+      "id": "velocidrone-installation-on-ubuntu",
+      "name": "VelociDrone installation on ubuntu",
+      "val": 20,
+      "type": "post",
+      "slug": "VelociDrone-installation-on-ubuntu"
+    },
+    {
+      "id": "virtualbox-clipboard-issues-on-ubuntu",
+      "name": "VirtualBox Clipboard Issues on Ubuntu",
+      "val": 20,
+      "type": "post",
+      "slug": "VirtualBox-Clipboard-Issues-on-Ubuntu"
+    },
+    {
+      "id": "download-vs-code-on-linux",
+      "name": "Download VS-Code on Linux",
+      "val": 20,
+      "type": "post",
+      "slug": "download-vs-code-on-linux"
+    },
+    {
+      "id": "esp-idf-1",
+      "name": "ESP-IDF - Setup with blink code",
+      "val": 20,
+      "type": "post",
+      "slug": "esp-idf-1"
+    },
+    {
+      "id": "finger-joints",
+      "name": "finger joints",
+      "val": 20,
+      "type": "post",
+      "slug": "finger-joints"
+    },
+    {
+      "id": "installing-esp32-boards",
+      "name": "Setting up ESP32",
+      "val": 20,
+      "type": "post",
+      "slug": "installing-esp32-boards"
+    },
+    {
+      "id": "tmux-fix",
+      "name": "Fixing that annoying `^[]11;rgb` garbage in Tmux & Windows Terminal",
+      "val": 20,
+      "type": "post",
+      "slug": "tmux-fix"
+    },
+    {
+      "id": "why-the-capacitor-will-not-fully-charge-it-self-at-5j",
+      "name": "why the capacitor will not fully charge it self at 5j",
+      "val": 20,
+      "type": "post",
+      "slug": "why-the-capacitor-will-not-fully-charge-it-self-at-5j"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=nV8jR8M8C74",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=nV8jR8M8C74"
+    },
+    {
+      "id": "https://youtu.be/T1Cp9F8qto8?si=mocguZS7ddZXiqb7",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/T1Cp9F8qto8?si=mocguZS7ddZXiqb7"
+    },
+    {
+      "id": "https://opencode.ai/",
+      "name": "opencode.ai",
+      "val": 10,
+      "type": "external",
+      "url": "https://opencode.ai/"
+    },
+    {
+      "id": "https://code.visualstudio.com/",
+      "name": "code.visualstudio.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://code.visualstudio.com/"
+    },
+    {
+      "id": "https://git-scm.com/",
+      "name": "git-scm.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "id": "https://www.python.org/",
+      "name": "www.python.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.python.org/"
+    },
+    {
+      "id": "https://www.postman.com/",
+      "name": "www.postman.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.postman.com/"
+    },
+    {
+      "id": "https://nodejs.org/en",
+      "name": "nodejs.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "id": "https://www.docker.com/",
+      "name": "www.docker.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.docker.com/"
+    },
+    {
+      "id": "https://www.mathworks.com/products/matlab.html",
+      "name": "www.mathworks.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.mathworks.com/products/matlab.html"
+    },
+    {
+      "id": "https://www.kicad.org/",
+      "name": "www.kicad.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.kicad.org/"
+    },
+    {
+      "id": "https://fritzing.org/",
+      "name": "fritzing.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://fritzing.org/"
+    },
+    {
+      "id": "https://www.arduino.cc/en/software/#ide",
+      "name": "www.arduino.cc",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.arduino.cc/en/software/#ide"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html"
+    },
+    {
+      "id": "https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/",
+      "name": "www.geeksforgeeks.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/"
+    },
+    {
+      "id": "https://snapcraft.io/betaflight-configurator",
+      "name": "snapcraft.io",
+      "val": 10,
+      "type": "external",
+      "url": "https://snapcraft.io/betaflight-configurator"
+    },
+    {
+      "id": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "name": "www.blackmagicdesign.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve"
+    },
+    {
+      "id": "https://obsproject.com/download",
+      "name": "obsproject.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://obsproject.com/download"
+    },
+    {
+      "id": "https://www.blender.org/",
+      "name": "www.blender.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.blender.org/"
+    },
+    {
+      "id": "https://inkscape.org/",
+      "name": "inkscape.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://inkscape.org/"
+    },
+    {
+      "id": "https://krita.org/en/",
+      "name": "krita.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://krita.org/en/"
+    },
+    {
+      "id": "https://www.audacityteam.org/download/",
+      "name": "www.audacityteam.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.audacityteam.org/download/"
+    },
+    {
+      "id": "https://zen-browser.app/",
+      "name": "zen-browser.app",
+      "val": 10,
+      "type": "external",
+      "url": "https://zen-browser.app/"
+    },
+    {
+      "id": "https://altstore.io/",
+      "name": "altstore.io",
+      "val": 10,
+      "type": "external",
+      "url": "https://altstore.io/"
+    },
+    {
+      "id": "https://github.com/vyvir/althea",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/vyvir/althea"
+    },
+    {
+      "id": "https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133",
+      "name": "www.ni.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133"
+    },
+    {
+      "id": "https://nextion.tech/nextion-editor/",
+      "name": "nextion.tech",
+      "val": 10,
+      "type": "external",
+      "url": "https://nextion.tech/nextion-editor/"
+    },
+    {
+      "id": "https://www.winboat.app/",
+      "name": "www.winboat.app",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.winboat.app/"
+    },
+    {
+      "id": "https://www.blackmagicdesign.com/support/",
+      "name": "www.blackmagicdesign.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.blackmagicdesign.com/support/"
+    },
+    {
+      "id": "https://www.autohotkey.com/",
+      "name": "www.autohotkey.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.autohotkey.com/"
+    },
+    {
+      "id": "https://www.photopea.com/",
+      "name": "www.photopea.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.photopea.com/"
+    },
+    {
+      "id": "https://www.snapeda.com/",
+      "name": "www.snapeda.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.snapeda.com/"
+    },
+    {
+      "id": "https://youtu.be/RZ4p-saaQkc",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/RZ4p-saaQkc"
+    },
+    {
+      "id": "https://www.youtube.com/playlist?list=PLT98CRl2KxKGiyV1u6wHDV8VwcQdzfuKe",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/playlist?list=PLT98CRl2KxKGiyV1u6wHDV8VwcQdzfuKe"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=nTqu6w2wc68",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=nTqu6w2wc68"
+    },
+    {
+      "id": "https://tmuxcheatsheet.com/",
+      "name": "tmuxcheatsheet.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://tmuxcheatsheet.com/"
+    },
+    {
+      "id": "https://youtu.be/_VzHpLjKeZ8?si=g_60MByeGy_GCVaE&t=1840",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/_VzHpLjKeZ8?si=g_60MByeGy_GCVaE&t=1840"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=_VzHpLjKeZ8&t=49s",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=_VzHpLjKeZ8&t=49s"
+    },
+    {
+      "id": "https://www.winehq.org/",
+      "name": "www.winehq.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.winehq.org/"
+    },
+    {
+      "id": "https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019QhDSAU&l=de-DE",
+      "name": "knowledge.ni.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019QhDSAU&l=de-DE"
+    },
+    {
+      "id": "https://youtu.be/Imnf8yd01fM?si=VAX6pZULFeIctP0F",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/Imnf8yd01fM?si=VAX6pZULFeIctP0F"
+    },
+    {
+      "id": "https://sourceforge.net/projects/multisim-latest/",
+      "name": "sourceforge.net",
+      "val": 10,
+      "type": "external",
+      "url": "https://sourceforge.net/projects/multisim-latest/"
+    },
+    {
+      "id": "https://www.raspberrypi.com/software/",
+      "name": "www.raspberrypi.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.raspberrypi.com/software/"
+    },
+    {
+      "id": "https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password",
+      "name": "www.raspberrypi.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password"
+    },
+    {
+      "id": "https://drive.google.com/drive/folders/1eZp5y4L_wD7y1c9HiHbB6wscSIWAAx1p?usp=sharing",
+      "name": "drive.google.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://drive.google.com/drive/folders/1eZp5y4L_wD7y1c9HiHbB6wscSIWAAx1p?usp=sharing"
+    },
+    {
+      "id": "https://docs.google.com/spreadsheets/d/1wztO1L4zvNykBRw7X4jxP8pvo11oQjT0O5DvZ_-S4Ok/edit?gid=803394557#gid=803394557",
+      "name": "docs.google.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.google.com/spreadsheets/d/1wztO1L4zvNykBRw7X4jxP8pvo11oQjT0O5DvZ_-S4Ok/edit?gid=803394557#gid=803394557"
+    },
+    {
+      "id": "https://github.com/SpotX-Official/SpotX",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/SpotX-Official/SpotX"
+    },
+    {
+      "id": "https://gohugo.io/installation/",
+      "name": "gohugo.io",
+      "val": 10,
+      "type": "external",
+      "url": "https://gohugo.io/installation/"
+    },
+    {
+      "id": "https://themes.gohugo.io/",
+      "name": "themes.gohugo.io",
+      "val": 10,
+      "type": "external",
+      "url": "https://themes.gohugo.io/"
+    },
+    {
+      "id": "https://gitlab.com/gabmus/hugo-ficurinia",
+      "name": "gitlab.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://gitlab.com/gabmus/hugo-ficurinia"
+    },
+    {
+      "id": "https://youtube.com/playlist?list=PLww54WQ2wa5qVh1p8iPi7HspX7N9hbvbc&si=9h1KH2NZG2lSLsaB",
+      "name": "youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtube.com/playlist?list=PLww54WQ2wa5qVh1p8iPi7HspX7N9hbvbc&si=9h1KH2NZG2lSLsaB"
+    },
+    {
+      "id": "https://www.linkedin.com/in/ahmad-awad-36b481301/",
+      "name": "www.linkedin.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.linkedin.com/in/ahmad-awad-36b481301/"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=JuvWbRhhpdI",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=JuvWbRhhpdI"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=IyGwvGzrqp8",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=IyGwvGzrqp8"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=V6m2skVlsQI",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=V6m2skVlsQI"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=4xBjrE9csxg",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=4xBjrE9csxg"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=Z-O6PkvYXXs",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=Z-O6PkvYXXs"
+    },
+    {
+      "id": "https://dpvipracollege.in/wp-content/uploads/2023/01/Data-Communications-and-Networking-By-Behrouz-A.Forouzan.pdf",
+      "name": "dpvipracollege.in",
+      "val": 10,
+      "type": "external",
+      "url": "https://dpvipracollege.in/wp-content/uploads/2023/01/Data-Communications-and-Networking-By-Behrouz-A.Forouzan.pdf"
+    },
+    {
+      "id": "https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter",
+      "name": "en.wikipedia.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter"
+    },
+    {
+      "id": "https://www.velocidrone.com/account/my_licenses",
+      "name": "www.velocidrone.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.velocidrone.com/account/my_licenses"
+    },
+    {
+      "id": "https://code.visualstudio.com/download",
+      "name": "code.visualstudio.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://code.visualstudio.com/download"
+    },
+    {
+      "id": "https://www.espressif.com/en/products/sdks/esp-idf",
+      "name": "www.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.espressif.com/en/products/sdks/esp-idf"
+    },
+    {
+      "id": "https://www.freertos.org/",
+      "name": "www.freertos.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.freertos.org/"
+    },
+    {
+      "id": "https://youtu.be/O2tV9q6784k?si=-JjG1ECueoNqWejt",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/O2tV9q6784k?si=-JjG1ECueoNqWejt"
+    },
+    {
+      "id": "https://www.youtube.com/playlist?list=PL3bNyZYHcRSXm0mNZLiu5hj5ScufC_au9",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/playlist?list=PL3bNyZYHcRSXm0mNZLiu5hj5ScufC_au9"
+    },
+    {
+      "id": "https://youtu.be/h7VfpoJvIpg?si=-Xkc5nEwmJU--kbo",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/h7VfpoJvIpg?si=-Xkc5nEwmJU--kbo"
+    },
+    {
+      "id": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "name": "documentation.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+    },
+    {
+      "id": "https://github.com/abda-s/course-iot-with-esp-idf",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/abda-s/course-iot-with-esp-idf"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation"
+    },
+    {
+      "id": "https://learn.microsoft.com/en-us/windows/wsl/install",
+      "name": "learn.microsoft.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://learn.microsoft.com/en-us/windows/wsl/install"
+    },
+    {
+      "id": "https://www.docker.com/products/docker-desktop/",
+      "name": "www.docker.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.docker.com/products/docker-desktop/"
+    },
+    {
+      "id": "https://www.python.org/downloads/",
+      "name": "www.python.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.python.org/downloads/"
+    },
+    {
+      "id": "https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers",
+      "name": "www.silabs.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers"
+    },
+    {
+      "id": "https://github.com/abda-s/course-iot-with-esp-idf/blob/main/Dockerfile.esp-idf",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/abda-s/course-iot-with-esp-idf/blob/main/Dockerfile.esp-idf"
+    },
+    {
+      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers",
+      "name": "marketplace.visualstudio.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers"
+    },
+    {
+      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools",
+      "name": "marketplace.visualstudio.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools"
+    },
+    {
+      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools",
+      "name": "marketplace.visualstudio.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools"
+    },
+    {
+      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor",
+      "name": "marketplace.visualstudio.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/build-system.html#idf-component-commands",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/build-system.html#idf-component-commands"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#api-reference-normal-gpio",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#api-reference-normal-gpio"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/stdio.html",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/stdio.html"
+    },
+    {
+      "id": "https://docs.docker.com/desktop/troubleshoot-and-support/faqs/general/#can-i-pass-through-a-usb-device-to-a-container",
+      "name": "docs.docker.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.docker.com/desktop/troubleshoot-and-support/faqs/general/#can-i-pass-through-a-usb-device-to-a-container"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32/api-guides/bootloader.html",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32/api-guides/bootloader.html"
+    },
+    {
+      "id": "https://www.makercase.com/#/basicbox",
+      "name": "www.makercase.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.makercase.com/#/basicbox"
+    },
+    {
+      "id": "https://drive.google.com/file/d/1TCEtkAoYKrJs-ypomD6y4LwpcRnMuvAK/view?usp=sharing",
+      "name": "drive.google.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://drive.google.com/file/d/1TCEtkAoYKrJs-ypomD6y4LwpcRnMuvAK/view?usp=sharing"
+    }
+  ],
+  "links": [
+    {
+      "source": "data-science-project-walkthrough",
+      "target": "https://www.youtube.com/watch?v=nV8jR8M8C74",
+      "type": "external"
+    },
+    {
+      "source": "fixing-my-ethernet-cable-issue",
+      "target": "https://youtu.be/T1Cp9F8qto8?si=mocguZS7ddZXiqb7",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "getting-davinci-resolve-to-actually-work-on-ubuntu",
+      "type": "internal"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "migrate-zen-browser-from-windows-to-linux",
+      "type": "internal"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "velocidrone-installation-on-ubuntu",
+      "type": "internal"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "running-ni-multisim-on-linux",
+      "type": "internal"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://opencode.ai/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://code.visualstudio.com/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://git-scm.com/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.python.org/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.postman.com/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://nodejs.org/en",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.docker.com/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.mathworks.com/products/matlab.html",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.kicad.org/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://fritzing.org/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.arduino.cc/en/software/#ide",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://snapcraft.io/betaflight-configurator",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://obsproject.com/download",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.blender.org/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://inkscape.org/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://krita.org/en/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.audacityteam.org/download/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://zen-browser.app/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://altstore.io/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://github.com/vyvir/althea",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://nextion.tech/nextion-editor/",
+      "type": "external"
+    },
+    {
+      "source": "fuck-it-im-moving-to-linux",
+      "target": "https://www.winboat.app/",
+      "type": "external"
+    },
+    {
+      "source": "getting-davinci-resolve-to-actually-work-on-ubuntu",
+      "target": "https://www.blackmagicdesign.com/support/",
+      "type": "external"
+    },
+    {
+      "source": "how-to-open-bluetooth-devices-with-autohotkey",
+      "target": "https://www.autohotkey.com/",
+      "type": "external"
+    },
+    {
+      "source": "how-to-make-a-pcb",
+      "target": "https://www.kicad.org/",
+      "type": "external"
+    },
+    {
+      "source": "how-to-make-a-pcb",
+      "target": "https://inkscape.org/",
+      "type": "external"
+    },
+    {
+      "source": "how-to-make-a-pcb",
+      "target": "https://www.photopea.com/",
+      "type": "external"
+    },
+    {
+      "source": "how-to-make-a-pcb",
+      "target": "https://www.snapeda.com/",
+      "type": "external"
+    },
+    {
+      "source": "learning-vim",
+      "target": "https://youtu.be/RZ4p-saaQkc",
+      "type": "external"
+    },
+    {
+      "source": "learning-tmux",
+      "target": "https://www.youtube.com/playlist?list=PLT98CRl2KxKGiyV1u6wHDV8VwcQdzfuKe",
+      "type": "external"
+    },
+    {
+      "source": "learning-tmux",
+      "target": "https://www.youtube.com/watch?v=nTqu6w2wc68",
+      "type": "external"
+    },
+    {
+      "source": "learning-tmux",
+      "target": "https://tmuxcheatsheet.com/",
+      "type": "external"
+    },
+    {
+      "source": "migrate-zen-browser-from-windows-to-linux",
+      "target": "https://zen-browser.app/",
+      "type": "external"
+    },
+    {
+      "source": "pid-controller",
+      "target": "https://youtu.be/_VzHpLjKeZ8?si=g_60MByeGy_GCVaE&t=1840",
+      "type": "external"
+    },
+    {
+      "source": "pid-controller",
+      "target": "https://www.youtube.com/watch?v=_VzHpLjKeZ8&t=49s",
+      "type": "external"
+    },
+    {
+      "source": "running-ni-multisim-on-linux",
+      "target": "https://www.winehq.org/",
+      "type": "external"
+    },
+    {
+      "source": "running-ni-multisim-on-linux",
+      "target": "https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019QhDSAU&l=de-DE",
+      "type": "external"
+    },
+    {
+      "source": "running-ni-multisim-on-linux",
+      "target": "https://www.winboat.app/",
+      "type": "external"
+    },
+    {
+      "source": "running-ni-multisim-on-linux",
+      "target": "https://youtu.be/Imnf8yd01fM?si=VAX6pZULFeIctP0F",
+      "type": "external"
+    },
+    {
+      "source": "running-ni-multisim-on-linux",
+      "target": "https://sourceforge.net/projects/multisim-latest/",
+      "type": "external"
+    },
+    {
+      "source": "running-ros-on-raspberry-pi",
+      "target": "running-ros-on-raspberry-pi",
+      "type": "internal"
+    },
+    {
+      "source": "running-ros-on-raspberry-pi",
+      "target": "https://www.raspberrypi.com/software/",
+      "type": "external"
+    },
+    {
+      "source": "running-ros-on-raspberry-pi",
+      "target": "https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password",
+      "type": "external"
+    },
+    {
+      "source": "spotx-no-ads-on-spotify-for-windows",
+      "target": "https://drive.google.com/drive/folders/1eZp5y4L_wD7y1c9HiHbB6wscSIWAAx1p?usp=sharing",
+      "type": "external"
+    },
+    {
+      "source": "spotx-no-ads-on-spotify-for-windows",
+      "target": "https://docs.google.com/spreadsheets/d/1wztO1L4zvNykBRw7X4jxP8pvo11oQjT0O5DvZ_-S4Ok/edit?gid=803394557#gid=803394557",
+      "type": "external"
+    },
+    {
+      "source": "spotx-no-ads-on-spotify-for-windows",
+      "target": "https://drive.google.com/drive/folders/1eZp5y4L_wD7y1c9HiHbB6wscSIWAAx1p?usp=sharing",
+      "type": "external"
+    },
+    {
+      "source": "spotx-no-ads-on-spotify-for-windows",
+      "target": "https://drive.google.com/drive/folders/1eZp5y4L_wD7y1c9HiHbB6wscSIWAAx1p?usp=sharing",
+      "type": "external"
+    },
+    {
+      "source": "spotx-no-ads-on-spotify-for-windows",
+      "target": "https://github.com/SpotX-Official/SpotX",
+      "type": "external"
+    },
+    {
+      "source": "starting-a-blog",
+      "target": "https://gohugo.io/installation/",
+      "type": "external"
+    },
+    {
+      "source": "starting-a-blog",
+      "target": "https://themes.gohugo.io/",
+      "type": "external"
+    },
+    {
+      "source": "starting-a-blog",
+      "target": "https://gitlab.com/gabmus/hugo-ficurinia",
+      "type": "external"
+    },
+    {
+      "source": "understanding-capacitor-charging-and-the-concept-of-full-charge",
+      "target": "https://youtube.com/playlist?list=PLww54WQ2wa5qVh1p8iPi7HspX7N9hbvbc&si=9h1KH2NZG2lSLsaB",
+      "type": "external"
+    },
+    {
+      "source": "understanding-capacitor-charging-and-the-concept-of-full-charge",
+      "target": "https://www.linkedin.com/in/ahmad-awad-36b481301/",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://www.youtube.com/watch?v=JuvWbRhhpdI",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://www.youtube.com/watch?v=IyGwvGzrqp8",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://www.youtube.com/watch?v=V6m2skVlsQI",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://www.youtube.com/watch?v=4xBjrE9csxg",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://www.youtube.com/watch?v=Z-O6PkvYXXs",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://dpvipracollege.in/wp-content/uploads/2023/01/Data-Communications-and-Networking-By-Behrouz-A.Forouzan.pdf",
+      "type": "external"
+    },
+    {
+      "source": "understanding-uart-and-serial-communication",
+      "target": "https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter",
+      "type": "external"
+    },
+    {
+      "source": "velocidrone-installation-on-ubuntu",
+      "target": "https://www.velocidrone.com/account/my_licenses",
+      "type": "external"
+    },
+    {
+      "source": "download-vs-code-on-linux",
+      "target": "https://code.visualstudio.com/download",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.arduino.cc/en/software/#ide",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.espressif.com/en/products/sdks/esp-idf",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.freertos.org/",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://youtu.be/O2tV9q6784k?si=-JjG1ECueoNqWejt",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.youtube.com/playlist?list=PL3bNyZYHcRSXm0mNZLiu5hj5ScufC_au9",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://youtu.be/h7VfpoJvIpg?si=-Xkc5nEwmJU--kbo",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://github.com/abda-s/course-iot-with-esp-idf",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://learn.microsoft.com/en-us/windows/wsl/install",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.docker.com/products/docker-desktop/",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.python.org/downloads/",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://github.com/abda-s/course-iot-with-esp-idf/blob/main/Dockerfile.esp-idf",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/build-system.html#idf-component-commands",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#api-reference-normal-gpio",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/stdio.html",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://www.freertos.org/",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://docs.docker.com/desktop/troubleshoot-and-support/faqs/general/#can-i-pass-through-a-usb-device-to-a-container",
+      "type": "external"
+    },
+    {
+      "source": "esp-idf-1",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32/api-guides/bootloader.html",
+      "type": "external"
+    },
+    {
+      "source": "finger-joints",
+      "target": "https://www.makercase.com/#/basicbox",
+      "type": "external"
+    },
+    {
+      "source": "finger-joints",
+      "target": "https://www.makercase.com/#/basicbox",
+      "type": "external"
+    },
+    {
+      "source": "installing-esp32-boards",
+      "target": "https://drive.google.com/file/d/1TCEtkAoYKrJs-ypomD6y4LwpcRnMuvAK/view?usp=sharing",
+      "type": "external"
+    }
+  ]
+}

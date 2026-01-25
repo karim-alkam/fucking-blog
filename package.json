@@ -12,6 +12,7 @@
     "sync-drawings": "node scripts/syncExcalidraw.js",
     "sync-drawing-assets": "node scripts/syncDrawingAssets.js",
     "process-drawings": "node scripts/compressExcalidraw.js",
+    "generate-graph": "node scripts/generateGraph.js",
     "copy-posts-from-obsidian": "node scripts/copyFilesFromObsidian.js"
   },
   "dependencies": {
@@ -36,7 +37,8 @@
     "pdfjs-dist": "^5.4.530",
     "puppeteer": "^24.34.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-force-graph-2d": "^1.29.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
