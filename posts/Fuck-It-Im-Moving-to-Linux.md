@@ -24,14 +24,14 @@ After that, I was thinking: what software is even on my Windows machine? What’
 
 Here is the breakdown:
 **The Dev & Engineering Staples:**
-- [VS Code](https://code.visualstudio.com/), [Git](https://git-scm.com/), [Python](https://www.python.org/), [Postman](https://www.postman.com/), [Node](https://nodejs.org/en) [Docker](https://www.docker.com/) (Native)
-- [MATLAB](https://www.mathworks.com/products/matlab.html), [KiCAD](https://www.kicad.org/), [Fritzing](https://fritzing.org/), [Arduino IDE](https://www.arduino.cc/en/software/#ide), [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html)  (Native)
-- [Cisco Packet Tracer](https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/) (Available as a `.deb`)
-- [Betaflight Configurator](https://snapcraft.io/betaflight-configurator) (For the FPV drones)
+- **VS Code, Git, Python, Postman, Node, Docker** (Native)
+- **MATLAB, KiCAD, Fritzing, Arduino IDE, ESP-IDF** (Native)
+- **Cisco Packet Tracer** (Available as a `.deb`)
+- **Betaflight Configurator** (For the FPV drones)
 
 **Creative & Media:**
-- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), [OBS Studio](https://obsproject.com/download), [Blender](https://www.blender.org/): Installing DaVinci wasn't that straight forward so i made this blog <a href="/posts/Getting-DaVinci-Resolve-to-Actually-Work-on-Ubuntu" class="obsidian-link">Getting DaVinci Resolve to Actually Work on Ubuntu</a>   
-- [Inkscape](https://inkscape.org/), [Krita](https://krita.org/en/), [Audacity](https://www.audacityteam.org/download/)
+- DaVinci Resolve, OBS Studio, Blender: Installing DaVinci wasn't that straight forward so i made this blog <a href="/posts/Getting-DaVinci-Resolve-to-Actually-Work-on-Ubuntu" class="obsidian-link">Getting DaVinci Resolve to Actually Work on Ubuntu</a>   
+- Inkscape, Krita, Audacity
 
 **The Internet & Sideloading:**
 - [Zen Browser](https://zen-browser.app/): I wanted all my workspaces and bookmarks to stay the same, so I did some shit and it worked. Here is an in-depth tutorial on how to do it: <a href="/posts/Migrate-Zen-Browser-from-Windows-to-Linux" class="obsidian-link">How to Migrate Zen Browser from Windows to Linux</a>.
@@ -42,8 +42,10 @@ Here is the breakdown:
 ### The "Impossible" Apps: Multisim & Office
 
 Now let's talk about the things that I can’t just run on Linux or that would crash if I used Wine. They are for electrical engineering and uni, so I just can’t skip them:
-- [NI Multisim](https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133)
+- NI Multisim
 - [Nextion Editor](https://nextion.tech/nextion-editor/)
 - **Microsoft Office 365** (Word, Excel)
 
 The best approach was to use a VM, but fuck that I found out about something better: [WinBoat](https://www.winboat.app/). I dove deeper into how it works and why I'm using it in the blog where I installed Multisim: <a href="/posts/Running-NI-Multisim-on-Linux" class="obsidian-link">Running NI Multisim on Linux</a>. The short explanation is: I can open apps like they are native on Linux, but they are actually running in a KVM in Docker in the background. It’s clean and it works.
+
+

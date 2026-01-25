@@ -80,7 +80,10 @@ async function syncExcalidrawAttachments() {
         const hasPdf = Array.from(attachmentsToSync.keys()).some(f => f.toLowerCase().endsWith('.pdf'));
         if (hasPdf) {
             logger.substep('Launching browser for PDF conversion...');
-            browser = await puppeteer.launch({ headless: 'new' });
+            browser = await puppeteer.launch({ 
+                headless: 'new',
+                args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+            });
         }
 
         for (const [filename, suffixes] of attachmentsToSync.entries()) {

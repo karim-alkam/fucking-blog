@@ -246,139 +246,6 @@
       "url": "https://opencode.ai/"
     },
     {
-      "id": "https://code.visualstudio.com/",
-      "name": "code.visualstudio.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://code.visualstudio.com/"
-    },
-    {
-      "id": "https://git-scm.com/",
-      "name": "git-scm.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://git-scm.com/"
-    },
-    {
-      "id": "https://www.python.org/",
-      "name": "www.python.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.python.org/"
-    },
-    {
-      "id": "https://www.postman.com/",
-      "name": "www.postman.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.postman.com/"
-    },
-    {
-      "id": "https://nodejs.org/en",
-      "name": "nodejs.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://nodejs.org/en"
-    },
-    {
-      "id": "https://www.docker.com/",
-      "name": "www.docker.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.docker.com/"
-    },
-    {
-      "id": "https://www.mathworks.com/products/matlab.html",
-      "name": "www.mathworks.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.mathworks.com/products/matlab.html"
-    },
-    {
-      "id": "https://www.kicad.org/",
-      "name": "www.kicad.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.kicad.org/"
-    },
-    {
-      "id": "https://fritzing.org/",
-      "name": "fritzing.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://fritzing.org/"
-    },
-    {
-      "id": "https://www.arduino.cc/en/software/#ide",
-      "name": "www.arduino.cc",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.arduino.cc/en/software/#ide"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html"
-    },
-    {
-      "id": "https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/",
-      "name": "www.geeksforgeeks.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/"
-    },
-    {
-      "id": "https://snapcraft.io/betaflight-configurator",
-      "name": "snapcraft.io",
-      "val": 10,
-      "type": "external",
-      "url": "https://snapcraft.io/betaflight-configurator"
-    },
-    {
-      "id": "https://www.blackmagicdesign.com/products/davinciresolve",
-      "name": "www.blackmagicdesign.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.blackmagicdesign.com/products/davinciresolve"
-    },
-    {
-      "id": "https://obsproject.com/download",
-      "name": "obsproject.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://obsproject.com/download"
-    },
-    {
-      "id": "https://www.blender.org/",
-      "name": "www.blender.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.blender.org/"
-    },
-    {
-      "id": "https://inkscape.org/",
-      "name": "inkscape.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://inkscape.org/"
-    },
-    {
-      "id": "https://krita.org/en/",
-      "name": "krita.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://krita.org/en/"
-    },
-    {
-      "id": "https://www.audacityteam.org/download/",
-      "name": "www.audacityteam.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.audacityteam.org/download/"
-    },
-    {
       "id": "https://zen-browser.app/",
       "name": "zen-browser.app",
       "val": 10,
@@ -398,13 +265,6 @@
       "val": 10,
       "type": "external",
       "url": "https://github.com/vyvir/althea"
-    },
-    {
-      "id": "https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133",
-      "name": "www.ni.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133"
     },
     {
       "id": "https://nextion.tech/nextion-editor/",
@@ -433,6 +293,20 @@
       "val": 10,
       "type": "external",
       "url": "https://www.autohotkey.com/"
+    },
+    {
+      "id": "https://www.kicad.org/",
+      "name": "www.kicad.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.kicad.org/"
+    },
+    {
+      "id": "https://inkscape.org/",
+      "name": "inkscape.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://inkscape.org/"
     },
     {
       "id": "https://www.photopea.com/",
@@ -652,6 +526,13 @@
       "url": "https://code.visualstudio.com/download"
     },
     {
+      "id": "https://www.arduino.cc/en/software/#ide",
+      "name": "www.arduino.cc",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.arduino.cc/en/software/#ide"
+    },
+    {
       "id": "https://www.espressif.com/en/products/sdks/esp-idf",
       "name": "www.espressif.com",
       "val": 10,
@@ -858,101 +739,6 @@
     },
     {
       "source": "fuck-it-im-moving-to-linux",
-      "target": "https://code.visualstudio.com/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://git-scm.com/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.python.org/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.postman.com/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://nodejs.org/en",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.docker.com/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.mathworks.com/products/matlab.html",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.kicad.org/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://fritzing.org/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.arduino.cc/en/software/#ide",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.geeksforgeeks.org/installation-guide/how-to-install-cisco-packet-tracer-on-linux/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://snapcraft.io/betaflight-configurator",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.blackmagicdesign.com/products/davinciresolve",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://obsproject.com/download",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.blender.org/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://inkscape.org/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://krita.org/en/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.audacityteam.org/download/",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
       "target": "https://zen-browser.app/",
       "type": "external"
     },
@@ -964,11 +750,6 @@
     {
       "source": "fuck-it-im-moving-to-linux",
       "target": "https://github.com/vyvir/althea",
-      "type": "external"
-    },
-    {
-      "source": "fuck-it-im-moving-to-linux",
-      "target": "https://www.ni.com/en/support/downloads/software-products/download.multisim.html#452133",
       "type": "external"
     },
     {
