@@ -41,7 +41,7 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
   const [data, setData] = useState<GraphData | null>(null);
   const router = useRouter();
   const graphWrapperRef = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(256); // Default to generic size to prevent layout shift
+  const [width, setWidth] = useState(0); // Start at 0 to defer render until measured
 
   // Filter Graph Data for Local View
   const filteredData = useMemo(() => {
@@ -107,25 +107,37 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
   }, []);
 
   useEffect(() => {
-    if (!data) return;
+    if (!data || !graphWrapperRef.current) return;
 
-    function handleResize() {
+    const measure = () => {
       if (graphWrapperRef.current) {
-        setWidth(graphWrapperRef.current.clientWidth);
+        const w = graphWrapperRef.current.clientWidth;
+        if (w > 0) {
+          setWidth((prev) => (Math.abs(prev - w) > 1 ? w : prev));
+        }
       }
-    }
+    };
 
-    // Initial measurement after data load
-    // Small timeout to ensure DOM is painted
-    const timer = setTimeout(handleResize, 0);
+    // Initial measure
+    measure();
 
-    // Listen for window resize
-    window.addEventListener('resize', handleResize);
-    
-    // Cleanup
+    // Observer
+    const resizeObserver = new ResizeObserver(measure);
+    resizeObserver.observe(graphWrapperRef.current);
+
+    // Polling backup for mobile animations/layout shifts
+    const timers: NodeJS.Timeout[] = [];
+    [100, 300, 500, 800, 1500].forEach(delay => {
+        timers.push(setTimeout(measure, delay));
+    });
+
+    // Window resize backup
+    window.addEventListener('resize', measure);
+
     return () => {
-      window.removeEventListener('resize', handleResize);
-      clearTimeout(timer);
+      resizeObserver.disconnect();
+      timers.forEach(t => clearTimeout(t));
+      window.removeEventListener('resize', measure);
     };
   }, [data]);
 
@@ -217,46 +229,55 @@ export default function GraphView({ currentSlug }: GraphViewProps) {
         </div>
 
         <div className="flex-1 w-full overflow-hidden relative h-64" ref={graphWrapperRef}>
-            <ForceGraph2D
-            width={width}
-            height={256}
-            graphData={filteredData}
-            nodeLabel="name"
-            nodeRelSize={6}
-            linkColor={() => '#2a2a2a'}
-            backgroundColor="rgba(0,0,0,0)"
-            onNodeClick={(node) => {
-                if (node.type === 'post' && node.slug) {
-                    router.push(`/posts/${node.slug}`);
-                } else if (node.type === 'external' && node.url) {
-                    window.open(node.url, '_blank');
-                }
-            }}
-            nodeCanvasObject={(node, ctx, globalScale) => {
-                const label = node.name;
-                const fontSize = 12/globalScale;
-                ctx.font = `${fontSize}px "Rajdhani", sans-serif`;
+            {width > 0 ? (
+                <ForceGraph2D
+                key={currentSlug} // Force re-mount on navigation to ensure clean state
+                width={width}
+                height={256}
+                graphData={filteredData}
+                nodeLabel="name"
+                nodeRelSize={6}
+                linkColor={() => '#2a2a2a'}
+                backgroundColor="rgba(0,0,0,0)"
+                onNodeClick={(node) => {
+                    if (node.type === 'post' && node.slug) {
+                        router.push(`/posts/${node.slug}`);
+                    } else if (node.type === 'external' && node.url) {
+                        window.open(node.url, '_blank');
+                    }
+                }}
+                nodeCanvasObject={(node, ctx, globalScale) => {
+                    const label = node.name;
+                    const fontSize = 12/globalScale;
+                    ctx.font = `${fontSize}px "Rajdhani", sans-serif`;
 
-                // Draw Node Circle
-                ctx.beginPath();
-                ctx.arc(node.x!, node.y!, 5, 0, 2 * Math.PI, false);
-                ctx.fillStyle = node.color || '#fff';
-                ctx.fill();
-                
-                // Glow effect
-                ctx.shadowColor = node.color || '#fff';
-                ctx.shadowBlur = 10;
-                ctx.stroke();
-                ctx.shadowBlur = 0; // Reset
+                    // Draw Node Circle
+                    ctx.beginPath();
+                    ctx.arc(node.x!, node.y!, 5, 0, 2 * Math.PI, false);
+                    ctx.fillStyle = node.color || '#fff';
+                    ctx.fill();
+                    
+                    // Glow effect
+                    ctx.shadowColor = node.color || '#fff';
+                    ctx.shadowBlur = 10;
+                    ctx.stroke();
+                    ctx.shadowBlur = 0; // Reset
 
-                // Draw Label on Hover or if it's the current node
-                // Note: Simplification for performance, drawing text below node
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillStyle = node.color || '#fff';
-                ctx.fillText(label, node.x!, node.y! + 8);
-            }}
-            />
+                    // Draw Label on Hover or if it's the current node
+                    // Note: Simplification for performance, drawing text below node
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillStyle = node.color || '#fff';
+                    ctx.fillText(label, node.x!, node.y! + 8);
+                }}
+                />
+            ) : (
+                <div className="flex items-center justify-center h-full w-full">
+                    <div className="text-cyber-neon-cyan/50 text-xs font-mono animate-pulse">
+                        INITIALIZING_SYSTEM...
+                    </div>
+                </div>
+            )}
         </div>
       </motion.div>
 
