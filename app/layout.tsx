@@ -88,7 +88,7 @@ export default function RootLayout({
         <main className="flex-1 relative z-10">
           {children}
         </main>
-        <footer className="bg-cyber-dark-gray border-t border-cyber-gray py-8 mt-auto relative z-10">
+        <footer id="site-footer" className="bg-cyber-dark-gray border-t border-cyber-gray py-8 mt-auto relative z-1">
           <div className="container mx-auto px-4 text-center">
             <p className="font-mono text-cyber-gray-light">
               <span className="text-cyber-neon-cyan">©</span> {new Date().getFullYear()} Salameh&apos;s Blog. All rights reserved.
