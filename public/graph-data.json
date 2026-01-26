@@ -57,6 +57,13 @@
       "slug": "How-to-make-a-pcb"
     },
     {
+      "id": "installing-arduino-ide-20-on-ubuntu",
+      "name": "Installing Arduino IDE 2.0 on Ubuntu",
+      "val": 20,
+      "type": "post",
+      "slug": "Installing-Arduino-IDE-2.0-on-Ubuntu"
+    },
+    {
       "id": "learning-vim",
       "name": "Learning VIM",
       "val": 20,
@@ -321,6 +328,13 @@
       "val": 10,
       "type": "external",
       "url": "https://www.snapeda.com/"
+    },
+    {
+      "id": "https://www.arduino.cc/en/software",
+      "name": "www.arduino.cc",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.arduino.cc/en/software"
     },
     {
       "id": "https://youtu.be/RZ4p-saaQkc",
@@ -790,6 +804,16 @@
     {
       "source": "how-to-make-a-pcb",
       "target": "https://www.snapeda.com/",
+      "type": "external"
+    },
+    {
+      "source": "installing-arduino-ide-20-on-ubuntu",
+      "target": "fuck-it-im-moving-to-linux",
+      "type": "internal"
+    },
+    {
+      "source": "installing-arduino-ide-20-on-ubuntu",
+      "target": "https://www.arduino.cc/en/software",
       "type": "external"
     },
     {
