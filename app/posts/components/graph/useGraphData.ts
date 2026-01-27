@@ -116,7 +116,7 @@ export const useGraphData = (currentSlug: string) => {
 
   // Derived Lists (Coupled to filteredData so they match the visual graph)
   const internalMentions = useMemo(() => {
-    return filteredData.links.filter(l => {
+    const nodes = filteredData.links.filter(l => {
        const sourceId = typeof l.source === 'object' ? (l.source as GraphNode).id : l.source;
        // Find the current node in the filtered nodes to get its ID (which might differ from slug)
        const currentNode = filteredData.nodes.find(n => n.slug === currentSlug);
@@ -129,10 +129,13 @@ export const useGraphData = (currentSlug: string) => {
         const targetId = typeof l.target === 'object' ? (l.target as GraphNode).id : l.target;
         return filteredData.nodes.find(n => n.id === targetId)!;
     }).filter(Boolean);
+
+    // Deduplicate nodes to prevent "duplicate key" React errors
+    return Array.from(new Map(nodes.map(node => [node.id, node])).values());
   }, [filteredData, currentSlug]);
 
   const externalMentions = useMemo(() => {
-    return filteredData.links.filter(l => {
+    const nodes = filteredData.links.filter(l => {
        const sourceId = typeof l.source === 'object' ? (l.source as GraphNode).id : l.source;
        // Find the current node in the filtered nodes to get its ID
        const currentNode = filteredData.nodes.find(n => n.slug === currentSlug);
@@ -145,10 +148,13 @@ export const useGraphData = (currentSlug: string) => {
         const targetId = typeof l.target === 'object' ? (l.target as GraphNode).id : l.target;
         return filteredData.nodes.find(n => n.id === targetId)!;
     }).filter(Boolean);
+
+    // Deduplicate nodes
+    return Array.from(new Map(nodes.map(node => [node.id, node])).values());
   }, [filteredData, currentSlug]);
 
   const internalReferences = useMemo(() => {
-    return filteredData.links.filter(l => {
+    const nodes = filteredData.links.filter(l => {
         const targetId = typeof l.target === 'object' ? (l.target as GraphNode).id : l.target;
         // Find the current node in the filtered nodes to get its ID
         const currentNode = filteredData.nodes.find(n => n.slug === currentSlug);
@@ -157,6 +163,9 @@ export const useGraphData = (currentSlug: string) => {
          const sourceId = typeof l.source === 'object' ? (l.source as GraphNode).id : l.source;
          return filteredData.nodes.find(n => n.id === sourceId)!;
      }).filter(Boolean);
+
+     // Deduplicate nodes
+     return Array.from(new Map(nodes.map(node => [node.id, node])).values());
   }, [filteredData, currentSlug]);
 
   return {
