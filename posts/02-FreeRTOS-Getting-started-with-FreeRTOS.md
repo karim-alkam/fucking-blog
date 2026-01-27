@@ -5,7 +5,7 @@ date: 2026-01-27
 tags:
   - ESP
   - FreeRTOS
-draft: "false"
+draft: "true"
 ---
 I’m diving into FreeRTOS on the ESP32-S3. Honestly, the tutorial starts by showing how to install FreeRTOS for everything, but since I’m using the ESP32-S3, the ESP platform already has a forked version of FreeRTOS pre-installed. We’re skipping the fluff and getting straight to the good stuff.
 
