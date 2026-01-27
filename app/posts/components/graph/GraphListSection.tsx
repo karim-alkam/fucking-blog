@@ -48,7 +48,7 @@ export const GraphListSection = ({ title, nodes, colorClass, delay }: GraphListS
                 rel="noopener noreferrer"
                 className={`text-xs text-gray-400 ${hoverColor} transition-colors block truncate font-mono`}
               >
-                [EXT] {node.name}
+                {node.name}
               </a>
             )}
           </li>
