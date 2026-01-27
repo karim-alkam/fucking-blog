@@ -8,6 +8,13 @@
       "slug": "(OOP)-in-Python"
     },
     {
+      "id": "02-freertos-getting-started-with-freertos",
+      "name": "02 FreeRTOS - Getting started with FreeRTOS",
+      "val": 20,
+      "type": "post",
+      "slug": "02-FreeRTOS-Getting-started-with-FreeRTOS"
+    },
+    {
       "id": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
       "name": "Charging the BYD Seagull: How 8A and 32A Chargers Impact Its LFP Battery",
       "val": 20,
@@ -230,6 +237,20 @@
       "val": 20,
       "type": "post",
       "slug": "why-the-capacitor-will-not-fully-charge-it-self-at-5j"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=JIr7Xm_riRs"
+    },
+    {
+      "id": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html",
+      "name": "docs.espressif.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html"
     },
     {
       "id": "https://www.youtube.com/watch?v=nV8jR8M8C74",
@@ -716,6 +737,26 @@
     }
   ],
   "links": [
+    {
+      "source": "02-freertos-getting-started-with-freertos",
+      "target": "installing-arduino-ide-20-on-ubuntu",
+      "type": "internal"
+    },
+    {
+      "source": "02-freertos-getting-started-with-freertos",
+      "target": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
+      "type": "external"
+    },
+    {
+      "source": "02-freertos-getting-started-with-freertos",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html",
+      "type": "external"
+    },
+    {
+      "source": "02-freertos-getting-started-with-freertos",
+      "target": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html",
+      "type": "external"
+    },
     {
       "source": "data-science-project-walkthrough",
       "target": "https://www.youtube.com/watch?v=nV8jR8M8C74",
