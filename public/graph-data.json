@@ -746,11 +746,6 @@
   "links": [
     {
       "source": "02-freertos-getting-started-with-freertos",
-      "target": "installing-arduino-ide-20-on-ubuntu",
-      "type": "internal"
-    },
-    {
-      "source": "02-freertos-getting-started-with-freertos",
       "target": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
       "type": "external"
     },
