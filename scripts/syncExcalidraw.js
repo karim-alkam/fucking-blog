@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const logger = require('./logger');
 const { getPath } = require('./config');
+const syncState = require('./syncState');
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
 const sourceDir = getPath('drawingsDir', 'BLOG_DRAWINGS_DIR');
@@ -123,6 +124,9 @@ async function syncDrawings() {
         return;
     }
 
+    // Load manifest
+    syncState.loadManifest();
+
     const sourceFiles = await walk(sourceDir, f => f.endsWith('.md'));
     logger.info(`Found ${sourceFiles.length} potential drawings.`);
 
@@ -132,6 +136,36 @@ async function syncDrawings() {
 
     for (const src of sourceFiles) {
         try {
+            // Convert "My Drawing.md" -> "My-Drawing.excalidraw"
+            // Also handles "Folder Name/My Drawing.md" -> "Folder-Name/My-Drawing.excalidraw"
+            // We use this logic early to determine the destination path
+            const relPath = path.relative(sourceDir, src)
+                .replace(/\.md$/, '.excalidraw')
+                .split(path.sep)
+                .map(part => part.trim().replace(/\s+/g, '-'))
+                .join(path.sep);
+
+            const dest = path.join(destDir, relPath);
+            
+            // Generate a unique key for the manifest based on the source file
+            // We use the original relative path to the vault (or drawings dir)
+            const manifestKey = path.relative(sourceDir, src)
+                .split(path.sep).map(s => s.replace(/ /g, '-')).join(path.sep);
+
+            // Check if source changed or dest missing
+            const changed = syncState.hasChanged(src, manifestKey);
+            const destExists = fs.existsSync(dest);
+
+            if (!changed && destExists) {
+                skipped++;
+                continue;
+            }
+
+            // ─── PROCESS FILE ────────────────────────────────────────────────
+            
+            const stats = await fs.promises.stat(src);
+            const mtimeMs = stats.mtime.getTime();
+
             const content = await fs.promises.readFile(src, 'utf8');
             const json = extractExcalidrawJson(content);
 
@@ -140,16 +174,6 @@ async function syncDrawings() {
                 skipped++;
                 continue;
             }
-
-            // Convert "My Drawing.md" -> "My-Drawing.excalidraw"
-            // Also handles "Folder Name/My Drawing.md" -> "Folder-Name/My-Drawing.excalidraw"
-            const relPath = path.relative(sourceDir, src)
-                .replace(/\.md$/, '.excalidraw')
-                .split(path.sep)
-                .map(part => part.trim().replace(/\s+/g, '-'))
-                .join(path.sep);
-
-            const dest = path.join(destDir, relPath);
 
             const data = JSON.parse(json);
             const attachments = extractAttachments(content);
@@ -193,17 +217,23 @@ async function syncDrawings() {
                         const imageName = `${cleanBaseName}-page-${page}.png`;
 
                         // Update entry to point to the PNG
+                        // Use deterministic timestamps (mtime of the source markdown file)
+                        // This assumes the markdown changes if the attachment link changes.
                         if (!data.files[fileId]) {
                             data.files[fileId] = {
                                 id: fileId,
                                 mimeType: 'image/png', // Lie to Excalidraw, it's an image now
                                 dataURL: `/drawing-assets/${imageName}`,
-                                created: Date.now(),
-                                lastRetrieved: Date.now()
+                                created: mtimeMs,
+                                lastRetrieved: mtimeMs
                             };
                         } else {
                             data.files[fileId].mimeType = 'image/png';
                             data.files[fileId].dataURL = `/drawing-assets/${imageName}`;
+                            // Don't update timestamps on existing sub-objects if we want pure determinism? 
+                            // Actually, better to reset them to the markdown's mtime to be safe/consistent.
+                            data.files[fileId].created = mtimeMs;
+                            data.files[fileId].lastRetrieved = mtimeMs;
                         }
 
                     } else {
@@ -216,11 +246,13 @@ async function syncDrawings() {
                                 id: fileId,
                                 mimeType: mimeType,
                                 dataURL: publicUrl,
-                                created: Date.now(),
-                                lastRetrieved: Date.now()
+                                created: mtimeMs,
+                                lastRetrieved: mtimeMs
                             };
                         } else {
                             data.files[fileId].dataURL = publicUrl;
+                            data.files[fileId].created = mtimeMs;
+                            data.files[fileId].lastRetrieved = mtimeMs;
                         }
                     }
                 }
@@ -233,14 +265,26 @@ async function syncDrawings() {
             if (mustWrite) {
                 await fs.promises.mkdir(path.dirname(dest), { recursive: true });
                 await fs.promises.writeFile(dest, output);
+                
+                // Update manifest ONLY after successful write
+                syncState.updateState(src, manifestKey);
+                
                 logger.substep(`Synced: ${relPath} (${attachmentCount} attachments linked)`);
                 synced++;
+            } else {
+                // Even if we didn't write (content same), we should update manifest 
+                // because the source file might have been 'touched' but content identical.
+                syncState.updateState(src, manifestKey);
+                skipped++;
             }
         } catch (e) {
             logger.error(`Error processing ${src}: ${e.message}`);
             errors++;
         }
     }
+    
+    // Save manifest
+    syncState.saveManifest();
 
     if (synced > 0) logger.success(`Updated ${synced} drawings.`);
     else logger.info('No drawing updates needed.');

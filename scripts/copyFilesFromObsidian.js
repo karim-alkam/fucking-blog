@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const logger = require('./logger');
 const { getPath } = require('./config');
+const syncState = require('./syncState');
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
 const vaultDir = getPath('vaultDir', 'BLOG_VAULT_DIR');
@@ -33,6 +34,9 @@ async function syncPosts() {
   const sourceFiles = await walk(vaultDir, f => f.endsWith('.md'));
   logger.info(`Found ${sourceFiles.length} source markdown files.`);
 
+  // Load manifest state
+  syncState.loadManifest();
+
   // build map of vault-relative → absolute source path
   const sourceMap = new Map();
   for (let src of sourceFiles) {
@@ -47,33 +51,28 @@ async function syncPosts() {
 
   for (let [rel, src] of sourceMap) {
     const dest = path.join(postsDir, rel);
-    const mustCopy = await (async () => {
-      try {
-        const [sStat, dStat] = await Promise.all([
-          fs.promises.stat(src),
-          fs.promises.stat(dest).catch(() => null)
-        ]);
-        if (!dStat) return true;
-        // Compare file contents
-        const [srcContent, destContent] = await Promise.all([
-          fs.promises.readFile(src),
-          fs.promises.readFile(dest)
-        ]);
-        return !srcContent.equals(destContent);
-      } catch {
-        return true;
-      }
-    })();
+    
+    // Check manifest for changes (Source Hash vs Stored Hash)
+    // We also check if dest exists, because if we deleted it manually, we want it back.
+    const hasChanged = syncState.hasChanged(src, rel);
+    const destExists = fs.existsSync(dest);
 
-    if (mustCopy) {
+    if (hasChanged || !destExists) {
       await fs.promises.mkdir(path.dirname(dest), { recursive: true });
       await fs.promises.copyFile(src, dest);
+      
+      // Update the manifest with the new hash
+      syncState.updateState(src, rel);
+      
       logger.substep(`Copied: ${rel}`);
       copied++;
     } else {
       skipped++;
     }
   }
+
+  // Save manifest changes
+  syncState.saveManifest();
 
   if (copied > 0) logger.success(`Updated ${copied} posts.`);
   else logger.info(`No changes detected in ${skipped} files.`);
