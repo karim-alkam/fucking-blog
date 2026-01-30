@@ -1,7 +1,7 @@
 ---
 title: 01 FreeRTOS - what is a nRTOS (Real Time Operating System)
 description:
-date:
+date: 2026-01-29
 tags:
   - FreeRTOS
   - Embedded
