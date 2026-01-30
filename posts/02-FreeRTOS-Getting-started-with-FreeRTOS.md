@@ -27,7 +27,7 @@ WTF, I just opened that; it was freaking huge.
 
 ## Setting Up the Environment
 
-We need the ESP32 boards installed. I already did that in my Installing Arduino IDE 2.0 on Ubuntu notes, but to make life easier:
+We need the ESP32 boards installed. I already did that in my <a href="/posts/Installing-Arduino-IDE-2.0-on-Ubuntu" class="obsidian-link">Installing Arduino IDE 2.0 on Ubuntu</a> notes, but to make life easier:
 
 1. Go to **File > Preferences**.
 2. Add this link to _Additional Board Manager URLs_: `https://dl.espressif.com/dl/package_esp32_index.json`

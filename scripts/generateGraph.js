@@ -10,7 +10,7 @@ const outputFile = path.resolve(process.cwd(), 'public', 'graph-data.json');
 function postNameToSlug(postName) {
   return postName
     .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/[^a-z0-9\s-\.]/g, '')
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '');

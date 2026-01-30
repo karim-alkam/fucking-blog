@@ -71,7 +71,7 @@
       "slug": "How-to-make-a-pcb"
     },
     {
-      "id": "installing-arduino-ide-20-on-ubuntu",
+      "id": "installing-arduino-ide-2.0-on-ubuntu",
       "name": "Installing Arduino IDE 2.0 on Ubuntu",
       "val": 20,
       "type": "post",
@@ -746,6 +746,11 @@
   "links": [
     {
       "source": "02-freertos-getting-started-with-freertos",
+      "target": "installing-arduino-ide-2.0-on-ubuntu",
+      "type": "internal"
+    },
+    {
+      "source": "02-freertos-getting-started-with-freertos",
       "target": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
       "type": "external"
     },
@@ -850,12 +855,12 @@
       "type": "external"
     },
     {
-      "source": "installing-arduino-ide-20-on-ubuntu",
+      "source": "installing-arduino-ide-2.0-on-ubuntu",
       "target": "fuck-it-im-moving-to-linux",
       "type": "internal"
     },
     {
-      "source": "installing-arduino-ide-20-on-ubuntu",
+      "source": "installing-arduino-ide-2.0-on-ubuntu",
       "target": "https://www.arduino.cc/en/software",
       "type": "external"
     },

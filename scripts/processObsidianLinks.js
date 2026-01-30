@@ -41,7 +41,7 @@ async function buildPostMap() {
 function postNameToSlug(postName) {
   return postName
     .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '') // Remove special chars except spaces and hyphens
+    .replace(/[^a-z0-9\s-\.]/g, '') // Remove special chars except spaces, hyphens, and dots
     .replace(/\s+/g, '-') // Replace spaces with hyphens
     .replace(/-+/g, '-') // Replace multiple hyphens with single
     .replace(/^-|-$/g, ''); // Remove leading/trailing hyphens
