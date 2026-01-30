@@ -8,6 +8,13 @@
       "slug": "(OOP)-in-Python"
     },
     {
+      "id": "01-freertos-what-is-rtos",
+      "name": "01 FreeRTOS - what is a nRTOS (Real Time Operating System)",
+      "val": 20,
+      "type": "post",
+      "slug": "01-FreeRTOS-what-is-RTOS"
+    },
+    {
       "id": "02-freertos-getting-started-with-freertos",
       "name": "02 FreeRTOS - Getting started with FreeRTOS",
       "val": 20,
