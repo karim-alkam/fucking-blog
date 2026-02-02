@@ -9,7 +9,7 @@
     },
     {
       "id": "01-freertos-what-is-rtos",
-      "name": "01 FreeRTOS - what is a nRTOS (Real Time Operating System)",
+      "name": "01 FreeRTOS - what is an RTOS (Real Time Operating System)",
       "val": 20,
       "type": "post",
       "slug": "01-FreeRTOS-what-is-RTOS"
