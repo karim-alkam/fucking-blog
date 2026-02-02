@@ -7,6 +7,18 @@ tags:
   - Embedded
 draft: "true"
 ---
+## Todo
+- [ ]  rewrite with AI 
+- [ ] read the other blog  find out how to add some info from there here
+- [ ] fuck my life
+- [ ] idk how but add some links to other posts maybe the one after this one and create a new post that will have all the series of posts in it  
+
+i think i have to add somethings from this blog here https://www.guru99.com/real-time-operating-system.html
+
+---
+
+after reading this blog [What is a Real-Time Operating System (RTOS)?](https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016) i thought i have to do the same thing in my own style
+
 A Real Time Operating system is (RTOS) is a light weight operating system (OS) that can run multiple tasks at the same time and it can do some critical tasks with meeting there critical deadline.
 
 Almost all of the RTOSs have:
@@ -83,9 +95,24 @@ there are somethings that we have to take into consideration when we have to use
 
 ![](/images/Pasted%20image%2020260130195151.png)
 
+technically we can run an RTOS on Arduino UNO (ATmega 328p), but the memory that the scheduler will leave us with little scpace to work on the actual program, because of this the best way to use many 8-bit and 16-bit microcontrollers is to use super loop (bare metal)
+
+As you begin using more powerful 32-bit microcontrollers with faster clocks (e.g. over 20 MHz) and more memory (e.g. over 32 kB RAM), you will have more resources available to run RTOSes. Note that these are not hard requirements--different RTOSes require different amounts of resources.
+
+In this series, we will use the ESP32, which has a 240 MHz clock, 512 kB of RAM, and 2 cores. this microcontroller was designed to be used in IoT applications and when we run the ESP32 in Arduino IDE FreeRTOS is already installed with it (a modified version of it), because of the WiFi and Bluetooth we have to use an RTOS as they run in the same time that the application so they can responed to network requsets and this has to be done in a very short time.
 
 
 
+According to a [2024 survey by the Eclipse Foundation](https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results),Linux was still the most popular operating system for IoT devices. However, note that Linux is a full GPOS, even if it’s being used in a lightweight manner. Additionally, it usually requires a full microprocessor (not a microcontroller) to run.
 ![](/images/Pasted%20image%2020260130195108.png)
+we can see that Linux is the most popular but it's a GPOS and it have to run on a micro processor not a microcontroller, also we can see that FreeRTOS was the most popular RTOS, I recommend keeping an eye on the [Zephyr Project](https://zephyrproject.org/), as it’s a newcomer to the RTOS field, and it’s backed by the Linux Foundation and it's keep in up with FreeRTOS as we can see it just needs 8% and they will be the same 
 
-https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results
+RTOS is a powerful tool to use if u want to get deeper into embedded and IoT, it will give u the ability to run seprate tasks in the same time (or that what they look like). u can give prioritization levels for tasks which allow some tasks to interrupt and run before other tasks. This is known as “preemption.”
+
+
+
+
+
+
+- [the FreeRTOS book](https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf)
+- some random slides i found: https://indico.ictp.it/event/9644/session/1/contribution/5/material/slides/0.pdf

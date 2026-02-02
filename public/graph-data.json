@@ -246,6 +246,34 @@
       "slug": "why-the-capacitor-will-not-fully-charge-it-self-at-5j"
     },
     {
+      "id": "https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016",
+      "name": "www.digikey.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016"
+    },
+    {
+      "id": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results",
+      "name": "newsroom.eclipse.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results"
+    },
+    {
+      "id": "https://zephyrproject.org/",
+      "name": "zephyrproject.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://zephyrproject.org/"
+    },
+    {
+      "id": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf"
+    },
+    {
       "id": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
       "name": "www.youtube.com",
       "val": 10,
@@ -744,6 +772,26 @@
     }
   ],
   "links": [
+    {
+      "source": "01-freertos-what-is-rtos",
+      "target": "https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016",
+      "type": "external"
+    },
+    {
+      "source": "01-freertos-what-is-rtos",
+      "target": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results",
+      "type": "external"
+    },
+    {
+      "source": "01-freertos-what-is-rtos",
+      "target": "https://zephyrproject.org/",
+      "type": "external"
+    },
+    {
+      "source": "01-freertos-what-is-rtos",
+      "target": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf",
+      "type": "external"
+    },
     {
       "source": "02-freertos-getting-started-with-freertos",
       "target": "installing-arduino-ide-2.0-on-ubuntu",
