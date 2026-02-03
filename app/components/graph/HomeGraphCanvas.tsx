@@ -96,7 +96,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
             // Reheat specifically to start resolving layout from a standstill
             instance.d3ReheatSimulation();
         }
-    }, [applyCustomForces, data.nodes, isForcesApplied]);
+    }, [applyCustomForces, isForcesApplied]);
 
     useEffect(() => {
         const graph = fgRef.current;
