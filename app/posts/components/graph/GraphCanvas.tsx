@@ -24,6 +24,12 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
   const graphWrapperRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
   const [showTutorial, setShowTutorial] = useState(false);
+  const startTime = useRef(0);
+
+  // Reset start time on mount OR when data changes (filtering)
+  useEffect(() => {
+    startTime.current = Date.now();
+  }, [data]);
 
   // Resize Observer
   useEffect(() => {
@@ -106,7 +112,15 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
           enablePanInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           enableZoomInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
-          linkColor={() => '#2a2a2a'}
+          linkColor={() => {
+            const now = Date.now();
+            const timeSinceStart = now - startTime.current;
+            const animationDuration = 2000;
+            const progress = Math.min(1, Math.max(0, (timeSinceStart - 500) / animationDuration));
+            const easeOutQuart = (x: number): number => 1 - Math.pow(1 - x, 4);
+            const opacity = easeOutQuart(progress);
+            return `rgba(92, 92, 92, ${opacity})`;
+          }}
           backgroundColor="rgba(0,0,0,0)"
           onNodeClick={(node) => {
             if (node.type === 'post' && node.slug) {
@@ -116,28 +130,43 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
             }
           }}
           nodeCanvasObject={(node, ctx, globalScale) => {
+            const radius = 5;
             const label = node.name;
-            const fontSize = 12 / globalScale;
-            ctx.font = `${fontSize}px "Rajdhani", sans-serif`;
 
-            // Draw Node Circle
+            if (node.x === undefined || node.y === undefined) return;
+
+            const now = Date.now();
+            const timeSinceStart = now - startTime.current;
+            const animationDuration = 2000;
+            const progress = Math.min(1, Math.max(0, timeSinceStart / animationDuration));
+
+            const easeWithOvershoot = (t: number) => {
+              const c1 = 1.70158;
+              const c3 = c1 + 1;
+              return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+            };
+            const easeOutQuart = (x: number): number => 1 - Math.pow(1 - x, 4);
+
+            const animatedRadius = radius * easeWithOvershoot(progress);
+            const opacity = easeOutQuart(progress);
+
+            ctx.globalAlpha = opacity;
             ctx.beginPath();
-            ctx.arc(node.x!, node.y!, 5, 0, 2 * Math.PI, false);
+            ctx.arc(node.x, node.y, Math.max(0, animatedRadius), 0, 2 * Math.PI, false);
             ctx.fillStyle = node.color || '#fff';
-            ctx.fill();
 
-            // Glow effect
             ctx.shadowColor = node.color || '#fff';
             ctx.shadowBlur = 10;
-            ctx.stroke();
-            ctx.shadowBlur = 0; // Reset
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            ctx.globalAlpha = 1;
 
-            // Draw Label on Hover or if it's the current node
-            // Note: Simplification for performance, drawing text below node
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px "Rajdhani", sans-serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillStyle = node.color || '#fff';
-            ctx.fillText(label, node.x!, node.y! + 8);
+            ctx.fillText(label, node.x, node.y + radius + 2 + fontSize);
           }}
         />
       ) : (
