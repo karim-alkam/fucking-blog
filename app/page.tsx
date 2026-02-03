@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { getPosts } from './lib/posts';
 import PostsList from './components/PostsList';
 import Hero from './components/Hero';
-import HomeGraph from './components/HomeGraph';
 
 export const metadata: Metadata = {
   title: 'HOME',
@@ -19,8 +18,7 @@ export default async function Home() {
   return (
     <>
       <Hero tags={allTags} />
-      <HomeGraph />
-      <div className="relative z-10 -mt-10">
+      <div className="relative z-2 -mt-10">
         <PostsList posts={allPosts} title="LATEST_LOGS" />
       </div>
     </>
