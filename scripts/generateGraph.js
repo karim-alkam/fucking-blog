@@ -209,6 +209,47 @@ async function generateGraph() {
     }
     nodes.push(...Array.from(drawingAssetNodes.values()));
 
+    // 1.9. Collect tag nodes from post frontmatter
+    const tagNodes = new Map();
+    const tagPostLinks = new Set();
+
+    for (const filename of nonDraftFiles) {
+      const filePath = path.join(postsDir, filename);
+      const fileContents = await fs.promises.readFile(filePath, 'utf8');
+      const { data } = matter(fileContents);
+
+      const postSlug = idToSlug.get(filename);
+
+      if (data.tags && Array.isArray(data.tags)) {
+        for (const tagName of data.tags) {
+          if (tagName && typeof tagName === 'string' && tagName.trim() !== '') {
+            const cleanTagName = tagName.trim();
+            const tagId = `tag:${cleanTagName}`;
+
+            if (!tagNodes.has(tagId)) {
+              tagNodes.set(tagId, {
+                id: tagId,
+                name: cleanTagName,
+                val: 22,
+                type: 'tag'
+              });
+            }
+
+            const linkKey = `${tagId}->${postSlug}`;
+            if (!tagPostLinks.has(linkKey)) {
+              tagPostLinks.add(linkKey);
+              links.push({
+                source: tagId,
+                target: postSlug,
+                type: 'tagged'
+              });
+            }
+          }
+        }
+      }
+    }
+    nodes.push(...Array.from(tagNodes.values()));
+
     // 2. Second pass: Parse content for links (Internal & External)
     for (const filename of nonDraftFiles) {
       const filePath = path.join(postsDir, filename);

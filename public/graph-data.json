@@ -1998,6 +1998,60 @@
       "url": "/drawing-assets/Week 6_ Fourier_Series.pdf"
     },
     {
+      "id": "tag:python",
+      "name": "python",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:Electronics",
+      "name": "Electronics",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:Cars",
+      "name": "Cars",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:AI",
+      "name": "AI",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:linux",
+      "name": "linux",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:Automation",
+      "name": "Automation",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:ROS",
+      "name": "ROS",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:ESP",
+      "name": "ESP",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:obsidian",
+      "name": "obsidian",
+      "val": 22,
+      "type": "tag"
+    },
+    {
       "id": "https://en.wikipedia.org/wiki/BYD_Seagull",
       "name": "en.wikipedia.org",
       "val": 10,
@@ -3185,6 +3239,151 @@
       "source": "drawing:Industrial-Power:9.-HARMONICS.excalidraw",
       "target": "/drawing-assets/Week 6_ Fourier_Series.pdf",
       "type": "drawing-asset"
+    },
+    {
+      "source": "tag:python",
+      "target": "oop-in-python",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Cars",
+      "target": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:AI",
+      "target": "data-science-project-walkthrough",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "fixing-my-ethernet-cable-issue",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "fuck-it-im-moving-to-linux",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "getting-davinci-resolve-to-actually-work-on-ubuntu",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Automation",
+      "target": "how-to-open-bluetooth-devices-with-autohotkey",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "installing-arduino-ide-2.0-on-ubuntu",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "learning-vim",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "learning-tmux",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "migrate-zen-browser-from-windows-to-linux",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "pid-controller",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:ROS",
+      "target": "ros-2-cheat-sheets",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "ros-2-cheat-sheets",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "remote-desktop-into-debian",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "running-ni-multisim-on-linux",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "running-ni-multisim-on-linux",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:ESP",
+      "target": "setting-up-esp8266",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "starting-a-blog",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:obsidian",
+      "target": "starting-a-blog",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "understanding-capacitor-charging-and-the-concept-of-full-charge",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "understanding-incremental-rotary-encoders",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Electronics",
+      "target": "understanding-uart-and-serial-communication",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "velocidrone-installation-on-ubuntu",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "virtualbox-clipboard-issues-on-ubuntu",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "download-vs-code-on-linux",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:ESP",
+      "target": "installing-esp32-boards",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:linux",
+      "target": "tmux-fix",
+      "type": "tagged"
     },
     {
       "source": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
