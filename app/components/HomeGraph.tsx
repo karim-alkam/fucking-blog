@@ -43,6 +43,18 @@ export default function HomeGraph() {
     const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
     const containerRef = useRef<HTMLDivElement>(null);
     const fgRef = useRef<any>(null);
+    const [showTutorial, setShowTutorial] = useState(false);
+
+    // Handle Touch Interactions for Mobile UX (Tutorial Only)
+    const handleTouchStart = (e: React.TouchEvent) => {
+        if (e.touches.length === 1) {
+            setShowTutorial(true);
+            const timer = setTimeout(() => setShowTutorial(false), 2000);
+            return () => clearTimeout(timer);
+        } else {
+            setShowTutorial(false);
+        }
+    };
 
     // Track if forces have been verified/applied for the current data cycle
     const isForcesApplied = useRef(false);
@@ -182,14 +194,28 @@ export default function HomeGraph() {
     }, [hoverNode]);
 
     return (
-        <section className="relative min-h-[70vh] flex flex-col items-center justify-center my-10">
+        <section className="relative min-h-[70vh] flex flex-col my-10 container mx-auto max-w-7xl px-4">
+            {/* Section Header */}
+            <div className="mb-12 space-y-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-cyber-gray pb-4">
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-cyber-white uppercase tracking-wider mb-2">
+                            <span className="glitch" data-text="NEURAL_NETWORK_MAP">NEURAL_NETWORK_MAP</span>
+                        </h2>
+                        <p className="text-cyber-gray-light font-mono text-sm">
+                            INTERACTIVE SYSTEM VISUALIZATION
+                        </p>
+                    </div>
+                </div>
+            </div>
             <motion.div
                 initial={{ opacity: 0, scaleY: 0, filter: 'brightness(2) hue-rotate(90deg)' }}
                 animate={{ opacity: 1, scaleY: 1, filter: 'brightness(1) hue-rotate(0deg)' }}
                 transition={{ duration: 0.6, type: "spring", bounce: 0.3 }}
                 style={{ originY: 0 }}
-                className="flex flex-col border border-cyber-neon-cyan bg-cyber-black relative shadow-lg shadow-cyber-neon-cyan/20 w-full max-w-5xl mx-auto overflow-hidden h-[600px]"
+                className="flex flex-col border border-cyber-neon-cyan bg-cyber-black relative shadow-lg shadow-cyber-neon-cyan/20 w-full max-w-5xl mx-auto overflow-hidden h-[600px] [&_canvas]:!touch-auto"
                 ref={containerRef}
+                onTouchStart={handleTouchStart}
             >
 
                 {/* Scanline Effect Overlay */}
@@ -235,11 +261,26 @@ export default function HomeGraph() {
                         }}
                         cooldownTicks={100}
                         enableNodeDrag={true}
-                        enableZoomInteraction={true}
                         minZoom={0.5}
                         maxZoom={4}
                         d3VelocityDecay={0.25}
+                        // Custom interaction filter: Ignore 1-finger touch to allow scrolling
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        enablePanInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        enableZoomInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
                     />
+
+                    {/* Mobile Tutorial Overlay */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: showTutorial ? 1 : 0 }}
+                        className="absolute inset-0 z-50 flex items-center justify-center bg-cyber-black/80 pointer-events-none"
+                    >
+                        <div className="text-cyber-neon-cyan font-mono text-sm font-bold bg-cyber-dark-gray border border-cyber-neon-cyan px-4 py-2 shadow-[0_0_15px_rgba(0,240,255,0.3)]">
+                            USE TWO FINGERS TO MOVE
+                        </div>
+                    </motion.div>
                 </div>
             </motion.div>
         </section>
