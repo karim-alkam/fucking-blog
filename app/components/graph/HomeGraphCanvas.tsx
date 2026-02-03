@@ -34,6 +34,12 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
     const fgRef = useRef<ForceGraphInstance | null>(null);
     const [hoverNode, setHoverNode] = useState<Node | null>(null);
     const [showTutorial, setShowTutorial] = useState(false);
+    const startTime = useRef(0);
+
+    // Reset start time on mount OR when data changes (filtering)
+    useEffect(() => {
+        startTime.current = Date.now();
+    }, [data]); // Depend on data to trigger Re-Bloom on filter change
 
     // Handle Touch Interactions for Mobile UX (Tutorial Only)
     const handleTouchStart = (e: React.TouchEvent) => {
@@ -75,13 +81,13 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
         // Save to ref for other usages
         fgRef.current = instance;
 
+        // Initialize animation start time
+        if (!startTime.current) {
+            startTime.current = Date.now();
+        }
+
         if (instance) {
-            // IMMEDIATE STOP -> DAMPEN: Reduce momentum significantly but don't kill it entirely.
-            // Multiplying by 0.2 renders the explosion harmless while keeping the "flow" organic.
-            data.nodes.forEach((node: Node) => {
-                node.vx = (node.vx || 0) * 0.01;
-                node.vy = (node.vy || 0) * 0.01;
-            });
+            // REMOVED manual dampening: Let the physics engine handle the explosion from center naturally for "bloom" effect.
 
             // Apply our custom forces IMMEDIATELY before the first tick
             applyCustomForces();
@@ -128,8 +134,36 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
 
         if (node.x === undefined || node.y === undefined) return;
 
+        // ANIMATION: "Bloom" effect
+        // Calculate progress based on time since mount + slight stagger based on node index/val
+        // Helper to get animation progress
+        const getAnimationProgress = (nodeIndex: number = 0) => {
+            const now = Date.now();
+            const timeSinceStart = now - startTime.current;
+            const animationDuration = 2000;
+            const staggerDelay = nodeIndex * 5;
+            return Math.min(1, Math.max(0, (timeSinceStart - staggerDelay) / animationDuration));
+        };
+
+        const progress = getAnimationProgress(node.index);
+
+
+
+        // Easing function (easeOutCubic) for smooth pop
+        const easeWithOvershoot = (t: number) => {
+            const c1 = 1.70158;
+            const c3 = c1 + 1;
+            return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+        };
+        const easeOutQuart = (x: number): number => 1 - Math.pow(1 - x, 4);
+
+        // Apply animation
+        const animatedRadius = radius * easeWithOvershoot(progress);
+        const opacity = easeOutQuart(progress);
+
+        ctx.globalAlpha = opacity;
         ctx.beginPath();
-        ctx.arc(node.x, node.y, radius, 0, 2 * Math.PI, false);
+        ctx.arc(node.x, node.y, Math.max(0, animatedRadius), 0, 2 * Math.PI, false);
         ctx.fillStyle = node.color || '#00F0FF';
 
         // PERFORMANCE OPTIMIZATION:
@@ -144,6 +178,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
 
         ctx.fill();
         ctx.shadowBlur = 0;
+        ctx.globalAlpha = 1; // Reset alpha for other draws
 
         if (!isHovered && globalScale > 2.25) {
             drawLabel(node, ctx, globalScale);
@@ -214,7 +249,18 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
                 linkDirectionalParticles={0.5}
 
                 nodeRelSize={6}
-                linkColor={() => 'rgba(92, 92, 92, 1)'}
+                linkColor={() => {
+                    // LINK ANIMATION: Fade in links
+                    const now = Date.now();
+                    const timeSinceStart = now - startTime.current;
+                    const animationDuration = 2000;
+                    // Start fading in links after 500ms to avoid initial clutter
+                    const progress = Math.min(1, Math.max(0, (timeSinceStart - 500) / animationDuration));
+                    const easeOutQuart = (x: number): number => 1 - Math.pow(1 - x, 4);
+                    const opacity = easeOutQuart(progress);
+
+                    return `rgba(92, 92, 92, ${opacity})`;
+                }}
                 linkWidth={1}
                 backgroundColor="#050505"
                 nodeCanvasObject={(node, ctx, globalScale) => nodeCanvasObject(node as Node, ctx, globalScale)}

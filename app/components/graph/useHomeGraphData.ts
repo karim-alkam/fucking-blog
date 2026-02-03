@@ -100,6 +100,10 @@ export function useHomeGraphData(): GraphSettings {
                         default:
                             node.color = '#00F0FF';
                     }
+
+                    // INITIALIZATION CHANGE: Start at center with slight jitter to promote "blooming"
+                    node.x = (Math.random() - 0.5) * 5;
+                    node.y = (Math.random() - 0.5) * 5;
                 });
 
                 isForcesApplied.current = false;

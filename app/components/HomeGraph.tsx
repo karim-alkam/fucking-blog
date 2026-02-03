@@ -20,7 +20,7 @@ export default function HomeGraph() {
         post: true,
         drawing: true,
         board: true,
-        tag: true,
+        tag: false,
         external: false,
         asset: false,
     });
