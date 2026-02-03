@@ -18,7 +18,7 @@ function postNameToSlug(postName) {
 
 async function generateGraph() {
   logger.header('GENERATING GRAPH DATA');
-  
+
   try {
     const filenames = await fs.promises.readdir(postsDir);
     const mdFiles = filenames.filter((f) => f.endsWith('.md'));
@@ -28,18 +28,34 @@ async function generateGraph() {
     const idToSlug = new Map(); // filename -> slug
     const slugToId = new Map(); // slug -> filename
 
-    // 1. First pass: Collect all nodes (Posts)
+    // Pre-pass: Filter out drafts
+    const nonDraftFiles = [];
     for (const filename of mdFiles) {
       const filePath = path.join(postsDir, filename);
       const fileContents = await fs.promises.readFile(filePath, 'utf8');
       const { data } = matter(fileContents);
-      
+
+      const isDraft = typeof data.draft === 'string'
+        ? data.draft.toLowerCase() === 'true'
+        : Boolean(data.draft);
+
+      if (!isDraft) {
+        nonDraftFiles.push(filename);
+      }
+    }
+
+    // 1. First pass: Collect all nodes (Posts)
+    for (const filename of nonDraftFiles) {
+      const filePath = path.join(postsDir, filename);
+      const fileContents = await fs.promises.readFile(filePath, 'utf8');
+      const { data } = matter(fileContents);
+
       const slug = filename.replace(/\.md$/, '');
       const cleanSlug = postNameToSlug(slug);
-      
+
       // Use cleanSlug as the unique ID for simplicity in linking
       const id = cleanSlug;
-      
+
       idToSlug.set(filename, id);
       slugToId.set(id, filename);
 
@@ -53,7 +69,7 @@ async function generateGraph() {
     }
 
     // 2. Second pass: Parse content for links (Internal & External)
-    for (const filename of mdFiles) {
+    for (const filename of nonDraftFiles) {
       const filePath = path.join(postsDir, filename);
       const fileContents = await fs.promises.readFile(filePath, 'utf8');
       const sourceId = idToSlug.get(filename);
@@ -64,14 +80,14 @@ async function generateGraph() {
       while ((match = obsidianLinkRegex.exec(fileContents)) !== null) {
         const targetRaw = match[1].trim();
         const targetSlug = postNameToSlug(targetRaw);
-        
+
         // Check if target exists as a post
         if (slugToId.has(targetSlug)) {
-           links.push({
-             source: sourceId,
-             target: targetSlug, // Use the Node ID (clean slug)
-             type: 'internal'
-           });
+          links.push({
+            source: sourceId,
+            target: targetSlug, // Use the Node ID (clean slug)
+            type: 'internal'
+          });
         }
       }
 
@@ -84,11 +100,11 @@ async function generateGraph() {
         const targetSlug = postNameToSlug(cleanTargetRaw);
 
         if (slugToId.has(targetSlug)) {
-           links.push({
-             source: sourceId,
-             target: targetSlug, // Use the Node ID (clean slug)
-             type: 'internal'
-           });
+          links.push({
+            source: sourceId,
+            target: targetSlug, // Use the Node ID (clean slug)
+            type: 'internal'
+          });
         }
       }
 
@@ -99,34 +115,34 @@ async function generateGraph() {
         const title = match[1];
         const url = match[2];
         const domain = new URL(url).hostname;
-        
+
         // Create an external node if it doesn't exist (use URL as ID to avoid dupes)
         const externalNodeId = url;
-        
+
         // Check if node already exists to avoid duplicates
         if (!nodes.find(n => n.id === externalNodeId)) {
-            nodes.push({
-                id: externalNodeId,
-                name: domain, // Show domain as label
-                val: 10, // Smaller size
-                type: 'external',
-                url: url
-            });
+          nodes.push({
+            id: externalNodeId,
+            name: domain, // Show domain as label
+            val: 10, // Smaller size
+            type: 'external',
+            url: url
+          });
         }
 
         links.push({
-            source: sourceId,
-            target: externalNodeId,
-            type: 'external'
+          source: sourceId,
+          target: externalNodeId,
+          type: 'external'
         });
       }
     }
 
     const graphData = { nodes, links };
-    
+
     await fs.promises.writeFile(outputFile, JSON.stringify(graphData, null, 2));
     logger.success(`Graph data generated with ${nodes.length} nodes and ${links.length} links`);
-    
+
   } catch (err) {
     logger.error(`Error generating graph: ${err.message}`);
   }

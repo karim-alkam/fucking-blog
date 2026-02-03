@@ -8,20 +8,6 @@
       "slug": "(OOP)-in-Python"
     },
     {
-      "id": "01-freertos-what-is-rtos",
-      "name": "01 FreeRTOS - what is an RTOS (Real Time Operating System)",
-      "val": 20,
-      "type": "post",
-      "slug": "01-FreeRTOS-what-is-RTOS"
-    },
-    {
-      "id": "02-freertos-getting-started-with-freertos",
-      "name": "02 FreeRTOS - Getting started with FreeRTOS",
-      "val": 20,
-      "type": "post",
-      "slug": "02-FreeRTOS-Getting-started-with-FreeRTOS"
-    },
-    {
       "id": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
       "name": "Charging the BYD Seagull: How 8A and 32A Chargers Impact Its LFP Battery",
       "val": 20,
@@ -62,13 +48,6 @@
       "val": 20,
       "type": "post",
       "slug": "How-to-Open-Bluetooth-Devices-with-AutoHotkey"
-    },
-    {
-      "id": "how-to-make-a-pcb",
-      "name": "How to make a pcb",
-      "val": 20,
-      "type": "post",
-      "slug": "How-to-make-a-pcb"
     },
     {
       "id": "installing-arduino-ide-2.0-on-ubuntu",
@@ -134,13 +113,6 @@
       "slug": "Running-NI-Multisim-on-Linux"
     },
     {
-      "id": "running-ros-on-raspberry-pi",
-      "name": "Running ROS on Raspberry Pi",
-      "val": 20,
-      "type": "post",
-      "slug": "Running-ROS-on-Raspberry-Pi"
-    },
-    {
       "id": "setting-up-esp8266",
       "name": "Setting up ESP8266",
       "val": 20,
@@ -160,13 +132,6 @@
       "val": 20,
       "type": "post",
       "slug": "Starting-a-blog"
-    },
-    {
-      "id": "tcp-ip-model",
-      "name": "The TCP/IP Model",
-      "val": 20,
-      "type": "post",
-      "slug": "TCP-IP-Model"
     },
     {
       "id": "understanding-capacitor-charging-and-the-concept-of-full-charge",
@@ -211,20 +176,6 @@
       "slug": "download-vs-code-on-linux"
     },
     {
-      "id": "esp-idf-1",
-      "name": "ESP-IDF - Setup with blink code",
-      "val": 20,
-      "type": "post",
-      "slug": "esp-idf-1"
-    },
-    {
-      "id": "finger-joints",
-      "name": "finger joints",
-      "val": 20,
-      "type": "post",
-      "slug": "finger-joints"
-    },
-    {
       "id": "installing-esp32-boards",
       "name": "Setting up ESP32",
       "val": 20,
@@ -237,55 +188,6 @@
       "val": 20,
       "type": "post",
       "slug": "tmux-fix"
-    },
-    {
-      "id": "why-the-capacitor-will-not-fully-charge-it-self-at-5j",
-      "name": "why the capacitor will not fully charge it self at 5j",
-      "val": 20,
-      "type": "post",
-      "slug": "why-the-capacitor-will-not-fully-charge-it-self-at-5j"
-    },
-    {
-      "id": "https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016",
-      "name": "www.digikey.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016"
-    },
-    {
-      "id": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results",
-      "name": "newsroom.eclipse.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results"
-    },
-    {
-      "id": "https://zephyrproject.org/",
-      "name": "zephyrproject.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://zephyrproject.org/"
-    },
-    {
-      "id": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf",
-      "name": "github.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf"
-    },
-    {
-      "id": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
-      "name": "www.youtube.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.youtube.com/watch?v=JIr7Xm_riRs"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html"
     },
     {
       "id": "https://www.youtube.com/watch?v=nV8jR8M8C74",
@@ -356,34 +258,6 @@
       "val": 10,
       "type": "external",
       "url": "https://www.autohotkey.com/"
-    },
-    {
-      "id": "https://www.kicad.org/",
-      "name": "www.kicad.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.kicad.org/"
-    },
-    {
-      "id": "https://inkscape.org/",
-      "name": "inkscape.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://inkscape.org/"
-    },
-    {
-      "id": "https://www.photopea.com/",
-      "name": "www.photopea.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.photopea.com/"
-    },
-    {
-      "id": "https://www.snapeda.com/",
-      "name": "www.snapeda.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.snapeda.com/"
     },
     {
       "id": "https://www.arduino.cc/en/software",
@@ -461,20 +335,6 @@
       "val": 10,
       "type": "external",
       "url": "https://sourceforge.net/projects/multisim-latest/"
-    },
-    {
-      "id": "https://www.raspberrypi.com/software/",
-      "name": "www.raspberrypi.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.raspberrypi.com/software/"
-    },
-    {
-      "id": "https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password",
-      "name": "www.raspberrypi.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password"
     },
     {
       "id": "https://drive.google.com/drive/folders/1eZp5y4L_wD7y1c9HiHbB6wscSIWAAx1p?usp=sharing",
@@ -596,174 +456,6 @@
       "url": "https://code.visualstudio.com/download"
     },
     {
-      "id": "https://www.arduino.cc/en/software/#ide",
-      "name": "www.arduino.cc",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.arduino.cc/en/software/#ide"
-    },
-    {
-      "id": "https://www.espressif.com/en/products/sdks/esp-idf",
-      "name": "www.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.espressif.com/en/products/sdks/esp-idf"
-    },
-    {
-      "id": "https://www.freertos.org/",
-      "name": "www.freertos.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.freertos.org/"
-    },
-    {
-      "id": "https://youtu.be/O2tV9q6784k?si=-JjG1ECueoNqWejt",
-      "name": "youtu.be",
-      "val": 10,
-      "type": "external",
-      "url": "https://youtu.be/O2tV9q6784k?si=-JjG1ECueoNqWejt"
-    },
-    {
-      "id": "https://www.youtube.com/playlist?list=PL3bNyZYHcRSXm0mNZLiu5hj5ScufC_au9",
-      "name": "www.youtube.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.youtube.com/playlist?list=PL3bNyZYHcRSXm0mNZLiu5hj5ScufC_au9"
-    },
-    {
-      "id": "https://youtu.be/h7VfpoJvIpg?si=-Xkc5nEwmJU--kbo",
-      "name": "youtu.be",
-      "val": 10,
-      "type": "external",
-      "url": "https://youtu.be/h7VfpoJvIpg?si=-Xkc5nEwmJU--kbo"
-    },
-    {
-      "id": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
-      "name": "documentation.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
-    },
-    {
-      "id": "https://github.com/abda-s/course-iot-with-esp-idf",
-      "name": "github.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://github.com/abda-s/course-iot-with-esp-idf"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation"
-    },
-    {
-      "id": "https://learn.microsoft.com/en-us/windows/wsl/install",
-      "name": "learn.microsoft.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://learn.microsoft.com/en-us/windows/wsl/install"
-    },
-    {
-      "id": "https://www.docker.com/products/docker-desktop/",
-      "name": "www.docker.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.docker.com/products/docker-desktop/"
-    },
-    {
-      "id": "https://www.python.org/downloads/",
-      "name": "www.python.org",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.python.org/downloads/"
-    },
-    {
-      "id": "https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers",
-      "name": "www.silabs.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers"
-    },
-    {
-      "id": "https://github.com/abda-s/course-iot-with-esp-idf/blob/main/Dockerfile.esp-idf",
-      "name": "github.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://github.com/abda-s/course-iot-with-esp-idf/blob/main/Dockerfile.esp-idf"
-    },
-    {
-      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers",
-      "name": "marketplace.visualstudio.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers"
-    },
-    {
-      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools",
-      "name": "marketplace.visualstudio.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools"
-    },
-    {
-      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools",
-      "name": "marketplace.visualstudio.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools"
-    },
-    {
-      "id": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor",
-      "name": "marketplace.visualstudio.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/build-system.html#idf-component-commands",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/build-system.html#idf-component-commands"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#api-reference-normal-gpio",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#api-reference-normal-gpio"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/stdio.html",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/stdio.html"
-    },
-    {
-      "id": "https://docs.docker.com/desktop/troubleshoot-and-support/faqs/general/#can-i-pass-through-a-usb-device-to-a-container",
-      "name": "docs.docker.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.docker.com/desktop/troubleshoot-and-support/faqs/general/#can-i-pass-through-a-usb-device-to-a-container"
-    },
-    {
-      "id": "https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32/api-guides/bootloader.html",
-      "name": "docs.espressif.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32/api-guides/bootloader.html"
-    },
-    {
-      "id": "https://www.makercase.com/#/basicbox",
-      "name": "www.makercase.com",
-      "val": 10,
-      "type": "external",
-      "url": "https://www.makercase.com/#/basicbox"
-    },
-    {
       "id": "https://drive.google.com/file/d/1TCEtkAoYKrJs-ypomD6y4LwpcRnMuvAK/view?usp=sharing",
       "name": "drive.google.com",
       "val": 10,
@@ -772,46 +464,6 @@
     }
   ],
   "links": [
-    {
-      "source": "01-freertos-what-is-rtos",
-      "target": "https://www.digikey.com/en/maker/projects/what-is-a-realtime-operating-system-rtos/28d8087f53844decafa5000d89608016",
-      "type": "external"
-    },
-    {
-      "source": "01-freertos-what-is-rtos",
-      "target": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results",
-      "type": "external"
-    },
-    {
-      "source": "01-freertos-what-is-rtos",
-      "target": "https://zephyrproject.org/",
-      "type": "external"
-    },
-    {
-      "source": "01-freertos-what-is-rtos",
-      "target": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/releases/download/V1.1.0/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf",
-      "type": "external"
-    },
-    {
-      "source": "02-freertos-getting-started-with-freertos",
-      "target": "installing-arduino-ide-2.0-on-ubuntu",
-      "type": "internal"
-    },
-    {
-      "source": "02-freertos-getting-started-with-freertos",
-      "target": "https://www.youtube.com/watch?v=JIr7Xm_riRs",
-      "type": "external"
-    },
-    {
-      "source": "02-freertos-getting-started-with-freertos",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html",
-      "type": "external"
-    },
-    {
-      "source": "02-freertos-getting-started-with-freertos",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html",
-      "type": "external"
-    },
     {
       "source": "data-science-project-walkthrough",
       "target": "https://www.youtube.com/watch?v=nV8jR8M8C74",
@@ -883,26 +535,6 @@
       "type": "external"
     },
     {
-      "source": "how-to-make-a-pcb",
-      "target": "https://www.kicad.org/",
-      "type": "external"
-    },
-    {
-      "source": "how-to-make-a-pcb",
-      "target": "https://inkscape.org/",
-      "type": "external"
-    },
-    {
-      "source": "how-to-make-a-pcb",
-      "target": "https://www.photopea.com/",
-      "type": "external"
-    },
-    {
-      "source": "how-to-make-a-pcb",
-      "target": "https://www.snapeda.com/",
-      "type": "external"
-    },
-    {
       "source": "installing-arduino-ide-2.0-on-ubuntu",
       "target": "fuck-it-im-moving-to-linux",
       "type": "internal"
@@ -970,21 +602,6 @@
     {
       "source": "running-ni-multisim-on-linux",
       "target": "https://sourceforge.net/projects/multisim-latest/",
-      "type": "external"
-    },
-    {
-      "source": "running-ros-on-raspberry-pi",
-      "target": "running-ros-on-raspberry-pi",
-      "type": "internal"
-    },
-    {
-      "source": "running-ros-on-raspberry-pi",
-      "target": "https://www.raspberrypi.com/software/",
-      "type": "external"
-    },
-    {
-      "source": "running-ros-on-raspberry-pi",
-      "target": "https://www.raspberrypi.com/documentation/computers/remote-access.html#configure-ssh-without-a-password",
       "type": "external"
     },
     {
@@ -1080,136 +697,6 @@
     {
       "source": "download-vs-code-on-linux",
       "target": "https://code.visualstudio.com/download",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.arduino.cc/en/software/#ide",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.espressif.com/en/products/sdks/esp-idf",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.freertos.org/",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://youtu.be/O2tV9q6784k?si=-JjG1ECueoNqWejt",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.youtube.com/playlist?list=PL3bNyZYHcRSXm0mNZLiu5hj5ScufC_au9",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://youtu.be/h7VfpoJvIpg?si=-Xkc5nEwmJU--kbo",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://github.com/abda-s/course-iot-with-esp-idf",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://learn.microsoft.com/en-us/windows/wsl/install",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.docker.com/products/docker-desktop/",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.python.org/downloads/",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://github.com/abda-s/course-iot-with-esp-idf/blob/main/Dockerfile.esp-idf",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/build-system.html#idf-component-commands",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#api-reference-normal-gpio",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/stdio.html",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://www.freertos.org/",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://docs.docker.com/desktop/troubleshoot-and-support/faqs/general/#can-i-pass-through-a-usb-device-to-a-container",
-      "type": "external"
-    },
-    {
-      "source": "esp-idf-1",
-      "target": "https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32/api-guides/bootloader.html",
-      "type": "external"
-    },
-    {
-      "source": "finger-joints",
-      "target": "https://www.makercase.com/#/basicbox",
-      "type": "external"
-    },
-    {
-      "source": "finger-joints",
-      "target": "https://www.makercase.com/#/basicbox",
       "type": "external"
     },
     {
