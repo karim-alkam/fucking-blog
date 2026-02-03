@@ -68,6 +68,147 @@ async function generateGraph() {
       });
     }
 
+    // 1.5. Collect assets from posts (images)
+    const assetNodes = new Map();
+
+    for (const filename of nonDraftFiles) {
+      const filePath = path.join(postsDir, filename);
+      const fileContents = await fs.promises.readFile(filePath, 'utf8');
+
+      // Regex for processed image syntax: ![](/images/filename.ext)
+      const imageRegex = /!\[]\([^)]*\/images\/([^)]+?)\)/g;
+      let match;
+
+      while ((match = imageRegex.exec(fileContents)) !== null) {
+        const imageName = decodeURIComponent(match[1]);
+        const assetId = `/images/${imageName}`;
+
+        if (!assetNodes.has(assetId)) {
+          assetNodes.set(assetId, {
+            id: assetId,
+            name: imageName,
+            val: 15,
+            type: 'asset',
+            url: assetId
+          });
+        }
+      }
+    }
+
+    // Add asset nodes to nodes array
+    nodes.push(...Array.from(assetNodes.values()));
+
+    // 1.6. Collect board nodes (folders in drawings/)
+    const drawingsDir = path.join(process.cwd(), 'drawings');
+    const boardNodes = new Map();
+
+    const boardNames = ['Devices-Notes', 'Electrical', 'Further-Electrical', 'Industrial-Power', 'Motors'];
+
+    if (!fs.existsSync(drawingsDir)) {
+      logger.warn('Drawings directory not found. Skipping board/drawing nodes. Run sync-drawings first.');
+    } else {
+      for (const boardName of boardNames) {
+        const boardPath = path.join(drawingsDir, boardName);
+
+        if (fs.existsSync(boardPath)) {
+          const boardId = `board:${boardName}`;
+          boardNodes.set(boardId, {
+            id: boardId,
+            name: boardName.replace(/-/g, ' '),
+            val: 25,
+            type: 'board'
+          });
+        }
+      }
+    }
+    nodes.push(...Array.from(boardNodes.values()));
+
+    // 1.7. Collect drawing nodes (excalidraw files in board folders)
+    const drawingNodes = new Map();
+    const drawingToAssets = new Map();
+
+    for (const [boardId, boardNode] of boardNodes.entries()) {
+      const boardName = boardNode.name.replace(/ /g, '-');
+      const boardPath = path.join(drawingsDir, boardName);
+
+      try {
+        const files = await fs.promises.readdir(boardPath);
+        const exFiles = files.filter(f => f.endsWith('.excalidraw') && !f.startsWith('compressed_'));
+
+        for (const filename of exFiles) {
+          const filePath = path.join(boardPath, filename);
+
+          try {
+            const fileContent = await fs.promises.readFile(filePath, 'utf8');
+            const data = JSON.parse(fileContent);
+
+            const drawingId = `drawing:${boardName}:${filename}`;
+            drawingNodes.set(drawingId, {
+              id: drawingId,
+              name: filename.replace(/\.excalidraw$/, ''),
+              val: 18,
+              type: 'drawing',
+              board: boardId
+            });
+
+            links.push({
+              source: boardId,
+              target: drawingId,
+              type: 'contains'
+            });
+
+            if (data.customData && data.customData.obsidianAttachments) {
+              const assetNames = new Set();
+              for (const att of Object.values(data.customData.obsidianAttachments)) {
+                let filename;
+                if (typeof att === 'string') {
+                  const parts = att.split(/[#|]/);
+                  filename = parts[0].trim();
+                } else {
+                  filename = att.filename;
+                }
+                if (filename) {
+                  assetNames.add(filename);
+                }
+              }
+              drawingToAssets.set(drawingId, assetNames);
+            }
+          } catch (err) {
+            logger.warn(`Failed to parse drawing ${filename}: ${err.message}`);
+          }
+        }
+      } catch (err) {
+        logger.warn(`Failed to read board directory ${boardName}: ${err.message}`);
+      }
+    }
+    nodes.push(...Array.from(drawingNodes.values()));
+
+    // 1.8. Collect drawing asset nodes
+    const drawingAssetNodes = new Map();
+
+    for (const [drawingId, assetNames] of drawingToAssets.entries()) {
+      for (const assetName of assetNames) {
+        const assetId = `/drawing-assets/${assetName}`;
+
+        if (!drawingAssetNodes.has(assetId)) {
+          drawingAssetNodes.set(assetId, {
+            id: assetId,
+            name: assetName,
+            val: 12,
+            type: 'drawing-asset',
+            url: assetId
+          });
+        }
+
+        links.push({
+          source: drawingId,
+          target: assetId,
+          type: 'drawing-asset'
+        });
+      }
+    }
+    nodes.push(...Array.from(drawingAssetNodes.values()));
+
     // 2. Second pass: Parse content for links (Internal & External)
     for (const filename of nonDraftFiles) {
       const filePath = path.join(postsDir, filename);
@@ -154,6 +295,21 @@ async function generateGraph() {
           });
         } catch (e) {
           // Invalid URL, skip
+        }
+      }
+
+      // Regex for Asset Links: ![](/images/filename.ext)
+      const assetLinkRegex = /!\[]\([^)]*\/images\/([^)]+?)\)/g;
+      while ((match = assetLinkRegex.exec(fileContents)) !== null) {
+        const imageName = decodeURIComponent(match[1]);
+        const assetId = `/images/${imageName}`;
+
+        if (assetNodes.has(assetId)) {
+          links.push({
+            source: sourceId,
+            target: assetId,
+            type: 'asset'
+          });
         }
       }
 
