@@ -11,6 +11,9 @@ export interface Node {
     links?: Link[];
     fx?: number;
     fy?: number;
+    vx?: number;
+    vy?: number;
+    url?: string;
 }
 
 export interface Link {

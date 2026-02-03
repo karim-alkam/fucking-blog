@@ -2,9 +2,16 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter, usePathname } from 'next/navigation';
 import * as d3 from 'd3-force';
-// @ts-ignore
+// @ts-expect-error - NProgress missing types
 import NProgress from 'nprogress';
-import { GraphData, Node } from './types';
+import { GraphData, Node, Link } from './types';
+
+interface ForceGraphInstance {
+    d3Force(forceName: string, forceFn?: unknown): unknown;
+    d3ReheatSimulation(): void;
+    zoom(k: number, duration?: number): void;
+    centerAt(x: number, y: number, duration?: number): void;
+}
 
 // Dynamically import generic ForceGraph to avoid SSR issues
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -24,8 +31,7 @@ interface HomeGraphCanvasProps {
 export function HomeGraphCanvas({ width, height, data, isForcesApplied, onInteract, onNodeClick }: HomeGraphCanvasProps) {
     const router = useRouter();
     const pathname = usePathname();
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const fgRef = useRef<any>(null);
+    const fgRef = useRef<ForceGraphInstance | null>(null);
     const [hoverNode, setHoverNode] = useState<Node | null>(null);
     const [showTutorial, setShowTutorial] = useState(false);
 
@@ -53,8 +59,10 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
         graph.d3Force('charge', d3.forceManyBody().strength(CHARGE_STRENGTH).distanceMax(400));
         // Dynamic Link Distance: Scale based on node radii to prevent cramping around large nodes
         // Formula: source_radius + target_radius + 20px padding
-        graph.d3Force('link').distance((link: any) => {
-            return (link.source.val || 5) + (link.target.val || 5) + 20;
+        (graph.d3Force('link') as d3.ForceLink<Node, Link>).distance((link: Link) => {
+            const source = link.source as Node;
+            const target = link.target as Node;
+            return (source.val || 5) + (target.val || 5) + 20;
         }).strength(0.3);
         graph.d3Force('collide', d3.forceCollide((node: Node) => node.val).strength(0.05));
         graph.d3Force('centerClusterX', d3.forceX(0).strength(0.05));
@@ -63,14 +71,14 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
     }, [data.nodes.length]);
 
     // Callback ref to handle immediate entry (fixing the spread/explosion issue)
-    const handleRef = useCallback((instance: any) => {
+    const handleRef = useCallback((instance: ForceGraphInstance | null) => {
         // Save to ref for other usages
         fgRef.current = instance;
 
         if (instance) {
             // IMMEDIATE STOP -> DAMPEN: Reduce momentum significantly but don't kill it entirely.
             // Multiplying by 0.2 renders the explosion harmless while keeping the "flow" organic.
-            data.nodes.forEach((node: any) => {
+            data.nodes.forEach((node: Node) => {
                 node.vx = (node.vx || 0) * 0.01;
                 node.vy = (node.vy || 0) * 0.01;
             });
@@ -148,9 +156,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
         }
     }, [hoverNode, drawLabel]);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const handleNodeClick = (node: any) => {
+    const handleNodeClick = (node: Node) => {
         if (!node) return;
 
         // Manual trigger for loading bar since router.push might be too fast/client-side
@@ -198,7 +204,8 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
         <div className="flex-1 w-full h-full relative cursor-move" onTouchStart={handleTouchStart}>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyber-neon-cyan/5 via-transparent to-transparent opacity-30 pointer-events-none" />
             <ForceGraph2D
-                ref={handleRef as any}
+                // @ts-expect-error - Library types are incompatible with custom interface
+                ref={handleRef}
                 width={width}
                 height={height}
                 graphData={data}
@@ -216,7 +223,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
                     document.body.style.cursor = node ? 'pointer' : 'default';
                 }}
                 onRenderFramePost={handleRenderFramePost}
-                onNodeClick={handleNodeClick}
+                onNodeClick={(node) => handleNodeClick(node as Node)}
                 onEngineTick={() => {
                     if (!isForcesApplied.current && fgRef.current) {
                         applyCustomForces();
@@ -227,10 +234,8 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
                 d3AlphaDecay={0.02}
                 d3VelocityDecay={0.4}
                 enableNodeDrag={true}
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                enablePanInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                enableZoomInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
+                enablePanInteraction={(e: MouseEvent | TouchEvent) => e.type !== 'touchstart' || (e as TouchEvent).touches.length >= 2}
+                enableZoomInteraction={(e: MouseEvent | TouchEvent) => e.type !== 'touchstart' || (e as TouchEvent).touches.length >= 2}
                 minZoom={0.5}
                 maxZoom={4}
             />
