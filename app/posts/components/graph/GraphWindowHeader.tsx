@@ -2,14 +2,18 @@
 
 import React from 'react';
 
-export const GraphWindowHeader = () => {
+interface GraphWindowHeaderProps {
+  title?: string;
+}
+
+export const GraphWindowHeader = ({ title = "NETWORK_GRAPH_v1.0" }: GraphWindowHeaderProps) => {
   return (
-    <div className="h-8 bg-cyber-dark-gray border-b border-cyber-neon-cyan flex items-center justify-between px-4 select-none overflow-hidden">
+    <div className="h-8 bg-cyber-dark-gray border-b border-cyber-neon-cyan flex items-center justify-between px-4 select-none overflow-hidden shrink-0 z-30 relative">
       <div className="text-xs font-mono text-cyber-gray-light tracking-widest uppercase flex items-center gap-4">
         <div className="flex items-center gap-2">
           <span className="text-cyber-neon-pink animate-pulse">►</span>
-          <span className="glitch relative text-cyber-neon-cyan" data-text="NETWORK_GRAPH_v1.0">
-            NETWORK_GRAPH_v1.0
+          <span className="glitch relative text-cyber-neon-cyan" data-text={title}>
+            {title}
           </span>
         </div>
       </div>

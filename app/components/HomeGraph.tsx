@@ -2,8 +2,10 @@
 
 import { useEffect, useState, useCallback, useRef, useMemo } from 'react';
 import dynamic from 'next/dynamic';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3-force';
+import { GraphWindowHeader } from '../posts/components/graph/GraphWindowHeader';
 
 // Dynamically import generic ForceGraph to avoid SSR issues
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -51,7 +53,7 @@ export default function HomeGraph() {
             if (containerRef.current) {
                 setDimensions({
                     width: containerRef.current.offsetWidth,
-                    height: containerRef.current.offsetHeight
+                    height: containerRef.current.offsetHeight - 32
                 });
             }
         }
@@ -110,8 +112,8 @@ export default function HomeGraph() {
         const graph = fgRef.current;
 
         // Physics Constants
-        const CHARGE_STRENGTH = -100;
-        const LINK_DISTANCE = 40;
+        const CHARGE_STRENGTH = -35;
+        const LINK_DISTANCE = 35;
 
         // Clear default forces
         graph.d3Force('center', null);
@@ -126,42 +128,22 @@ export default function HomeGraph() {
         // 2. Link Force
         graph.d3Force('link')
             .distance(LINK_DISTANCE)
-            .strength(0.8);
+            .strength(0.2);
 
         // 3. Collision Force (Soft & Tight)
         // Prevent overlap by using exact node radius, but soft strength to allow "breathing"
         graph.d3Force('collide', d3.forceCollide((node: any) => node.val)
-            .strength(0.7)
+            .strength(0.2)
         );
 
         // 4. Radial & Centering
-        const orphans = data.nodes.filter(n => (!n.neighbors || n.neighbors.length === 0));
-        const connected = data.nodes.filter(n => (n.neighbors && n.neighbors.length > 0));
-        const orphanIds = new Set(orphans.map(n => n.id));
+        // 4. Center Gravity (Organic Drift)
+        // Gentle gravity to keep nodes from floating away too far, replacing rigid radial forces
+        graph.d3Force('centerClusterX', d3.forceX(0).strength(0.05));
+        graph.d3Force('centerClusterY', d3.forceY(0).strength(0.05));
 
-        graph.d3Force('centerClusterX', d3.forceX(0).strength((d: any) => orphanIds.has(d.id) ? 0 : 0.08));
-        graph.d3Force('centerClusterY', d3.forceY(0).strength((d: any) => orphanIds.has(d.id) ? 0 : 0.08));
-
-        // Physics-Aware Radius Calculation
-        // Radius = (√N * LinkDist) + (OrphanExpansionPressure)
-        const connectedCount = connected.length;
-        const basePackingRadius = Math.sqrt(connectedCount) * LINK_DISTANCE / 2;
-        const repulsionExpansion = connectedCount * Math.abs(CHARGE_STRENGTH) * 0.005; // Tuned coefficient
-
-        const calculatedRadius = basePackingRadius + repulsionExpansion;
-
-        // Clamp radius to ensure it fits within screen bounds (with some margin)
-        const minDim = Math.min(dimensions.width, dimensions.height);
-        const maxAllowedRadius = (minDim / 2) * 0.8;
-
-        const targetRadius = Math.min(calculatedRadius, maxAllowedRadius);
-
-        // Organic Layout: Soft Radial Pull
-        // We gently pull orphans towards the target radius.
-        // Collision and Repulsion forces will naturally distribute them into a "cloud" or "band".
-        graph.d3Force('orphanRadial', d3.forceRadial(targetRadius, 0, 0)
-            .strength((d: any) => orphanIds.has(d.id) ? 0.2 : 0) // Low strength for organic drift
-        );
+        // Remove old radial/orphan forces if they exist
+        graph.d3Force('orphanRadial', null);
 
     }, [data, dimensions]);
 
@@ -190,7 +172,7 @@ export default function HomeGraph() {
         ctx.fill();
         ctx.shadowBlur = 0;
 
-        if (isHovered || globalScale > 1.5) {
+        if (isHovered || globalScale > 2.25) {
             ctx.font = `${fontSize}px Sans-Serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
@@ -201,45 +183,65 @@ export default function HomeGraph() {
 
     return (
         <section className="relative min-h-[70vh] flex flex-col items-center justify-center my-10">
-            <div className="max-w-5xl w-full mx-auto border border-cyber-gray bg-cyber-black/50 backdrop-blur-sm relative overflow-hidden h-[600px] rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.5)]" ref={containerRef}>
-                <div className="absolute top-4 left-4 z-10 pointer-events-none">
-                    <h3 className="text-cyber-neon-cyan font-mono text-xs tracking-widest uppercase mb-1">Neural Network</h3>
-                    <p className="text-cyber-gray-light text-[10px]">Interactive Post Graph</p>
-                </div>
+            <motion.div
+                initial={{ opacity: 0, scaleY: 0, filter: 'brightness(2) hue-rotate(90deg)' }}
+                animate={{ opacity: 1, scaleY: 1, filter: 'brightness(1) hue-rotate(0deg)' }}
+                transition={{ duration: 0.6, type: "spring", bounce: 0.3 }}
+                style={{ originY: 0 }}
+                className="flex flex-col border border-cyber-neon-cyan bg-cyber-black relative shadow-lg shadow-cyber-neon-cyan/20 w-full max-w-5xl mx-auto overflow-hidden h-[600px]"
+                ref={containerRef}
+            >
 
-                <ForceGraph2D
-                    ref={fgRef}
-                    width={dimensions.width}
-                    height={dimensions.height}
-                    graphData={data}
-                    nodeLabel="name"
-                    backgroundColor="#050505"
-                    nodeColor="color"
-                    linkColor={() => 'rgba(136, 136, 136, 0.2)'}
-                    nodeCanvasObject={(node, ctx, globalScale) => nodeCanvasObject(node, ctx, globalScale)}
-                    onNodeHover={(node) => {
-                        setHoverNode(node as Node || null);
-                        document.body.style.cursor = node ? 'pointer' : 'default';
-                    }}
-                    onNodeClick={(node) => {
-                        if (node && node.slug) {
-                            router.push(`/posts/${node.slug}`);
-                        }
-                    }}
-                    onEngineTick={() => {
-                        // Apply custom forces on the very first frame of the simulation cycle
-                        if (!isForcesApplied.current && fgRef.current) {
-                            applyCustomForces();
-                            isForcesApplied.current = true;
-                        }
-                    }}
-                    cooldownTicks={100}
-                    enableNodeDrag={true}
-                    enableZoomInteraction={true}
-                    minZoom={0.5}
-                    maxZoom={4}
+                {/* Scanline Effect Overlay */}
+                <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
+                <motion.div
+                    initial={{ top: "-10%" }}
+                    animate={{ top: "110%" }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
+                    className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-20 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
                 />
-            </div>
+
+                {/* Header Section */}
+                <GraphWindowHeader title="NEURAL_NETWORK_v1.0" />
+
+                <div className="flex-1 relative w-full overflow-hidden bg-cyber-black/50 backdrop-blur-sm">
+                    <ForceGraph2D
+                        ref={fgRef}
+                        width={dimensions.width}
+                        // Ensure height doesn't go negative on initial render
+                        height={Math.max(1, dimensions.height)}
+                        graphData={data}
+                        nodeLabel={null as any} // Removed to prevent double labels (handled in nodeCanvasObject)
+                        backgroundColor="#050505"
+                        nodeColor="color"
+                        linkColor={() => 'rgba(92, 92, 92, 1)'}
+                        linkDirectionalParticles={0.5}
+                        nodeCanvasObject={(node, ctx, globalScale) => nodeCanvasObject(node, ctx, globalScale)}
+                        onNodeHover={(node) => {
+                            setHoverNode(node as Node || null);
+                            document.body.style.cursor = node ? 'pointer' : 'default';
+                        }}
+                        onNodeClick={(node) => {
+                            if (node && node.slug) {
+                                router.push(`/posts/${node.slug}`);
+                            }
+                        }}
+                        onEngineTick={() => {
+                            // Apply custom forces on the very first frame of the simulation cycle
+                            if (!isForcesApplied.current && fgRef.current) {
+                                applyCustomForces();
+                                isForcesApplied.current = true;
+                            }
+                        }}
+                        cooldownTicks={100}
+                        enableNodeDrag={true}
+                        enableZoomInteraction={true}
+                        minZoom={0.5}
+                        maxZoom={4}
+                        d3VelocityDecay={0.25}
+                    />
+                </div>
+            </motion.div>
         </section>
     );
 }
