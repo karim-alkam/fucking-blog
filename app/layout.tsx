@@ -82,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${outfit.variable} ${rajdhani.variable} bg-cyber-black text-cyber-white min-h-screen flex flex-col font-sans selection:bg-cyber-neon-pink selection:text-white`}>
-        <NextTopLoader color="#FCEE0A" height={3} showSpinner={false} shadow="0 0 10px #FCEE0A,0 0 5px #FCEE0A" />
+        <NextTopLoader color="#FCEE0A" height={3} showSpinner={false} zIndex={9999} shadow="0 0 10px #FCEE0A,0 0 5px #FCEE0A" />
         <ChunkErrorListener />
         <Navbar />
         <main className="flex-1 relative z-10">

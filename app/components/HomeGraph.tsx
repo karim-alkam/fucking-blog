@@ -1,16 +1,56 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback, useRef, useEffect, useMemo } from 'react';
+import { motion } from 'framer-motion';
 import { GraphWindowHeader } from '../posts/components/graph/GraphWindowHeader';
 import { useHomeGraphData } from './graph/useHomeGraphData';
 import { HomeGraphCanvas } from './graph/HomeGraphCanvas';
 import { GraphModal } from './graph/GraphModal';
+import { GraphSettings } from './graph/GraphSettings';
+import { Node } from './graph/types';
 
 export default function HomeGraph() {
     const { data, isForcesApplied } = useHomeGraphData();
     const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
     const containerRef = useRef<HTMLDivElement>(null);
     const [isMaximized, setIsMaximized] = useState(false);
+
+    // Initial Filters State
+    const [activeFilters, setActiveFilters] = useState<Record<string, boolean>>({
+        post: true,
+        drawing: true,
+        board: true,
+        tag: true,
+        external: false,
+        asset: false,
+    });
+
+    const toggleFilter = useCallback((type: string) => {
+        setActiveFilters(prev => ({
+            ...prev,
+            [type]: !prev[type]
+        }));
+    }, []);
+
+    // Memoize filtered data to prevent unnecessary re-computations or re-renders
+    const filteredData = useMemo(() => {
+        if (!data.nodes.length) return data;
+
+        const filteredNodes = data.nodes.filter(node => {
+            // Treat 'drawing-asset' as 'asset' for filtering purposes
+            const checkType = node.type === 'drawing-asset' ? 'asset' : node.type;
+            return activeFilters[checkType] !== false;
+        });
+        const nodeIds = new Set(filteredNodes.map(n => n.id));
+
+        const filteredLinks = data.links.filter(link => {
+            const sourceId = typeof link.source === 'object' ? (link.source as Node).id : link.source as string;
+            const targetId = typeof link.target === 'object' ? (link.target as Node).id : link.target as string;
+            return nodeIds.has(sourceId) && nodeIds.has(targetId);
+        });
+
+        return { nodes: filteredNodes, links: filteredLinks };
+    }, [data, activeFilters]);
 
     // Toggle Maximize
     const toggleMaximize = useCallback(() => {
@@ -83,6 +123,15 @@ export default function HomeGraph() {
                         className="hidden md:flex flex-col border border-cyber-neon-cyan bg-cyber-black overflow-hidden shadow-lg shadow-cyber-neon-cyan/20 [&_canvas]:!touch-auto w-full h-[600px] relative"
                         ref={containerRef}
                     >
+                        {/* CRT Scanline Effect */}
+                        <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
+                        <motion.div
+                            initial={{ top: "-10%" }}
+                            animate={{ top: "110%" }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
+                            className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-20 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
+                        />
+
                         <GraphWindowHeader
                             title="NEURAL_NET_v1.0"
                             onMaximize={toggleMaximize}
@@ -90,10 +139,19 @@ export default function HomeGraph() {
                             onClose={() => { }}
                         />
 
+                        {/* Graph Settings Component - Absolute Positioned in Header/Top-Right area within relative container */}
+                        <div className="absolute top-0 right-0 z-10 pointer-events-none">
+                            {/* Passed pointer-events-none to container to not block standard header interactions, 
+                                 but settings itself needs pointer-events-auto. 
+                                 Actually settings has absolute positioning itself. 
+                                 Let's just render it here. */}
+                        </div>
+                        <GraphSettings filters={activeFilters} onToggle={toggleFilter} />
+
                         <HomeGraphCanvas
                             width={dimensions.width}
                             height={dimensions.height}
-                            data={data}
+                            data={filteredData}
                             isForcesApplied={isForcesApplied}
                             onInteract={toggleMaximize} // Pass interaction handler if needed, mainly for mobile touch
                         />
@@ -105,8 +163,10 @@ export default function HomeGraph() {
             <GraphModal
                 isOpen={isMaximized}
                 onClose={toggleMaximize}
-                data={data}
+                data={filteredData}
                 isForcesApplied={isForcesApplied}
+                activeFilters={activeFilters}
+                toggleFilter={toggleFilter}
             />
         </section>
     );

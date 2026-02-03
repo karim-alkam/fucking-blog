@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Pagination from './Pagination';
 import { Post } from '../types';
 import PostCard from './PostCard';
@@ -16,6 +17,36 @@ export default function PostsList({ posts, title = 'Recent Logs' }: PostsListPro
   const [pageSize, setPageSize] = useState(6);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const postsTopRef = useRef<HTMLDivElement>(null);
+  const searchParams = useSearchParams();
+
+  // Sync with URL query params
+  // Sync with URL query params & Custom Events
+  useEffect(() => {
+    // 1. Handle URL Params (Initial Load / Back Button)
+    const tagFromUrl = searchParams.get('tag');
+    if (tagFromUrl) {
+      setSelectedTag(tagFromUrl);
+    }
+
+    // 2. Handle Custom Event (Graph Interaction - No Reload)
+    const handleSetTag = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      const newTag = customEvent.detail;
+      setSelectedTag(newTag);
+
+      // Update URL silently without Next.js Router navigation (to preserve Graph state)
+      const newUrl = new URL(window.location.href);
+      if (newTag) {
+        newUrl.searchParams.set('tag', newTag);
+      } else {
+        newUrl.searchParams.delete('tag');
+      }
+      window.history.pushState({}, '', newUrl.toString());
+    };
+
+    window.addEventListener('set-post-tag', handleSetTag);
+    return () => window.removeEventListener('set-post-tag', handleSetTag);
+  }, [searchParams]);
 
   const allTags = useMemo(() => {
     return Array.from(new Set(posts.flatMap(post => post.tags || []))).sort();
@@ -43,7 +74,7 @@ export default function PostsList({ posts, title = 'Recent Logs' }: PostsListPro
   };
 
   return (
-    <div className='container mx-auto max-w-7xl px-4 py-8' ref={postsTopRef}>
+    <div id="posts-list" className='container mx-auto max-w-7xl px-4 py-8' ref={postsTopRef}>
       {/* Header and Filter Controls */}
       <div className="mb-12 space-y-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-cyber-gray pb-4">

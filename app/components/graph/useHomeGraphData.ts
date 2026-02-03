@@ -18,24 +18,24 @@ export function useHomeGraphData(): GraphSettings {
                 const nodeExternalDegree = new Map<string, number>();
                 const nodeRegularDegree = new Map<string, number>();
                 const nodeAssetDegree = new Map<string, number>();
-                
+
                 // Initialize counts
                 graphData.nodes.forEach(n => {
                     nodeExternalDegree.set(n.id, 0);
                     nodeRegularDegree.set(n.id, 0);
                     nodeAssetDegree.set(n.id, 0);
                 });
-                
+
                 // Calculate degrees from ALL links
                 graphData.links.forEach(link => {
                     const sourceId = typeof link.source === 'object' ? (link.source as Node).id : link.source as string;
                     const targetId = typeof link.target === 'object' ? (link.target as Node).id : link.target as string;
                     const sourceNode = allNodesMap.get(sourceId);
                     const targetNode = allNodesMap.get(targetId);
-                    
+
                     if (sourceNode && targetNode) {
                         const isAssetLink = link.type === 'asset' || link.type === 'drawing-asset';
-                        
+
                         // Logic for Source Node
                         if (sourceNode.type !== 'external') {
                             if (isAssetLink) {
@@ -46,7 +46,7 @@ export function useHomeGraphData(): GraphSettings {
                                 nodeRegularDegree.set(sourceId, (nodeRegularDegree.get(sourceId) || 0) + 1);
                             }
                         }
-                        
+
                         // Logic for Target Node
                         if (targetNode.type !== 'external') {
                             if (isAssetLink) {
@@ -73,7 +73,7 @@ export function useHomeGraphData(): GraphSettings {
                     const regularCount = nodeRegularDegree.get(node.id) || 0;
                     const assetCount = nodeAssetDegree.get(node.id) || 0;
 
-                    node.val = 4 + (regularCount * 1.5) + (externalCount * 0.75) + (assetCount * 0.3);
+                    node.val = 4 + (regularCount * 1.5) + (externalCount * 0.5) + (assetCount * 0.3);
 
                     switch (node.type) {
                         case 'board':
@@ -101,13 +101,13 @@ export function useHomeGraphData(): GraphSettings {
                             node.color = '#00F0FF';
                     }
                 });
-                
+
                 isForcesApplied.current = false;
                 setData({ nodes: allNodes, links: allLinks });
             })
             .catch(err => console.error("Failed to load graph data", err));
     }, []);
-    
+
     return {
         data,
         isForcesApplied

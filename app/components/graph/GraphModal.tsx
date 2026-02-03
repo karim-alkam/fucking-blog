@@ -1,17 +1,21 @@
 import { Fragment, useRef, useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import { motion } from 'framer-motion';
 import { GraphWindowHeader } from '../../posts/components/graph/GraphWindowHeader';
 import { HomeGraphCanvas } from './HomeGraphCanvas';
 import { GraphData } from './types';
+import { GraphSettings } from './GraphSettings';
 
 interface GraphModalProps {
     isOpen: boolean;
     onClose: () => void;
     data: GraphData;
     isForcesApplied: React.MutableRefObject<boolean>;
+    activeFilters: Record<string, boolean>;
+    toggleFilter: (type: string) => void;
 }
 
-export function GraphModal({ isOpen, onClose, data, isForcesApplied }: GraphModalProps) {
+export function GraphModal({ isOpen, onClose, data, isForcesApplied, activeFilters, toggleFilter }: GraphModalProps) {
     const modalContainerRef = useRef<HTMLDivElement>(null);
     const [modalDimensions, setModalDimensions] = useState({ width: 800, height: 600 });
 
@@ -56,7 +60,7 @@ export function GraphModal({ isOpen, onClose, data, isForcesApplied }: GraphModa
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                 >
-                    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm" />
+                    <div className="fixed inset-0 bg-black/90" />
                 </Transition.Child>
 
                 <div className="fixed inset-0 overflow-y-auto">
@@ -71,8 +75,17 @@ export function GraphModal({ isOpen, onClose, data, isForcesApplied }: GraphModa
                             leaveTo="opacity-0 scale-95"
                         >
                             <Dialog.Panel
-                                className="w-[90vw] max-w-[1600px] h-[calc(100vh-8rem)] transform overflow-hidden bg-cyber-black border border-cyber-neon-cyan shadow-xl transition-all flex flex-col"
+                                className="w-[90vw] max-w-[1600px] h-[calc(100vh-8rem)] transform overflow-hidden bg-cyber-black border border-cyber-neon-cyan shadow-xl transition-all flex flex-col relative"
                             >
+                                {/* CRT Scanline Effect */}
+                                <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
+                                <motion.div
+                                    initial={{ top: "-10%" }}
+                                    animate={{ top: "110%" }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
+                                    className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-20 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
+                                />
+
                                 <GraphWindowHeader
                                     title="NEURAL_NET_MAX"
                                     onMaximize={() => { }}
@@ -85,6 +98,13 @@ export function GraphModal({ isOpen, onClose, data, isForcesApplied }: GraphModa
                                         height={modalDimensions.height}
                                         data={data}
                                         isForcesApplied={isForcesApplied}
+                                        onNodeClick={() => onClose()}
+                                    />
+                                    <GraphSettings
+                                        filters={activeFilters}
+                                        onToggle={toggleFilter}
+                                        className="!absolute !top-4 !right-4"
+                                        alwaysShowOnDesktop
                                     />
                                 </div>
                             </Dialog.Panel>
