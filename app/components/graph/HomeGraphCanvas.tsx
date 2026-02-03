@@ -204,6 +204,8 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
                 graphData={data}
                 nodeLabel={() => ""}
                 nodeColor="color"
+                linkDirectionalParticles={0.5}
+
                 nodeRelSize={6}
                 linkColor={() => 'rgba(92, 92, 92, 1)'}
                 linkWidth={1}
