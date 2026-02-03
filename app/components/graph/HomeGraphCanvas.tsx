@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3-force';
-import { GraphData, Node, Link } from './types';
+import { GraphData, Node } from './types';
 
 // Dynamically import generic ForceGraph to avoid SSR issues
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
