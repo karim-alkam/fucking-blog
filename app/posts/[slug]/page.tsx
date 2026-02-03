@@ -129,14 +129,14 @@ export default async function Page(props: PageProps) {
                   <TocSidebar toc={postData.toc} displayType="inline" />
                 </div>
               )}
-
-              {/* Mobile Graph View - visible on mobile/tablet (lg:hidden) */}
-              <div className="lg:hidden mt-8 mb-4">
-                 <GraphView currentSlug={postData.slug} />
-              </div>
             </header>
 
             <PostContent html={postData.content} />
+
+            {/* Mobile Graph View - visible on mobile/tablet (lg:hidden) */}
+            <div className="lg:hidden mt-8 mb-4">
+               <GraphView currentSlug={postData.slug} />
+            </div>
 
             <div className="mt-12 pt-6 border-t border-gray-700">
               <Link href="/" className="inline-flex items-center text-cyber-neon-cyan hover:text-cyber-neon-yellow transition-colors group font-mono text-sm tracking-wider uppercase">
