@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef, useMemo } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
@@ -42,6 +42,7 @@ export default function HomeGraph() {
     const [data, setData] = useState<GraphData>({ nodes: [], links: [] });
     const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
     const containerRef = useRef<HTMLDivElement>(null);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fgRef = useRef<any>(null);
     const [showTutorial, setShowTutorial] = useState(false);
 
@@ -144,7 +145,7 @@ export default function HomeGraph() {
 
         // 3. Collision Force (Soft & Tight)
         // Prevent overlap by using exact node radius, but soft strength to allow "breathing"
-        graph.d3Force('collide', d3.forceCollide((node: any) => node.val)
+        graph.d3Force('collide', d3.forceCollide((node: Node) => node.val)
             .strength(0.2)
         );
 
@@ -157,7 +158,7 @@ export default function HomeGraph() {
         // Remove old radial/orphan forces if they exist
         graph.d3Force('orphanRadial', null);
 
-    }, [data, dimensions]);
+    }, [data]);
 
     // Re-apply if dimensions change
     useEffect(() => {
@@ -170,11 +171,13 @@ export default function HomeGraph() {
 
     const [hoverNode, setHoverNode] = useState<Node | null>(null);
 
-    const nodeCanvasObject = useCallback((node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
+    const nodeCanvasObject = useCallback((node: Node, ctx: CanvasRenderingContext2D, globalScale: number) => {
         const label = node.name;
         const fontSize = 12 / globalScale;
         const radius = node.val;
         const isHovered = node === hoverNode;
+
+        if (node.x === undefined || node.y === undefined) return;
 
         ctx.beginPath();
         ctx.arc(node.x, node.y, radius, 0, 2 * Math.PI, false);
@@ -237,12 +240,13 @@ export default function HomeGraph() {
                         // Ensure height doesn't go negative on initial render
                         height={Math.max(1, dimensions.height)}
                         graphData={data}
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         nodeLabel={null as any} // Removed to prevent double labels (handled in nodeCanvasObject)
                         backgroundColor="#050505"
                         nodeColor="color"
                         linkColor={() => 'rgba(92, 92, 92, 1)'}
                         linkDirectionalParticles={0.5}
-                        nodeCanvasObject={(node, ctx, globalScale) => nodeCanvasObject(node, ctx, globalScale)}
+                        nodeCanvasObject={(node, ctx, globalScale) => nodeCanvasObject(node as Node, ctx, globalScale)}
                         onNodeHover={(node) => {
                             setHoverNode(node as Node || null);
                             document.body.style.cursor = node ? 'pointer' : 'default';
