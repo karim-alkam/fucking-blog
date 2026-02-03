@@ -74,10 +74,23 @@ async function generateGraph() {
       const fileContents = await fs.promises.readFile(filePath, 'utf8');
       const sourceId = idToSlug.get(filename);
 
+      // Track matched ranges to avoid double-counting URLs
+      const matchedRanges = [];
+      const addMatchRange = (m) => {
+        if (m && m.index !== undefined) {
+          matchedRanges.push([m.index, m.index + m[0].length]);
+        }
+      };
+
+      const isInsideMatchedRange = (idx) => {
+        return matchedRanges.some(([start, end]) => idx >= start && idx < end);
+      };
+
       // Regex for Obsidian Links: [[Link]] or [[Link|Alias]]
       const obsidianLinkRegex = /\[\[([^\]|#]+)(?:#([^|\]]+))?(?:\|([^\]]+))?\]\]/g;
       let match;
       while ((match = obsidianLinkRegex.exec(fileContents)) !== null) {
+        addMatchRange(match);
         const targetRaw = match[1].trim();
         const targetSlug = postNameToSlug(targetRaw);
 
@@ -94,6 +107,7 @@ async function generateGraph() {
       // Regex for Processed HTML Links: <a href="/posts/Slug" class="obsidian-link">
       const htmlLinkRegex = /<a href="\/posts\/([^"]+)" class="obsidian-link">/g;
       while ((match = htmlLinkRegex.exec(fileContents)) !== null) {
+        addMatchRange(match);
         const targetRaw = match[1].trim();
         // The href might contain a hash anchor #header, strip it
         const cleanTargetRaw = targetRaw.split('#')[0];
@@ -112,29 +126,79 @@ async function generateGraph() {
       // We want to capture external links
       const mdLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g;
       while ((match = mdLinkRegex.exec(fileContents)) !== null) {
+        addMatchRange(match);
         const title = match[1];
         const url = match[2];
-        const domain = new URL(url).hostname;
 
-        // Create an external node if it doesn't exist (use URL as ID to avoid dupes)
-        const externalNodeId = url;
+        try {
+          const domain = new URL(url).hostname;
 
-        // Check if node already exists to avoid duplicates
-        if (!nodes.find(n => n.id === externalNodeId)) {
-          nodes.push({
-            id: externalNodeId,
-            name: domain, // Show domain as label
-            val: 10, // Smaller size
-            type: 'external',
-            url: url
+          // Create an external node if it doesn't exist (use URL as ID to avoid dupes)
+          const externalNodeId = url;
+
+          // Check if node already exists to avoid duplicates
+          if (!nodes.find(n => n.id === externalNodeId)) {
+            nodes.push({
+              id: externalNodeId,
+              name: domain, // Show domain as label
+              val: 10, // Smaller size
+              type: 'external',
+              url: url
+            });
+          }
+
+          links.push({
+            source: sourceId,
+            target: externalNodeId,
+            type: 'external'
           });
+        } catch (e) {
+          // Invalid URL, skip
+        }
+      }
+
+      // Regex for Code Blocks (inline and block) to exclude from bare URL detection
+      const codeBlockRegex = /(`+)([\s\S]*?)\1/g;
+      while ((match = codeBlockRegex.exec(fileContents)) !== null) {
+        addMatchRange(match);
+      }
+
+      // Regex for Bare URLs (http/https/www)
+      const bareUrlRegex = /(https?:\/\/[^\s<>"'\)]+|www\.[^\s<>"'\)]+)/g;
+      while ((match = bareUrlRegex.exec(fileContents)) !== null) {
+        if (isInsideMatchedRange(match.index)) continue;
+
+        let url = match[1];
+        // Clean trailing punctuation
+        url = url.replace(/[\.,;?!]+$/, '');
+
+        let urlToParse = url;
+        if (!urlToParse.match(/^https?:\/\//)) {
+          urlToParse = 'https://' + url;
         }
 
-        links.push({
-          source: sourceId,
-          target: externalNodeId,
-          type: 'external'
-        });
+        try {
+          const domain = new URL(urlToParse).hostname;
+          const externalNodeId = urlToParse;
+
+          if (!nodes.find(n => n.id === externalNodeId)) {
+            nodes.push({
+              id: externalNodeId,
+              name: domain,
+              val: 10,
+              type: 'external',
+              url: urlToParse
+            });
+          }
+
+          links.push({
+            source: sourceId,
+            target: externalNodeId,
+            type: 'external'
+          });
+        } catch (e) {
+          // ignore invalid urls
+        }
       }
     }
 

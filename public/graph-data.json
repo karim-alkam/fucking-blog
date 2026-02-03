@@ -190,6 +190,34 @@
       "slug": "tmux-fix"
     },
     {
+      "id": "https://en.wikipedia.org/wiki/BYD_Seagull",
+      "name": "en.wikipedia.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://en.wikipedia.org/wiki/BYD_Seagull"
+    },
+    {
+      "id": "https://findingspress.org/api/v1/articles/21459-impact-of-charging-rates-on-electric-vehicle-battery-life.pdf",
+      "name": "findingspress.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://findingspress.org/api/v1/articles/21459-impact-of-charging-rates-on-electric-vehicle-battery-life.pdf"
+    },
+    {
+      "id": "https://moscow.sci-hub.ru/5155/011d5b81780c4ac3e787a937c78bd05a/10.1016@j.jpowsour.2016.04.140.pdf",
+      "name": "moscow.sci-hub.ru",
+      "val": 10,
+      "type": "external",
+      "url": "https://moscow.sci-hub.ru/5155/011d5b81780c4ac3e787a937c78bd05a/10.1016@j.jpowsour.2016.04.140.pdf"
+    },
+    {
+      "id": "https://acmobility.ph/news/byd-seagull-launch",
+      "name": "acmobility.ph",
+      "val": 10,
+      "type": "external",
+      "url": "https://acmobility.ph/news/byd-seagull-launch"
+    },
+    {
       "id": "https://www.youtube.com/watch?v=nV8jR8M8C74",
       "name": "www.youtube.com",
       "val": 10,
@@ -295,6 +323,34 @@
       "url": "https://tmuxcheatsheet.com/"
     },
     {
+      "id": "https://en.wikipedia.org/wiki/Modbus",
+      "name": "en.wikipedia.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://en.wikipedia.org/wiki/Modbus"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=txi2p5_OjKU",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=txi2p5_OjKU"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=JBGaInI-TG4",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=JBGaInI-TG4"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=nlFM1q9QPJw",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=nlFM1q9QPJw"
+    },
+    {
       "id": "https://youtu.be/_VzHpLjKeZ8?si=g_60MByeGy_GCVaE&t=1840",
       "name": "youtu.be",
       "val": 10,
@@ -393,6 +449,34 @@
       "url": "https://www.linkedin.com/in/ahmad-awad-36b481301/"
     },
     {
+      "id": "https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/",
+      "name": "howtomechatronics.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/"
+    },
+    {
+      "id": "https://en.wikipedia.org/wiki/Rotary_encoder",
+      "name": "en.wikipedia.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://en.wikipedia.org/wiki/Rotary_encoder"
+    },
+    {
+      "id": "https://en.wikipedia.org/wiki/Incremental_encoder",
+      "name": "en.wikipedia.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://en.wikipedia.org/wiki/Incremental_encoder"
+    },
+    {
+      "id": "https://esp32io.com/tutorials/esp32-rotary-encoder",
+      "name": "esp32io.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://esp32io.com/tutorials/esp32-rotary-encoder"
+    },
+    {
       "id": "https://www.youtube.com/watch?v=JuvWbRhhpdI",
       "name": "www.youtube.com",
       "val": 10,
@@ -464,6 +548,26 @@
     }
   ],
   "links": [
+    {
+      "source": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "target": "https://en.wikipedia.org/wiki/BYD_Seagull",
+      "type": "external"
+    },
+    {
+      "source": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "target": "https://findingspress.org/api/v1/articles/21459-impact-of-charging-rates-on-electric-vehicle-battery-life.pdf",
+      "type": "external"
+    },
+    {
+      "source": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "target": "https://moscow.sci-hub.ru/5155/011d5b81780c4ac3e787a937c78bd05a/10.1016@j.jpowsour.2016.04.140.pdf",
+      "type": "external"
+    },
+    {
+      "source": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
+      "target": "https://acmobility.ph/news/byd-seagull-launch",
+      "type": "external"
+    },
     {
       "source": "data-science-project-walkthrough",
       "target": "https://www.youtube.com/watch?v=nV8jR8M8C74",
@@ -570,6 +674,26 @@
       "type": "external"
     },
     {
+      "source": "modbus-protocol",
+      "target": "https://en.wikipedia.org/wiki/Modbus",
+      "type": "external"
+    },
+    {
+      "source": "modbus-protocol",
+      "target": "https://www.youtube.com/watch?v=txi2p5_OjKU",
+      "type": "external"
+    },
+    {
+      "source": "modbus-protocol",
+      "target": "https://www.youtube.com/watch?v=JBGaInI-TG4",
+      "type": "external"
+    },
+    {
+      "source": "modbus-protocol",
+      "target": "https://www.youtube.com/watch?v=nlFM1q9QPJw",
+      "type": "external"
+    },
+    {
       "source": "pid-controller",
       "target": "https://youtu.be/_VzHpLjKeZ8?si=g_60MByeGy_GCVaE&t=1840",
       "type": "external"
@@ -652,6 +776,26 @@
     {
       "source": "understanding-capacitor-charging-and-the-concept-of-full-charge",
       "target": "https://www.linkedin.com/in/ahmad-awad-36b481301/",
+      "type": "external"
+    },
+    {
+      "source": "understanding-incremental-rotary-encoders",
+      "target": "https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/",
+      "type": "external"
+    },
+    {
+      "source": "understanding-incremental-rotary-encoders",
+      "target": "https://en.wikipedia.org/wiki/Rotary_encoder",
+      "type": "external"
+    },
+    {
+      "source": "understanding-incremental-rotary-encoders",
+      "target": "https://en.wikipedia.org/wiki/Incremental_encoder",
+      "type": "external"
+    },
+    {
+      "source": "understanding-incremental-rotary-encoders",
+      "target": "https://esp32io.com/tutorials/esp32-rotary-encoder",
       "type": "external"
     },
     {
