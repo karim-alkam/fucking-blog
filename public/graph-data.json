@@ -169,6 +169,13 @@
       "slug": "VirtualBox-Clipboard-Issues-on-Ubuntu"
     },
     {
+      "id": "zipwn-how-to-crack-archive-passwords-winrar",
+      "name": "Zipwn: How to Crack Archive Passwords (WINRAR)",
+      "val": 20,
+      "type": "post",
+      "slug": "Zipwn-How-to-Crack-Archive-Passwords-WINRAR"
+    },
+    {
       "id": "download-vs-code-on-linux",
       "name": "Download VS-Code on Linux",
       "val": 20,
@@ -2052,6 +2059,18 @@
       "type": "tag"
     },
     {
+      "id": "tag:CyberSecurity",
+      "name": "CyberSecurity",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:Pentesting",
+      "name": "Pentesting",
+      "val": 22,
+      "type": "tag"
+    },
+    {
       "id": "https://en.wikipedia.org/wiki/BYD_Seagull",
       "name": "en.wikipedia.org",
       "val": 10,
@@ -3368,6 +3387,16 @@
     {
       "source": "tag:linux",
       "target": "virtualbox-clipboard-issues-on-ubuntu",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:CyberSecurity",
+      "target": "zipwn-how-to-crack-archive-passwords-winrar",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:Pentesting",
+      "target": "zipwn-how-to-crack-archive-passwords-winrar",
       "type": "tagged"
     },
     {
