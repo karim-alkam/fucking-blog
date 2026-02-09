@@ -2414,6 +2414,27 @@
       "url": "https://www.velocidrone.com/account/my_licenses"
     },
     {
+      "id": "https://github.com/dw0rsec/rockyou.txt",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/dw0rsec/rockyou.txt"
+    },
+    {
+      "id": "https://github.com/danielmiessler/SecLists",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/danielmiessler/SecLists"
+    },
+    {
+      "id": "https://github.com/crunchsec/crunch",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/crunchsec/crunch"
+    },
+    {
       "id": "https://code.visualstudio.com/download",
       "name": "code.visualstudio.com",
       "val": 10,
@@ -4102,6 +4123,21 @@
     {
       "source": "velocidrone-installation-on-ubuntu",
       "target": "https://www.velocidrone.com/account/my_licenses",
+      "type": "external"
+    },
+    {
+      "source": "zipwn-how-to-crack-archive-passwords-winrar",
+      "target": "https://github.com/dw0rsec/rockyou.txt",
+      "type": "external"
+    },
+    {
+      "source": "zipwn-how-to-crack-archive-passwords-winrar",
+      "target": "https://github.com/danielmiessler/SecLists",
+      "type": "external"
+    },
+    {
+      "source": "zipwn-how-to-crack-archive-passwords-winrar",
+      "target": "https://github.com/crunchsec/crunch",
       "type": "external"
     },
     {

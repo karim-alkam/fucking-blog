@@ -9,11 +9,34 @@ draft: "false"
 ---
 **Disclaimer:** *This is for educational purposes only. Only use this for ethical stuff, like recovering your own lost files or testing your own security.* 😉
 
+## Get the Code
+
+You can find the full source code for both Windows and Linux in my GitHub repository here: [Zipwn on GitHub]() (Make sure to replace this with your actual link!)
 ## The Strategy: Dictionary Attacks
 
 Before we touch any code, you have to understand the logic. We aren't "hacking" the encryption algorithm itself (that would take a supercomputer and a few lifetimes). We are doing a **Dictionary Attack**.
 
 Imagine you have a massive list of common passwords (a "wordlist"). You try them one by one until the lock clicks. It’s brute force, but instead of trying every possible combination of characters, you're trying words that people actually use.
+
+## All About Wordlists
+
+The "Dictionary" is just a simple `.txt` file where every line is a potential password. The quality of your wordlist determines if you'll actually crack the file.
+
+### 1. Where to find "Pro" Wordlists
+
+If you’re testing your own security, you want to use lists that contain passwords leaked from real-world hacks.
+
+* [RockYou.txt](https://github.com/dw0rsec/rockyou.txt): The "Gold Standard" of wordlists. It contains over 14 million passwords from an old leak. Most Linux distros like Kali have it pre-installed, but you can find it on GitHub.
+* [SecLists](https://github.com/danielmiessler/SecLists): A massive collection on GitHub that contains everything from common names to default router passwords.
+
+### 2. How to create your own
+
+Sometimes you know the person (or yourself). If you know the password probably contains "Jordan," "2026," or a pet's name, you can create a custom list.
+
+* **The Manual Way:** Just open Notepad and type your best guesses, one per line. Save it as `mylabs.txt`.
+* The Pro Way [Crunch](https://github.com/crunchsec/crunch): If you're on Linux, use a tool called `crunch`. It can generate every possible combination based on parameters you give it.
+* *Example:* `crunch 8 8 -t 3adas@@@` would generate every 8-character password starting with "3adas" followed by 3 numbers.
+
 
 ## The Tool: 7-Zip
 
@@ -150,9 +173,11 @@ echo "Password not found."
 ```
 
 > [!question] Question
+> 
 > Why the hell do we need this weird syntax at the end of the 7z command?
 
-> [!abstract] AI Answer
+> [!abstract] Answer
+> 
 > 7-Zip is very talkative. Every time it fails, it wants to tell you *why*. If your wordlist has 10,000 words, your screen will be a mess of error messages. This syntax redirects "Standard Output" and "Standard Error" to a "black hole" (null), so the script stays clean.
 
 ### 2. The Exit Code (The Secret Sauce)
@@ -160,9 +185,11 @@ echo "Password not found."
 The most important part of this whole project is the status code.
 
 > [!question] Question
+> 
 > How does the script know it actually found the password?
 
-> [!abstract] AI Answer
+> [!abstract] Answer
+> 
 > When a program finishes, it sends an integer back to the OS. `0` globally means "Success." Any other number (like `1` or `2`) indicates an error (like "Wrong Password"). We use `%errorlevel%` (Windows) or `$?` (Linux) to catch that specific number.
 
 ## How to Defend Yourself
@@ -171,8 +198,8 @@ If your password is "123456" or "LetMeIn," this script will wreck you in seconds
 
 The only way to stop a dictionary attack is to use a password that **isn't in the dictionary**.
 
-1. Use **Long Passwords** (16+ characters).
-2. Use **Randomness** (don't use names or dates).
-3. Use a **Password Manager** (so you don't have to remember `G#k9!pL2x$Z`).
+-  Use **Long Passwords** (16+ characters).
+-  Use **Randomness** (don't use names or dates).
+-  Use a **Password Manager** (so you don't have to remember `G#k9!pL2x$Z`).
 
 Stay safe, don't do anything illegal, and keep your archives locked down tight.
