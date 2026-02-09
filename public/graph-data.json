@@ -2414,6 +2414,13 @@
       "url": "https://www.velocidrone.com/account/my_licenses"
     },
     {
+      "id": "https://github.com/abda-s/zipwn",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/abda-s/zipwn"
+    },
+    {
       "id": "https://github.com/dw0rsec/rockyou.txt",
       "name": "github.com",
       "val": 10,
@@ -4123,6 +4130,11 @@
     {
       "source": "velocidrone-installation-on-ubuntu",
       "target": "https://www.velocidrone.com/account/my_licenses",
+      "type": "external"
+    },
+    {
+      "source": "zipwn-how-to-crack-archive-passwords-winrar",
+      "target": "https://github.com/abda-s/zipwn",
       "type": "external"
     },
     {
