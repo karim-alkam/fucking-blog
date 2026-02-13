@@ -11,7 +11,7 @@ draft: "false"
 
 ## Get the Code
 
-You can find the full source code for both Windows and Linux in my GitHub repository here: [Zipwn on GitHub](https://github.com/abda-s/zipwn) (Make sure to replace this with your actual link!)
+You can find the full source code for both Windows and Linux in my GitHub repository here: [Zipwn on GitHub](https://github.com/abda-s/zipwn) 
 ## The Strategy: Dictionary Attacks
 
 Before we touch any code, you have to understand the logic. We aren't "hacking" the encryption algorithm itself (that would take a supercomputer and a few lifetimes). We are doing a **Dictionary Attack**.
