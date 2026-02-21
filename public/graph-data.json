@@ -8,6 +8,13 @@
       "slug": "(OOP)-in-Python"
     },
     {
+      "id": "c-and-memory-management",
+      "name": "C and Memory Management",
+      "val": 20,
+      "type": "post",
+      "slug": "C-and-Memory-Management"
+    },
+    {
       "id": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
       "name": "Charging the BYD Seagull: How 8A and 32A Chargers Impact Its LFP Battery",
       "val": 20,
@@ -2011,6 +2018,18 @@
       "type": "tag"
     },
     {
+      "id": "tag:Embedded",
+      "name": "Embedded",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:C",
+      "name": "C",
+      "val": 22,
+      "type": "tag"
+    },
+    {
       "id": "tag:Electronics",
       "name": "Electronics",
       "val": 22,
@@ -2069,6 +2088,34 @@
       "name": "Pentesting",
       "val": 22,
       "type": "tag"
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=rJrd2QMVbGM&list=PLkRVBxEUZmoNK_p0dLusm5pD5Us8cs6fq&index=2",
+      "name": "www.youtube.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.youtube.com/watch?v=rJrd2QMVbGM&list=PLkRVBxEUZmoNK_p0dLusm5pD5Us8cs6fq&index=2"
+    },
+    {
+      "id": "https://boot.dev",
+      "name": "boot.dev",
+      "val": 10,
+      "type": "external",
+      "url": "https://boot.dev"
+    },
+    {
+      "id": "https://github.com/abda-s/memory-management-in-c",
+      "name": "github.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://github.com/abda-s/memory-management-in-c"
+    },
+    {
+      "id": "https://youtu.be/z7wVUfnm7M0?si=1Wh3ZDMCDj_x-zZM",
+      "name": "youtu.be",
+      "val": 10,
+      "type": "external",
+      "url": "https://youtu.be/z7wVUfnm7M0?si=1Wh3ZDMCDj_x-zZM"
     },
     {
       "id": "https://en.wikipedia.org/wiki/BYD_Seagull",
@@ -3293,6 +3340,16 @@
       "type": "tagged"
     },
     {
+      "source": "tag:Embedded",
+      "target": "c-and-memory-management",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:C",
+      "target": "c-and-memory-management",
+      "type": "tagged"
+    },
+    {
       "source": "tag:Electronics",
       "target": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
       "type": "tagged"
@@ -3441,6 +3498,26 @@
       "source": "tag:linux",
       "target": "tmux-fix",
       "type": "tagged"
+    },
+    {
+      "source": "c-and-memory-management",
+      "target": "https://www.youtube.com/watch?v=rJrd2QMVbGM&list=PLkRVBxEUZmoNK_p0dLusm5pD5Us8cs6fq&index=2",
+      "type": "external"
+    },
+    {
+      "source": "c-and-memory-management",
+      "target": "https://boot.dev",
+      "type": "external"
+    },
+    {
+      "source": "c-and-memory-management",
+      "target": "https://github.com/abda-s/memory-management-in-c",
+      "type": "external"
+    },
+    {
+      "source": "c-and-memory-management",
+      "target": "https://youtu.be/z7wVUfnm7M0?si=1Wh3ZDMCDj_x-zZM",
+      "type": "external"
     },
     {
       "source": "charging-the-byd-seagull-how-8a-and-32a-chargers-impact-its-lfp-battery",
