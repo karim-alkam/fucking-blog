@@ -50,7 +50,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     title,
     description,
     openGraph: {
-      title: `${title} // SALAMEH`, // OG title doesn't use the template, so we keep it here if we want the full branding for social sharing, OR we rely on generic logic. Usually better to provide full title for OG.
+      title: `${title}`, // OG title doesn't use the template, so we keep it here if we want the full branding for social sharing, OR we rely on generic logic. Usually better to provide full title for OG.
       description,
       type: 'article',
       publishedTime: postData.date,

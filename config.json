@@ -1,8 +1,8 @@
 {
   "paths": {
-    "vaultDir": "/home/abdas/Documents/Notes/posts",
-    "drawingsDir": "/home/abdas/Documents/Notes/drawings",
-    "attachmentsDir": "/home/abdas/Documents/Notes/files"
+    "vaultDir": "C:\\Users\\karim\\Documents\\Obsidian Vault\\posts",
+    "drawingsDir": "C:\\Users\\karim\\Documents\\Obsidian Vault\\drawings",
+    "attachmentsDir": "C:\\Users\\karim\\Documents\\Obsidian Vault\\FILES"
   },
   "notes": [
     "Update these paths to match your Linux Obsidian vault location",

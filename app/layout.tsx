@@ -25,7 +25,7 @@ export const metadata = {
   },
   description: SITE_CONFIG.description,
   keywords: ['Electrical Engineering', 'Embedded Systems', 'IoT', 'Web Development', 'Next.js', 'Digital Garden', 'Engineering Log'],
-  authors: [{ name: SITE_CONFIG.author, url: 'https://github.com/abda-s' }],
+  authors: [{ name: SITE_CONFIG.author, url: '' }],
   creator: SITE_CONFIG.author,
   publisher: SITE_CONFIG.author,
   robots: {
@@ -45,13 +45,13 @@ export const metadata = {
     url: BASE_URL,
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,
-    siteName: 'Abdullah Salameh - Engineering Log',
+    siteName: 'Karim Alkam - Fucking Log',
     images: [
       {
         url: '/A-logo-w-bg.png',
         width: 4096,
         height: 4096,
-        alt: 'Abdullah Salameh - Engineering Log',
+        alt: 'Karim Alkam - Fucking Log',
       },
     ],
   },
@@ -91,12 +91,11 @@ export default function RootLayout({
         <footer id="site-footer" className="bg-cyber-dark-gray border-t border-cyber-gray py-8 mt-auto relative z-1">
           <div className="container mx-auto px-4 text-center">
             <p className="font-mono text-cyber-gray-light">
-              <span className="text-cyber-neon-cyan">©</span> {new Date().getFullYear()} Salameh&apos;s Blog. All rights reserved.
+              <span className="text-cyber-neon-cyan">©</span> {new Date().getFullYear()} Karim&apos;s Fucking Blog. All rights reserved.
             </p>
           </div>
         </footer>
         {/* Global heavy grain or grid effect could go here */}
-        <GoogleAnalytics gaId={GA_ID} />
       </body>
     </html>
   );
