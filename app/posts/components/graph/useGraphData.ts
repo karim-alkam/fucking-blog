@@ -10,9 +10,16 @@ export const useGraphData = (currentSlug: string) => {
     // Fetch Data
     useEffect(() => {
         fetch('/graph-data.json')
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP ${res.status} - missing graph-data.json`);
+                return res.json();
+            })
             .then(setData)
-            .catch(err => console.error("Failed to load graph data", err));
+            .catch(err => {
+                console.warn("Graph data not found. Run 'npm run gen-graph' to generate it.", err);
+                // Set empty fallback data instead of crashing
+                setData({ nodes: [], links: [] });
+            });
     }, []);
 
     // Smart Default: Show external links if no internal links exist

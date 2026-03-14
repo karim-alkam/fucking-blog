@@ -18,12 +18,12 @@ export default function ContactForm() {
         const message = form.querySelector('textarea[name="message"]') as HTMLTextAreaElement;
 
         const formData = new FormData();
-        formData.append('entry.984568658', email.value);
-        formData.append('entry.1994126310', fullName.value);
-        formData.append('entry.401660184', message.value);
+        formData.append('entry.213796773', email.value);      // Email
+        formData.append('entry.356773386', fullName.value);   // Name
+        formData.append('entry.464557231', message.value);    // Message
 
         try {
-            await fetch('https://docs.google.com/forms/d/e/1FAIpQLSckbwI86tPYpDiJ8Pqlky_a7WK3BXcnbjxBy8DSWle-hWcnZA/formResponse?usp=pp_url', {
+            await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdkaIywoRD7UvDwWXnErCnkfbZNJS3X1PGVLmPjOCVD1xq6UA/formResponse?usp=pp_url', {
                 method: 'POST',
                 body: formData,
                 mode: 'no-cors'

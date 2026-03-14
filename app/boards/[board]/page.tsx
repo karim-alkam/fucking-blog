@@ -20,7 +20,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params;
   const boardName = decodeURIComponent(params.board);
   const title = `BOARD: ${boardName}`;
-  const fullTitle = `${title} // SALAMEH`;
+  const fullTitle = `${title} // KARIM`;
   const description = `Explore engineering drawings and whiteboards in the ${boardName} collection.`;
   const url = `${BASE_URL}/boards/${params.board}`;
 

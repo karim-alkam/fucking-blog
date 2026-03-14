@@ -33,7 +33,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const boardName = decodeURIComponent(params.board);
   const drawingName = decodeURIComponent(params.drawing);
   const title = `DRAWING: ${drawingName}`;
-  const fullTitle = `${title} // SALAMEH`;
+  const fullTitle = `${title} // KARIM`;
   const description = `Interactive Excalidraw whiteboarding session: ${drawingName} from ${boardName}.`;
   const url = `${BASE_URL}/boards/${params.board}/${params.drawing}`;
 

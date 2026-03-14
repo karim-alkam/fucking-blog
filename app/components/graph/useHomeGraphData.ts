@@ -12,7 +12,10 @@ export function useHomeGraphData(): GraphSettings {
 
     useEffect(() => {
         fetch('/graph-data.json')
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP ${res.status} - missing graph-data.json`);
+                return res.json();
+            })
             .then((graphData: GraphData) => {
                 const allNodesMap = new Map(graphData.nodes.map(n => [n.id, n]));
                 const nodeExternalDegree = new Map<string, number>();

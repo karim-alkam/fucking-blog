@@ -45,13 +45,13 @@ export const metadata = {
     url: BASE_URL,
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,
-    siteName: 'Karim Alkam - Fucking Log',
+    siteName: 'Karim Alkam - Digital Log',
     images: [
       {
         url: '/A-logo-w-bg.png',
         width: 4096,
         height: 4096,
-        alt: 'Karim Alkam - Fucking Log',
+        alt: 'Karim Alkam - Digital Log',
       },
     ],
   },
@@ -91,7 +91,7 @@ export default function RootLayout({
         <footer id="site-footer" className="bg-cyber-dark-gray border-t border-cyber-gray py-8 mt-auto relative z-1">
           <div className="container mx-auto px-4 text-center">
             <p className="font-mono text-cyber-gray-light">
-              <span className="text-cyber-neon-cyan">©</span> {new Date().getFullYear()} Karim&apos;s Fucking Blog. All rights reserved.
+              <span className="text-cyber-neon-cyan">©</span> {new Date().getFullYear()} Karim Alkam&apos;s Engineering Blog. All rights reserved.
             </p>
           </div>
         </footer>

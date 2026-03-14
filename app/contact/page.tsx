@@ -4,10 +4,10 @@ import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
   title: "CONTACT_UPLINK",
-  description: "Get in touch with Abdullah Salameh. Open for project inquiries and tech discussions.",
+  description: "Get in touch with Karim Alkam. Open for project inquiries and tech discussions.",
   openGraph: {
-    title: "CONTACT_UPLINK // SALAMEH",
-    description: "Get in touch with Abdullah Salameh. Open for project inquiries and tech discussions.",
+    title: "CONTACT_UPLINK // KARIM",
+    description: "Get in touch with Karim Alkam. Open for project inquiries and tech discussions.",
     url: `${BASE_URL}/contact`,
     siteName: SITE_CONFIG.title,
     images: [
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
         url: '/A-logo-w-bg.png',
         width: 4096,
         height: 4096,
-        alt: 'Abdullah Salameh - Contact',
+        alt: 'Karim Alkam - Contact',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "CONTACT_UPLINK // SALAMEH",
-    description: "Get in touch with Abdullah Salameh. Open for project inquiries and tech discussions.",
+    title: "CONTACT_UPLINK // KARIM",
+    description: "Get in touch with Karim Alkam. Open for project inquiries and tech discussions.",
     images: ['/A-logo-w-bg.png'],
     creator: SITE_CONFIG.twitterHandle,
   },

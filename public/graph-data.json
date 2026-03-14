@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "id": "test-blog",
+      "name": "title test",
+      "val": 20,
+      "type": "post",
+      "slug": "Test-blog"
+    },
+    {
+      "id": "tag:aquarium",
+      "name": "aquarium",
+      "val": 22,
+      "type": "tag"
+    }
+  ],
+  "links": [
+    {
+      "source": "tag:aquarium",
+      "target": "test-blog",
+      "type": "tagged"
+    }
+  ]
+}

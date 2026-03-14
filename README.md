@@ -1,4 +1,4 @@
-# ⚡ Salameh's Digital Log
+# ⚡ Karim's Digital Log
 
 A high-performance, **Cyberpunk-themed** digital garden built with **Next.js 15**, **Tailwind CSS**, and fueled by **Obsidian**. This site is designed to be a living repository of engineering knowledge, featuring a distinct sci-fi aesthetic with glitch effects, neon palettes, and terminal-inspired UI.
 
@@ -76,4 +76,4 @@ toc: true
 ```
 
 ---
-*System Status: ONLINE // Operator: Abdullah Salameh*
+*System Status: ONLINE // Operator: Karim Alkam*

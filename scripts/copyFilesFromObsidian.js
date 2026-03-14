@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const matter = require('gray-matter');
 const logger = require('./logger');
 const { getPath } = require('./config');
 const syncState = require('./syncState');
@@ -52,6 +53,16 @@ async function syncPosts() {
   for (let [rel, src] of sourceMap) {
     const dest = path.join(postsDir, rel);
     
+    // Read source content to check for draft status
+    const content = fs.readFileSync(src, 'utf8');
+    const { data } = matter(content);
+    const isDraft = typeof data.draft === 'string'
+      ? data.draft.toLowerCase() === 'true'
+      : Boolean(data.draft);
+
+    // We no longer skip drafts or remove them because we want them available locally
+    // Next.js static renderer and `/posts` feed will handle filtering them out.
+
     // Check manifest for changes (Source Hash vs Stored Hash)
     // We also check if dest exists, because if we deleted it manually, we want it back.
     const hasChanged = syncState.hasChanged(src, rel);

@@ -1,6 +1,4 @@
 import { notFound } from 'next/navigation';
-import { readdirSync } from 'fs';
-import path from 'path';
 import 'highlight.js/styles/github-dark.css';
 import Link from 'next/link';
 import PostContent from '../components/PostContent';
@@ -8,17 +6,18 @@ import TocSidebar from '../components/TocSidebar';
 import ScrollToTop from '../components/ScrollToTop';
 import MathJaxInit from '../components/MathJaxInit';
 import AnalyticsEvents from '../../components/AnalyticsEvents';
-import { getPostBySlug } from '../../lib/posts';
+import { getPostBySlug, getPosts } from '../../lib/posts';
 import GraphView from '../components/GraphView';
 
 /**
- * Synchronously read the /posts folder so Next infers
- * { slug: string }[] (not Promise<any>).
+ * Fetch all non-draft posts for static site generation.
+ * This ensures that drafts are not attempted to be built during 'next export'.
  */
-export function generateStaticParams() {
-  const postsDir = path.join(process.cwd(), 'posts');
-  const files = readdirSync(postsDir);
-  return files.map((f) => ({ slug: f.replace(/\.md$/, '') }));
+export async function generateStaticParams() {
+  const posts = await getPosts(true); // true = include drafts so they can be exported statically
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 interface PageProps {

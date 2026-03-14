@@ -11,12 +11,12 @@ function Write-Header {
 
 function Write-Success {
     param([string]$Message)
-    Write-Host "✔ $Message" -ForegroundColor Green
+    Write-Host "[OK] $Message" -ForegroundColor Green
 }
 
 function Write-Step {
     param([string]$Message)
-    Write-Host "➜ $Message" -ForegroundColor Gray
+    Write-Host "-> $Message" -ForegroundColor Gray
 }
 
 # --- DEPLOYMENT START ---
