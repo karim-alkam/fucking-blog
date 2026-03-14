@@ -3,8 +3,7 @@ import Navbar from './components/Navbar';
 import NextTopLoader from 'nextjs-toploader';
 import { Outfit, Rajdhani } from 'next/font/google';
 import ChunkErrorListener from './components/ChunkErrorListener';
-import { GoogleAnalytics } from '@next/third-parties/google';
-import { BASE_URL, GA_ID, GOOGLE_VERIFICATION_ID, SITE_CONFIG } from './lib/constants';
+import { BASE_URL, GOOGLE_VERIFICATION_ID, SITE_CONFIG } from './lib/constants';
 
 const outfit = Outfit({
   subsets: ['latin'],

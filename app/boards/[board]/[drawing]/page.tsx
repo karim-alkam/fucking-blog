@@ -11,10 +11,19 @@ export async function generateStaticParams() {
   for (const board of boards) {
     const drawings = getDrawingsForBoard(board);
     for (const drawing of drawings) {
-      params.push({ board, drawing });
+      params.push({ 
+        board: encodeURIComponent(board), 
+        drawing: encodeURIComponent(drawing)
+      });
     }
   }
-  return params;
+  
+  // Next.js static exports crash if the `params` array is empty. 
+  // If the user hasn't synced drawings yet, the folder is empty.
+  if (params.length === 0) {
+    return [{ board: 'empty', drawing: 'empty' }];
+  }
+
   return params;
 }
 

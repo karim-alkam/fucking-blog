@@ -7,7 +7,10 @@ import { SITE_CONFIG, BASE_URL } from '../../lib/constants';
 
 export async function generateStaticParams() {
   const boards = getBoards();
-  return boards.map((board) => ({ board }));
+  if (boards.length === 0) {
+    return [{ board: 'empty' }];
+  }
+  return boards.map((board) => ({ board: encodeURIComponent(board) }));
 }
 
 interface PageProps {
