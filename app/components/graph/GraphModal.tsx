@@ -1,6 +1,5 @@
 import { Fragment, useRef, useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { motion } from 'framer-motion';
 import { GraphWindowHeader } from '../../posts/components/graph/GraphWindowHeader';
 import { HomeGraphCanvas } from './HomeGraphCanvas';
 import { GraphData } from './types';

@@ -11,7 +11,9 @@ export function useHomeGraphData(): GraphSettings {
     const isForcesApplied = useRef(false);
 
     useEffect(() => {
-        fetch('/graph-data.json')
+        const isProd = process.env.NODE_ENV === 'production';
+        const basePath = isProd ? '/fucking-blog' : '';
+        fetch(`${basePath}/graph-data.json`)
             .then(res => {
                 if (!res.ok) throw new Error(`HTTP ${res.status} - missing graph-data.json`);
                 return res.json();

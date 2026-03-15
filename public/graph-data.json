@@ -1,4 +1,25 @@
 {
-  "nodes": [],
-  "links": []
+  "nodes": [
+    {
+      "id": "muscles-hypertrophy",
+      "name": "Muscles hypertrophy",
+      "val": 20,
+      "type": "post",
+      "slug": "Muscles-hypertrophy"
+    },
+    {
+      "id": "https://www.unm.edu/~lkravitz/Article%20folder/musclesgrowLK.html",
+      "name": "www.unm.edu",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.unm.edu/~lkravitz/Article%20folder/musclesgrowLK.html"
+    }
+  ],
+  "links": [
+    {
+      "source": "muscles-hypertrophy",
+      "target": "https://www.unm.edu/~lkravitz/Article%20folder/musclesgrowLK.html",
+      "type": "external"
+    }
+  ]
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect, useMemo } from 'react';
-import { motion } from 'framer-motion';
 import { GraphWindowHeader } from '../posts/components/graph/GraphWindowHeader';
 import { useHomeGraphData } from './graph/useHomeGraphData';
 import { HomeGraphCanvas } from './graph/HomeGraphCanvas';
