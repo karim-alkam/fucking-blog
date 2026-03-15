@@ -1,7 +1,7 @@
 import './globals.css';
 import Navbar from './components/Navbar';
 import NextTopLoader from 'nextjs-toploader';
-import { Outfit, Rajdhani } from 'next/font/google';
+import { Outfit, EB_Garamond } from 'next/font/google';
 import ChunkErrorListener from './components/ChunkErrorListener';
 import { BASE_URL, GOOGLE_VERIFICATION_ID, SITE_CONFIG } from './lib/constants';
 
@@ -10,10 +10,9 @@ const outfit = Outfit({
   variable: '--font-outfit',
 });
 
-const rajdhani = Rajdhani({
-  weight: ['300', '400', '500', '600', '700'],
+const ebGaramond = EB_Garamond({
   subsets: ['latin'],
-  variable: '--font-rajdhani',
+  variable: '--font-eb-garamond',
 });
 
 export const metadata = {
@@ -80,21 +79,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${outfit.variable} ${rajdhani.variable} bg-cyber-black text-cyber-white min-h-screen flex flex-col font-sans selection:bg-cyber-neon-pink selection:text-white`}>
-        <NextTopLoader color="#FCEE0A" height={3} showSpinner={false} zIndex={9999} shadow="0 0 10px #FCEE0A,0 0 5px #FCEE0A" />
+      <body className={`${outfit.variable} ${ebGaramond.variable} bg-deep-space text-starlight min-h-screen flex flex-col font-sans selection:bg-brass selection:text-void-black font-light`}>
+        <NextTopLoader color="#C5A869" height={3} showSpinner={false} zIndex={9999} shadow="0 0 10px rgba(197, 168, 105, 0.5)" />
         <ChunkErrorListener />
         <Navbar />
         <main className="flex-1 relative z-10">
           {children}
         </main>
-        <footer id="site-footer" className="bg-cyber-dark-gray border-t border-cyber-gray py-8 mt-auto relative z-1">
+        <footer id="site-footer" className="bg-void-black/80 backdrop-blur-md border-t border-brass/20 py-8 mt-auto relative z-10">
           <div className="container mx-auto px-4 text-center">
-            <p className="font-mono text-cyber-gray-light">
-              <span className="text-cyber-neon-cyan">©</span> {new Date().getFullYear()} Karim Alkam&apos;s Engineering Blog. All rights reserved.
+            <p className="font-serif italic text-aged-parchment/70">
+              <span className="text-brass">©</span> {new Date().getFullYear()} Karim Alkam&apos;s Engineering Log. All rights reserved.
             </p>
           </div>
         </footer>
-        {/* Global heavy grain or grid effect could go here */}
+        {/* SVG background is applied in globals.css */}
       </body>
     </html>
   );

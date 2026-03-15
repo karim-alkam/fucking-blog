@@ -16,7 +16,7 @@ interface ForceGraphInstance {
 // Dynamically import generic ForceGraph to avoid SSR issues
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
     ssr: false,
-    loading: () => <div className="h-[60vh] flex items-center justify-center text-cyber-neon-cyan/50 animate-pulse">Initializing Neural Link...</div>
+    loading: () => <div className="h-[60vh] flex items-center justify-center text-celestial-blue/50 animate-pulse">Initializing Neural Link...</div>
 });
 
 interface HomeGraphCanvasProps {
@@ -161,17 +161,24 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
         const animatedRadius = radius * easeWithOvershoot(progress);
         const opacity = easeOutQuart(progress);
 
+        // Map Vintage Astronomy node colors
+        let renderColor = '#EAE7DC'; // text-starlight
+        if (node.type === 'post') renderColor = '#C5A869'; // brass
+        else if (node.type === 'tag') renderColor = '#4B6B92'; // celestial-blue
+        else if (node.type === 'board' || node.type === 'drawing') renderColor = '#8E7B4A'; // brass-dark
+        else if (node.type === 'external') renderColor = '#7A9BBD'; // celestial-blue-light
+
         ctx.globalAlpha = opacity;
         ctx.beginPath();
         ctx.arc(node.x, node.y, Math.max(0, animatedRadius), 0, 2 * Math.PI, false);
-        ctx.fillStyle = node.color || '#00F0FF';
+        ctx.fillStyle = renderColor;
 
         // PERFORMANCE OPTIMIZATION:
         // Only render expensive shadow glow for the hovered node.
         // Rendering shadows for all nodes on a large 4k modal canvas kills FPS.
         if (isHovered) {
-            ctx.shadowColor = node.color || '#00F0FF';
-            ctx.shadowBlur = 25;
+            ctx.shadowColor = renderColor;
+            ctx.shadowBlur = 15;
         } else {
             ctx.shadowBlur = 0;
         }
@@ -237,7 +244,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
 
     return (
         <div className="flex-1 w-full h-full relative cursor-move" onTouchStart={handleTouchStart}>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyber-neon-cyan/5 via-transparent to-transparent opacity-30 pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-celestial-blue/5 via-transparent to-transparent opacity-30 pointer-events-none" />
             <ForceGraph2D
                 // @ts-expect-error - Library types are incompatible with custom interface
                 ref={handleRef}
@@ -262,7 +269,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
                     return `rgba(92, 92, 92, ${opacity})`;
                 }}
                 linkWidth={1}
-                backgroundColor="#050505"
+                backgroundColor="transparent"
                 nodeCanvasObject={(node, ctx, globalScale) => nodeCanvasObject(node as Node, ctx, globalScale)}
                 onNodeHover={(node) => {
                     setHoverNode(node as Node || null);
@@ -287,7 +294,7 @@ export function HomeGraphCanvas({ width, height, data, isForcesApplied, onIntera
             />
             {showTutorial && (
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-50">
-                    <div className="bg-black/80 backdrop-blur-sm border border-cyber-neon-cyan px-6 py-4 rounded-none text-cyber-neon-cyan font-mono animate-pulse">
+                    <div className="bg-black/80 backdrop-blur-sm border border-celestial-blue px-6 py-4 rounded-none text-celestial-blue font-mono animate-pulse">
                         USE TWO FINGERS TO PAN/ZOOM
                     </div>
                 </div>

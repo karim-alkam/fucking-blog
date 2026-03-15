@@ -11,7 +11,7 @@ export default async function DraftsPage() {
   return (
     <main className="min-h-screen pt-4">
       <AnalyticsEvents eventName="drafts_view" />
-      <Suspense fallback={<div className="text-center py-20 text-cyber-neon-cyan font-mono">LOADING_DATA...</div>}>
+      <Suspense fallback={<div className="text-center py-20 text-celestial-blue font-mono">LOADING_DATA...</div>}>
         <PostsList posts={draftPosts} title="Draft Logs" />
       </Suspense>
     </main>

@@ -8,12 +8,12 @@ interface GraphSettingsProps {
 }
 
 const FILTER_CONFIG: Record<string, { label: string; color: string }> = {
-    post: { label: 'POSTS', color: '#FF003C' },
-    drawing: { label: 'DRAWINGS', color: '#FCEE0A' },
-    board: { label: 'BOARDS', color: '#FF6600' },
-    tag: { label: 'TAGS', color: '#7000FF' },
-    external: { label: 'EXTERNAL', color: '#39FF14' },
-    asset: { label: 'ASSETS', color: '#00F0FF' },
+    post: { label: 'ENTRIES', color: '#C5A869' }, // brass
+    drawing: { label: 'ILLUSTRATIONS', color: '#8E7B4A' }, // brass-dark
+    board: { label: 'BOARDS', color: '#8E7B4A' }, // brass-dark
+    tag: { label: 'TAGS', color: '#4B6B92' }, // celestial-blue
+    external: { label: 'EXTERNAL', color: '#7A9BBD' }, // celestial-blue-light
+    asset: { label: 'ASSETS', color: '#D8D4C7' }, // aged-parchment
 };
 
 export function GraphSettings({ filters, onToggle, className = '', alwaysShowOnDesktop = false }: GraphSettingsProps) {
@@ -39,7 +39,7 @@ export function GraphSettings({ filters, onToggle, className = '', alwaysShowOnD
         <div className={`absolute top-12 right-4 z-50 text-left ${className}`} ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-10 h-10 flex items-center justify-center bg-cyber-black/80 border text-cyber-neon-cyan hover:text-cyber-neon-yellow border-cyber-neon-cyan hover:border-cyber-neon-yellow transition-all duration-300 rounded-sm ${alwaysShowOnDesktop ? 'lg:hidden' : ''}`}
+                className={`w-10 h-10 flex items-center justify-center bg-void-black/80 border text-brass hover:text-brass-dark border-brass/20 hover:border-brass/60 transition-all duration-300 rounded-sm ${alwaysShowOnDesktop ? 'lg:hidden' : ''}`}
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +58,9 @@ export function GraphSettings({ filters, onToggle, className = '', alwaysShowOnD
                 </svg>
             </button>
 
-            <div className={`absolute right-0 mt-2 w-56 origin-top-right bg-cyber-dark-gray border border-cyber-neon-cyan shadow-lg shadow-cyber-neon-cyan/20 ring-1 ring-black ring-opacity-5 focus:outline-none z-50 ${isOpen ? 'block animate-in fade-in slide-in-from-top-2' : 'hidden'} ${alwaysShowOnDesktop ? 'lg:block' : ''}`}>
+            <div className={`absolute right-0 mt-2 w-56 origin-top-right glass-panel bg-void-black/90 focus:outline-none z-50 ${isOpen ? 'block animate-in fade-in slide-in-from-top-2' : 'hidden'} ${alwaysShowOnDesktop ? 'lg:block' : ''}`}>
                 <div className="py-2 px-3">
-                    <h3 className="text-xs font-display font-bold text-cyber-neon-cyan mb-3 tracking-widest border-b border-cyber-gray pb-1">
+                    <h3 className="text-xs font-sans font-medium text-brass mb-3 uppercase tracking-[0.2em] opacity-80 border-b border-brass/20 pb-2">
                         NODE_FILTERS
                     </h3>
                     <div className="space-y-2">
@@ -71,19 +71,19 @@ export function GraphSettings({ filters, onToggle, className = '', alwaysShowOnD
                                         className="w-2 h-2 rounded-full shadow-[0_0_5px_currentColor]"
                                         style={{ color: config.color, backgroundColor: config.color }}
                                     />
-                                    <span className={`text-xs font-mono transition-colors ${filters[type] ? 'text-cyber-white' : 'text-cyber-gray-light'}`}>
+                                    <span className={`text-xs font-mono transition-colors ${filters[type] ? 'text-starlight' : 'text-starlight'}`}>
                                         {config.label}
                                     </span>
                                 </div>
                                 <button
                                     onClick={() => onToggle(type)}
-                                    className={`relative inline-flex h-4 w-8 items-center rounded-none border transition-colors focus:outline-none ${filters[type] ? 'border-cyber-neon-cyan' : 'border-cyber-gray'
+                                    className={`relative inline-flex h-4 w-8 items-center rounded-none border transition-colors focus:outline-none ${filters[type] ? 'border-brass' : 'border-brass/20'
                                         }`}
                                 >
                                     <span
                                         className={`inline-block h-2 w-2 transform bg-current transition-transform ${filters[type]
-                                            ? 'translate-x-5 text-cyber-neon-cyan shadow-[0_0_8px_currentColor]'
-                                            : 'translate-x-1 text-cyber-gray'
+                                            ? 'translate-x-5 text-brass shadow-[0_0_8px_currentColor]'
+                                            : 'translate-x-1 text-brass/20'
                                             }`}
                                     />
                                 </button>

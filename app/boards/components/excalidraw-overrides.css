@@ -8,13 +8,13 @@
 }
 
 .excalidraw.theme--dark {
-    --color-primary: var(--cyber-neon-cyan) !important;
-    --color-secondary: var(--cyber-neon-pink) !important;
-    --color-text-primary: var(--cyber-white) !important;
-    --color-background-primary: var(--cyber-black) !important;
-    --color-background-secondary: var(--cyber-dark-gray) !important;
-    --color-surface-primary: var(--cyber-dark-gray) !important;
-    --color-surface-secondary: var(--cyber-gray) !important;
+    --color-primary: var(--celestial-blue) !important;
+    --color-secondary: var(--brass) !important;
+    --color-text-primary: var(--starlight) !important;
+    --color-background-primary: var(--void-black) !important;
+    --color-background-secondary: var(--deep-space) !important;
+    --color-surface-primary: var(--deep-space) !important;
+    --color-surface-secondary: rgba(var(--brass), 0.2) !important;
 }
 
 /* --- Footer & UI Wrapper --- */
@@ -22,21 +22,21 @@
 .excalidraw .layer-ui__wrapper__footer-left {
     /* Hide default footer background/elements if desired, or style them */
     background-color: transparent !important;
-    /* border: 1px solid var(--cyber-neon-cyan) !important; */
+    /* border: 1px solid var(--celestial-blue) !important; */
 }
 
 .excalidraw .help-icon {
-    background-color: var(--cyber-dark-gray) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
-    color: var(--cyber-neon-cyan) !important;
+    background-color: var(--deep-space) !important;
+    border: 1px solid var(--celestial-blue) !important;
+    color: var(--celestial-blue) !important;
     border-radius: 0 !important;
     /* Sharp edges */
 }
 
 /* --- Zoom & Tool Icons --- */
 .excalidraw .Stack.Stack_vertical.zoom-actions {
-    background-color: var(--cyber-dark-gray) !important;
-    border: 1px solid var(--cyber-gray) !important;
+    background-color: var(--deep-space) !important;
+    border: 1px solid rgba(var(--brass), 0.2) !important;
     border-radius: 0 !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
     transition: all 0.2s ease;
@@ -45,7 +45,7 @@
 }
 
 .excalidraw .Stack.Stack_vertical.zoom-actions:hover {
-    /* border-color: var(--cyber-neon-yellow) !important;
+    /* border-color: var(--brass-dark) !important;
     box-shadow: 0 0 10px rgba(252, 238, 10, 0.2) !important; */
     border-radius: 0 !important;
 
@@ -54,21 +54,21 @@
 .excalidraw .ToolIcon_type_button {
     background-color: transparent !important;
     border-radius: 0 !important;
-    color: var(--cyber-gray-light) !important;
+    color: var(--starlight) !important;
     transition: all 0.2s ease;
-    border: 1px solid var(--cyber-neon-cyan) !important;
-    color: var(--cyber-neon-cyan) !important;
+    border: 1px solid var(--celestial-blue) !important;
+    color: var(--celestial-blue) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* .excalidraw .ToolIcon_type_button:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
 } */
 
 .excalidraw .ToolIcon__icon {
-    color: var(--cyber-neon-cyan) !important;
-    fill: var(--cyber-neon-cyan) !important;
+    color: var(--celestial-blue) !important;
+    fill: var(--celestial-blue) !important;
 }
 
 
@@ -80,16 +80,16 @@
 .excalidraw .zoom-out-button,
 .excalidraw .zoom-in-button,
 .excalidraw .reset-zoom-button {
-    color: var(--cyber-neon-cyan) !important;
+    color: var(--celestial-blue) !important;
     border: 1px solid transparent !important;
-    border-color: var(--cyber-neon-cyan) !important;
+    border-color: var(--celestial-blue) !important;
     /* Prepare for border transition */
 }
 
 .excalidraw .zoom-out-button:hover,
 .excalidraw .zoom-in-button:hover,
 .excalidraw .reset-zoom-button:hover {
-    border-color: var(--cyber-neon-yellow) !important;
+    border-color: var(--brass-dark) !important;
     box-shadow: 0 0 10px rgba(252, 238, 10, 0.2) !important;
     border-radius: 0 !important;
 
@@ -97,22 +97,22 @@
 
 /* --- Dropdown Menus --- */
 .excalidraw .dropdown-menu-container {
-    background-color: var(--cyber-dark-gray) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
+    background-color: var(--deep-space) !important;
+    border: 1px solid var(--celestial-blue) !important;
     border-radius: 0 !important;
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.2) !important;
 }
 
 .excalidraw .dropdown-menu-item {
-    color: var(--cyber-white) !important;
+    color: var(--starlight) !important;
     font-family: inherit !important;
     border-radius: 0 !important;
 }
 
 .excalidraw .dropdown-menu-item:hover,
 .excalidraw .dropdown-menu-item:focus {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
     border-radius: 0 !important;
 }
 
@@ -121,23 +121,23 @@
 }
 
 .excalidraw .dropdown-menu-button {
-    background-color: var(--cyber-dark-gray) !important;
-    color: var(--cyber-white) !important;
+    background-color: var(--deep-space) !important;
+    color: var(--starlight) !important;
     border-radius: 0 !important;
-    border: 1px solid var(--cyber-gray) !important;
+    border: 1px solid rgba(var(--brass), 0.2) !important;
     transition: all 0.2s ease;
 }
 
 .excalidraw .dropdown-menu-button:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
-    border-color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
+    border-color: var(--brass-dark) !important;
 }
 
 .excalidraw .library-menu-browse-button {
     border-radius: 0 !important;
-    background-color: var(--cyber-neon-cyan) !important;
-    color: var(--cyber-black) !important;
+    background-color: var(--celestial-blue) !important;
+    color: var(--void-black) !important;
     font-weight: bold;
     text-transform: uppercase;
     font-family: inherit !important;
@@ -145,37 +145,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--cyber-neon-cyan) !important;
+    border: 1px solid var(--celestial-blue) !important;
     transition: all 0.2s ease;
 }
 
 .excalidraw .library-menu-browse-button:hover {
-    background-color: var(--cyber-neon-yellow) !important;
-    color: var(--cyber-black) !important;
+    background-color: var(--brass-dark) !important;
+    color: var(--void-black) !important;
     box-shadow: 0 0 15px rgba(252, 238, 10, 0.4) !important;
-    border-color: var(--cyber-neon-yellow) !important;
+    border-color: var(--brass-dark) !important;
 }
 
 .excalidraw .main-menu-trigger {
-    background-color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
-    color: var(--cyber-neon-cyan) !important;
+    background-color: var(--void-black) !important;
+    border: 1px solid var(--celestial-blue) !important;
+    color: var(--celestial-blue) !important;
     border-radius: 0 !important;
     transition: all 0.2s ease;
 }
 
 .excalidraw .main-menu-trigger:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.2) !important;
-    border-color: var(--cyber-neon-yellow) !important;
+    border-color: var(--brass-dark) !important;
 }
 
 .excalidraw .help-icon:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.2) !important;
-    border-color: var(--cyber-neon-yellow) !important;
+    border-color: var(--brass-dark) !important;
 }
 
 /* --- Modals & Dialogs --- */
@@ -186,30 +186,30 @@
 
 .excalidraw .Modal__close {
     border-radius: 0 !important;
-    color: var(--cyber-white) !important;
+    color: var(--starlight) !important;
     background-color: transparent !important;
 }
 
 .excalidraw .Modal__close:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
     box-shadow: 0 0 10px rgba(252, 238, 10, 0.2) !important;
 }
 
 .excalidraw .Modal__content {
-    background-color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
+    background-color: var(--void-black) !important;
+    border: 1px solid var(--celestial-blue) !important;
     box-shadow: 0 0 20px rgba(255, 0, 60, 0.2) !important;
     border-radius: 0 !important;
-    color: var(--cyber-white) !important;
+    color: var(--starlight) !important;
 }
 
 .excalidraw .Island {
-    background-color: var(--cyber-black) !important;
+    background-color: var(--void-black) !important;
 }
 
 .excalidraw .Dialog__title {
-    color: var(--cyber-neon-pink) !important;
+    color: var(--brass) !important;
     font-family: inherit !important;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -217,13 +217,13 @@
 
 /* --- Cards (Library/Export) --- */
 .excalidraw .Card {
-    background-color: var(--cyber-black) !important;
+    background-color: var(--void-black) !important;
     border-radius: 0 !important;
 }
 
 .excalidraw .Card-icon {
-    background-color: var(--cyber-dark-gray) !important;
-    color: var(--cyber-neon-cyan) !important;
+    background-color: var(--deep-space) !important;
+    color: var(--celestial-blue) !important;
 }
 
 /* --- App Toolbar / Menu Container --- */
@@ -231,8 +231,8 @@
 .excalidraw .buttonList,
 .excalidraw .App-toolbar-content {
     border-radius: 0 !important;
-    background-color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
+    background-color: var(--void-black) !important;
+    border: 1px solid var(--celestial-blue) !important;
 }
 
 .excalidraw .layer-ui__wrapper__top-left .App-menu__left {
@@ -244,14 +244,14 @@
 }
 
 .excalidraw .Card-details {
-    color: var(--cyber-white) !important;
+    color: var(--starlight) !important;
 }
 
 .excalidraw .Card-button {
     border-radius: 0 !important;
-    background-color: var(--cyber-neon-cyan) !important;
-    color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
+    background-color: var(--celestial-blue) !important;
+    color: var(--void-black) !important;
+    border: 1px solid var(--celestial-blue) !important;
     transition: all 0.2s ease;
     height: 40px !important;
     display: inline-flex !important;
@@ -260,7 +260,7 @@
 }
 
 .excalidraw .Card-button .ToolIcon__label {
-    color: var(--cyber-black) !important;
+    color: var(--void-black) !important;
     font-weight: bold;
     font-family: inherit !important;
     text-transform: uppercase;
@@ -268,20 +268,20 @@
 }
 
 .excalidraw .Card-button:hover {
-    background-color: var(--cyber-neon-yellow) !important;
-    color: var(--cyber-black) !important;
+    background-color: var(--brass-dark) !important;
+    color: var(--void-black) !important;
     box-shadow: 0 0 15px rgba(252, 238, 10, 0.4) !important;
-    border-color: var(--cyber-neon-yellow) !important;
+    border-color: var(--brass-dark) !important;
 }
 
 .excalidraw .Card-button:hover .ToolIcon__label {
-    color: var(--cyber-black) !important;
+    color: var(--void-black) !important;
 }
 
 /* --- Export Dialog Specifics --- */
 
 .excalidraw .ImageExportModal__preview__canvas {
-    border: 1px dashed var(--cyber-gray) !important;
+    border: 1px dashed rgba(var(--brass), 0.2) !important;
     border-radius: 0 !important;
 }
 
@@ -292,9 +292,9 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    background-color: var(--cyber-neon-cyan) !important;
-    color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
+    background-color: var(--celestial-blue) !important;
+    color: var(--void-black) !important;
+    border: 1px solid var(--celestial-blue) !important;
     transition: all 0.2s ease;
     height: 40px !important;
     /* Ensure consistent height */
@@ -305,36 +305,36 @@
 
 .excalidraw .ExcButton:hover,
 .excalidraw .ExcButton:active {
-    background-color: var(--cyber-neon-yellow) !important;
+    background-color: var(--brass-dark) !important;
     box-shadow: 0 0 15px rgba(252, 238, 10, 0.4) !important;
-    border-color: var(--cyber-neon-yellow) !important;
-    color: var(--cyber-black) !important;
+    border-color: var(--brass-dark) !important;
+    color: var(--void-black) !important;
 }
 
 /* Specific overrides for variants if they try to override the base */
 .excalidraw .ExcButton--variant-filled,
 .excalidraw .ExcButton--color-primary,
 .excalidraw .ImageExportModal__settings__buttons__button {
-    background-color: var(--cyber-neon-cyan) !important;
-    color: var(--cyber-black) !important;
+    background-color: var(--celestial-blue) !important;
+    color: var(--void-black) !important;
 }
 
 /* --- Form Elements --- */
 .excalidraw .Switch {
     border-radius: 0 !important;
-    background-color: var(--cyber-dark-gray) !important;
+    background-color: var(--deep-space) !important;
 }
 
 .excalidraw .Switch.toggled {
-    background-color: var(--cyber-neon-cyan) !important;
+    background-color: var(--celestial-blue) !important;
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.4) !important;
 }
 
 .excalidraw .Switch .thumb {
     border-radius: 0 !important;
-    background-color: var(--cyber-black) !important;
+    background-color: var(--void-black) !important;
     box-shadow: none !important;
-    border: 1px solid var(--cyber-gray) !important;
+    border: 1px solid rgba(var(--brass), 0.2) !important;
 }
 
 .excalidraw .RadioGroup {
@@ -344,9 +344,9 @@
 }
 
 .excalidraw .RadioGroup .RadioGroup__choice {
-    background-color: var(--cyber-black) !important;
-    color: var(--cyber-gray-light) !important;
-    border: 1px solid var(--cyber-gray) !important;
+    background-color: var(--void-black) !important;
+    color: var(--starlight) !important;
+    border: 1px solid rgba(var(--brass), 0.2) !important;
     border-radius: 0 !important;
     margin: 0 0.1rem !important;
 
@@ -355,80 +355,80 @@
 }
 
 .excalidraw .RadioGroup .RadioGroup__choice:hover {
-    color: var(--cyber-neon-cyan) !important;
-    border-color: var(--cyber-neon-cyan) !important;
+    color: var(--celestial-blue) !important;
+    border-color: var(--celestial-blue) !important;
 }
 
 .excalidraw .RadioGroup .RadioGroup__choice.active {
-    background-color: var(--cyber-neon-cyan) !important;
-    color: var(--cyber-black) !important;
-    border-color: var(--cyber-neon-cyan) !important;
+    background-color: var(--celestial-blue) !important;
+    color: var(--void-black) !important;
+    border-color: var(--celestial-blue) !important;
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.4) !important;
     font-weight: bold;
     z-index: 1;
 }
 
 .excalidraw .ExcTextField__input {
-    background-color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-gray) !important;
-    color: var(--cyber-white) !important;
+    background-color: var(--void-black) !important;
+    border: 1px solid rgba(var(--brass), 0.2) !important;
+    color: var(--starlight) !important;
     border-radius: 0 !important;
     font-family: inherit !important;
 }
 
 .excalidraw .ExcTextField__input:focus {
-    border-color: var(--cyber-neon-cyan) !important;
+    border-color: var(--celestial-blue) !important;
     outline: none !important;
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.2) !important;
 }
 
 /* --- Sidebar --- */
 .excalidraw .sidebar-tabs-root {
-    background-color: var(--cyber-dark-gray) !important;
-    border-right: 1px solid var(--cyber-gray) !important;
+    background-color: var(--deep-space) !important;
+    border-right: 1px solid rgba(var(--brass), 0.2) !important;
 }
 
 .excalidraw .sidebar-triggers {
-    background-color: var(--cyber-dark-gray) !important;
-    border-top: 1px solid var(--cyber-gray) !important;
+    background-color: var(--deep-space) !important;
+    border-top: 1px solid rgba(var(--brass), 0.2) !important;
     border-radius: 0 !important;
 }
 
 .excalidraw .sidebar-tab-trigger {
-    color: var(--cyber-gray-light) !important;
+    color: var(--starlight) !important;
     border-radius: 0 !important;
     background-color: transparent !important;
 }
 
 .excalidraw .sidebar-tab-trigger:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
 }
 
 .excalidraw .sidebar-tab-trigger[aria-selected="true"] {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-cyan) !important;
-    border-bottom: 2px solid var(--cyber-neon-cyan) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--celestial-blue) !important;
+    border-bottom: 2px solid var(--celestial-blue) !important;
 }
 
 .excalidraw .sidebar-header-button,
 .excalidraw .sidebar__header__buttons .Modal__close {
     border-radius: 0 !important;
-    color: var(--cyber-white) !important;
+    color: var(--starlight) !important;
 }
 
 .excalidraw .sidebar-header-button:hover,
 .excalidraw .sidebar__header__buttons .Modal__close:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
     border-radius: 0 !important;
 }
 
 .excalidraw .sidebar-header-button:hover,
 .excalidraw .sidebar__header__buttons:hover,
 .excalidraw .sidebar__close:hover {
-    background-color: var(--cyber-gray) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: rgba(var(--brass), 0.2) !important;
+    color: var(--brass-dark) !important;
     border-radius: 0 !important;
 }
 
@@ -439,9 +439,9 @@
 }
 
 .excalidraw .HelpDialog__btn {
-    background-color: var(--cyber-neon-cyan) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
-    color: var(--cyber-black) !important;
+    background-color: var(--celestial-blue) !important;
+    border: 1px solid var(--celestial-blue) !important;
+    color: var(--void-black) !important;
     border-radius: 0 !important;
     font-family: inherit !important;
     font-weight: bold;
@@ -456,22 +456,22 @@
 }
 
 .excalidraw .HelpDialog__btn:hover {
-    background-color: var(--cyber-neon-yellow) !important;
-    color: var(--cyber-black) !important;
+    background-color: var(--brass-dark) !important;
+    color: var(--void-black) !important;
     box-shadow: 0 0 15px rgba(252, 238, 10, 0.4) !important;
-    border-color: var(--cyber-neon-yellow) !important;
+    border-color: var(--brass-dark) !important;
 }
 
 
 .excalidraw .HelpDialog__island-title {
-    color: var(--cyber-neon-pink) !important;
+    color: var(--brass) !important;
     font-family: inherit !important;
 }
 
 .excalidraw .HelpDialog__shortcut {
-    background-color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-gray) !important;
-    color: var(--cyber-neon-cyan) !important;
+    background-color: var(--void-black) !important;
+    border: 1px solid rgba(var(--brass), 0.2) !important;
+    color: var(--celestial-blue) !important;
     border-radius: 0 !important;
     font-family: 'JetBrains Mono', monospace !important;
 }
@@ -479,9 +479,9 @@
 
 
 .excalidraw .HelpDialog__key {
-    background-color: var(--cyber-dark-gray) !important;
-    border: 1px solid var(--cyber-neon-yellow) !important;
-    color: var(--cyber-neon-yellow) !important;
+    background-color: var(--deep-space) !important;
+    border: 1px solid var(--brass-dark) !important;
+    color: var(--brass-dark) !important;
     border-radius: 0 !important;
     font-family: 'JetBrains Mono', monospace !important;
     box-shadow: none !important;
@@ -489,9 +489,9 @@
 
 
 .excalidraw .excalidraw-tooltip {
-    background-color: var(--cyber-black) !important;
-    border: 1px solid var(--cyber-neon-cyan) !important;
-    color: var(--cyber-white) !important;
+    background-color: var(--void-black) !important;
+    border: 1px solid var(--celestial-blue) !important;
+    color: var(--starlight) !important;
     border-radius: 0 !important;
     font-family: inherit !important;
     font-size: 0.8rem !important;

@@ -9,12 +9,8 @@ import AnalyticsEvents from '../../components/AnalyticsEvents';
 import { getPostBySlug, getPosts } from '../../lib/posts';
 import GraphView from '../components/GraphView';
 
-/**
- * Fetch all non-draft posts for static site generation.
- * This ensures that drafts are not attempted to be built during 'next export'.
- */
 export async function generateStaticParams() {
-  const posts = await getPosts(true); // true = include drafts so they can be exported statically
+  const posts = await getPosts(true); 
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -29,15 +25,13 @@ interface PageProps {
 import { Metadata } from 'next';
 import { SITE_CONFIG, BASE_URL } from '../../lib/constants';
 
-// ... existing imports
-
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params;
   const postData = await getPostBySlug(params.slug);
 
   if (!postData) {
     return {
-      title: 'LOG: NOT FOUND',
+      title: 'ENTRY NOT FOUND',
     };
   }
 
@@ -49,7 +43,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     title,
     description,
     openGraph: {
-      title: `${title}`, // OG title doesn't use the template, so we keep it here if we want the full branding for social sharing, OR we rely on generic logic. Usually better to provide full title for OG.
+      title: `${title}`,
       description,
       type: 'article',
       publishedTime: postData.date,
@@ -58,7 +52,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
       siteName: SITE_CONFIG.title,
       images: [
         {
-          url: '/A-logo-w-bg.png', // Fallback to site logo for now
+          url: '/A-logo-w-bg.png',
           width: 4096,
           height: 4096,
           alt: postData.title,
@@ -85,8 +79,7 @@ export default async function Page(props: PageProps) {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    // Use a fixed format to avoid hydration mismatch
-    return date.toISOString().slice(0, 10); // e.g., 2024-06-07
+    return date.toISOString().slice(0, 10);
   };
 
   return (
@@ -95,12 +88,12 @@ export default async function Page(props: PageProps) {
       <MathJaxInit />
       <AnalyticsEvents eventName="post_view" eventParams={{ slug: postData.slug, title: postData.title }} />
       {/* Main content area with layout logic */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col lg:flex-row justify-center gap-12">
+      <div className="container mx-auto px-4 py-12 lg:py-16">
+        <div className="flex flex-col lg:flex-row justify-center gap-16">
           
           {/* Left Spacer with Graph View */}
-          <aside className="hidden 2xl:block w-64 shrink-0">
-             <div className="sticky top-24">
+          <aside className="hidden 2xl:block w-72 shrink-0">
+             <div className="sticky top-32">
                 <GraphView currentSlug={postData.slug} />
              </div>
           </aside>
@@ -108,23 +101,31 @@ export default async function Page(props: PageProps) {
           {/* Post Content Area */}
           <article className="min-w-0 flex-1 max-w-4xl break-words hyphens-auto">
             {postData.draft && (
-              <div className="cyber-card p-4 mb-8 border-l-4 border-cyber-neon-pink bg-cyber-dark-gray/50 flex items-center">
-                <span className="text-cyber-neon-pink font-mono uppercase tracking-widest text-sm font-bold mr-3">
-                  [DRAFT_MODE]
+              <div className="glass-panel p-5 mb-10 border-l-4 border-l-brass flex items-center bg-void-black/30">
+                <span className="text-brass font-sans uppercase tracking-[0.2em] text-xs font-medium mr-4">
+                  Draft Record
                 </span>
-                <span className="text-gray-400 font-mono text-xs">
-                  System_Entry_Is_Not_Finalized
+                <span className="text-starlight/50 font-sans font-light italic text-xs">
+                  This entry is incomplete and subject to alteration.
                 </span>
               </div>
             )}
 
-            <header className="mb-8">
-              <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{postData.title}</h1>
-              <p className="text-gray-400">{formatDate(postData.date)}</p>
+            <header className="mb-14 border-b border-brass/10 pb-8 relative">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-starlight mb-6 leading-tight">{postData.title}</h1>
+              <div className="flex items-center gap-4 text-starlight/60 font-sans text-sm tracking-widest uppercase mb-2">
+                <time dateTime={postData.date}>{formatDate(postData.date)}</time>
+                {postData.tags && postData.tags.length > 0 && (
+                  <>
+                    <span className="text-brass/40">&bull;</span>
+                    <span className="text-brass">{postData.tags[0]}</span>
+                  </>
+                )}
+              </div>
 
               {/* Mobile Inline TOC - visible on mobile/tablet if toc exists */}
               {postData.toc && postData.toc.length > 0 && (
-                <div className="lg:hidden mt-8"> 
+                <div className="lg:hidden mt-10"> 
                   <TocSidebar toc={postData.toc} displayType="inline" />
                 </div>
               )}
@@ -133,29 +134,29 @@ export default async function Page(props: PageProps) {
             <PostContent html={postData.content} />
 
             {/* Mobile Graph View - visible on mobile/tablet (lg:hidden) */}
-            <div className="lg:hidden mt-8 mb-4">
+            <div className="lg:hidden mt-16 mb-8">
                <GraphView currentSlug={postData.slug} />
             </div>
 
-            <div className="mt-12 pt-6 border-t border-gray-700">
-              <Link href="/" className="inline-flex items-center text-cyber-neon-cyan hover:text-cyber-neon-yellow transition-colors group font-mono text-sm tracking-wider uppercase">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            <div className="mt-20 pt-10 border-t border-brass/20 flex justify-center lg:justify-start">
+              <Link href="/" className="inline-flex items-center text-brass hover:text-starlight transition-colors duration-300 group font-sans tracking-[0.2em] uppercase text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 group-hover:-translate-x-2 transition-transform duration-300 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-                Back to all posts
+                Return to Archives
               </Link>
             </div>
           </article>
 
           {/* Right Sidebar (TOC) - Hidden on mobile/tablet, visible on desktop (lg+) */}
           <aside className="hidden lg:block w-80 shrink-0">
-             <div className="sticky top-24 flex flex-col gap-8">
+             <div className="sticky top-32 flex flex-col gap-10">
                {postData.toc && postData.toc.length > 0 && (
                   <TocSidebar toc={postData.toc} displayType="sidebar" />
                )}
                
                {/* Graph on Laptop (LG - XL) - Hidden on 2XL where it moves to left */}
-               <div className="block 2xl:hidden pr-2">
+               <div className="block 2xl:hidden pr-4">
                   <GraphView currentSlug={postData.slug} />
                </div>
              </div>

@@ -6,15 +6,14 @@ import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { GraphData } from './types';
 
-// Dynamically import ForceGraph2D with no SSR
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
   ssr: false,
-  loading: () => <div className="h-64 w-full bg-cyber-dark-gray animate-pulse rounded-lg border border-cyber-gray"></div>
+  loading: () => <div className="h-64 w-full bg-void-black animate-pulse rounded-b-sm border-t border-brass/10 border-b border-brass/10"></div>
 });
 
 interface GraphCanvasProps {
   data: GraphData;
-  currentSlug: string; // Used for unique key re-mounting
+  currentSlug: string; 
   showExternal: boolean;
   setShowExternal: (show: boolean) => void;
 }
@@ -26,12 +25,10 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
   const [showTutorial, setShowTutorial] = useState(false);
   const startTime = useRef(0);
 
-  // Reset start time on mount OR when data changes (filtering)
   useEffect(() => {
     startTime.current = Date.now();
   }, [data]);
 
-  // Resize Observer
   useEffect(() => {
     if (!data || !graphWrapperRef.current) return;
 
@@ -44,20 +41,16 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
       }
     };
 
-    // Initial measure
     measure();
 
-    // Observer
     const resizeObserver = new ResizeObserver(measure);
     resizeObserver.observe(graphWrapperRef.current);
 
-    // Polling backup for mobile animations/layout shifts
     const timers: NodeJS.Timeout[] = [];
     [100, 300, 500, 800, 1500].forEach(delay => {
       timers.push(setTimeout(measure, delay));
     });
 
-    // Window resize backup
     window.addEventListener('resize', measure);
 
     return () => {
@@ -67,7 +60,6 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
     };
   }, [data]);
 
-  // Handle Touch Interactions for Mobile UX (Tutorial Only)
   const handleTouchStart = (e: React.TouchEvent) => {
     if (e.touches.length === 1) {
       setShowTutorial(true);
@@ -80,48 +72,39 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
 
   return (
     <div
-      className="flex-1 w-full overflow-hidden relative h-64 [&_canvas]:!touch-auto"
+      className="flex-1 w-full overflow-hidden relative h-64 [&_canvas]:!touch-auto bg-deep-space"
       ref={graphWrapperRef}
       onTouchStart={handleTouchStart}
     >
       {/* Controls Overlay */}
-      <div className="absolute bottom-3 right-3 z-10">
+      <div className="absolute top-3 right-3 z-10">
         <button
           onClick={() => setShowExternal(!showExternal)}
-          className={`text-[10px] font-mono uppercase tracking-wider border px-2 py-1 transition-all backdrop-blur-sm ${showExternal
-            ? 'border-cyber-neon-cyan text-cyber-neon-cyan bg-cyber-neon-cyan/10 shadow-[0_0_10px_rgba(0,240,255,0.3)]'
-            : 'border-cyber-gray text-cyber-gray-light bg-cyber-black/50 hover:text-cyber-white hover:border-cyber-white'
+          className={`text-[10px] font-sans uppercase tracking-[0.2em] border px-3 py-1.5 transition-all backdrop-blur-sm rounded-sm ${showExternal
+            ? 'border-brass text-void-black bg-brass shadow-[0_0_15px_rgba(197,168,105,0.2)]'
+            : 'border-brass/30 text-brass/70 bg-void-black/50 hover:text-brass hover:border-brass/60'
             }`}
           title={showExternal ? "Hide External Links" : "Show External Links"}
         >
-          {showExternal ? '[ EXT: ON ]' : '[ EXT: OFF ]'}
+          {showExternal ? 'External: Visible' : 'External: Hidden'}
         </button>
       </div>
 
       {width > 0 ? (
         <ForceGraph2D
-          key={`${currentSlug}-${showExternal}`} // Force re-mount on toggle to reset physics engine
+          key={`${currentSlug}-${showExternal}`} 
           width={width}
           height={256}
           graphData={data}
           nodeLabel="name"
           nodeRelSize={6}
-          linkDirectionalParticles={0.5}
-          // Custom interaction filter: Ignore 1-finger touch to allow scrolling
+          linkDirectionalParticles={0} // Removed directional particles for cleaner look
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           enablePanInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           enableZoomInteraction={(e: any) => e.type !== 'touchstart' || e.touches.length >= 2}
-          linkColor={() => {
-            const now = Date.now();
-            const timeSinceStart = now - startTime.current;
-            const animationDuration = 2000;
-            const progress = Math.min(1, Math.max(0, (timeSinceStart - 500) / animationDuration));
-            const easeOutQuart = (x: number): number => 1 - Math.pow(1 - x, 4);
-            const opacity = easeOutQuart(progress);
-            return `rgba(92, 92, 92, ${opacity})`;
-          }}
-          backgroundColor="rgba(0,0,0,0)"
+          linkColor={() => `rgba(197, 168, 105, 0.15)`} // Elegant brass link color
+          backgroundColor="transparent"
           onNodeClick={(node) => {
             if (node.type === 'post' && node.slug) {
               router.push(`/posts/${node.slug}`);
@@ -130,7 +113,7 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
             }
           }}
           nodeCanvasObject={(node, ctx, globalScale) => {
-            const radius = 5;
+            const radius = 4;
             const label = node.name;
 
             if (node.x === undefined || node.y === undefined) return;
@@ -150,29 +133,37 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
             const animatedRadius = radius * easeWithOvershoot(progress);
             const opacity = easeOutQuart(progress);
 
+            // Using brass, celestial-blue, or starlight for nodes depending on type
+            let color = '#EAE7DC'; // Starlight
+            if (node.type === 'post') {
+              color = node.slug === currentSlug ? '#C5A869' : '#8E7B4A'; // Brass / Brass Dark
+            } else if (node.type === 'external') {
+              color = '#4B6B92'; // Celestial Blue
+            }
+
             ctx.globalAlpha = opacity;
             ctx.beginPath();
             ctx.arc(node.x, node.y, Math.max(0, animatedRadius), 0, 2 * Math.PI, false);
-            ctx.fillStyle = node.color || '#fff';
+            ctx.fillStyle = color;
 
-            ctx.shadowColor = node.color || '#fff';
-            ctx.shadowBlur = 10;
+            ctx.shadowColor = color;
+            ctx.shadowBlur = 4;
             ctx.fill();
             ctx.shadowBlur = 0;
             ctx.globalAlpha = 1;
 
-            const fontSize = 12 / globalScale;
-            ctx.font = `${fontSize}px "Rajdhani", sans-serif`;
+            const fontSize = 10 / globalScale;
+            ctx.font = `300 ${fontSize}px "Outfit", sans-serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillStyle = node.color || '#fff';
-            ctx.fillText(label, node.x, node.y + radius + 2 + fontSize);
+            ctx.fillStyle = color;
+            ctx.fillText(label, node.x, node.y + radius + 3 + fontSize);
           }}
         />
       ) : (
         <div className="flex items-center justify-center h-full w-full">
-          <div className="text-cyber-neon-cyan/50 text-xs font-mono animate-pulse">
-            INITIALIZING_SYSTEM...
+          <div className="text-starlight/40 text-xs font-sans tracking-[0.2em] font-light uppercase animate-pulse">
+            Calibrating Instruments...
           </div>
         </div>
       )}
@@ -181,10 +172,10 @@ export const GraphCanvas = ({ data, currentSlug, showExternal, setShowExternal }
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: showTutorial ? 1 : 0 }}
-        className="absolute inset-0 z-50 flex items-center justify-center bg-cyber-black/80 pointer-events-none"
+        className="absolute inset-0 z-50 flex items-center justify-center bg-void-black/80 pointer-events-none"
       >
-        <div className="text-cyber-neon-cyan font-mono text-sm font-bold bg-cyber-dark-gray border border-cyber-neon-cyan px-4 py-2 shadow-[0_0_15px_rgba(0,240,255,0.3)]">
-          USE TWO FINGERS TO MOVE
+        <div className="text-brass font-sans text-xs uppercase tracking-[0.2em] font-light bg-void-black/90 border border-brass/20 px-6 py-3 rounded-sm shadow-xl">
+          Use two fingers to navigate
         </div>
       </motion.div>
     </div>

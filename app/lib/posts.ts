@@ -81,6 +81,13 @@ export async function getPostBySlug(slug: string) {
       id: heading.id,
     }));
 
+    // Handle tags - ensure they're always an array
+    const tags = Array.isArray(data.tags)
+      ? data.tags
+      : typeof data.tags === 'string'
+        ? data.tags.split(',').map((tag: string) => tag.trim())
+        : [];
+
     return {
       slug,
       title: data.title,
@@ -88,6 +95,7 @@ export async function getPostBySlug(slug: string) {
       content: finalHtml,
       draft,
       description: data.description || '',
+      tags,
       toc, // Always include toc data
     };
   } catch {

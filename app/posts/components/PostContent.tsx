@@ -2,8 +2,6 @@
 
 import React, { useEffect } from 'react';
 
-
-// Declare global interface for MathJax on window
 declare global {
     interface Window {
         MathJax?: {
@@ -13,7 +11,6 @@ declare global {
 }
 
 const PostContent: React.FC<{ html: string }> = ({ html }) => {
-    // Handle copy button clicks using event delegation
     const handleCopyClick = async (e: React.MouseEvent<HTMLDivElement>) => {
         const target = e.target as HTMLElement;
         const button = target.closest('.copy-btn') as HTMLButtonElement;
@@ -26,10 +23,9 @@ const PostContent: React.FC<{ html: string }> = ({ html }) => {
         try {
             await navigator.clipboard.writeText(code);
 
-            // Visual feedback
             const originalContent = button.innerHTML;
             button.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-celestial-blue" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
             `;
@@ -41,7 +37,6 @@ const PostContent: React.FC<{ html: string }> = ({ html }) => {
         }
     };
 
-    // Trigger MathJax to typeset on mount and when html changes
     useEffect(() => {
         if (typeof window !== 'undefined' && window.MathJax && window.MathJax.typesetPromise) {
             window.MathJax.typesetPromise();
@@ -50,15 +45,16 @@ const PostContent: React.FC<{ html: string }> = ({ html }) => {
 
     return (
         <div
-            className="prose prose-lg dark:prose-invert 
-            prose-headings:font-display prose-headings:text-cyber-white prose-headings:uppercase prose-headings:tracking-wide
-            prose-p:text-gray-300 prose-p:font-light prose-p:leading-relaxed
-            prose-a:text-cyber-neon-cyan prose-a:no-underline hover:prose-a:text-cyber-neon-yellow hover:prose-a:shadow-[0_2px_0_0_currentColor] prose-a:transition-all
-            prose-strong:text-cyber-neon-pink prose-strong:font-bold
-            prose-code:text-cyber-neon-yellow prose-code:font-mono prose-code:bg-transparent prose-code:p-0
+            className="prose prose-lg dark:prose-invert max-w-none
+            prose-headings:font-serif prose-headings:text-starlight prose-headings:font-bold prose-headings:tracking-wide
+            prose-h2:border-b-2 prose-h2:border-brass/10 prose-h2:pb-2 prose-h2:mt-16
+            prose-p:text-aged-parchment prose-p:font-light prose-p:leading-loose prose-p:tracking-wide
+            prose-a:text-celestial-blue-light prose-a:font-medium prose-a:underline prose-a:decoration-brass/40 prose-a:underline-offset-4 hover:prose-a:text-celestial-blue hover:prose-a:decoration-brass transition-colors
+            prose-strong:text-starlight prose-strong:font-medium
+            prose-code:text-brass-dark prose-code:bg-void-black/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:font-sans prose-code:text-[0.9em]
             prose-pre:bg-transparent prose-pre:border-0 prose-pre:shadow-none prose-pre:p-0 prose-pre:m-0
-            prose-blockquote:border-l-4 prose-blockquote:border-cyber-neon-purple prose-blockquote:bg-cyber-dark-gray/30 prose-blockquote:p-4 prose-blockquote:italic prose-blockquote:text-gray-400
-            prose-li:text-gray-300 prose-marker:text-cyber-neon-cyan"
+            prose-blockquote:border-l-4 prose-blockquote:border-brass/40 prose-blockquote:bg-void-black/30 prose-blockquote:px-6 prose-blockquote:py-4 prose-blockquote:my-8 prose-blockquote:italic prose-blockquote:text-starlight/70 prose-blockquote:rounded-r-sm
+            prose-ul:text-aged-parchment prose-ul:font-light prose-li:marker:text-brass/60 prose-ol:text-aged-parchment"
             dangerouslySetInnerHTML={{ __html: html }}
             onClick={handleCopyClick}
         />

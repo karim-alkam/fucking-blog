@@ -20,8 +20,8 @@ export default async function Home() {
     <>
       <Hero tags={allTags} />
       <div className="relative z-2 -mt-10">
-        <Suspense fallback={<div className="text-center py-20 text-cyber-neon-cyan font-mono">LOADING_DATA...</div>}>
-          <PostsList posts={allPosts} title="LATEST_LOGS" />
+        <Suspense fallback={<div className="text-center py-20 text-starlight/60 font-sans tracking-widest uppercase">Consulting Archives...</div>}>
+          <PostsList posts={allPosts} title="Recent Entries" />
         </Suspense>
       </div>
     </>

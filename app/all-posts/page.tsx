@@ -12,8 +12,8 @@ export default async function AllPosts() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <Suspense fallback={<div className="text-center py-20 text-cyber-neon-cyan font-mono">LOADING_DATA...</div>}>
-        <PostsList posts={posts} title="ARCHIVED_LOGS" />
+      <Suspense fallback={<div className="text-center py-20 text-starlight/60 font-sans tracking-widest uppercase">Extracting Logs...</div>}>
+        <PostsList posts={posts} title="Archived Entries" />
       </Suspense>
     </main>
   );

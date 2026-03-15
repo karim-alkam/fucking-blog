@@ -12,7 +12,7 @@ interface TocHeading {
 
 interface TocSidebarProps {
   toc: TocHeading[];
-  displayType: 'inline' | 'sidebar'; // 'inline' for mobile top, 'sidebar' for desktop right
+  displayType: 'inline' | 'sidebar';
 }
 
 export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
@@ -29,42 +29,38 @@ export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
     };
 
     observer.current = new IntersectionObserver(handleObserver, {
-      rootMargin: '-50% 0px -50% 0px', // Adjust these values to fine-tune when a heading is considered active
-      threshold: 0, // We only need to know if it intersects at all
+      rootMargin: '-20% 0px -80% 0px',
+      threshold: 0,
     });
 
-    // Observe all heading elements with IDs
     const elements = document.querySelectorAll('h2[id], h3[id]');
     elements.forEach((el) => observer.current?.observe(el));
 
-    // Clean up the observer
     return () => {
       observer.current?.disconnect();
     };
   }, [toc]);
 
   const sidebarClasses = displayType === 'sidebar'
-    ? "hidden lg:block max-h-[60vh] overflow-y-auto custom-scrollbar pr-2"
-    : "lg:hidden mb-8";
+    ? "hidden lg:block max-h-[60vh] overflow-y-auto custom-scrollbar pr-4 text-sm"
+    : "lg:hidden mb-12 border-t border-b border-brass/10 py-6";
 
   return (
     <div className={sidebarClasses}>
       <motion.div 
-        initial={{ opacity: 0, scaleY: 0, filter: 'brightness(2) hue-rotate(90deg)' }}
-        animate={{ opacity: 1, scaleY: 1, filter: 'brightness(1) hue-rotate(0deg)' }}
-        transition={{ duration: 0.6, type: "spring", bounce: 0.3 }}
+        initial={{ opacity: 0, scaleY: 0.95 }}
+        animate={{ opacity: 1, scaleY: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         style={{ originY: 0 }}
-        className="bg-cyber-dark-gray border border-cyber-gray p-6 relative overflow-hidden"
+        className={displayType === 'sidebar' ? "glass-panel p-6 bg-void-black/30" : "relative"}
       >
-        <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyber-neon-cyan to-cyber-neon-purple z-10"></div>
 
-        <h2 className="text-lg font-display font-bold text-cyber-white mb-4 uppercase tracking-widest flex items-center relative z-10">
-          <span className="w-2 h-2 bg-cyber-neon-cyan mr-2 animate-pulse"></span>
-          Table of Contents
+        <h2 className="text-sm font-sans font-medium text-brass mb-5 uppercase tracking-[0.2em] flex items-center relative z-10 border-b border-brass/20 pb-3">
+          Index
         </h2>
-        <ul className="space-y-1 relative z-10">
+        <ul className="space-y-3 relative z-10 font-sans font-light">
           {toc.map((item) => (
-            <li key={item.id} className={`${item.level === 3 ? 'ml-4' : ''}`}>
+            <li key={item.id} className={`${item.level === 3 ? 'ml-5' : ''}`}>
               <Link
                 href={`#${item.id}`}
                 onClick={(e) => {
@@ -73,9 +69,9 @@ export default function TocSidebar({ toc, displayType }: TocSidebarProps) {
                     behavior: 'smooth'
                   });
                 }}
-                className={`block py-1 text-sm font-mono transition-colors duration-200 border-l-2 pl-3 ${activeId === item.id
-                  ? 'border-cyber-neon-yellow text-cyber-neon-yellow'
-                  : 'border-transparent text-gray-500 hover:text-cyber-white hover:border-gray-500'
+                className={`block transition-colors duration-300 border-l px-3 py-0.5 ${activeId === item.id
+                  ? 'border-brass text-brass font-medium bg-brass/5'
+                  : 'border-brass/10 text-starlight/50 hover:text-starlight hover:border-brass/50'
                   }`}
               >
                 {item.text}

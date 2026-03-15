@@ -12,14 +12,13 @@ interface PostsListProps {
   title?: string;
 }
 
-export default function PostsList({ posts, title = 'Recent Logs' }: PostsListProps) {
+export default function PostsList({ posts, title = 'Archived Logs' }: PostsListProps) {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(6);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const postsTopRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
 
-  // Sync with URL query params
   // Sync with URL query params & Custom Events
   useEffect(() => {
     // 1. Handle URL Params (Initial Load / Back Button)
@@ -76,75 +75,75 @@ export default function PostsList({ posts, title = 'Recent Logs' }: PostsListPro
   return (
     <div id="posts-list" className='container mx-auto max-w-7xl px-4 py-8' ref={postsTopRef}>
       {/* Header and Filter Controls */}
-      <div className="mb-12 space-y-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-cyber-gray pb-4">
+      <div className="mb-14 space-y-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-brass/20 pb-6">
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-cyber-white uppercase tracking-wider mb-2">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-starlight capitalize tracking-wide mb-3 flex items-center gap-3">
               {selectedTag ? (
-                <span>Tag: <span className="text-cyber-neon-pink">#{selectedTag}</span></span>
+                <>Tag Index: <span className="text-brass font-sans text-3xl font-light">#{selectedTag}</span></>
               ) : (
-                <span className="glitch" data-text={title}>{title}</span>
+                <span>{title}</span>
               )}
             </h2>
-            <p className="text-cyber-gray-light font-mono text-sm">
-              {filteredPosts.length} ENTRY(S) FOUND
+            <p className="text-brass-dark font-sans tracking-widest text-xs uppercase opacity-80">
+              {filteredPosts.length} Record{filteredPosts.length !== 1 && 's'} Found
             </p>
           </div>
 
-          <div className="flex items-center space-x-4 mt-4 md:mt-0 self-end">
-            <div className="flex items-center space-x-2 bg-cyber-dark-gray border border-cyber-gray px-3 py-1">
-              <label htmlFor="pageSize" className="text-xs text-cyber-gray-light uppercase font-mono">DENSITY:</label>
+          <div className="flex items-center space-x-4 mt-6 md:mt-0 self-end">
+            <div className="flex items-center space-x-3 bg-void-black/60 backdrop-blur-sm border border-brass/10 px-4 py-2 rounded-sm shadow-sm">
+              <label htmlFor="pageSize" className="text-xs text-starlight/60 uppercase font-sans tracking-wider">Density:</label>
               <select
                 id="pageSize"
                 value={pageSize}
                 onChange={handlePageSizeChange}
-                className="bg-transparent text-cyber-neon-cyan font-mono text-sm focus:outline-none cursor-pointer"
+                className="bg-transparent text-brass font-sans text-sm focus:outline-none cursor-pointer font-medium"
               >
-                <option value="6" className="bg-cyber-dark-gray text-cyber-neon-cyan">LOW</option>
-                <option value="12" className="bg-cyber-dark-gray text-cyber-neon-cyan">MED</option>
-                <option value="24" className="bg-cyber-dark-gray text-cyber-neon-cyan">HIGH</option>
+                <option value="6" className="bg-deep-space text-starlight">Sparse</option>
+                <option value="12" className="bg-deep-space text-starlight">Balanced</option>
+                <option value="24" className="bg-deep-space text-starlight">Dense</option>
               </select>
             </div>
           </div>
         </div>
 
         {/* Tags Row */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2.5 pt-2">
           <button
             onClick={() => setSelectedTag(null)}
-            className={`px-3 py-1 text-xs font-mono uppercase tracking-wider border transition-all ${selectedTag === null
-              ? 'border-cyber-neon-yellow text-cyber-black bg-cyber-neon-yellow'
-              : 'border-cyber-gray text-cyber-gray-light hover:border-cyber-neon-yellow hover:text-cyber-neon-yellow'
+            className={`px-3.5 py-1.5 text-xs font-sans uppercase tracking-widest border transition-all duration-300 rounded-sm ${selectedTag === null
+              ? 'border-brass text-void-black bg-brass font-semibold shadow-[0_0_15px_rgba(197,168,105,0.2)]'
+              : 'border-brass/20 text-starlight/60 hover:border-brass/60 hover:text-brass hover:bg-brass/5'
               }`}
           >
-            ALL_SYSTEMS
+            All Logs
           </button>
           {allTags.map(tag => (
             <button
               key={tag}
               onClick={() => handleTagClick(tag)}
-              className={`px-3 py-1 text-xs font-mono uppercase tracking-wider border transition-all ${selectedTag === tag
-                ? 'border-cyber-neon-cyan text-cyber-black bg-cyber-neon-cyan shadow-[0_0_10px_rgba(0,240,255,0.4)]'
-                : 'border-cyber-gray text-cyber-gray-light hover:border-cyber-neon-cyan hover:text-cyber-neon-cyan'
+              className={`px-3.5 py-1.5 text-[11px] font-sans tracking-wide border transition-all duration-300 rounded-sm ${selectedTag === tag
+                ? 'border-celestial-blue text-white bg-celestial-blue shadow-[0_0_15px_rgba(75,107,146,0.4)] font-medium'
+                : 'border-brass/20 text-brass-dark hover:border-celestial-blue/60 hover:text-celestial-blue hover:bg-celestial-blue/5'
                 }`}
             >
-              #{tag}
+              {tag}
             </button>
           ))}
         </div>
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         <AnimatePresence mode="popLayout">
           {paginatedPosts.map((post) => (
             <motion.div
               key={post.slug}
               layout
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <PostCard post={post} />
             </motion.div>
@@ -153,9 +152,12 @@ export default function PostsList({ posts, title = 'Recent Logs' }: PostsListPro
       </div>
 
       {filteredPosts.length === 0 && (
-        <div className="text-center py-20 border border-dashed border-cyber-gray">
-          <h3 className="text-2xl font-display text-cyber-gray-light">NO DATA FOUND</h3>
-          <p className="text-gray-500 font-mono mt-2">Try adjusting your filters.</p>
+        <div className="text-center py-24 glass-panel border border-dashed border-brass/20">
+          <svg className="w-12 h-12 text-brass/30 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+          <h3 className="text-2xl font-serif text-starlight/80 italic mb-2">The Archives Yield No Results</h3>
+          <p className="text-aged-parchment/60 font-sans font-light tracking-wide">Adjust your astral parameters to seek further.</p>
         </div>
       )}
 

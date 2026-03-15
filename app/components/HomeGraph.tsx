@@ -89,12 +89,12 @@ export default function HomeGraph() {
             {!isMaximized && (
                 <>
                     <div className="mb-4 space-y-2 md:hidden">
-                        <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-cyber-gray pb-2">
+                        <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-brass/20 pb-2">
                             <div>
-                                <h2 className="text-xl md:text-2xl font-display font-bold text-cyber-white uppercase tracking-wider mb-1">
-                                    <span className="glitch" data-text="NEURAL_NETWORK_MAP">NEURAL_NETWORK_MAP</span>
+                                <h2 className="text-xl md:text-2xl font-serif font-bold text-starlight uppercase tracking-wider mb-1">
+                                    <span className="italic" data-text="CONSTELLATION_MAP">CONSTELLATION_MAP</span>
                                 </h2>
-                                <p className="text-cyber-gray-light font-mono text-[10px] md:text-xs">
+                                <p className="text-starlight/60 font-sans text-[10px] md:text-xs tracking-[0.2em]">
                                     INTERACTIVE SYSTEM VISUALIZATION
                                 </p>
                             </div>
@@ -105,35 +105,28 @@ export default function HomeGraph() {
                     <div className="md:hidden mb-4">
                         <button
                             onClick={toggleMaximize}
-                            className="w-full flex items-center justify-center gap-2 py-4 border border-cyber-neon-cyan bg-cyber-black/50 text-cyber-neon-cyan font-display font-bold tracking-widest hover:bg-cyber-neon-cyan/10 transition-colors uppercase relative group overflow-hidden"
+                            className="w-full flex items-center justify-center gap-2 py-4 border border-brass/20 bg-void-black/50 text-brass font-sans font-medium tracking-widest hover:bg-brass/10 transition-colors uppercase relative group overflow-hidden rounded-sm"
                         >
                             <span className="relative z-10 flex items-center gap-2">
-                                <span className="w-2 h-2 bg-cyber-neon-cyan animate-pulse" />
-                                INITIATE NEURAL LINK
+                                <span className="w-2 h-2 bg-brass animate-pulse rounded-full" />
+                                INITIATE_OBSERVATION
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
                                 </svg>
                             </span>
-                            {/* Scanline hover effect */}
-                            <div className="absolute inset-0 bg-cyber-neon-cyan/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                            {/* Gentle hover effect */}
+                            <div className="absolute inset-0 bg-brass/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                         </button>
                     </div>
 
                     <div
-                        className="hidden md:flex flex-col border border-cyber-neon-cyan bg-cyber-black overflow-hidden shadow-lg shadow-cyber-neon-cyan/20 [&_canvas]:!touch-auto w-full h-[600px] relative"
+                        className="hidden md:flex flex-col border border-brass/20 glass-panel bg-void-black/70 overflow-hidden shadow-xl [&_canvas]:!touch-auto w-full h-[600px] relative"
                         ref={containerRef}
                     >
-                        {/* CRT Scanline Effect */}
-                        <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
-                        <motion.div
-                            initial={{ top: "-10%" }}
-                            animate={{ top: "110%" }}
-                            transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
-                            className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-20 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
-                        />
-
+                        {/* Removed CRT Scanline Effect for a cleaner vintage astromony look */}
+                        
                         <GraphWindowHeader
-                            title="NEURAL_NET_v1.0"
+                            title="CONSTELLATION_MAP"
                             onMaximize={toggleMaximize}
                             onMinimize={() => { }}
                             onClose={() => { }}

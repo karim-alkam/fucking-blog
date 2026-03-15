@@ -75,24 +75,15 @@ export function GraphModal({ isOpen, onClose, data, isForcesApplied, activeFilte
                             leaveTo="opacity-0 scale-95"
                         >
                             <Dialog.Panel
-                                className="w-[90vw] max-w-[1600px] h-[calc(100vh-8rem)] transform overflow-hidden bg-cyber-black border border-cyber-neon-cyan shadow-xl transition-all flex flex-col relative"
+                                className="w-[90vw] max-w-[1600px] h-[calc(100vh-8rem)] transform overflow-hidden glass-panel bg-void-black/90 border border-brass/20 shadow-2xl transition-all flex flex-col relative"
                             >
-                                {/* CRT Scanline Effect */}
-                                <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(transparent_50%,rgba(0,240,255,0.05)_50%)] bg-[length:100%_4px] opacity-50"></div>
-                                <motion.div
-                                    initial={{ top: "-10%" }}
-                                    animate={{ top: "110%" }}
-                                    transition={{ duration: 2, repeat: Infinity, ease: "linear", repeatDelay: 1 }}
-                                    className="absolute left-0 right-0 h-[2px] bg-cyber-neon-cyan/30 z-20 shadow-[0_0_10px_rgba(0,240,255,0.8)]"
-                                />
-
                                 <GraphWindowHeader
-                                    title="NEURAL_NET_MAX"
+                                    title="CONSTELLATION_MAP_EXPANDED"
                                     onMaximize={() => { }}
                                     onMinimize={onClose}
                                     onClose={onClose}
                                 />
-                                <div className="flex-1 w-full h-full relative cursor-move bg-black" ref={modalContainerRef}>
+                                <div className="flex-1 w-full h-full relative cursor-move bg-transparent" ref={modalContainerRef}>
                                     <HomeGraphCanvas
                                         width={modalDimensions.width}
                                         height={modalDimensions.height}

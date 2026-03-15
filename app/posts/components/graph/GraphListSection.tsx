@@ -8,36 +8,30 @@ import { GraphNode } from './types';
 interface GraphListSectionProps {
   title: string;
   nodes: GraphNode[];
-  colorClass: string; // e.g., 'text-cyber-neon-green', 'border-cyber-neon-green'
+  colorClass: string; // e.g., 'text-brass border-brass'
   delay: number;
 }
 
 export const GraphListSection = ({ title, nodes, colorClass, delay }: GraphListSectionProps) => {
   if (nodes.length === 0) return null;
 
-  // Map utility class names based on the base color class passed
-  // We assume colorClass is like 'cyber-neon-green'
-  const borderColor = `border-${colorClass}`;
-  const textColor = `text-${colorClass}`;
-  const hoverColor = `hover:text-${colorClass}`;
-
   return (
     <motion.div
-      initial={{ opacity: 0, x: -20 }}
+      initial={{ opacity: 0, x: -10 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay, duration: 0.3 }}
-      className={`border-l-2 ${borderColor} pl-4`}
+      transition={{ delay, duration: 0.5, ease: "easeOut" }}
+      className={`border-l pl-5 ${colorClass}`}
     >
-      <h3 className={`text-sm font-display font-bold ${textColor} uppercase mb-2 tracking-widest`} >
+      <h3 className="text-xs font-sans font-medium uppercase mb-3 tracking-[0.2em] opacity-80" >
         {title}
       </h3>
-      <ul className="space-y-1">
+      <ul className="space-y-2">
         {nodes.map((node) => (
           <li key={node.id}>
             {node.type === 'post' ? (
               <Link
                 href={`/posts/${node.slug}`}
-                className={`text-xs text-gray-400 ${hoverColor} transition-colors block truncate font-mono`}
+                className="text-[13px] text-starlight/70 hover:text-brass transition-colors block truncate font-sans font-light"
               >
                 {node.name}
               </Link>
@@ -46,7 +40,7 @@ export const GraphListSection = ({ title, nodes, colorClass, delay }: GraphListS
                 href={node.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`text-xs text-gray-400 ${hoverColor} transition-colors block truncate font-mono`}
+                className="text-[13px] text-starlight/70 hover:text-celestial-blue-light transition-colors block truncate font-sans font-light"
               >
                 {node.name}
               </a>
