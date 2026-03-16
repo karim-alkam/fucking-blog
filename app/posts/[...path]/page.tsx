@@ -124,10 +124,6 @@ async function FolderView({ folderPath }: { folderPath: string }) {
   const { subDirs, posts } = await getFolderContents(folderPath);
   const folderName = folderPath.split('/').pop() || folderPath;
   
-  // We need a path to go back. If it's a subfolder, go up one level.
-  const parentPath = folderPath.includes('/') 
-    ? `/posts/${folderPath.split('/').slice(0, -1).map(p => encodeURIComponent(p)).join('/')}` 
-    : '/posts';
 
   return (
     <div className="container mx-auto max-w-7xl px-4 py-8 min-h-screen">
@@ -179,7 +175,7 @@ async function FolderView({ folderPath }: { folderPath: string }) {
   );
 }
 
-async function PostView({ postData }: { postData: any }) {
+async function PostView({ postData }: { postData: { slug: string; folder: string; title: string; date: string | null; content: string; draft?: boolean; description: string; tags?: string[]; toc?: { level: number; text: string; id: string }[] } }) {
   const formatDate = (dateString: string | null) => {
     if (!dateString) return 'Undated';
     const d = new Date(dateString);
@@ -217,7 +213,7 @@ async function PostView({ postData }: { postData: any }) {
             <header className="mb-14 border-b border-brass/10 pb-8 relative">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-starlight mb-6 leading-tight">{postData.title}</h1>
               <div className="flex items-center gap-4 text-starlight/60 font-sans text-sm tracking-widest uppercase mb-2">
-                <time dateTime={postData.date}>{formatDate(postData.date)}</time>
+                <time dateTime={postData.date ?? undefined}>{formatDate(postData.date)}</time>
                 {postData.tags && postData.tags.length > 0 && (
                   <>
                     <span className="text-brass/40">&bull;</span>
