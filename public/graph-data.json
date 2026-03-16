@@ -1,11 +1,104 @@
 {
   "nodes": [
     {
+      "id": "fish-tank-ecosystembasic-self-sustainable-aquarium-ecosystem",
+      "name": "basic self sustainable aquarium ecosystem",
+      "val": 20,
+      "type": "post",
+      "slug": "Fish-tank-ecosystem\\basic-self-sustainable-aquarium-ecosystem"
+    },
+    {
+      "id": "fish-tank-ecosystemmy-ecosystem-aquariumaquarium-log",
+      "name": "Aquarium Log",
+      "val": 20,
+      "type": "post",
+      "slug": "Fish-tank-ecosystem\\My-ecosystem-aquarium\\Aquarium-Log"
+    },
+    {
+      "id": "fish-tank-ecosystemmy-ecosystem-aquariumaquarium-logistics",
+      "name": "Aquarium logistics",
+      "val": 20,
+      "type": "post",
+      "slug": "Fish-tank-ecosystem\\My-ecosystem-aquarium\\Aquarium-logistics"
+    },
+    {
       "id": "muscles-hypertrophy",
       "name": "Muscles hypertrophy",
       "val": 20,
       "type": "post",
       "slug": "Muscles-hypertrophy"
+    },
+    {
+      "id": "self-studycommunication-systems-fundamentals",
+      "name": "communication systems fundamentals",
+      "val": 20,
+      "type": "post",
+      "slug": "Self-study\\communication-systems-fundamentals"
+    },
+    {
+      "id": "self-studysemiconductorssemiconductors-general-fabrication-process",
+      "name": "Semiconductors General fabrication process",
+      "val": 20,
+      "type": "post",
+      "slug": "Self-study\\Semiconductors\\Semiconductors-General-fabrication-process"
+    },
+    {
+      "id": "tag:aquarium",
+      "name": "aquarium",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:my-aquarium",
+      "name": "my-aquarium",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:muscles",
+      "name": "muscles",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:embedded",
+      "name": "embedded",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "tag:semiconductors",
+      "name": "semiconductors",
+      "val": 22,
+      "type": "tag"
+    },
+    {
+      "id": "https://buceplant.com/blogs/aquascaping-guides-and-tips/how-to-create-a-self-sustaining-aquarium",
+      "name": "buceplant.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://buceplant.com/blogs/aquascaping-guides-and-tips/how-to-create-a-self-sustaining-aquarium"
+    },
+    {
+      "id": "https://en.wikipedia.org/wiki/Full-spectrum_light",
+      "name": "en.wikipedia.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://en.wikipedia.org/wiki/Full-spectrum_light"
+    },
+    {
+      "id": "https://www.sciencedirect.com/science/article/pii/S0301479725033481",
+      "name": "www.sciencedirect.com",
+      "val": 10,
+      "type": "external",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0301479725033481"
+    },
+    {
+      "id": "https://worldfishcenter.org/publication/zooplankton-its-biochemistry-and-significance-aquaculture",
+      "name": "worldfishcenter.org",
+      "val": 10,
+      "type": "external",
+      "url": "https://worldfishcenter.org/publication/zooplankton-its-biochemistry-and-significance-aquaculture"
     },
     {
       "id": "https://www.unm.edu/~lkravitz/Article%20folder/musclesgrowLK.html",
@@ -16,6 +109,66 @@
     }
   ],
   "links": [
+    {
+      "source": "tag:aquarium",
+      "target": "fish-tank-ecosystembasic-self-sustainable-aquarium-ecosystem",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:aquarium",
+      "target": "fish-tank-ecosystemmy-ecosystem-aquariumaquarium-log",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:my-aquarium",
+      "target": "fish-tank-ecosystemmy-ecosystem-aquariumaquarium-log",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:aquarium",
+      "target": "fish-tank-ecosystemmy-ecosystem-aquariumaquarium-logistics",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:my-aquarium",
+      "target": "fish-tank-ecosystemmy-ecosystem-aquariumaquarium-logistics",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:muscles",
+      "target": "muscles-hypertrophy",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:embedded",
+      "target": "self-studycommunication-systems-fundamentals",
+      "type": "tagged"
+    },
+    {
+      "source": "tag:semiconductors",
+      "target": "self-studysemiconductorssemiconductors-general-fabrication-process",
+      "type": "tagged"
+    },
+    {
+      "source": "fish-tank-ecosystembasic-self-sustainable-aquarium-ecosystem",
+      "target": "https://buceplant.com/blogs/aquascaping-guides-and-tips/how-to-create-a-self-sustaining-aquarium",
+      "type": "external"
+    },
+    {
+      "source": "fish-tank-ecosystembasic-self-sustainable-aquarium-ecosystem",
+      "target": "https://en.wikipedia.org/wiki/Full-spectrum_light",
+      "type": "external"
+    },
+    {
+      "source": "fish-tank-ecosystembasic-self-sustainable-aquarium-ecosystem",
+      "target": "https://www.sciencedirect.com/science/article/pii/S0301479725033481",
+      "type": "external"
+    },
+    {
+      "source": "fish-tank-ecosystembasic-self-sustainable-aquarium-ecosystem",
+      "target": "https://worldfishcenter.org/publication/zooplankton-its-biochemistry-and-significance-aquaculture",
+      "type": "external"
+    },
     {
       "source": "muscles-hypertrophy",
       "target": "https://www.unm.edu/~lkravitz/Article%20folder/musclesgrowLK.html",

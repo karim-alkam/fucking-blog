@@ -16,12 +16,27 @@ function postNameToSlug(postName) {
     .replace(/^-|-$/g, '');
 }
 
+async function walk(dir, filterFn = () => true) {
+  const entries = await fs.promises.readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (let ent of entries) {
+    const full = path.join(dir, ent.name);
+    if (ent.isDirectory()) {
+      files.push(...await walk(full, filterFn));
+    } else if (ent.isFile() && filterFn(full)) {
+      files.push(full);
+    }
+  }
+  return files;
+}
+
 async function generateGraph() {
   logger.header('GENERATING GRAPH DATA');
 
   try {
-    const filenames = await fs.promises.readdir(postsDir);
-    const mdFiles = filenames.filter((f) => f.endsWith('.md'));
+    const mdFilesFullPaths = await walk(postsDir, f => f.endsWith('.md'));
+    // convert to relative paths from postsDir so the rest of the script is largely the same
+    const mdFiles = mdFilesFullPaths.map(f => path.relative(postsDir, f));
 
     const nodes = [];
     const links = [];

@@ -9,16 +9,21 @@ const syncState = require('./syncState');
 // ─── CONFIG ────────────────────────────────────────────────────────────────
 const vaultDir = getPath('vaultDir', 'BLOG_VAULT_DIR');
 const postsDir = path.resolve(process.cwd(), 'posts');
+const drawingsDir = getPath('drawingsDir', 'BLOG_DRAWINGS_DIR');
+const attachmentsDir = getPath('attachmentsDir', 'BLOG_ATTACHMENTS_DIR');
 // ────────────────────────────────────────────────────────────────────────────
 
 /** Recursively collect all files under `dir` matching `filterFn` */
-async function walk(dir, filterFn = () => true) {
+async function walk(dir, filterFn = () => true, excludeDirs = []) {
   const entries = await fs.promises.readdir(dir, { withFileTypes: true });
   const files = [];
   for (let ent of entries) {
     const full = path.join(dir, ent.name);
     if (ent.isDirectory()) {
-      files.push(...await walk(full, filterFn));
+      const isExcluded = excludeDirs.some(ex => full === ex || full.startsWith(ex + path.sep));
+      if (!isExcluded && ent.name !== '.obsidian' && ent.name !== '.trash') {
+        files.push(...await walk(full, filterFn, excludeDirs));
+      }
     } else if (ent.isFile() && filterFn(full)) {
       files.push(full);
     }
@@ -32,7 +37,13 @@ async function syncPosts() {
   logger.substep(`Dest:   ${postsDir}`);
 
   // 1) find all source .md files
-  const sourceFiles = await walk(vaultDir, f => f.endsWith('.md'));
+  const excludeDirs = [];
+  if (drawingsDir) excludeDirs.push(path.resolve(drawingsDir));
+  if (attachmentsDir) excludeDirs.push(path.resolve(attachmentsDir));
+  const templateDir = path.resolve(vaultDir, 'Templates');
+  if (templateDir) excludeDirs.push(path.resolve(templateDir));
+
+  const sourceFiles = await walk(vaultDir, f => f.endsWith('.md'), excludeDirs);
   logger.info(`Found ${sourceFiles.length} source markdown files.`);
 
   // Load manifest state
@@ -53,9 +64,35 @@ async function syncPosts() {
   for (let [rel, src] of sourceMap) {
     const dest = path.join(postsDir, rel);
     
-    // Read source content to check for draft status
+    // Read source content to check for draft and publish status
     const content = fs.readFileSync(src, 'utf8');
     const { data } = matter(content);
+
+    // Filter out files that have publish: false in frontmatter
+    const isPublish = typeof data.publish === 'string'
+      ? data.publish.toLowerCase() !== 'false'
+      : data.publish !== false;
+      
+    if (!isPublish) {
+      // If we shouldn't publish, just skip copying it. The cleanup logic at the end will delete it if it exists.
+      continue;
+    }
+
+    // Filter out Excalidraw drawings — they are .md files but contain drawing data,
+    // not blog content. They can live anywhere in the vault, not just the drawings folder.
+    const isExcalidrawFile = !!data['excalidraw-plugin'] || !!data['excalidraw'];
+    if (isExcalidrawFile) {
+      logger.substep(`Skipped (drawing): ${rel}`);
+      continue;
+    }
+
+    // Filter out files that don't have the minimum required frontmatter.
+    // A file without a title cannot be displayed properly in the blog.
+    if (!data.title) {
+      logger.warn(`Skipped (missing frontmatter): ${rel}`);
+      continue;
+    }
+
     const isDraft = typeof data.draft === 'string'
       ? data.draft.toLowerCase() === 'true'
       : Boolean(data.draft);

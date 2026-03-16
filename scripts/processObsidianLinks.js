@@ -7,12 +7,26 @@ const matter = require('gray-matter');
 const postsDir = path.resolve(process.cwd(), 'posts');
 
 // Build a map of all available posts (slug -> title)
+async function walk(dir, filterFn = () => true) {
+  const entries = await fs.promises.readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (let ent of entries) {
+    const full = path.join(dir, ent.name);
+    if (ent.isDirectory()) {
+      files.push(...await walk(full, filterFn));
+    } else if (ent.isFile() && filterFn(full)) {
+      files.push(full);
+    }
+  }
+  return files;
+}
+
 async function buildPostMap() {
   const postMap = new Map();
   
   try {
-    const filenames = await fs.promises.readdir(postsDir);
-    const mdFiles = filenames.filter((f) => f.endsWith('.md'));
+    const mdFilesFullPaths = await walk(postsDir, f => f.endsWith('.md'));
+    const mdFiles = mdFilesFullPaths.map(f => path.relative(postsDir, f));
     
     for (const filename of mdFiles) {
       const filePath = path.join(postsDir, filename);

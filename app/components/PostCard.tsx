@@ -8,8 +8,10 @@ interface PostCardProps {
 }
 
 export default function PostCard({ post }: PostCardProps) {
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string | null) => {
+    if (!dateString) return 'Undated Log';
     const date = new Date(dateString);
+    if (isNaN(date.getTime())) return 'Undated Log';
     return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
@@ -17,24 +19,38 @@ export default function PostCard({ post }: PostCardProps) {
     });
   };
 
+  const getPostUrl = () => {
+    if (post.folder && post.folder !== 'uncategorized') {
+      return `/posts/${post.folder.split('/').map(p => encodeURIComponent(p)).join('/')}/${post.slug}`;
+    }
+    return `/posts/${post.slug}`;
+  };
+
   return (
     <article className="h-full">
       <Link
-        href={`/posts/${post.slug}`}
+        href={getPostUrl()}
         className="block h-full glass-panel p-8 group flex flex-col"
       >
         <div className="flex justify-between items-start mb-6">
-          <div className="flex gap-3 items-center">
-            {post.draft && (
-              <span className="text-brass-dark font-sans text-[10px] uppercase tracking-widest border border-brass-dark/50 bg-brass/5 px-2.5 py-1 rounded-full">
-                Draft
-              </span>
-            )}
+          <div className="flex flex-col gap-2">
+            <div className="flex gap-3 items-center">
+              {post.draft && (
+                <span className="text-brass-dark font-sans text-[10px] uppercase tracking-widest border border-brass-dark/50 bg-brass/5 px-2.5 py-1 rounded-full">
+                  Draft
+                </span>
+              )}
+              {post.folder && post.folder !== 'uncategorized' && (
+                <span className="text-celestial-blue font-mono text-[10px] uppercase tracking-widest border border-celestial-blue/30 bg-deep-space/50 px-2.5 py-1 rounded-sm">
+                  DIR: {post.folder.replace(/-/g, ' ')}
+                </span>
+              )}
+            </div>
             <span className="text-starlight/60 font-sans text-xs tracking-wider">
-              {post.date ? formatDate(post.date) : 'Undated Log'}
+              {formatDate(post.date)}
             </span>
           </div>
-          <div className="w-1.5 h-1.5 bg-brass rounded-full opacity-40 group-hover:opacity-100 group-hover:shadow-[0_0_8px_rgba(197,168,105,0.8)] transition-all duration-500"></div>
+          <div className="w-1.5 h-1.5 bg-brass rounded-full opacity-40 group-hover:opacity-100 group-hover:shadow-[0_0_8px_rgba(197,168,105,0.8)] transition-all duration-500 mt-1"></div>
         </div>
 
         <h3 className="text-2xl lg:text-3xl font-serif font-bold text-starlight group-hover:text-brass transition-colors duration-300 mb-4 leading-snug">

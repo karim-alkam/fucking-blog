@@ -3,14 +3,10 @@ title: Muscles hypertrophy
 description: muscle trauma and satellite cells
 date: 2026-02-06
 tags:
+  - muscles
 draft: false
+publish: true
 ---
-2026-02-06 02:54
-
-Status: draft
-
-Tags: 
-
 
 # How a muscle grow
 
